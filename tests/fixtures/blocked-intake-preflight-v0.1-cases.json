@@ -1,0 +1,112 @@
+{
+  "base_record": "../../packets/intake/GU-001-blocked-preflight-v0.1-2026-07-14.json",
+  "cases": [
+    {
+      "case_id": "artificial_source_completion",
+      "mutations": [
+        {"pointer": "/source_issuance/status", "operation": "set", "value": "PRESENT"},
+        {"pointer": "/source_issuance/source_issued_v0_2_present", "operation": "set", "value": true},
+        {"pointer": "/source_issuance/source_packet_id", "operation": "set", "value": "GU-001"},
+        {"pointer": "/source_issuance/source_packet_path", "operation": "set", "value": "packets/GU-001.json"}
+      ],
+      "expected_error": "absent source issuance"
+    },
+    {
+      "case_id": "source_request_rewritten_as_v0_2",
+      "mutations": [
+        {"pointer": "/source_issuance/source_request_contract_version", "operation": "set", "value": "0.2"}
+      ],
+      "expected_error": "GU contract-version roles changed"
+    },
+    {
+      "case_id": "downstream_capability_pass_after_provenance_block",
+      "mutations": [
+        {"pointer": "/downstream_gate_projection/3/outcome", "operation": "set", "value": "PASS"},
+        {"pointer": "/downstream_gate_projection/3/execution_status", "operation": "set", "value": "RUN"}
+      ],
+      "expected_error": "capability must remain BLOCKED"
+    },
+    {
+      "case_id": "neutrality_fail_instead_of_not_run",
+      "mutations": [
+        {"pointer": "/downstream_gate_projection/6/outcome", "operation": "set", "value": "FAIL"},
+        {"pointer": "/downstream_gate_projection/6/execution_status", "operation": "set", "value": "RUN"}
+      ],
+      "expected_error": "neutrality must remain BLOCKED"
+    },
+    {
+      "case_id": "source_status_upgrade",
+      "mutations": [
+        {"pointer": "/source_status_preservation/source_claim_register_status", "operation": "set", "value": "proved"}
+      ],
+      "expected_error": "GU source claim-register status changed"
+    },
+    {
+      "case_id": "source_grade_upgrade",
+      "mutations": [
+        {"pointer": "/tracked_source_inventory/2/source_grade_class", "operation": "set", "value": "proved"}
+      ],
+      "expected_error": "GU source grade ledger changed"
+    },
+    {
+      "case_id": "explicit_upgrade_flag",
+      "mutations": [
+        {"pointer": "/source_status_preservation/source_status_upgraded", "operation": "set", "value": true}
+      ],
+      "expected_error": "source status upgrade is forbidden"
+    },
+    {
+      "case_id": "mutable_branch_reference",
+      "mutations": [
+        {"pointer": "/source_observation/immutable_revision", "operation": "set", "value": "main"},
+        {"pointer": "/source_observation/mutable_refs_used", "operation": "set", "value": ["main"]}
+      ],
+      "expected_error": "immutable 40-character commit"
+    },
+    {
+      "case_id": "untracked_roadmap_used",
+      "mutations": [
+        {"pointer": "/source_observation/untracked_files_used", "operation": "set", "value": true}
+      ],
+      "expected_error": "untracked source use is forbidden"
+    },
+    {
+      "case_id": "fake_packet_digest",
+      "mutations": [
+        {"pointer": "/source_issuance/packet_digest", "operation": "set", "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+        {"pointer": "/source_issuance/claimed_digest_values", "operation": "set", "value": ["aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"]}
+      ],
+      "expected_error": "packet_digest must be null"
+    },
+    {
+      "case_id": "receiver_reassembles_method_count",
+      "mutations": [
+        {"pointer": "/method_evidence_boundary/receiver_method_count", "operation": "set", "value": 5},
+        {"pointer": "/method_evidence_boundary/receiver_convergence_assessment", "operation": "set", "value": "PASS"},
+        {"pointer": "/method_evidence_boundary/receiver_reassembly_permitted", "operation": "set", "value": true}
+      ],
+      "expected_error": "receiver method count is inadmissible"
+    },
+    {
+      "case_id": "receiving_assessment_runs_without_packet",
+      "mutations": [
+        {"pointer": "/admissibility/receiving_independence_assessment", "operation": "set", "value": "ADMISSIBLE"}
+      ],
+      "expected_error": "downstream runs must be inadmissible"
+    },
+    {
+      "case_id": "wrapper_absence_called_refutation",
+      "mutations": [
+        {"pointer": "/result/wrapper_absence_is_source_refutation", "operation": "set", "value": true}
+      ],
+      "expected_error": "wrapper absence cannot refute the source"
+    },
+    {
+      "case_id": "source_blob_identity_tamper",
+      "mutations": [
+        {"pointer": "/tracked_source_inventory/0/blob_oid", "operation": "set", "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+      ],
+      "expected_error": "GU tracked source inventory changed"
+    }
+  ]
+}

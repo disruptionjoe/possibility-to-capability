@@ -1,0 +1,345 @@
+{
+  "schema_version": "0.1",
+  "preflight_id": "PTC-PREFLIGHT-GU-001-2026-07-14-EC149A2",
+  "packet_candidate": "GU-001",
+  "receiver_owner": "possibility-to-capability",
+  "observed_at": "2026-07-14",
+  "source_observation": {
+    "repository": "gu-formalization",
+    "immutable_revision": "ec149a2feadb1f141f464d327b09e5ee213ac7f7",
+    "revision_kind": "git_commit",
+    "inspection_mode": "git_object_database_tracked_only",
+    "working_tree_used": false,
+    "untracked_files_used": false,
+    "mutable_refs_used": [],
+    "tree_queries": [
+      {
+        "query": "tracked path or content contains GU-001",
+        "tracked_matches": []
+      },
+      {
+        "query": "tracked content contains frozen-packet-v0.1.schema.json",
+        "tracked_matches": []
+      },
+      {
+        "query": "tracked content contains frozen-packet-v0.2.schema.json",
+        "tracked_matches": []
+      },
+      {
+        "query": "tracked content contains ptc-frozen-bundle-v1",
+        "tracked_matches": []
+      },
+      {
+        "query": "tracked content contains manifest_digest, packet_digest, or bundle_digest",
+        "tracked_matches": []
+      }
+    ]
+  },
+  "source_issuance": {
+    "status": "ABSENT",
+    "source_request_contract_version": "0.1",
+    "current_receiver_preferred_contract_version": "0.2",
+    "checked_contract_versions": [
+      "0.1",
+      "0.2"
+    ],
+    "source_issued_v0_1_present": false,
+    "source_issued_v0_2_present": false,
+    "source_packet_id": null,
+    "source_packet_path": null,
+    "manifest_path": null,
+    "manifest_digest": null,
+    "packet_digest": null,
+    "bundle_digest": null,
+    "claimed_digest_values": []
+  },
+  "tracked_source_inventory": [
+    {
+      "role": "signature_decoupling",
+      "path": "explorations/W202-signature-crux-bach-branch-2026-07-14.md",
+      "blob_oid": "63916b61f880a6c0be8c659bce28aa7186c09491",
+      "artifact_type": "exploration",
+      "source_status_class": "exploration",
+      "source_grade_class": "exploration; strong on exact machine-checked signature/Krein facts; structural on the Bach reading",
+      "preservation": "immutable_reference_no_receiver_regrade"
+    },
+    {
+      "role": "schur_forced_source_action",
+      "path": "explorations/W203-branch3-source-action-fixed-coefficients-2026-07-14.md",
+      "blob_oid": "6b67b2c068be3892ab3f05f567493f0476b2abc0",
+      "artifact_type": "exploration",
+      "source_status_class": "exploration",
+      "source_grade_class": "exploration; strong on the machine-checked coefficient pin and Krein consequence; structural on the branch-3 mapping",
+      "preservation": "immutable_reference_no_receiver_regrade"
+    },
+    {
+      "role": "counterfactual_invariance",
+      "path": "explorations/W206-decisive-bit-counterfactual-invariance-2026-07-14.md",
+      "blob_oid": "b002b65de7030da1ac3903cee64b58b2aa905751",
+      "artifact_type": "exploration",
+      "source_status_class": "exploration",
+      "source_grade_class": "exploration; strong on the decisive machine-checked linear algebra",
+      "preservation": "immutable_reference_no_receiver_regrade"
+    },
+    {
+      "role": "dirac_brst",
+      "path": "explorations/W207-decisive-bit-brst-cohomology-2026-07-14.md",
+      "blob_oid": "9c0ca3f3f73201e10dd4cfa70b6f9abbf2dc9271",
+      "artifact_type": "exploration",
+      "source_status_class": "exploration",
+      "source_grade_class": "exact finite-dimensional group-cohomology facts; structural BRST lift; argued spectral-section identification",
+      "preservation": "immutable_reference_no_receiver_regrade"
+    },
+    {
+      "role": "lawvere_fixed_point",
+      "path": "explorations/W208-decisive-bit-lawvere-fixed-point-2026-07-14.md",
+      "blob_oid": "db743d22b73f1f3cd30891540e5a3b35eeebb265",
+      "artifact_type": "exploration",
+      "source_status_class": "exploration",
+      "source_grade_class": "exploration; strong, with two decisive exact machine-checked linear-algebra facts and a structural GU lift",
+      "preservation": "immutable_reference_no_receiver_regrade"
+    },
+    {
+      "role": "topos_internal_logic",
+      "path": "explorations/W209-decisive-bit-topos-internal-logic-2026-07-14.md",
+      "blob_oid": "63b3a0e18e2b4988acdf2abfe66334bb4d38549e",
+      "artifact_type": "exploration",
+      "source_status_class": "no explicit status key; artifact_type is exploration and posture is exploration grade / conditional register",
+      "source_grade_class": "exploration / conditional register; exact deterministic controls; structural / modelling site identification",
+      "preservation": "immutable_reference_no_receiver_regrade"
+    },
+    {
+      "role": "helmholtz_inverse_variational",
+      "path": "explorations/W210-decisive-bit-helmholtz-inverse-variational-2026-07-14.md",
+      "blob_oid": "8a1f27386331cb34ba182d5bda304047150a2734",
+      "artifact_type": "exploration",
+      "source_status_class": "exploration",
+      "source_grade_class": "exploration; strong on two exact machine-checked load-bearing facts; structural on the Helmholtz and stabilizer lift",
+      "preservation": "immutable_reference_no_receiver_regrade"
+    },
+    {
+      "role": "five_method_synthesis",
+      "path": "explorations/W211-krein-sign-godel-independent-five-method-synthesis-2026-07-14.md",
+      "blob_oid": "d404d0612f9c8fb7a51f0ffb7e8f9dca21c8a690",
+      "artifact_type": "exploration",
+      "source_status_class": "exploration synthesis",
+      "source_grade_class": "exploration / synthesis; aggregates five machine-checked cores; structural on same-datum localization",
+      "preservation": "immutable_reference_no_receiver_regrade"
+    }
+  ],
+  "source_status_preservation": {
+    "source_register_artifact": "RESEARCH-STATUS.md",
+    "source_register_blob_oid": "5fca4fc8466b0f59f66cc10f92f45a1b114c8519",
+    "source_claim_register_status": "exploration-tier; LOCATED-NOT-FORCED / GODEL-INDEPENDENT; verdict-stable",
+    "named_residual_statuses": [
+      {
+        "residual": "bar (b)",
+        "source_status": "OPEN_UNCHANGED"
+      },
+      {
+        "residual": "H59",
+        "source_status": "OPEN_UNCHANGED"
+      }
+    ],
+    "source_status_upgraded": false,
+    "receiver_claim_status_assigned": false,
+    "source_wording_rewritten": false
+  },
+  "method_evidence_boundary": {
+    "method_artifacts_observed": 5,
+    "source_issued_independence_structure_available": false,
+    "receiver_method_count": null,
+    "receiver_convergence_assessment": "NOT_RUN",
+    "receiver_reassembly_permitted": false
+  },
+  "provenance_preflight": {
+    "execution_status": "RUN",
+    "outcome": "BLOCKED",
+    "reason_code": "SOURCE_ISSUANCE_ABSENT",
+    "judgment_owner": "possibility-to-capability"
+  },
+  "admissibility": {
+    "receiving_independence_assessment": "NOT_ADMISSIBLE",
+    "full_gate_run": "NOT_ADMISSIBLE",
+    "transition_diagnosis": "NOT_ADMISSIBLE"
+  },
+  "downstream_gate_projection": [
+    {
+      "gate": "construction",
+      "outcome": "BLOCKED",
+      "execution_status": "NOT_RUN",
+      "blocked_by": "provenance"
+    },
+    {
+      "gate": "formation",
+      "outcome": "BLOCKED",
+      "execution_status": "NOT_RUN",
+      "blocked_by": "provenance"
+    },
+    {
+      "gate": "completion_null",
+      "outcome": "BLOCKED",
+      "execution_status": "NOT_RUN",
+      "blocked_by": "provenance"
+    },
+    {
+      "gate": "capability",
+      "outcome": "BLOCKED",
+      "execution_status": "NOT_RUN",
+      "blocked_by": "provenance"
+    },
+    {
+      "gate": "finality",
+      "outcome": "BLOCKED",
+      "execution_status": "NOT_RUN",
+      "blocked_by": "provenance"
+    },
+    {
+      "gate": "no_artificial_success",
+      "outcome": "BLOCKED",
+      "execution_status": "NOT_RUN",
+      "blocked_by": "provenance"
+    },
+    {
+      "gate": "neutrality",
+      "outcome": "BLOCKED",
+      "execution_status": "NOT_RUN",
+      "blocked_by": "provenance"
+    }
+  ],
+  "unblock_contract": {
+    "required_source_artifacts": [
+      "one source-issued Frozen-Packet v0.2 JSON object",
+      "every raw source, method, premise, verification, and joint-argument blob named by the packet",
+      "one canonical ptc-frozen-bundle-v1 manifest over the exact raw blobs",
+      "source-issued manifest, packet, and bundle digest values matching the canonical profile"
+    ],
+    "required_v0_2_root_fields": [
+      "schema_version",
+      "packet_id",
+      "packet_status",
+      "source",
+      "question",
+      "ownership",
+      "construction_forks",
+      "assumptions",
+      "quantifiers",
+      "method_ledger",
+      "evidence_structure",
+      "claim",
+      "verification",
+      "alternatives",
+      "residuals",
+      "nonclaims",
+      "interfaces",
+      "integrity"
+    ],
+    "required_v0_2_integrity_fields": [
+      "hash_algorithm",
+      "canonicalization_profile",
+      "hash_scope",
+      "manifest",
+      "manifest_digest",
+      "packet_digest",
+      "bundle_digest",
+      "digest",
+      "frozen"
+    ],
+    "required_v0_2_method_fields": [
+      "method_id",
+      "label",
+      "artifact_path",
+      "artifact_revision",
+      "result",
+      "grade",
+      "verification",
+      "premise_ids"
+    ],
+    "required_v0_2_nested_fields": [
+      "source.repository",
+      "source.revision",
+      "source.source_packet_id",
+      "source.artifact_paths",
+      "source.issued_at",
+      "source.claim_status",
+      "source.evidence_grade",
+      "question.exact_question",
+      "question.decision_type",
+      "ownership.source_owner",
+      "ownership.receiving_owner",
+      "ownership.authority_transfer",
+      "construction_forks[].name",
+      "construction_forks[].selected",
+      "construction_forks[].alternatives",
+      "construction_forks[].transfer_status",
+      "evidence_structure.premise_ledger",
+      "evidence_structure.method_dependency_edges",
+      "evidence_structure.shared_load_bearing_premise_ids",
+      "evidence_structure.raw_method_count",
+      "evidence_structure.raw_method_count_is_independence_count",
+      "evidence_structure.premise_ledger[].premise_id",
+      "evidence_structure.premise_ledger[].exact_statement",
+      "evidence_structure.premise_ledger[].premise_type",
+      "evidence_structure.premise_ledger[].source_artifact_path",
+      "evidence_structure.premise_ledger[].load_bearing_for_method_ids",
+      "evidence_structure.premise_ledger[].source_status",
+      "evidence_structure.method_dependency_edges[].dependent_method_id",
+      "evidence_structure.method_dependency_edges[].antecedent_method_id",
+      "evidence_structure.method_dependency_edges[].dependency_type",
+      "evidence_structure.method_dependency_edges[].exact_statement",
+      "claim.statement",
+      "claim.scope",
+      "claim.independence_scope",
+      "claim.independence_type",
+      "claim.method_count",
+      "claim.convergence",
+      "claim.joint_argument_artifact",
+      "claim.source_status_unchanged",
+      "verification.artifacts",
+      "verification.replication_status",
+      "interfaces[].target_repository",
+      "interfaces[].requested_datum",
+      "interfaces[].ownership_status",
+      "integrity.manifest[].path",
+      "integrity.manifest[].byte_length",
+      "integrity.manifest[].content_sha256"
+    ],
+    "next_receiver_steps": [
+      "pin the newly issued source revision and validate the v0.2 packet, raw blobs, canonical manifest, and all four integrity aliases",
+      "create a separate non-upgrading Receiving Independence Assessment v0.2 only after packet validation passes",
+      "create and evaluate a new Neutral Eight-Gate Run only after the packet and receiving assessment both pass their contracts",
+      "retain this blocked preflight unchanged and issue a new intake receipt recording the superseding evidence"
+    ]
+  },
+  "result": {
+    "verdict": "NOT_YET_IMPORTABLE",
+    "grade": "receiver-owned deterministic provenance preflight over an immutable tracked source snapshot",
+    "wrapper_absence_is_source_refutation": false,
+    "source_result_assessed": false,
+    "assumptions": [
+      "the pinned Git commit and blob objects are the complete tracked source snapshot under inspection",
+      "only a source-issued object can supply source packet identity, source wording, and source bundle integrity"
+    ],
+    "verification": [
+      "Git object inspection found the eight inventoried artifacts and source register at their recorded blob identities",
+      "tracked path and content searches at the pinned commit returned no GU-001 or Possibility-to-Capability packet-contract and digest identifiers",
+      "the prior mailbox receipt states that planning was accepted but no frozen packet was issued"
+    ],
+    "falsifiers": [
+      "a source-issued GU-001 packet already exists in the pinned tracked tree under an identifier or path missed by the recorded searches",
+      "one or more recorded source blob identities does not belong to the pinned commit",
+      "the observed source claim-register status is not the status at the pinned revision"
+    ],
+    "nonclaims": [
+      "packet-wrapper absence is not a refutation, downgrade, or criticism of GU",
+      "the receiver did not assess whether the five source methods are independent or convergent",
+      "the receiver did not run or decide construction, formation, completion/null, capability, finality, No-Artificial-Success, or neutrality",
+      "the receiver did not change bar (b), H59, source claim status, or any source grade"
+    ],
+    "reopening_conditions": [
+      "GU issues a candidate packet and frozen bundle at a newly pinned immutable revision",
+      "the pinned source tree or blob inventory is shown to have been inspected incorrectly",
+      "the receiving packet contract changes in a way that alters the minimum provenance object"
+    ]
+  }
+}

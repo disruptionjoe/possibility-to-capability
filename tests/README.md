@@ -3,6 +3,30 @@
 This directory is reserved for deterministic checks and adversarial fixtures
 owned by this repository. Source-repo test suites remain in their source repos.
 
+## Blocked intake preflight
+
+- `evaluate_blocked_intake_preflight.py` enforces the provenance stop,
+  tracked-only immutable-source rule, null digest firewall, source-status
+  preservation flags, assessment/gate inadmissibility, and exact v0.2 unblock
+  field lists.
+- `validate_blocked_intake_preflight.py` validates the real receiver-owned
+  GU-001 preflight and pins its immutable source revision, blob inventory,
+  source register, and unchanged named residuals.
+- `fixtures/blocked-intake-preflight-v0.1-cases.json` rejects artificial source
+  completion, downstream passes or failures after provenance blocks, source
+  status upgrades, mutable and untracked references, fake digests, receiver
+  method reassembly, and treating wrapper absence as a source refutation.
+
+Run from the repository root:
+
+```text
+python tests/validate_blocked_intake_preflight.py
+python tests/evaluate_blocked_intake_preflight.py packets/intake/GU-001-blocked-preflight-v0.1-2026-07-14.json
+```
+
+The valid verdict is `NOT_YET_IMPORTABLE`. It is not a failed GU result or a
+partial eight-gate run.
+
 ## Frozen-packet contract
 
 - `validate_frozen_packet_contract.py` protects the unchanged v0.1 contract.

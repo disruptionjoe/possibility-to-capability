@@ -10,6 +10,12 @@ passes.
 
 ## Active provisional contracts
 
+- `blocked-intake-preflight-v0.1.schema.json` records a receiver-owned
+  provenance stop when no source-issued packet, manifest, or digest exists. It
+  forbids mutable/untracked source refs, receiver-created packet identity,
+  status upgrades, method reassembly, and downstream gate execution.
+- `blocked-intake-preflight-v0.1.md` defines why `BLOCKED`/`NOT_RUN` is a
+  first-class result and names the exact source artifacts needed to reopen.
 - `gate-run-v0.1.schema.json` is the machine-readable receiver-side record for
   the charter's ordered eight-gate evaluation.
 - `gate-run-v0.1.md` defines outcome, source/receiver separation,

@@ -1,0 +1,282 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/disruptionjoe/possibility-to-capability/blob/main/interfaces/blocked-intake-preflight-v0.1.schema.json",
+  "title": "Blocked Intake Preflight v0.1",
+  "description": "Receiver-owned evidence that a source packet is not yet importable. It records an immutable tracked-source inspection, terminates at provenance, and forbids inferred completion or downstream gate execution.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "preflight_id",
+    "packet_candidate",
+    "receiver_owner",
+    "observed_at",
+    "source_observation",
+    "source_issuance",
+    "tracked_source_inventory",
+    "source_status_preservation",
+    "method_evidence_boundary",
+    "provenance_preflight",
+    "admissibility",
+    "downstream_gate_projection",
+    "unblock_contract",
+    "result"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "preflight_id": {"type": "string", "minLength": 1},
+    "packet_candidate": {"type": "string", "minLength": 1},
+    "receiver_owner": {"type": "string", "minLength": 1},
+    "observed_at": {"type": "string", "format": "date"},
+    "source_observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repository",
+        "immutable_revision",
+        "revision_kind",
+        "inspection_mode",
+        "working_tree_used",
+        "untracked_files_used",
+        "mutable_refs_used",
+        "tree_queries"
+      ],
+      "properties": {
+        "repository": {"type": "string", "minLength": 1},
+        "immutable_revision": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "revision_kind": {"const": "git_commit"},
+        "inspection_mode": {"const": "git_object_database_tracked_only"},
+        "working_tree_used": {"const": false},
+        "untracked_files_used": {"const": false},
+        "mutable_refs_used": {"type": "array", "maxItems": 0},
+        "tree_queries": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["query", "tracked_matches"],
+            "properties": {
+              "query": {"type": "string", "minLength": 1},
+              "tracked_matches": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        }
+      }
+    },
+    "source_issuance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "source_request_contract_version",
+        "current_receiver_preferred_contract_version",
+        "checked_contract_versions",
+        "source_issued_v0_1_present",
+        "source_issued_v0_2_present",
+        "source_packet_id",
+        "source_packet_path",
+        "manifest_path",
+        "manifest_digest",
+        "packet_digest",
+        "bundle_digest",
+        "claimed_digest_values"
+      ],
+      "properties": {
+        "status": {"const": "ABSENT"},
+        "source_request_contract_version": {"enum": ["0.1", "0.2"]},
+        "current_receiver_preferred_contract_version": {"enum": ["0.1", "0.2"]},
+        "checked_contract_versions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"enum": ["0.1", "0.2"]}
+        },
+        "source_issued_v0_1_present": {"const": false},
+        "source_issued_v0_2_present": {"const": false},
+        "source_packet_id": {"type": "null"},
+        "source_packet_path": {"type": "null"},
+        "manifest_path": {"type": "null"},
+        "manifest_digest": {"type": "null"},
+        "packet_digest": {"type": "null"},
+        "bundle_digest": {"type": "null"},
+        "claimed_digest_values": {"type": "array", "maxItems": 0}
+      }
+    },
+    "tracked_source_inventory": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "path",
+          "blob_oid",
+          "artifact_type",
+          "source_status_class",
+          "source_grade_class",
+          "preservation"
+        ],
+        "properties": {
+          "role": {"type": "string", "minLength": 1},
+          "path": {"type": "string", "minLength": 1},
+          "blob_oid": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+          "artifact_type": {"type": "string", "minLength": 1},
+          "source_status_class": {"type": "string", "minLength": 1},
+          "source_grade_class": {"type": "string", "minLength": 1},
+          "preservation": {"const": "immutable_reference_no_receiver_regrade"}
+        }
+      }
+    },
+    "source_status_preservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_register_artifact",
+        "source_register_blob_oid",
+        "source_claim_register_status",
+        "named_residual_statuses",
+        "source_status_upgraded",
+        "receiver_claim_status_assigned",
+        "source_wording_rewritten"
+      ],
+      "properties": {
+        "source_register_artifact": {"type": "string", "minLength": 1},
+        "source_register_blob_oid": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "source_claim_register_status": {"type": "string", "minLength": 1},
+        "named_residual_statuses": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["residual", "source_status"],
+            "properties": {
+              "residual": {"type": "string", "minLength": 1},
+              "source_status": {"type": "string", "minLength": 1}
+            }
+          }
+        },
+        "source_status_upgraded": {"const": false},
+        "receiver_claim_status_assigned": {"const": false},
+        "source_wording_rewritten": {"const": false}
+      }
+    },
+    "method_evidence_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method_artifacts_observed",
+        "source_issued_independence_structure_available",
+        "receiver_method_count",
+        "receiver_convergence_assessment",
+        "receiver_reassembly_permitted"
+      ],
+      "properties": {
+        "method_artifacts_observed": {"type": "integer", "minimum": 0},
+        "source_issued_independence_structure_available": {"const": false},
+        "receiver_method_count": {"type": "null"},
+        "receiver_convergence_assessment": {"const": "NOT_RUN"},
+        "receiver_reassembly_permitted": {"const": false}
+      }
+    },
+    "provenance_preflight": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["execution_status", "outcome", "reason_code", "judgment_owner"],
+      "properties": {
+        "execution_status": {"const": "RUN"},
+        "outcome": {"const": "BLOCKED"},
+        "reason_code": {"const": "SOURCE_ISSUANCE_ABSENT"},
+        "judgment_owner": {"type": "string", "minLength": 1}
+      }
+    },
+    "admissibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "receiving_independence_assessment",
+        "full_gate_run",
+        "transition_diagnosis"
+      ],
+      "properties": {
+        "receiving_independence_assessment": {"const": "NOT_ADMISSIBLE"},
+        "full_gate_run": {"const": "NOT_ADMISSIBLE"},
+        "transition_diagnosis": {"const": "NOT_ADMISSIBLE"}
+      }
+    },
+    "downstream_gate_projection": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["gate", "outcome", "execution_status", "blocked_by"],
+        "properties": {
+          "gate": {
+            "enum": [
+              "construction",
+              "formation",
+              "completion_null",
+              "capability",
+              "finality",
+              "no_artificial_success",
+              "neutrality"
+            ]
+          },
+          "outcome": {"const": "BLOCKED"},
+          "execution_status": {"const": "NOT_RUN"},
+          "blocked_by": {"const": "provenance"}
+        }
+      }
+    },
+    "unblock_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "required_source_artifacts",
+        "required_v0_2_root_fields",
+        "required_v0_2_integrity_fields",
+        "required_v0_2_method_fields",
+        "required_v0_2_nested_fields",
+        "next_receiver_steps"
+      ],
+      "properties": {
+        "required_source_artifacts": {"type": "array", "minItems": 3, "items": {"type": "string", "minLength": 1}},
+        "required_v0_2_root_fields": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "required_v0_2_integrity_fields": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "required_v0_2_method_fields": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "required_v0_2_nested_fields": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "next_receiver_steps": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verdict",
+        "grade",
+        "wrapper_absence_is_source_refutation",
+        "source_result_assessed",
+        "assumptions",
+        "verification",
+        "falsifiers",
+        "nonclaims",
+        "reopening_conditions"
+      ],
+      "properties": {
+        "verdict": {"const": "NOT_YET_IMPORTABLE"},
+        "grade": {"type": "string", "minLength": 1},
+        "wrapper_absence_is_source_refutation": {"const": false},
+        "source_result_assessed": {"const": false},
+        "assumptions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "verification": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "falsifiers": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "nonclaims": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "reopening_conditions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+      }
+    }
+  }
+}

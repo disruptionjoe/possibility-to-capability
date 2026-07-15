@@ -29,8 +29,14 @@ synthetic unanimous result from partial source artifacts.
 - Contract checks: v0.1 and v0.2 deterministic/adversarial validators under
   `tests/`.
 - Founding-case readiness: `packets/intake/GU-001-readiness-2026-07-14.md`
+- Founding-case blocked preflight:
+  `packets/intake/GU-001-blocked-preflight-v0.1-2026-07-14.json`
 - GU-001: `NOT_YET_IMPORTABLE` pending a source-issued manifest and bundle hash.
 
 Schema hardening does not change packet readiness. A source must issue a packet
 against an explicit version; the receiver never migrates or completes it on the
 source's behalf.
+
+The blocked preflight is a receiver-owned stop record, not an imported packet.
+It keeps every downstream gate `BLOCKED`/`NOT_RUN` until source issuance makes
+provenance admissible.
