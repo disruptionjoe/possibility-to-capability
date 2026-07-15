@@ -11,12 +11,12 @@ repository steward package is active for Mailbox Processing, Repo Progress,
 Repo Stewardship, and Repo Discovery. Routine versioning lives at
 `https://github.com/disruptionjoe/possibility-to-capability`.
 
-## Installed skeleton
+## Repository map
 
 - `steward/` - provisional local steward context and run records.
 - `packets/` - immutable imported packet manifests and provenance receipts.
 - `interfaces/` - neutral cross-repo gate and adapter contracts.
-- `hypotheses/` - future falsifiable hypotheses after charter ratification.
+- `hypotheses/` - provisional falsifiable hypothesis and rival ledgers.
 - `evidence/` - repo-owned evidence about repo-independent claims.
 - `experiments/` - bounded tests and preregistrations.
 - `explorations/` - honestly labeled working research.
@@ -35,5 +35,25 @@ Repo Stewardship, and Repo Discovery. Routine versioning lives at
 - Never combine partial results into an artificial joint success.
 - Preserve null, negative, incompatible, and `NOT_YET_IMPORTABLE` outcomes.
 
-The first research sequence is Frozen-Packet Schema v0.1, GU Packet #1, and the
-first neutral gate run. See `governance/CHARTER.md` and `AGENTS.md`.
+## Current research position
+
+Five serialized Progress swings on 2026-07-14 established provisional,
+repo-owned machinery for:
+
+- reproducible Frozen-Packet v0.2 identity and explicit method dependencies;
+- a neutral eight-gate evaluation contract;
+- adversarial transition diagnosis across possibility, dynamics, records,
+  access, normalized capability, and candidate finality;
+- a tested `NOT_YET_IMPORTABLE` stop for the real GU-001 founding case; and
+- a bounded coherent-story hypothesis, four live rivals, and five ranked
+  decisive tests.
+
+The strongest warranted synthesis treats the hierarchy as a fallible typed
+diagnostic, not a chronology, causal ladder, ontology, or established physical
+result. GU-001 remains blocked at provenance because no source-issued packet,
+manifest, or digest bundle exists at the pinned source revision; every
+substantive gate remains unrun.
+
+Start with `synthesis/2026-07-14-coherent-story-v0.1.md` for the plain-English
+picture, `experiments/2026-07-14-ranked-decisive-test-program-v0.1.md` for the
+next tests, and `governance/CHARTER.md` plus `AGENTS.md` for boundaries.
