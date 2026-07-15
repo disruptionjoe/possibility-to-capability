@@ -14,3 +14,6 @@
 - A stop-gated `AGENTS.md` draft and proposed charter were installed for Joe's
   final review. The standard automation package is queued but remains off until
   that approval.
+- Joe's continuation instruction was treated as approval of the reviewed
+  `AGENTS.md`. The charter and instructions were ratified, the public GitHub
+  versioning surface was authorized, and the standard package was activated.

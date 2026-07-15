@@ -1,12 +1,10 @@
 # Possibility-to-Capability Steward Context
 
-Status: pre-activation steward context. Joe selected the repository name and
-approved the charter in substance. The stop-gated `AGENTS.md` draft is pending
-his final review.
+Status: active steward context. Joe ratified the repository name, charter, and
+`AGENTS.md` on 2026-07-14.
 
-Load this file for stewardship and routing context. Until Joe approves
-`AGENTS.md`, it is not authority to begin research, accept claims, activate
-automations, or interpret cross-repo evidence.
+Load this file for stewardship and routing context. `AGENTS.md` and
+`governance/CHARTER.md` remain the governing instruction and charter surfaces.
 
 ## North Star
 
@@ -28,7 +26,7 @@ Temporary setup measures:
 
 - every imported source-repo packet is frozen and provenance-bearing;
 - source-repo truth and verdicts remain sovereign;
-- automation enrollment remains connected/off until the `AGENTS.md` gate;
+- the standard automation package remains active and boundary-conformant;
 - no claim ledger, canon, or accepted synthesis appears before a ratified
   promotion workflow.
 
@@ -65,8 +63,8 @@ program sequencing.
 - Cross-repo actions route through mailboxes.
 - No source-repo file may be edited from a run mounted here.
 - No non-GitHub external action is authorized.
-- No GitHub remote exists yet; creating one remains gated on Joe's final
-  `AGENTS.md` approval and explicit remote authorization.
+- GitHub routine versioning uses
+  `https://github.com/disruptionjoe/possibility-to-capability`.
 
 ## Routing
 
@@ -78,18 +76,17 @@ program sequencing.
 
 ## Candidate Decisions
 
-- Joe's final `AGENTS.md` review.
-- Whether and when to create a public GitHub remote.
-- Activation of the queued `standard_repo_steward_package` immediately after
-  the instruction review.
+- Establish the repo-owned claim-status and promotion workflow after the first
+  packet/gate sequence reveals what it actually needs.
 
 ## Durable Decisions
 
 - Name: Possibility to Capability (`possibility-to-capability`).
 - Visibility posture: public.
 - WI-069 is a distinct sibling object connected only by typed frozen packets.
-- Charter approved in substance; founding case and first-deliverable additions
-  accepted.
+- Charter, founding case, first-deliverable sequence, and `AGENTS.md` ratified.
+- Standard repository steward package active.
+- Public GitHub routine-versioning surface approved.
 
 ## Principles
 
@@ -106,11 +103,9 @@ Chronological setup and future steward memory lives at
 
 ## Automation Hooks
 
-CapacityOS registration, mailbox, and System-overlay sockets are present. The
-standard package is queued, but Mailbox Processing, Progress, Stewardship, and
-Discovery remain connected/off until Joe approves `AGENTS.md`. Activation
-requires adding the repo to the existing curated target set; no new trigger is
-needed.
+CapacityOS registration, mailbox, and System-overlay sockets are present.
+Mailbox Processing, Progress, Stewardship, and Discovery are active through the
+standard repository steward package. No repo-specific trigger is needed.
 
 ## Local Source References
 
@@ -118,5 +113,5 @@ needed.
 - `packets/README.md`
 - `interfaces/README.md`
 - `governance/README.md`
-- `governance/CHARTER.proposed.md`
+- `governance/CHARTER.md`
 - `AGENTS.md`

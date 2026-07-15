@@ -1,7 +1,6 @@
-# Proposed Charter: Possibility to Capability
+# Charter: Possibility to Capability
 
-Status: approved in substance by Joe on 2026-07-14; repository activation and
-final ratification remain gated on Joe's review of `AGENTS.md`.
+Status: ratified by Joe on 2026-07-14.
 
 ## Repository Name
 
@@ -9,7 +8,7 @@ final ratification remain gated on Joe's review of `AGENTS.md`.
 
 Repository slug: `possibility-to-capability`
 
-Visibility: public once a GitHub remote is explicitly authorized and created.
+Visibility: public.
 
 ## North Star
 

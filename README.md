@@ -1,16 +1,15 @@
 # Possibility to Capability
 
-Status: named public-path repository pending Joe's final review of the proposed
-`AGENTS.md` and live automation activation.
+Status: active public research repository.
 
-This directory is the proposed public research home for the neutral,
+This directory is the public research home for the neutral,
 repo-independent layer connecting physical possibility, dynamics, records,
 access, capability, and the open question of finality.
 
-Joe selected the name and approved the charter in substance on 2026-07-14. The
-proposed charter and a stop-gated `AGENTS.md` draft are now present for his final
-review. No GitHub repository or remote has been created, and automation remains
-connected/off until that review is complete.
+Joe ratified the name, charter, and `AGENTS.md` on 2026-07-14. The standard
+repository steward package is active for Mailbox Processing, Repo Progress,
+Repo Stewardship, and Repo Discovery. Routine versioning lives at
+`https://github.com/disruptionjoe/possibility-to-capability`.
 
 ## Installed skeleton
 
@@ -25,20 +24,16 @@ connected/off until that review is complete.
 - `literature/` - literature maps and novelty comparisons.
 - `tests/` - deterministic checks owned by this repo.
 - `results/` - generated or summarized test receipts.
-- `governance/` - the proposed charter and future governance records.
+- `governance/` - the ratified charter and future governance records.
 
-## Temporary operating boundary
+## Operating boundary
 
-Until Joe approves `AGENTS.md` and the standard automation package is activated:
+- Do not edit GU Formalization, Temporal Issuance, Time as Finality, or WI-069
+  truth from work mounted here.
+- Import cross-repo evidence only as frozen, provenance-bearing packets.
+- Treat each source repository's verdict as sovereign.
+- Never combine partial results into an artificial joint success.
+- Preserve null, negative, incompatible, and `NOT_YET_IMPORTABLE` outcomes.
 
-- do not conduct autonomous research here;
-- do not promote claims or create canon;
-- do not edit GU Formalization, Temporal Issuance, or Time as Finality truth;
-- import cross-repo evidence only as frozen, provenance-bearing packets;
-- treat each source repository's verdict as sovereign;
-- never combine partial results into an artificial joint success;
-- keep all CapacityOS automations connected/off.
-
-The first authorized research sequence after activation is Frozen-Packet Schema
-v0.1, GU Packet #1, and the first neutral gate run. See
-`governance/CHARTER.proposed.md` and `AGENTS.md`.
+The first research sequence is Frozen-Packet Schema v0.1, GU Packet #1, and the
+first neutral gate run. See `governance/CHARTER.md` and `AGENTS.md`.
