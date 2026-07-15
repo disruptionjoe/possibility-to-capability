@@ -28,3 +28,22 @@ CapacityOS routing surfaces without writing the charter or `AGENTS.md`.
 - GitHub repository/remote creation.
 - Live automation activation.
 - Publication or other external action.
+
+## Result
+
+- Created and committed the local skeleton on `main`.
+- Created the provisional local steward context and empty research surfaces.
+- Confirmed `AGENTS.md` is absent.
+- Confirmed no Git remote exists.
+- CapacityOS now has a System overlay, mailbox/archive, registry entry, and
+  connected/off enrollment for all four repo-scoped automation families.
+- The proposed charter remains outside the repository for Joe discussion.
+
+## Task-1 relationship decision
+
+WI-069 is a distinct sibling object. It studies cross-domain class-relative
+measurement transitions and recursive incentive transduction in open-ended
+systems. This repository is the proposed neutral owner of the foundational
+possibility/records/capability hierarchy and frozen GU/TI/TaF joint seam.
+Neither object subsumes the other; each may supply stress tests to the other
+through explicit, provenance-bearing interfaces.
