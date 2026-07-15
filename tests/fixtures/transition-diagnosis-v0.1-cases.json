@@ -1,0 +1,334 @@
+{
+  "contract": "transition-diagnosis-v0.1",
+  "construction": "Each case supplies partial witness overrides over the validator's explicit neutral baseline. The harness materializes every qualified witness with a case-local synthetic evidence reference before classification.",
+  "cases": [
+    {
+      "case_id": "pure-relabeling",
+      "description": "A label changes inside one equivalent fixed family.",
+      "witness": {"description_change": "YES"},
+      "declared_claims": ["CAPABILITY_ENLARGEMENT"],
+      "expected_outcome": "FIXED_FAMILY_DISCLOSURE",
+      "expected_components": ["FIXED_FAMILY_DISCLOSURE"],
+      "expected_rejected_claims": ["CAPABILITY_ENLARGEMENT"]
+    },
+    {
+      "case_id": "new-description-not-new-capability",
+      "description": "A new coordinate description is advertised as a new ability.",
+      "witness": {"description_change": "YES", "raw_task_set_relation": "EQUAL"},
+      "declared_claims": ["CAPABILITY_ENLARGEMENT"],
+      "expected_outcome": "FIXED_FAMILY_DISCLOSURE",
+      "expected_components": ["FIXED_FAMILY_DISCLOSURE"],
+      "expected_rejected_claims": ["CAPABILITY_ENLARGEMENT"]
+    },
+    {
+      "case_id": "hidden-member-disclosed",
+      "description": "An already admissible family member becomes named without a transition.",
+      "witness": {"description_change": "YES"},
+      "declared_claims": ["FIXED_FAMILY_DISCLOSURE"],
+      "expected_outcome": "FIXED_FAMILY_DISCLOSURE",
+      "expected_components": ["FIXED_FAMILY_DISCLOSURE"],
+      "expected_rejected_claims": []
+    },
+    {
+      "case_id": "fixed-family-dynamics",
+      "description": "A trajectory changes while the admissible family remains fixed.",
+      "witness": {"dynamics_change": "YES", "representation_relation": "INEQUIVALENT"},
+      "declared_claims": ["FIXED_FAMILY_DYNAMICS"],
+      "expected_outcome": "FIXED_FAMILY_DYNAMICS",
+      "expected_components": ["FIXED_FAMILY_DYNAMICS"],
+      "expected_rejected_claims": []
+    },
+    {
+      "case_id": "record-formation-only",
+      "description": "A persistent discriminable trace forms with no assessed access change.",
+      "witness": {"persistent_record": "YES"},
+      "declared_claims": ["RECORD_FORMATION"],
+      "expected_outcome": "RECORD_FORMATION",
+      "expected_components": ["RECORD_FORMATION"],
+      "expected_rejected_claims": []
+    },
+    {
+      "case_id": "record-is-not-access",
+      "description": "A stored bit is incorrectly advertised as accessible evidence.",
+      "witness": {"persistent_record": "YES"},
+      "declared_claims": ["ACCESS_CHANGE"],
+      "expected_outcome": "RECORD_FORMATION",
+      "expected_components": ["RECORD_FORMATION"],
+      "expected_rejected_claims": ["ACCESS_CHANGE"]
+    },
+    {
+      "case_id": "access-without-record",
+      "description": "A channel opens without creating a new persistent record.",
+      "witness": {"access_change": "YES", "raw_task_set_relation": "SUPERSET"},
+      "declared_claims": ["ACCESS_CHANGE"],
+      "expected_outcome": "ACCESS_CHANGE",
+      "expected_components": ["ACCESS_CHANGE"],
+      "expected_rejected_claims": []
+    },
+    {
+      "case_id": "conditioning-change",
+      "description": "A conditioning relation changes with normalized task equality.",
+      "witness": {"access_change": "YES"},
+      "declared_claims": ["ACCESS_CHANGE"],
+      "expected_outcome": "ACCESS_CHANGE",
+      "expected_components": ["ACCESS_CHANGE"],
+      "expected_rejected_claims": []
+    },
+    {
+      "case_id": "control-change",
+      "description": "A control policy becomes available without intrinsic task-set growth.",
+      "witness": {"control_change": "YES", "raw_task_set_relation": "SUPERSET"},
+      "declared_claims": ["ACCESS_CHANGE"],
+      "expected_outcome": "ACCESS_CHANGE",
+      "expected_components": ["ACCESS_CHANGE"],
+      "expected_rejected_claims": []
+    },
+    {
+      "case_id": "access-called-capability",
+      "description": "Raw tasks grow only because access changes; normalized tasks are equal.",
+      "witness": {"access_change": "YES", "raw_task_set_relation": "SUPERSET"},
+      "declared_claims": ["CAPABILITY_ENLARGEMENT"],
+      "expected_outcome": "ACCESS_CHANGE",
+      "expected_components": ["ACCESS_CHANGE"],
+      "expected_rejected_claims": ["CAPABILITY_ENLARGEMENT"],
+      "expected_alert_contains": "normalized capability did not"
+    },
+    {
+      "case_id": "genuine-capability-enlargement",
+      "description": "The normalized operational task set is a strict superset.",
+      "witness": {"raw_task_set_relation": "SUPERSET", "normalized_task_set_relation": "SUPERSET"},
+      "declared_claims": ["CAPABILITY_ENLARGEMENT"],
+      "expected_outcome": "CAPABILITY_ENLARGEMENT",
+      "expected_components": ["CAPABILITY_ENLARGEMENT"],
+      "expected_rejected_claims": []
+    },
+    {
+      "case_id": "genuine-capability-restriction",
+      "description": "The normalized operational task set is a strict subset.",
+      "witness": {"raw_task_set_relation": "SUBSET", "normalized_task_set_relation": "SUBSET"},
+      "declared_claims": ["CAPABILITY_RESTRICTION"],
+      "expected_outcome": "CAPABILITY_RESTRICTION",
+      "expected_components": ["CAPABILITY_RESTRICTION"],
+      "expected_rejected_claims": []
+    },
+    {
+      "case_id": "capability-incomparable",
+      "description": "Each state supports tasks the other does not.",
+      "witness": {"raw_task_set_relation": "INCOMPARABLE", "normalized_task_set_relation": "INCOMPARABLE"},
+      "declared_claims": ["CAPABILITY_ENLARGEMENT"],
+      "expected_outcome": "INCOMPARABLE",
+      "expected_components": [],
+      "expected_rejected_claims": ["CAPABILITY_ENLARGEMENT"]
+    },
+    {
+      "case_id": "irreversibility-not-finality",
+      "description": "An irreversible trajectory change lacks settlement and non-factorization.",
+      "witness": {"dynamics_change": "YES", "irreversible": "YES"},
+      "declared_claims": ["FINALITY_CANDIDATE"],
+      "expected_outcome": "FIXED_FAMILY_DYNAMICS",
+      "expected_components": ["FIXED_FAMILY_DYNAMICS"],
+      "expected_rejected_claims": ["FINALITY_CANDIDATE"],
+      "expected_alert_contains": "Irreversibility alone"
+    },
+    {
+      "case_id": "irreversible-record-not-finality",
+      "description": "A durable record is irreversible but can be superseded by continuation.",
+      "witness": {"persistent_record": "YES", "irreversible": "YES"},
+      "declared_claims": ["FINALITY_CANDIDATE"],
+      "expected_outcome": "RECORD_FORMATION",
+      "expected_components": ["RECORD_FORMATION"],
+      "expected_rejected_claims": ["FINALITY_CANDIDATE"],
+      "expected_alert_contains": "Irreversibility alone"
+    },
+    {
+      "case_id": "finality-candidate",
+      "description": "Settlement survives a declared factorization search and admissible continuation test.",
+      "witness": {"irreversible": "YES", "settlement": "YES", "preceding_layer_factorization": "NO_FACTOR_FOUND", "reopenable_by_admissible_continuation": "NO"},
+      "declared_claims": ["FINALITY_CANDIDATE"],
+      "expected_outcome": "FINALITY_CANDIDATE",
+      "expected_components": ["FINALITY_CANDIDATE"],
+      "expected_rejected_claims": []
+    },
+    {
+      "case_id": "finality-factors-through-capability",
+      "description": "An apparent closure is fully represented as capability restriction.",
+      "witness": {"normalized_task_set_relation": "SUBSET", "irreversible": "YES", "settlement": "YES", "preceding_layer_factorization": "FACTORED", "reopenable_by_admissible_continuation": "NO"},
+      "declared_claims": ["FINALITY_CANDIDATE", "CAPABILITY_RESTRICTION"],
+      "expected_outcome": "CAPABILITY_RESTRICTION",
+      "expected_components": ["CAPABILITY_RESTRICTION"],
+      "expected_rejected_claims": ["FINALITY_CANDIDATE"],
+      "expected_alert_contains": "factors through preceding layers"
+    },
+    {
+      "case_id": "finality-search-unknown",
+      "description": "Settlement is asserted but the non-factorization search is incomplete.",
+      "witness": {"settlement": "YES", "preceding_layer_factorization": "UNKNOWN", "reopenable_by_admissible_continuation": "NO"},
+      "declared_claims": ["FINALITY_CANDIDATE"],
+      "expected_outcome": "UNKNOWN",
+      "expected_components": [],
+      "expected_rejected_claims": ["FINALITY_CANDIDATE"]
+    },
+    {
+      "case_id": "record-and-access",
+      "description": "One event creates a record and changes access without ordering the two diagnoses.",
+      "witness": {"persistent_record": "YES", "access_change": "YES", "ordering_relation": "CO_OCCURRENT"},
+      "declared_claims": ["MULTI_LEVEL"],
+      "expected_outcome": "MULTI_LEVEL",
+      "expected_components": ["RECORD_FORMATION", "ACCESS_CHANGE"],
+      "expected_rejected_claims": []
+    },
+    {
+      "case_id": "access-and-capability",
+      "description": "A transition changes both access and normalized task capacity.",
+      "witness": {"access_change": "YES", "raw_task_set_relation": "SUPERSET", "normalized_task_set_relation": "SUPERSET", "ordering_relation": "CO_OCCURRENT"},
+      "declared_claims": ["MULTI_LEVEL"],
+      "expected_outcome": "MULTI_LEVEL",
+      "expected_components": ["ACCESS_CHANGE", "CAPABILITY_ENLARGEMENT"],
+      "expected_rejected_claims": []
+    },
+    {
+      "case_id": "possibility-family-change",
+      "description": "The admissible family changes without an established operational capability relation.",
+      "witness": {"possibility_family_relation": "DIFFERENT", "representation_relation": "INEQUIVALENT"},
+      "declared_claims": ["POSSIBILITY_FAMILY_CHANGE"],
+      "expected_outcome": "POSSIBILITY_FAMILY_CHANGE",
+      "expected_components": ["POSSIBILITY_FAMILY_CHANGE"],
+      "expected_rejected_claims": []
+    },
+    {
+      "case_id": "record-access-incomparable-order",
+      "description": "Record and access witnesses exist, but neither is prior under the case's partial order.",
+      "witness": {"persistent_record": "YES", "access_change": "YES", "ordering_relation": "INCOMPARABLE"},
+      "declared_claims": ["INCOMPARABLE"],
+      "expected_outcome": "INCOMPARABLE",
+      "expected_components": ["RECORD_FORMATION", "ACCESS_CHANGE"],
+      "expected_rejected_claims": []
+    },
+    {
+      "case_id": "cyclic-level-dependence",
+      "description": "The case declares a cycle among typed dependencies.",
+      "witness": {"persistent_record": "YES", "access_change": "YES", "ordering_relation": "CYCLIC"},
+      "declared_claims": ["HIERARCHY_REVISION"],
+      "expected_outcome": "HIERARCHY_REVISION",
+      "expected_components": [],
+      "expected_rejected_claims": []
+    },
+    {
+      "case_id": "unrepresentable-transition",
+      "description": "A meaningful transition cannot be represented by the available types.",
+      "witness": {"ordering_relation": "UNREPRESENTABLE"},
+      "declared_claims": ["HIERARCHY_REVISION"],
+      "expected_outcome": "HIERARCHY_REVISION",
+      "expected_components": [],
+      "expected_rejected_claims": []
+    },
+    {
+      "case_id": "unknown-capability-relation",
+      "description": "The normalized task comparison has not been performed.",
+      "witness": {"normalized_task_set_relation": "UNKNOWN"},
+      "declared_claims": ["CAPABILITY_ENLARGEMENT"],
+      "expected_outcome": "UNKNOWN",
+      "expected_components": [],
+      "expected_rejected_claims": ["CAPABILITY_ENLARGEMENT"]
+    },
+    {
+      "case_id": "contested-capability-relation",
+      "description": "Reviewers dispute the normalized task comparison.",
+      "witness": {"normalized_task_set_relation": "CONTESTED"},
+      "declared_claims": ["CAPABILITY_ENLARGEMENT"],
+      "expected_outcome": "CONTESTED",
+      "expected_components": [],
+      "expected_rejected_claims": ["CAPABILITY_ENLARGEMENT"]
+    },
+    {
+      "case_id": "null-no-change",
+      "description": "No relevant diagnostic witness changes.",
+      "witness": {},
+      "declared_claims": [],
+      "expected_outcome": "NULL_NO_RELEVANT_CHANGE",
+      "expected_components": [],
+      "expected_rejected_claims": []
+    },
+    {
+      "case_id": "inadmissible-construction",
+      "description": "The only construction fails its admissibility gate.",
+      "admissibility": "INADMISSIBLE",
+      "witness": {"normalized_task_set_relation": "SUPERSET"},
+      "declared_claims": ["CAPABILITY_ENLARGEMENT"],
+      "expected_outcome": "NULL_NO_ADMISSIBLE_CONSTRUCTION",
+      "expected_branch_outcome": "NULL_INADMISSIBLE_CONSTRUCTION",
+      "expected_components": [],
+      "expected_rejected_claims": ["CAPABILITY_ENLARGEMENT"]
+    },
+    {
+      "case_id": "unknown-admissibility",
+      "description": "Construction admissibility is unresolved.",
+      "admissibility": "UNKNOWN",
+      "witness": {"normalized_task_set_relation": "SUPERSET"},
+      "declared_claims": ["CAPABILITY_ENLARGEMENT"],
+      "expected_outcome": "UNKNOWN",
+      "expected_components": [],
+      "expected_rejected_claims": ["CAPABILITY_ENLARGEMENT"]
+    },
+    {
+      "case_id": "contested-representation",
+      "description": "Whether two descriptions are equivalent is disputed.",
+      "witness": {"description_change": "YES", "representation_relation": "CONTESTED"},
+      "declared_claims": ["FIXED_FAMILY_DISCLOSURE"],
+      "expected_outcome": "CONTESTED",
+      "expected_components": [],
+      "expected_rejected_claims": ["FIXED_FAMILY_DISCLOSURE"]
+    },
+    {
+      "case_id": "dynamics-and-record-no-forced-order",
+      "description": "Dynamics and record witnesses co-occur without a claimed before/after relation.",
+      "witness": {"dynamics_change": "YES", "persistent_record": "YES", "ordering_relation": "CO_OCCURRENT"},
+      "declared_claims": ["MULTI_LEVEL"],
+      "expected_outcome": "MULTI_LEVEL",
+      "expected_components": ["FIXED_FAMILY_DYNAMICS", "RECORD_FORMATION"],
+      "expected_rejected_claims": []
+    }
+  ],
+  "fork_cases": [
+    {
+      "case_id": "access-versus-capability-construction-fork",
+      "description": "One admissible normalization treats a resource as access; another treats it as intrinsic capability.",
+      "branch_relation": "ALTERNATIVE_CONSTRUCTIONS",
+      "branches": [
+        {"branch_id": "access-normalized", "witness": {"access_change": "YES", "raw_task_set_relation": "SUPERSET", "normalized_task_set_relation": "EQUAL"}, "expected_outcome": "ACCESS_CHANGE"},
+        {"branch_id": "resource-inclusive", "witness": {"raw_task_set_relation": "SUPERSET", "normalized_task_set_relation": "SUPERSET"}, "expected_outcome": "CAPABILITY_ENLARGEMENT"}
+      ],
+      "expected_outcome": "CONSTRUCTION_FORK"
+    },
+    {
+      "case_id": "retained-fork-same-diagnosis",
+      "description": "Two admissible constructions differ internally but both diagnose record formation.",
+      "branch_relation": "ALTERNATIVE_CONSTRUCTIONS",
+      "branches": [
+        {"branch_id": "field-record", "witness": {"persistent_record": "YES"}, "expected_outcome": "RECORD_FORMATION"},
+        {"branch_id": "algebraic-record", "witness": {"persistent_record": "YES", "representation_relation": "INEQUIVALENT"}, "expected_outcome": "RECORD_FORMATION"}
+      ],
+      "expected_outcome": "RECORD_FORMATION"
+    },
+    {
+      "case_id": "incomparable-constructions",
+      "description": "Admissible constructions expose different diagnoses with no common comparison frame.",
+      "branch_relation": "INCOMPARABLE_CONSTRUCTIONS",
+      "branches": [
+        {"branch_id": "record-view", "witness": {"persistent_record": "YES"}, "expected_outcome": "RECORD_FORMATION"},
+        {"branch_id": "access-view", "witness": {"access_change": "YES"}, "expected_outcome": "ACCESS_CHANGE"}
+      ],
+      "expected_outcome": "INCOMPARABLE"
+    },
+    {
+      "case_id": "fork-with-revision-branch",
+      "description": "One live construction is representable and another forces hierarchy revision.",
+      "branch_relation": "ALTERNATIVE_CONSTRUCTIONS",
+      "branches": [
+        {"branch_id": "typed-view", "witness": {"access_change": "YES"}, "expected_outcome": "ACCESS_CHANGE"},
+        {"branch_id": "cyclic-view", "witness": {"ordering_relation": "CYCLIC"}, "expected_outcome": "HIERARCHY_REVISION"}
+      ],
+      "expected_outcome": "HIERARCHY_REVISION"
+    }
+  ]
+}

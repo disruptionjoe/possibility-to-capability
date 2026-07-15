@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/disruptionjoe/possibility-to-capability/blob/main/interfaces/transition-diagnosis-v0.1.schema.json",
+  "title": "Possibility to Capability Transition Diagnosis v0.1",
+  "description": "A provisional receiver-owned witness contract for distinguishing disclosure, dynamics, records, access, capability change, finality candidates, and hierarchy failures. The reference evaluator enforces additional semantic rules.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "assessment_id",
+    "status",
+    "question",
+    "construction",
+    "branch_relation",
+    "branches",
+    "label_neutrality",
+    "assumptions",
+    "evidence_grade",
+    "tests",
+    "falsifiers",
+    "nonclaims",
+    "reopening_conditions"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "assessment_id": {"type": "string", "pattern": "^[A-Z][A-Z0-9_-]*-TD-[0-9]{3,}$"},
+    "status": {"const": "provisional"},
+    "question": {"type": "string", "minLength": 1},
+    "construction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fork_identified", "selected_branch_id", "retention_statement"],
+      "properties": {
+        "fork_identified": {"type": "boolean"},
+        "selected_branch_id": {"type": ["string", "null"]},
+        "retention_statement": {"type": "string", "minLength": 1}
+      }
+    },
+    "branch_relation": {
+      "enum": [
+        "SAME_OBJECT",
+        "ALTERNATIVE_CONSTRUCTIONS",
+        "INCOMPARABLE_CONSTRUCTIONS",
+        "UNKNOWN",
+        "CONTESTED"
+      ]
+    },
+    "branches": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/branch"}
+    },
+    "label_neutrality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["left_label", "right_label", "required"],
+      "properties": {
+        "left_label": {"type": "string", "minLength": 1},
+        "right_label": {"type": "string", "minLength": 1},
+        "required": {"const": true}
+      }
+    },
+    "assumptions": {"$ref": "#/$defs/nonempty_strings"},
+    "evidence_grade": {"$ref": "#/$defs/evidence_grade"},
+    "tests": {"$ref": "#/$defs/nonempty_strings"},
+    "falsifiers": {"$ref": "#/$defs/nonempty_strings"},
+    "nonclaims": {"$ref": "#/$defs/nonempty_strings"},
+    "reopening_conditions": {"$ref": "#/$defs/nonempty_strings"}
+  },
+  "$defs": {
+    "nonempty_strings": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "evidence_grade": {
+      "enum": ["SYNTHETIC_CONTROL", "EXPLORATORY", "ARGUMENT", "COMPUTATION", "PROOF"]
+    },
+    "verification": {
+      "enum": ["UNVERIFIED", "DETERMINISTIC_SYNTHETIC", "REPLICATED", "CONTESTED"]
+    },
+    "qualified_yes_no": {
+      "allOf": [
+        {"$ref": "#/$defs/qualified_base"},
+        {"properties": {"value": {"enum": ["YES", "NO", "UNKNOWN", "CONTESTED"]}}}
+      ]
+    },
+    "qualified_family": {
+      "allOf": [
+        {"$ref": "#/$defs/qualified_base"},
+        {"properties": {"value": {"enum": ["SAME", "DIFFERENT", "INCOMPARABLE", "UNKNOWN", "CONTESTED"]}}}
+      ]
+    },
+    "qualified_representation": {
+      "allOf": [
+        {"$ref": "#/$defs/qualified_base"},
+        {"properties": {"value": {"enum": ["EQUIVALENT", "INEQUIVALENT", "UNKNOWN", "CONTESTED"]}}}
+      ]
+    },
+    "qualified_task_relation": {
+      "allOf": [
+        {"$ref": "#/$defs/qualified_base"},
+        {"properties": {"value": {"enum": ["EQUAL", "SUPERSET", "SUBSET", "INCOMPARABLE", "UNKNOWN", "CONTESTED"]}}}
+      ]
+    },
+    "qualified_factorization": {
+      "allOf": [
+        {"$ref": "#/$defs/qualified_base"},
+        {"properties": {"value": {"enum": ["FACTORED", "NO_FACTOR_FOUND", "NOT_APPLICABLE", "UNKNOWN", "CONTESTED"]}}}
+      ]
+    },
+    "qualified_ordering": {
+      "allOf": [
+        {"$ref": "#/$defs/qualified_base"},
+        {"properties": {"value": {"enum": ["ORDER_COMPATIBLE", "CO_OCCURRENT", "INCOMPARABLE", "CYCLIC", "UNREPRESENTABLE", "UNKNOWN", "CONTESTED"]}}}
+      ]
+    },
+    "qualified_base": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "evidence_refs"],
+      "properties": {
+        "value": {"type": "string"},
+        "evidence_refs": {"$ref": "#/$defs/nonempty_strings"}
+      }
+    },
+    "witness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "possibility_family_relation",
+        "representation_relation",
+        "description_change",
+        "dynamics_change",
+        "persistent_record",
+        "access_change",
+        "control_change",
+        "raw_task_set_relation",
+        "normalized_task_set_relation",
+        "irreversible",
+        "settlement",
+        "preceding_layer_factorization",
+        "reopenable_by_admissible_continuation",
+        "ordering_relation"
+      ],
+      "properties": {
+        "possibility_family_relation": {"$ref": "#/$defs/qualified_family"},
+        "representation_relation": {"$ref": "#/$defs/qualified_representation"},
+        "description_change": {"$ref": "#/$defs/qualified_yes_no"},
+        "dynamics_change": {"$ref": "#/$defs/qualified_yes_no"},
+        "persistent_record": {"$ref": "#/$defs/qualified_yes_no"},
+        "access_change": {"$ref": "#/$defs/qualified_yes_no"},
+        "control_change": {"$ref": "#/$defs/qualified_yes_no"},
+        "raw_task_set_relation": {"$ref": "#/$defs/qualified_task_relation"},
+        "normalized_task_set_relation": {"$ref": "#/$defs/qualified_task_relation"},
+        "irreversible": {"$ref": "#/$defs/qualified_yes_no"},
+        "settlement": {"$ref": "#/$defs/qualified_yes_no"},
+        "preceding_layer_factorization": {"$ref": "#/$defs/qualified_factorization"},
+        "reopenable_by_admissible_continuation": {"$ref": "#/$defs/qualified_yes_no"},
+        "ordering_relation": {"$ref": "#/$defs/qualified_ordering"}
+      }
+    },
+    "declared_claim": {
+      "enum": [
+        "FIXED_FAMILY_DISCLOSURE",
+        "FIXED_FAMILY_DYNAMICS",
+        "RECORD_FORMATION",
+        "ACCESS_CHANGE",
+        "POSSIBILITY_FAMILY_CHANGE",
+        "CAPABILITY_ENLARGEMENT",
+        "CAPABILITY_RESTRICTION",
+        "FINALITY_CANDIDATE",
+        "MULTI_LEVEL",
+        "INCOMPARABLE",
+        "HIERARCHY_REVISION"
+      ]
+    },
+    "branch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "branch_id",
+        "label",
+        "admissibility",
+        "witness",
+        "normalization_frame",
+        "factorization_search_scope",
+        "declared_claims",
+        "evidence_grade",
+        "verification"
+      ],
+      "properties": {
+        "branch_id": {"type": "string", "pattern": "^[a-z][a-z0-9_-]*$"},
+        "label": {"type": "string", "minLength": 1},
+        "admissibility": {"enum": ["ADMISSIBLE", "INADMISSIBLE", "UNKNOWN", "CONTESTED"]},
+        "witness": {"$ref": "#/$defs/witness"},
+        "normalization_frame": {"type": ["string", "null"]},
+        "factorization_search_scope": {"type": ["string", "null"]},
+        "declared_claims": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/declared_claim"}
+        },
+        "evidence_grade": {"$ref": "#/$defs/evidence_grade"},
+        "verification": {"$ref": "#/$defs/verification"}
+      }
+    }
+  }
+}

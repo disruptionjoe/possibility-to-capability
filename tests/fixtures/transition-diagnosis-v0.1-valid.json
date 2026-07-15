@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1",
+  "assessment_id": "SYNTHETIC-TD-001",
+  "status": "provisional",
+  "question": "Does unlocking a previously closed channel enlarge normalized capability or only change access?",
+  "construction": {
+    "fork_identified": false,
+    "selected_branch_id": "channel-model",
+    "retention_statement": "This synthetic control has one declared construction; a resource-inclusive capability construction would require a separate retained branch."
+  },
+  "branch_relation": "SAME_OBJECT",
+  "branches": [
+    {
+      "branch_id": "channel-model",
+      "label": "unlocked channel",
+      "admissibility": "ADMISSIBLE",
+      "witness": {
+        "possibility_family_relation": {"value": "SAME", "evidence_refs": ["synthetic://access-only/family"]},
+        "representation_relation": {"value": "EQUIVALENT", "evidence_refs": ["synthetic://access-only/representation"]},
+        "description_change": {"value": "NO", "evidence_refs": ["synthetic://access-only/description"]},
+        "dynamics_change": {"value": "NO", "evidence_refs": ["synthetic://access-only/dynamics"]},
+        "persistent_record": {"value": "NO", "evidence_refs": ["synthetic://access-only/record"]},
+        "access_change": {"value": "YES", "evidence_refs": ["synthetic://access-only/access"]},
+        "control_change": {"value": "NO", "evidence_refs": ["synthetic://access-only/control"]},
+        "raw_task_set_relation": {"value": "SUPERSET", "evidence_refs": ["synthetic://access-only/raw-tasks"]},
+        "normalized_task_set_relation": {"value": "EQUAL", "evidence_refs": ["synthetic://access-only/normalized-tasks"]},
+        "irreversible": {"value": "NO", "evidence_refs": ["synthetic://access-only/irreversibility"]},
+        "settlement": {"value": "NO", "evidence_refs": ["synthetic://access-only/settlement"]},
+        "preceding_layer_factorization": {"value": "NOT_APPLICABLE", "evidence_refs": ["synthetic://access-only/factorization"]},
+        "reopenable_by_admissible_continuation": {"value": "YES", "evidence_refs": ["synthetic://access-only/reopening"]},
+        "ordering_relation": {"value": "ORDER_COMPATIBLE", "evidence_refs": ["synthetic://access-only/ordering"]}
+      },
+      "normalization_frame": "Same task vocabulary and intrinsic policy family, with channel access held fixed for the normalized comparison.",
+      "factorization_search_scope": null,
+      "declared_claims": ["CAPABILITY_ENLARGEMENT"],
+      "evidence_grade": "SYNTHETIC_CONTROL",
+      "verification": "DETERMINISTIC_SYNTHETIC"
+    }
+  ],
+  "label_neutrality": {"left_label": "closed", "right_label": "open", "required": true},
+  "assumptions": ["The common normalization frame is meaningful for this synthetic channel model."],
+  "evidence_grade": "SYNTHETIC_CONTROL",
+  "tests": ["Classify raw task growth with normalized equality as access change, not capability enlargement."],
+  "falsifiers": ["A pure branch or endpoint relabeling changes the computed diagnosis."],
+  "nonclaims": ["The synthetic channel establishes no physical or source-repository result."],
+  "reopening_conditions": ["Reopen if access cannot be held fixed without changing the task definition."]
+}

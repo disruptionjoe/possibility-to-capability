@@ -46,3 +46,29 @@ python tests/evaluate_gate_run.py tests/fixtures/gate-run-v0.1-positive.json tes
 An evaluator `PASS` means only that one run is complete and internally
 consistent with the neutral gate contract. It does not establish physics,
 promote a source claim, or validate the receiver judgments' substance.
+
+## Transition diagnosis contract
+
+- `classify_transition.py` validates and classifies a provisional
+  Transition Diagnosis v0.1 witness record using only the Python standard
+  library.
+- `validate_transition_diagnosis_contract.py` materializes and checks 35
+  synthetic adversarial cases, including disclosure/capability, record/access,
+  access/capability, and irreversibility/finality false positives; null,
+  unknown, contested, multi-level, incomparable, construction-fork, and
+  hierarchy-revision outcomes; and a label-swap metamorphic control on every
+  valid case.
+- `fixtures/transition-diagnosis-v0.1-valid.json` is a complete access-only
+  example that rejects a declared capability-enlargement claim.
+- `fixtures/transition-diagnosis-v0.1-cases.json` is the machine-readable
+  adversarial case table.
+
+Run from the repository root:
+
+```text
+python tests/validate_transition_diagnosis_contract.py
+python tests/classify_transition.py tests/fixtures/transition-diagnosis-v0.1-valid.json
+```
+
+A classification diagnoses supplied receiver witnesses. It does not establish
+their truth, promote a source claim, or prove the hierarchy complete.
