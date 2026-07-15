@@ -96,3 +96,23 @@ python tests/classify_transition.py tests/fixtures/transition-diagnosis-v0.1-val
 
 A classification diagnoses supplied receiver witnesses. It does not establish
 their truth, promote a source claim, or prove the hierarchy complete.
+
+## Coherent-story ledger
+
+- `validate_coherent_story_ledger.py` checks the provisional synthesis ledger's
+  five epistemic claim classes, open-question posture, typed-partial semantics,
+  GU/source firewall, finality and access-capability controls, four live
+  rivals, construction-fork preservation, and confidence/nonclaim posture.
+- Its embedded adversarial suite rejects promotion overclaim, chronology,
+  circular or upgraded finality, access-capability collapse, blocked-source
+  leakage, artificial joint success, construction suppression, and a weakened
+  rival.
+
+Run from the repository root:
+
+```text
+python tests/validate_coherent_story_ledger.py
+```
+
+A pass means the ledger retains those structural and epistemic boundaries. It
+does not establish novelty, physics, source truth, or the candidate story.

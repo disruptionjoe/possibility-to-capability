@@ -1,0 +1,358 @@
+{
+  "artifact_type": "provisional_hypothesis_evidence_rival_ledger",
+  "version": "0.1",
+  "status": "provisional",
+  "created": "2026-07-14",
+  "owner": "possibility-to-capability",
+  "construction": "typed_partial_diagnostic",
+  "guiding_hypothesis": {
+    "id": "H-COHERENT-STORY-001",
+    "question": "Can a representation-respecting typed decomposition of physical cases into admissible possibility, fixed-family dynamics, record formation, access, normalized capability, and candidate finality only after explicit factorization tests classify real frozen evidence more stably and discriminatively than its strongest reductive, context-relative, structural, and pluralist rivals, or do real cases collapse the distinctions, change under admissible construction, or expose a missing type?",
+    "is_question": true,
+    "verdict": "OPEN",
+    "promotion_status": "NOT_PROMOTED",
+    "evidence_ceiling": "synthetic_plus_blocked_real_intake"
+  },
+  "candidate_story": {
+    "id": "CANDIDATE-TYPED-ARC",
+    "plain_english_summary": "Physics specifies admissible possibilities and transformations; some transformations stabilize records; access determines which distinctions can condition later action; capability is the normalized operational task set rather than raw access; finality is only a candidate when settlement or selection cannot be factored through the preceding types under a named scope and cannot be reopened by admissible continuation.",
+    "relation_type": "typed_partial_diagnostic",
+    "is_chronology": false,
+    "is_causal_sequence": false,
+    "is_total_order": false,
+    "allows_skipped_types": true,
+    "allows_multi_level": true,
+    "allows_incomparable_types": true,
+    "allows_construction_fork": true,
+    "allows_hierarchy_revision": true,
+    "finality_status": "FINALITY_CANDIDATE_ONLY",
+    "finality_minimum_controls": [
+      "settlement_witness",
+      "named_factorization_search_scope",
+      "no_factor_found_under_scope",
+      "no_reopening_by_admissible_continuation"
+    ],
+    "finality_nonclaim": "A bounded no-factor-found result does not establish absolute non-reducibility or physical finality.",
+    "access_capability_boundary": {
+      "access": "Changed conditioning, observability, reachability, or control relation.",
+      "capability": "A strict change in the operational task set under a named common normalization.",
+      "normalization_must_hold_fixed": [
+        "description",
+        "representation",
+        "resources",
+        "access",
+        "control"
+      ],
+      "constitutive_access_fork_retained": true,
+      "reopening_condition": "A real case in which access is constitutive of capability rather than a separable factor."
+    }
+  },
+  "evidence_state": {
+    "accepted_real_packets": 0,
+    "completed_real_eight_gate_runs": 0,
+    "physical_finality_gate_results": 0,
+    "synthetic_transition_cases": 35,
+    "synthetic_transition_aggregate_outcomes": 16,
+    "gu_001": {
+      "role": "founding_motivation_only",
+      "import_status": "NOT_YET_IMPORTABLE",
+      "provenance_preflight": "BLOCKED",
+      "receiving_independence_assessment": "NOT_ADMISSIBLE_NOT_RUN",
+      "full_gate_run": "NOT_ADMISSIBLE_NOT_RUN",
+      "downstream_gates": "BLOCKED_NOT_RUN",
+      "may_support_candidate_story": false,
+      "may_support_rival_story": false,
+      "source_truth_frozen": true,
+      "receiver_method_count": null,
+      "receiver_convergence_verdict": null,
+      "receiver_independence_verdict": null
+    }
+  },
+  "claim_classes": {
+    "widely_known_conceptual_ingredients": [
+      {
+        "id": "KNOWN-001",
+        "statement": "Physical theories commonly specify admissible states, histories, fields, constraints, or alternatives.",
+        "novelty_claimed": false,
+        "evidence_role": "orientation_not_priority_claim"
+      },
+      {
+        "id": "KNOWN-002",
+        "statement": "Dynamics, persistent records, observability and control, operational task sets, and boundary or closure conditions are familiar explanatory ingredients across established fields.",
+        "novelty_claimed": false,
+        "evidence_role": "orientation_requires_publication_grade_literature_map"
+      }
+    ],
+    "repo_new_assembly_and_machinery": [
+      {
+        "id": "ASSEMBLY-001",
+        "statement": "The six terms are assembled as non-exclusive typed diagnoses rather than a chronology.",
+        "evidence_refs": [
+          "interfaces/transition-diagnosis-v0.1.md",
+          "results/2026-07-14-transition-diagnosis-v0.1-adversarial-results.md"
+        ]
+      },
+      {
+        "id": "ASSEMBLY-002",
+        "statement": "Frozen source packets, reproducible bundle identity, explicit method-premise dependence, and a non-upgrading receiver assessment separate source truth from synthesis.",
+        "evidence_refs": [
+          "packets/schema/frozen-packet-v0.2.md"
+        ]
+      },
+      {
+        "id": "ASSEMBLY-003",
+        "statement": "A cumulative eight-gate contract preserves non-passing outcomes, rejects split-chain artificial success, and applies a bounded label-reversal control.",
+        "evidence_refs": [
+          "interfaces/gate-run-v0.1.md"
+        ]
+      },
+      {
+        "id": "ASSEMBLY-004",
+        "statement": "Access and normalized capability are separated through a named comparison frame, while access-constitutive constructions remain explicit reopening cases.",
+        "evidence_refs": [
+          "interfaces/transition-diagnosis-v0.1.md"
+        ]
+      }
+    ],
+    "provisional_synthetic_results": [
+      {
+        "id": "SYNTHETIC-001",
+        "statement": "The transition vocabulary was mechanically distinguishable across 35 stipulated cases and 16 aggregate outcomes.",
+        "grade": "deterministic_synthetic",
+        "physical_claim": false,
+        "evidence_refs": [
+          "results/2026-07-14-transition-diagnosis-v0.1-adversarial-results.md"
+        ]
+      },
+      {
+        "id": "SYNTHETIC-002",
+        "statement": "In the synthetic construction, record did not imply access, access did not imply normalized capability, and irreversibility did not imply finality.",
+        "grade": "deterministic_synthetic",
+        "physical_claim": false,
+        "evidence_refs": [
+          "results/2026-07-14-transition-diagnosis-v0.1-adversarial-results.md"
+        ]
+      },
+      {
+        "id": "SYNTHETIC-003",
+        "statement": "The hierarchy survived the implemented controls only as a fallible typed diagnostic, not as a strict sequence.",
+        "grade": "deterministic_synthetic",
+        "physical_claim": false,
+        "evidence_refs": [
+          "results/2026-07-14-transition-diagnosis-v0.1-adversarial-results.md"
+        ]
+      }
+    ],
+    "blocked_founding_motivation": [
+      {
+        "id": "GU-MOTIVATION-001",
+        "statement": "GU-001 motivates the ownership and seam problem but cannot enter receiving assessment or a substantive gate run at the pinned revision.",
+        "status": "NOT_YET_IMPORTABLE",
+        "evidence_use": "motivation_and_provenance_stop_only",
+        "evidence_refs": [
+          "results/2026-07-14-gu-001-blocked-preflight-results.md",
+          "packets/intake/GU-001-blocked-preflight-v0.1-2026-07-14.json"
+        ]
+      }
+    ],
+    "genuinely_open_claims": [
+      {
+        "id": "OPEN-001",
+        "statement": "The six diagnostic types are complete, universal, fundamental, or ontologically real.",
+        "status": "OPEN_UNSUPPORTED"
+      },
+      {
+        "id": "OPEN-002",
+        "statement": "The diagnosis is invariant under substantive admissible reformulation.",
+        "status": "OPEN_UNSUPPORTED"
+      },
+      {
+        "id": "OPEN-003",
+        "statement": "Access can always be normalized away from capability without circularity.",
+        "status": "OPEN_UNSUPPORTED"
+      },
+      {
+        "id": "OPEN-004",
+        "statement": "A real physical case passes the packet and full gate sequence.",
+        "status": "OPEN_UNSUPPORTED"
+      },
+      {
+        "id": "OPEN-005",
+        "statement": "Physical finality exists as a non-factorable explanatory kind.",
+        "status": "OPEN_UNSUPPORTED"
+      },
+      {
+        "id": "OPEN-006",
+        "statement": "GU, TI, or TaF supplies an accepted physical confirmation of the candidate story.",
+        "status": "OPEN_NOT_ADMISSIBLE_FROM_CURRENT_EVIDENCE"
+      }
+    ]
+  },
+  "rivals": [
+    {
+      "rank_as_rival": 1,
+      "id": "RIVAL-REDUCTIVE-DYNAMICS",
+      "name": "Reductive dynamics and coarse-graining are enough",
+      "status": "LIVE",
+      "steelman": "A sufficiently complete state space, dynamics, boundary conditions, and coarse-graining explain records, access, task sets, apparent selection, and the arrow of time. Capability summarizes constrained reachability, and finality names effective irreversibility or omission of the larger model rather than a new explanatory kind.",
+      "observations_favoring_rival": [
+        "Every preregistered finality candidate factors through a defensible enlarged dynamics, boundary condition, or coarse-graining.",
+        "Record, access, and capability diagnoses add no stable prediction or explanatory compression beyond the complete dynamical model.",
+        "Normalization frames are derivable from the dynamics rather than independently chosen.",
+        "Apparent settlement reopens under an admissible embedding or continuation."
+      ],
+      "observations_favoring_candidate_over_rival": [
+        "A stable diagnosis or prediction remains after the strongest admissible dynamical and boundary-condition factorization succeeds as far as it can.",
+        "The typed distinctions compress or predict outcomes across equivalent formulations that the reductive account treats only case by case."
+      ]
+    },
+    {
+      "rank_as_rival": 2,
+      "id": "RIVAL-OPERATIONAL-CONTEXT",
+      "name": "Operational context is primary",
+      "status": "LIVE",
+      "steelman": "Tasks, agents, resources, access, controls, and success criteria jointly constitute capability. Holding access fixed can remove the relation that makes a capability meaningful, so the access-capability boundary is a context-dependent bookkeeping choice rather than a general physical distinction.",
+      "observations_favoring_rival": [
+        "Equally admissible observer, task, resource, or control frames yield different capability diagnoses with no invariant quotient.",
+        "Access-constitutive cases repeatedly produce construction forks rather than a stable normalized capability relation.",
+        "The chosen normalization frame already entails the desired capability verdict.",
+        "Context-relative models predict interventions better than a normalized context-independent task set."
+      ],
+      "observations_favoring_candidate_over_rival": [
+        "Independent reviewers recover an invariant normalized capability comparison across admissible contexts.",
+        "Access-only changes and capability changes produce distinct, preregistered intervention consequences."
+      ]
+    },
+    {
+      "rank_as_rival": 3,
+      "id": "RIVAL-PLURALITY",
+      "name": "Explanatory plurality is irreducible",
+      "status": "LIVE",
+      "steelman": "Different physical domains support locally successful but non-reducible explanatory grammars. The six-type vocabulary may be a comparison tool, while repeated hierarchy revision shows that there is no single universal joint object.",
+      "observations_favoring_rival": [
+        "Multiple well-specified real cases require the same stable missing explanatory type.",
+        "Cross-domain mapping erases load-bearing distinctions or worsens prediction.",
+        "No shared normalization or gate vocabulary survives across domains.",
+        "Several incompatible taxonomies remain equally invariant and empirically adequate."
+      ],
+      "observations_favoring_candidate_over_rival": [
+        "The same typed distinctions and gates classify heterogeneous real packets without source-specific reinterpretation.",
+        "Hierarchy revision remains rare, local, and repairable rather than systematically domain-indexed."
+      ]
+    },
+    {
+      "rank_as_rival": 4,
+      "id": "RIVAL-CONSTRAINT-FIRST",
+      "name": "Constraint and consistency are more fundamental than the arc",
+      "status": "LIVE",
+      "steelman": "Possibility, dynamics, records, access, capability, and settlement are representation-dependent projections of one invariant global constraint or consistency object. The explanatory arc adds vocabulary but no independent structure.",
+      "observations_favoring_rival": [
+        "All six diagnoses derive as projections of one invariant constraint object.",
+        "Construction forks collapse under the constraint formulation.",
+        "The constraint account reproduces every discrimination with fewer independent assumptions.",
+        "No case classified by the typed vocabulary escapes the constraint account."
+      ],
+      "observations_favoring_candidate_over_rival": [
+        "Two cases with the same global consistency structure differ predictively by record, access, or normalized capability type.",
+        "The typed decomposition exposes a stable operational distinction lost by the constraint projection."
+      ]
+    }
+  ],
+  "safeguards": {
+    "source_sovereignty": {
+      "gu_ti_taf_truth_frozen": true,
+      "source_claim_status_changes": false,
+      "blocked_source_used_as_support": false
+    },
+    "no_artificial_success": {
+      "joint_real_gate_status": "NOT_RUN",
+      "cross_repo_partial_aggregation": false,
+      "one_argument_chain_required_for_success": true
+    },
+    "construction_forks": {
+      "retained": true,
+      "transfer_without_test": false,
+      "candidate_conclusion_scope": "typed_partial_diagnostic_construction"
+    },
+    "finality_anti_circularity": {
+      "irreversibility_sufficient": false,
+      "no_factor_found_equals_absolute_proof": false,
+      "candidate_label_required": true
+    },
+    "access_capability_anti_collapse": {
+      "raw_task_availability_equals_capability": false,
+      "normalization_frame_required": true,
+      "constitutive_access_fork_retained": true
+    }
+  },
+  "confidence_calibration": [
+    {
+      "target": "diagnostic_coherence",
+      "level": "moderate",
+      "basis": "Explicit distinctions and substantial synthetic controls; no real accepted packet."
+    },
+    {
+      "target": "cross_repository_interface_usefulness",
+      "level": "moderate",
+      "basis": "The blocked preflight demonstrates disciplined stopping; accepted interoperability remains untested."
+    },
+    {
+      "target": "universality_or_completeness",
+      "level": "low_and_unsupported",
+      "basis": "No real-case coverage and explicit hierarchy-revision outcomes."
+    },
+    {
+      "target": "physical_irreducibility_of_finality",
+      "level": "not_assessable",
+      "basis": "No finality gate has run on a real accepted packet."
+    },
+    {
+      "target": "gu_as_confirmation",
+      "level": "not_admissible",
+      "basis": "GU-001 is NOT_YET_IMPORTABLE and all substantive gates are NOT_RUN."
+    }
+  ],
+  "numeric_likelihood_assigned": false,
+  "feasibility": {
+    "assessment": "technically_feasible_evidence_limited",
+    "basis": [
+      "The repository has explicit packet, dependence, gate, transition, construction-fork, and negative-outcome interfaces.",
+      "A source-issued valid packet gives a concrete bounded receiver sequence.",
+      "Upstream packet preparation and independently defensible normalization and factorization choices remain the main bottlenecks."
+    ]
+  },
+  "candidate_killers": [
+    "Diagnosis changes under admissible reformulation.",
+    "Access and capability cannot be separated without circular normalization.",
+    "Every finality candidate factors through a defensible earlier-layer model.",
+    "A simpler reductive or constraint account matches every discrimination and predicts more.",
+    "Real cases repeatedly expose a stable missing type.",
+    "No real packet survives intake and the full gate sequence."
+  ],
+  "falsifiers": [
+    "A diagnosis changes under a source-certified physically equivalent representation.",
+    "Access and normalized capability cannot be separated without a conclusion-entailing frame.",
+    "Every well-formed finality candidate factors through a defensible earlier-layer construction.",
+    "A reductive or constraint-first account matches every discrimination with fewer assumptions and better prediction.",
+    "Repeated real cases expose a stable missing explanatory type or require irreducibly domain-specific grammars.",
+    "No physically meaningful source-issued packet can survive the complete receiver sequence without semantic distortion."
+  ],
+  "nonclaims": [
+    "The candidate is not a unified theory, new fundamental law, or chronology.",
+    "The six types are not claimed complete, universal, mutually exclusive, or ontologically fundamental.",
+    "Candidate finality is not proof of finality, collapse, temporal issuance, free will, or cosmological closure.",
+    "Synthetic validation is not empirical evidence.",
+    "GU, TI, TaF, and WI-069 truth and claim status remain with their source owners."
+  ],
+  "reopening_conditions": [
+    "The first real Frozen-Packet v0.2 object passes intake.",
+    "GU issues a candidate GU-001 bundle at a newly pinned revision.",
+    "A real case makes access constitutive of capability.",
+    "A substantive admissible reformulation changes diagnosis.",
+    "A real case returns HIERARCHY_REVISION.",
+    "A rival matches or exceeds discrimination with fewer assumptions."
+  ],
+  "decisive_test_program_ref": "experiments/2026-07-14-ranked-decisive-test-program-v0.1.md",
+  "adversarial_validation_ref": "results/2026-07-14-coherent-story-adversarial-validation.md",
+  "synthesis_ref": "synthesis/2026-07-14-coherent-story-v0.1.md"
+}
