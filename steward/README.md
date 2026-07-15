@@ -101,6 +101,11 @@ program sequencing.
 Chronological setup and future steward memory lives at
 `steward/memory-log.md`.
 
+Automation run plans and receipts live locally under `steward/runs/`. This
+public repository ignores that directory; durable decisions belong in steward
+memory or repo-owned research/governance artifacts rather than internal
+CapacityOS execution records.
+
 ## Automation Hooks
 
 CapacityOS registration, mailbox, and System-overlay sockets are present.
