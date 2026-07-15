@@ -1,14 +1,16 @@
 # Possibility to Capability
 
-Status: provisional local repository skeleton pending Joe's charter review.
+Status: named public-path repository pending Joe's final review of the proposed
+`AGENTS.md` and live automation activation.
 
 This directory is the proposed public research home for the neutral,
 repo-independent layer connecting physical possibility, dynamics, records,
 access, capability, and the open question of finality.
 
-The repository is not yet an active research authority. Its charter and
-`AGENTS.md` are intentionally absent. No GitHub repository or remote has been
-created, and no automation is enabled.
+Joe selected the name and approved the charter in substance on 2026-07-14. The
+proposed charter and a stop-gated `AGENTS.md` draft are now present for his final
+review. No GitHub repository or remote has been created, and automation remains
+connected/off until that review is complete.
 
 ## Installed skeleton
 
@@ -23,11 +25,11 @@ created, and no automation is enabled.
 - `literature/` - literature maps and novelty comparisons.
 - `tests/` - deterministic checks owned by this repo.
 - `results/` - generated or summarized test receipts.
-- `governance/` - future charter-adjacent governance records after ratification.
+- `governance/` - the proposed charter and future governance records.
 
 ## Temporary operating boundary
 
-Until Joe ratifies the charter and `AGENTS.md`:
+Until Joe approves `AGENTS.md` and the standard automation package is activated:
 
 - do not conduct autonomous research here;
 - do not promote claims or create canon;
@@ -37,5 +39,6 @@ Until Joe ratifies the charter and `AGENTS.md`:
 - never combine partial results into an artificial joint success;
 - keep all CapacityOS automations connected/off.
 
-The proposed charter is intentionally being discussed outside this repository
-before it becomes constitutional repo truth.
+The first authorized research sequence after activation is Frozen-Packet Schema
+v0.1, GU Packet #1, and the first neutral gate run. See
+`governance/CHARTER.proposed.md` and `AGENTS.md`.

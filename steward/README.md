@@ -1,19 +1,26 @@
 # Possibility-to-Capability Steward Context
 
-Status: provisional setup context only. The repository charter and
-`AGENTS.md` are intentionally pending Joe's review.
+Status: pre-activation steward context. Joe selected the repository name and
+approved the charter in substance. The stop-gated `AGENTS.md` draft is pending
+his final review.
 
-Load this file only for skeleton maintenance, mailbox routing, or charter
-preparation. It is not authority to begin research, accept claims, activate
+Load this file for stewardship and routing context. Until Joe approves
+`AGENTS.md`, it is not authority to begin research, accept claims, activate
 automations, or interpret cross-repo evidence.
 
 ## North Star
 
-Intentionally unset until charter ratification.
+Develop the smallest rigorous, repo-independent account of how admissible
+possibilities become dynamics, records, access, capability, and finality, and
+use it to locate exactly what cross-repository evidence establishes without
+manufacturing agreement.
 
 ## Long-Term Objectives
 
-Intentionally unset until charter ratification.
+- Force or falsify the explanatory hierarchy on real frozen cases.
+- Build trustworthy packet and gate interfaces without absorbing source truth.
+- Distinguish fixed-family disclosure from genuine capability change.
+- Preserve negative results and the possibility that the hierarchy is wrong.
 
 ## Measures And Countermeasures
 
@@ -21,9 +28,9 @@ Temporary setup measures:
 
 - every imported source-repo packet is frozen and provenance-bearing;
 - source-repo truth and verdicts remain sovereign;
-- automation enrollment remains connected/off;
-- no `AGENTS.md`, claim ledger, canon, or accepted hypothesis appears before
-  charter ratification.
+- automation enrollment remains connected/off until the `AGENTS.md` gate;
+- no claim ledger, canon, or accepted synthesis appears before a ratified
+  promotion workflow.
 
 Temporary countermeasures:
 
@@ -34,9 +41,10 @@ Temporary countermeasures:
 
 ## What This Repo Owns
 
-Ownership is intentionally not finalized. The setup boundary permits only the
-local skeleton, provenance conventions, and future repo-independent research
-surfaces described in `README.md`.
+The repo owns the repo-independent hierarchy, packet schemas, neutral gates,
+abstract joint-seam object, and results independently established here. It
+coordinates but does not own source-packet requests, source truth, or JoeOps
+program sequencing.
 
 ## What This Repo Must Not Absorb
 
@@ -57,7 +65,8 @@ surfaces described in `README.md`.
 - Cross-repo actions route through mailboxes.
 - No source-repo file may be edited from a run mounted here.
 - No non-GitHub external action is authorized.
-- No GitHub remote exists yet; creating one requires a later explicit Joe step.
+- No GitHub remote exists yet; creating one remains gated on Joe's final
+  `AGENTS.md` approval and explicit remote authorization.
 
 ## Routing
 
@@ -69,14 +78,18 @@ surfaces described in `README.md`.
 
 ## Candidate Decisions
 
-- Joe's charter review.
-- Final repository name and visibility confirmation.
+- Joe's final `AGENTS.md` review.
 - Whether and when to create a public GitHub remote.
-- Whether and when to activate a standard automation package.
+- Activation of the queued `standard_repo_steward_package` immediately after
+  the instruction review.
 
 ## Durable Decisions
 
-None yet. This is a provisional skeleton.
+- Name: Possibility to Capability (`possibility-to-capability`).
+- Visibility posture: public.
+- WI-069 is a distinct sibling object connected only by typed frozen packets.
+- Charter approved in substance; founding case and first-deliverable additions
+  accepted.
 
 ## Principles
 
@@ -93,9 +106,11 @@ Chronological setup and future steward memory lives at
 
 ## Automation Hooks
 
-CapacityOS registration, mailbox, and System-overlay sockets are present, but
-Mailbox Processing, Progress, Stewardship, and Discovery remain connected/off.
-No live trigger is armed for this repository.
+CapacityOS registration, mailbox, and System-overlay sockets are present. The
+standard package is queued, but Mailbox Processing, Progress, Stewardship, and
+Discovery remain connected/off until Joe approves `AGENTS.md`. Activation
+requires adding the repo to the existing curated target set; no new trigger is
+needed.
 
 ## Local Source References
 
@@ -103,3 +118,5 @@ No live trigger is armed for this repository.
 - `packets/README.md`
 - `interfaces/README.md`
 - `governance/README.md`
+- `governance/CHARTER.proposed.md`
+- `AGENTS.md`
