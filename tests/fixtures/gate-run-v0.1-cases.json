@@ -1,0 +1,161 @@
+{
+  "schema_version": "0.1-test-cases",
+  "base_fixture": "gate-run-v0.1-positive.json",
+  "cases": [
+    {
+      "case_id": "completion-fails",
+      "expected_valid": true,
+      "expected_aggregate": "FAIL",
+      "mutations": [
+        {"operation": "set", "pointer": "/gate_results/3/status", "value": "FAIL"},
+        {"operation": "set", "pointer": "/gate_results/4/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/gate_results/5/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/gate_results/6/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/gate_results/7/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/declared_aggregate", "value": "FAIL"}
+      ]
+    },
+    {
+      "case_id": "provenance-blocked",
+      "expected_valid": true,
+      "expected_aggregate": "BLOCKED",
+      "mutations": [
+        {"operation": "set", "pointer": "/gate_results/0/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/gate_results/1/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/gate_results/2/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/gate_results/3/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/gate_results/4/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/gate_results/5/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/gate_results/6/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/gate_results/7/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/declared_aggregate", "value": "BLOCKED"}
+      ]
+    },
+    {
+      "case_id": "completion-indeterminate",
+      "expected_valid": true,
+      "expected_aggregate": "INDETERMINATE",
+      "mutations": [
+        {"operation": "set", "pointer": "/gate_results/3/status", "value": "INDETERMINATE"},
+        {"operation": "set", "pointer": "/gate_results/4/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/gate_results/5/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/gate_results/6/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/gate_results/7/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/declared_aggregate", "value": "INDETERMINATE"}
+      ]
+    },
+    {
+      "case_id": "split-chain",
+      "expected_valid": true,
+      "expected_aggregate": "FAIL",
+      "mutations": [
+        {"operation": "set", "pointer": "/gate_results/4/argument_chain_id", "value": "SYNTHETIC-CHAIN-2"},
+        {"operation": "set", "pointer": "/gate_results/4/construction_branch_id", "value": "standard-field"},
+        {"operation": "set", "pointer": "/gate_results/4/argument_ref", "value": "repo-analysis:other-chain"},
+        {"operation": "set", "pointer": "/gate_results/6/status", "value": "FAIL"},
+        {"operation": "set", "pointer": "/gate_results/7/status", "value": "BLOCKED"},
+        {"operation": "set", "pointer": "/declared_aggregate", "value": "FAIL"}
+      ]
+    },
+    {
+      "case_id": "label-sensitive",
+      "expected_valid": true,
+      "expected_aggregate": "FAIL",
+      "mutations": [
+        {"operation": "set", "pointer": "/neutrality_control/verdict_after", "value": "BRANCH_A_SELECTED"},
+        {"operation": "set", "pointer": "/neutrality_control/label_invariant", "value": false},
+        {"operation": "set", "pointer": "/gate_results/7/status", "value": "FAIL"},
+        {"operation": "set", "pointer": "/declared_aggregate", "value": "FAIL"}
+      ]
+    },
+    {
+      "case_id": "missing-required-gate",
+      "expected_valid": false,
+      "expected_aggregate": "INVALID",
+      "mutations": [
+        {"operation": "remove", "pointer": "/gate_results/2"}
+      ]
+    },
+    {
+      "case_id": "split-chain-claims-success",
+      "expected_valid": false,
+      "expected_aggregate": "INVALID",
+      "mutations": [
+        {"operation": "set", "pointer": "/gate_results/4/argument_chain_id", "value": "SYNTHETIC-CHAIN-2"}
+      ]
+    },
+    {
+      "case_id": "label-sensitive-claims-success",
+      "expected_valid": false,
+      "expected_aggregate": "INVALID",
+      "mutations": [
+        {"operation": "set", "pointer": "/neutrality_control/verdict_after", "value": "BRANCH_A_SELECTED"},
+        {"operation": "set", "pointer": "/neutrality_control/label_invariant", "value": false}
+      ]
+    },
+    {
+      "case_id": "blocked-prerequisite-skipped",
+      "expected_valid": false,
+      "expected_aggregate": "INVALID",
+      "mutations": [
+        {"operation": "set", "pointer": "/gate_results/2/status", "value": "BLOCKED"}
+      ]
+    },
+    {
+      "case_id": "unresolved-source-reference",
+      "expected_valid": false,
+      "expected_aggregate": "INVALID",
+      "mutations": [
+        {"operation": "set", "pointer": "/gate_results/0/source_evidence_refs/0", "value": "/missing"}
+      ]
+    },
+    {
+      "case_id": "missing-gate-nonclaim",
+      "expected_valid": false,
+      "expected_aggregate": "INVALID",
+      "mutations": [
+        {"operation": "set", "pointer": "/gate_results/5/nonclaims", "value": []}
+      ]
+    },
+    {
+      "case_id": "source-mutation-guard",
+      "expected_valid": false,
+      "expected_aggregate": "INVALID",
+      "mutations": [
+        {"operation": "set", "pointer": "/source_preservation/source_content_modified", "value": true}
+      ]
+    },
+    {
+      "case_id": "assessment-digest-substitution",
+      "expected_valid": false,
+      "expected_aggregate": "INVALID",
+      "mutations": [
+        {"operation": "set", "pointer": "/receiver_assessment_ref/assessment_sha256", "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+      ]
+    },
+    {
+      "case_id": "wrong-gate-order",
+      "expected_valid": false,
+      "expected_aggregate": "INVALID",
+      "mutations": [
+        {"operation": "set", "pointer": "/gate_results/2/gate_id", "value": "capability"}
+      ]
+    },
+    {
+      "case_id": "no-artificial-gate-leaves-chain",
+      "expected_valid": false,
+      "expected_aggregate": "INVALID",
+      "mutations": [
+        {"operation": "set", "pointer": "/gate_results/6/argument_chain_id", "value": "SYNTHETIC-CHAIN-2"}
+      ]
+    },
+    {
+      "case_id": "neutrality-gate-leaves-branch",
+      "expected_valid": false,
+      "expected_aggregate": "INVALID",
+      "mutations": [
+        {"operation": "set", "pointer": "/gate_results/7/construction_branch_id", "value": "standard-field"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "schema_version": "0.1",
+  "run_id": "SYNTHETIC-002-GR-001",
+  "evaluation_status": "provisional",
+  "receiving_owner": "possibility-to-capability",
+  "source_packet_ref": {
+    "packet_id": "SYNTHETIC-002",
+    "packet_digest": "19ad7995bea9c77214fffb3d8660ef3d7e9104649892c883a09a1632b2967c9b",
+    "source_revision": "0123456789abcdef0123456789abcdef01234567"
+  },
+  "receiver_assessment_ref": {
+    "assessment_id": "SYNTHETIC-002-IA-001",
+    "assessment_sha256": "31000e2a35b4a1d0979f85fa1662e145c8ee796b653d06889f6134617f656f78"
+  },
+  "source_preservation": {
+    "source_packet_frozen": true,
+    "source_content_modified": false,
+    "source_status_unchanged": true,
+    "authority_transfer": false
+  },
+  "outcome_model": {
+    "gate_outcomes": ["PASS", "FAIL", "BLOCKED", "INDETERMINATE"],
+    "malformed_outcome": "INVALID",
+    "success_rule": "ALL_EIGHT_PASS_ONE_CHAIN_LABEL_INVARIANT"
+  },
+  "one_chain_control": {
+    "required_argument_chain_id": "SYNTHETIC-CHAIN-1",
+    "required_construction_branch_id": "source-native",
+    "single_argument_ref": "repo-analysis:synthetic-one-chain"
+  },
+  "neutrality_control": {
+    "label_permutation": {
+      "left_before": "branch-A",
+      "right_before": "branch-B",
+      "left_after": "branch-B",
+      "right_after": "branch-A"
+    },
+    "verdict_before": "NO_BRANCH_SELECTED",
+    "verdict_after": "NO_BRANCH_SELECTED",
+    "label_invariant": true,
+    "artifact_ref": "repo-analysis:synthetic-label-reversal"
+  },
+  "gate_results": [
+    {
+      "gate_id": "provenance",
+      "ordinal": 1,
+      "prerequisite_gate_ids": [],
+      "status": "PASS",
+      "status_reason": "The synthetic packet is frozen and its receiver assessment pins the same packet identity.",
+      "argument_chain_id": "SYNTHETIC-CHAIN-1",
+      "construction_branch_id": "source-native",
+      "argument_ref": "repo-analysis:synthetic-one-chain",
+      "source_evidence_refs": ["/integrity", "/source"],
+      "receiver_assessment_refs": ["/source_packet_ref", "/guards"],
+      "receiver_judgment": {
+        "owner": "possibility-to-capability",
+        "statement": "The referenced synthetic inputs meet the provenance control for this fixture.",
+        "grade": "synthetic-test",
+        "verification": "Reference evaluator identity and pointer checks."
+      },
+      "falsifiers": ["A packet, revision, digest, or assessment reference fails to match."],
+      "nonclaims": ["This provenance pass does not show that any physical claim is true."]
+    },
+    {
+      "gate_id": "construction",
+      "ordinal": 2,
+      "prerequisite_gate_ids": ["provenance"],
+      "status": "PASS",
+      "status_reason": "The selected source-native construction and retained alternative are explicit.",
+      "argument_chain_id": "SYNTHETIC-CHAIN-1",
+      "construction_branch_id": "source-native",
+      "argument_ref": "repo-analysis:synthetic-one-chain",
+      "source_evidence_refs": ["/construction_forks/0", "/evidence_structure/premise_ledger/0"],
+      "receiver_assessment_refs": ["/classification/limiting_premise_ids"],
+      "receiver_judgment": {
+        "owner": "possibility-to-capability",
+        "statement": "The fixture makes its construction fork and shared construction premise visible.",
+        "grade": "synthetic-test",
+        "verification": "Exact branch and pointer checks."
+      },
+      "falsifiers": ["The selected branch or a material alternative is missing from the frozen packet."],
+      "nonclaims": ["The pass does not show transfer to the standard-field alternative."]
+    },
+    {
+      "gate_id": "formation",
+      "ordinal": 3,
+      "prerequisite_gate_ids": ["provenance", "construction"],
+      "status": "PASS",
+      "status_reason": "One declared joint artifact and one receiver argument identify the synthetic joint object.",
+      "argument_chain_id": "SYNTHETIC-CHAIN-1",
+      "construction_branch_id": "source-native",
+      "argument_ref": "repo-analysis:synthetic-one-chain",
+      "source_evidence_refs": ["/claim/joint_argument_artifact", "/method_ledger"],
+      "receiver_assessment_refs": ["/classification/basis_method_ids"],
+      "receiver_judgment": {
+        "owner": "possibility-to-capability",
+        "statement": "The synthetic methods are assessed as one object without rewriting their source results.",
+        "grade": "synthetic-test",
+        "verification": "Joint-artifact and basis-reference checks."
+      },
+      "falsifiers": ["The methods cannot be interpreted over the same declared object without changing source meaning."],
+      "nonclaims": ["Formation does not imply evidential independence among methods."]
+    },
+    {
+      "gate_id": "completion-null",
+      "ordinal": 4,
+      "prerequisite_gate_ids": ["provenance", "construction", "formation"],
+      "status": "PASS",
+      "status_reason": "For this positive control, the named residual remains after the fixture's declared alternatives.",
+      "argument_chain_id": "SYNTHETIC-CHAIN-1",
+      "construction_branch_id": "source-native",
+      "argument_ref": "repo-analysis:synthetic-one-chain",
+      "source_evidence_refs": ["/alternatives", "/residuals"],
+      "receiver_assessment_refs": ["/classification/rationale"],
+      "receiver_judgment": {
+        "owner": "possibility-to-capability",
+        "statement": "The synthetic residual survives only the explicitly delimited completion/null control.",
+        "grade": "synthetic-test",
+        "verification": "Controlled fixture assertion; no physical completion theorem."
+      },
+      "falsifiers": ["An admissible declared completion absorbs the residual or places it in the null class."],
+      "nonclaims": ["The fixture does not exhaust all mathematically or physically admissible completions."]
+    },
+    {
+      "gate_id": "capability",
+      "ordinal": 5,
+      "prerequisite_gate_ids": ["provenance", "construction", "formation", "completion-null"],
+      "status": "PASS",
+      "status_reason": "The positive control stipulates a receiver-visible operational distinction between its two branches.",
+      "argument_chain_id": "SYNTHETIC-CHAIN-1",
+      "construction_branch_id": "source-native",
+      "argument_ref": "repo-analysis:synthetic-one-chain",
+      "source_evidence_refs": ["/question", "/residuals/0"],
+      "receiver_assessment_refs": ["/classification/rationale", "/nonclaims/0"],
+      "receiver_judgment": {
+        "owner": "possibility-to-capability",
+        "statement": "Within this synthetic control only, the residual is classified as capability-relevant rather than a label difference.",
+        "grade": "synthetic-test",
+        "verification": "Fixture-controlled receiver judgment."
+      },
+      "falsifiers": ["Both branches have the same operational possibility set under the declared test."],
+      "nonclaims": ["This synthetic classification is not evidence of a real capability change."]
+    },
+    {
+      "gate_id": "finality",
+      "ordinal": 6,
+      "prerequisite_gate_ids": ["provenance", "construction", "formation", "completion-null", "capability"],
+      "status": "PASS",
+      "status_reason": "The packet leaves the selector unresolved and identifies a distinct synthetic boundary owner.",
+      "argument_chain_id": "SYNTHETIC-CHAIN-1",
+      "construction_branch_id": "source-native",
+      "argument_ref": "repo-analysis:synthetic-one-chain",
+      "source_evidence_refs": ["/interfaces/0", "/nonclaims/1"],
+      "receiver_assessment_refs": ["/classification/rationale", "/falsifiers"],
+      "receiver_judgment": {
+        "owner": "possibility-to-capability",
+        "statement": "The synthetic selector is external to the delimited source model and its requested owner is named.",
+        "grade": "synthetic-test",
+        "verification": "Boundary-interface and source-nonclaim checks."
+      },
+      "falsifiers": ["The selector is derived within the declared source model or no accountable boundary owner is identified."],
+      "nonclaims": ["This does not show that the named boundary supplies or uniquely fixes the selector."]
+    },
+    {
+      "gate_id": "no-artificial-success",
+      "ordinal": 7,
+      "prerequisite_gate_ids": ["provenance", "construction", "formation", "completion-null", "capability", "finality"],
+      "status": "PASS",
+      "status_reason": "All six substantive gates use exactly the declared argument, chain, and construction branch.",
+      "argument_chain_id": "SYNTHETIC-CHAIN-1",
+      "construction_branch_id": "source-native",
+      "argument_ref": "repo-analysis:synthetic-one-chain",
+      "source_evidence_refs": ["/claim", "/evidence_structure"],
+      "receiver_assessment_refs": ["/guards/no_strength_upgrade", "/classification"],
+      "receiver_judgment": {
+        "owner": "possibility-to-capability",
+        "statement": "The synthetic positive control uses one explicit receiver argument across the entire substantive chain.",
+        "grade": "synthetic-test",
+        "verification": "Deterministic one-chain set equality."
+      },
+      "falsifiers": ["Any substantive gate changes argument chain, construction branch, or argument reference."],
+      "nonclaims": ["A single identifier does not prove that the referenced argument is scientifically sound."]
+    },
+    {
+      "gate_id": "neutrality",
+      "ordinal": 8,
+      "prerequisite_gate_ids": ["provenance", "construction", "formation", "completion-null", "capability", "finality", "no-artificial-success"],
+      "status": "PASS",
+      "status_reason": "An exact reversal of the two synthetic branch labels leaves the declared verdict unchanged.",
+      "argument_chain_id": "SYNTHETIC-CHAIN-1",
+      "construction_branch_id": "source-native",
+      "argument_ref": "repo-analysis:synthetic-one-chain",
+      "source_evidence_refs": ["/nonclaims/1", "/alternatives"],
+      "receiver_assessment_refs": ["/guards", "/nonclaims"],
+      "receiver_judgment": {
+        "owner": "possibility-to-capability",
+        "statement": "The fixture verdict is invariant under its named branch-label reversal.",
+        "grade": "synthetic-test",
+        "verification": "Deterministic exact-swap metamorphic control."
+      },
+      "falsifiers": ["The verdict changes after an exact reversal of the branch labels."],
+      "nonclaims": ["One label reversal does not prove invariance under every admissible reformulation."]
+    }
+  ],
+  "declared_aggregate": "PASS",
+  "assumptions": [
+    "Frozen-Packet v0.2 and its separate receiving assessment have already passed their own contracts.",
+    "The synthetic receiver judgments are controls, not claims about nature."
+  ],
+  "nonclaims": [
+    "This gate run does not establish any physics.",
+    "Structural success does not promote the source claim or receiver judgments.",
+    "The synthetic positive case does not make the hierarchy universal."
+  ],
+  "reopening_conditions": [
+    "A real case requires a non-cumulative prerequisite graph.",
+    "A justified multi-chain proof cannot be represented without appearing artificially assembled.",
+    "A scientifically necessary outcome is not representable by PASS, FAIL, BLOCKED, or INDETERMINATE."
+  ]
+}

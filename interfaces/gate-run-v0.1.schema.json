@@ -1,0 +1,227 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/disruptionjoe/possibility-to-capability/blob/main/interfaces/gate-run-v0.1.schema.json",
+  "title": "Possibility to Capability Neutral Gate Run v0.1",
+  "description": "A receiver-owned evaluation record over one immutable Frozen-Packet v0.2 object and one separate receiving assessment. Schema validity is necessary but not sufficient; the reference evaluator enforces ordering, pointer resolution, one-chain, label-invariance, and aggregate semantics.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "run_id",
+    "evaluation_status",
+    "receiving_owner",
+    "source_packet_ref",
+    "receiver_assessment_ref",
+    "source_preservation",
+    "outcome_model",
+    "one_chain_control",
+    "neutrality_control",
+    "gate_results",
+    "declared_aggregate",
+    "assumptions",
+    "nonclaims",
+    "reopening_conditions"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "run_id": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9_-]*-GR-[0-9]{3,}$"
+    },
+    "evaluation_status": {"const": "provisional"},
+    "receiving_owner": {"const": "possibility-to-capability"},
+    "source_packet_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["packet_id", "packet_digest", "source_revision"],
+      "properties": {
+        "packet_id": {"type": "string", "minLength": 1},
+        "packet_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "source_revision": {"type": "string", "pattern": "^[0-9a-f]{7,40}$"}
+      }
+    },
+    "receiver_assessment_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["assessment_id", "assessment_sha256"],
+      "properties": {
+        "assessment_id": {"type": "string", "minLength": 1},
+        "assessment_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "source_preservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_packet_frozen",
+        "source_content_modified",
+        "source_status_unchanged",
+        "authority_transfer"
+      ],
+      "properties": {
+        "source_packet_frozen": {"const": true},
+        "source_content_modified": {"const": false},
+        "source_status_unchanged": {"const": true},
+        "authority_transfer": {"const": false}
+      }
+    },
+    "outcome_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gate_outcomes", "malformed_outcome", "success_rule"],
+      "properties": {
+        "gate_outcomes": {"const": ["PASS", "FAIL", "BLOCKED", "INDETERMINATE"]},
+        "malformed_outcome": {"const": "INVALID"},
+        "success_rule": {"const": "ALL_EIGHT_PASS_ONE_CHAIN_LABEL_INVARIANT"}
+      }
+    },
+    "one_chain_control": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "required_argument_chain_id",
+        "required_construction_branch_id",
+        "single_argument_ref"
+      ],
+      "properties": {
+        "required_argument_chain_id": {"type": "string", "minLength": 1},
+        "required_construction_branch_id": {"type": "string", "minLength": 1},
+        "single_argument_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "neutrality_control": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label_permutation",
+        "verdict_before",
+        "verdict_after",
+        "label_invariant",
+        "artifact_ref"
+      ],
+      "properties": {
+        "label_permutation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["left_before", "right_before", "left_after", "right_after"],
+          "properties": {
+            "left_before": {"type": "string", "minLength": 1},
+            "right_before": {"type": "string", "minLength": 1},
+            "left_after": {"type": "string", "minLength": 1},
+            "right_after": {"type": "string", "minLength": 1}
+          }
+        },
+        "verdict_before": {"type": "string", "minLength": 1},
+        "verdict_after": {"type": "string", "minLength": 1},
+        "label_invariant": {"type": "boolean"},
+        "artifact_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "gate_results": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {"$ref": "#/$defs/gate_result"}
+    },
+    "declared_aggregate": {"$ref": "#/$defs/gate_outcome"},
+    "assumptions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "nonclaims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "reopening_conditions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    }
+  },
+  "$defs": {
+    "gate_outcome": {
+      "enum": ["PASS", "FAIL", "BLOCKED", "INDETERMINATE"]
+    },
+    "gate_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gate_id",
+        "ordinal",
+        "prerequisite_gate_ids",
+        "status",
+        "status_reason",
+        "argument_chain_id",
+        "construction_branch_id",
+        "argument_ref",
+        "source_evidence_refs",
+        "receiver_assessment_refs",
+        "receiver_judgment",
+        "falsifiers",
+        "nonclaims"
+      ],
+      "properties": {
+        "gate_id": {
+          "enum": [
+            "provenance",
+            "construction",
+            "formation",
+            "completion-null",
+            "capability",
+            "finality",
+            "no-artificial-success",
+            "neutrality"
+          ]
+        },
+        "ordinal": {"type": "integer", "minimum": 1, "maximum": 8},
+        "prerequisite_gate_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "status": {"$ref": "#/$defs/gate_outcome"},
+        "status_reason": {"type": "string", "minLength": 1},
+        "argument_chain_id": {"type": "string", "minLength": 1},
+        "construction_branch_id": {"type": "string", "minLength": 1},
+        "argument_ref": {"type": "string", "minLength": 1},
+        "source_evidence_refs": {
+          "description": "JSON Pointers into the immutable source packet.",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^/"}
+        },
+        "receiver_assessment_refs": {
+          "description": "JSON Pointers into the separate receiver assessment.",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^/"}
+        },
+        "receiver_judgment": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["owner", "statement", "grade", "verification"],
+          "properties": {
+            "owner": {"const": "possibility-to-capability"},
+            "statement": {"type": "string", "minLength": 1},
+            "grade": {"type": "string", "minLength": 1},
+            "verification": {"type": "string", "minLength": 1}
+          }
+        },
+        "falsifiers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "nonclaims": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}
