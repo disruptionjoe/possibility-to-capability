@@ -1,0 +1,391 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/disruptionjoe/possibility-to-capability/blob/main/packets/schema/frozen-packet-v0.2.schema.json",
+  "title": "Possibility to Capability Frozen Packet v0.2",
+  "description": "A source-issued frozen packet with reproducible bundle integrity and an explicit method-premise dependency structure. Receiving-repository annotations remain separate.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "packet_id",
+    "packet_status",
+    "source",
+    "question",
+    "ownership",
+    "construction_forks",
+    "assumptions",
+    "quantifiers",
+    "method_ledger",
+    "evidence_structure",
+    "claim",
+    "verification",
+    "alternatives",
+    "residuals",
+    "nonclaims",
+    "interfaces",
+    "integrity"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.2"},
+    "packet_id": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9_-]*-[0-9]{3,}$"
+    },
+    "packet_status": {"const": "SOURCE_FROZEN"},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repository",
+        "revision",
+        "source_packet_id",
+        "artifact_paths",
+        "issued_at",
+        "claim_status",
+        "evidence_grade"
+      ],
+      "properties": {
+        "repository": {"type": "string", "minLength": 1},
+        "revision": {"type": "string", "pattern": "^[0-9a-f]{7,40}$"},
+        "source_packet_id": {"type": "string", "minLength": 1},
+        "artifact_paths": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "issued_at": {"type": "string", "format": "date-time"},
+        "claim_status": {"type": "string", "minLength": 1},
+        "evidence_grade": {"type": "string", "minLength": 1}
+      }
+    },
+    "question": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["exact_question", "decision_type"],
+      "properties": {
+        "exact_question": {"type": "string", "minLength": 1},
+        "decision_type": {
+          "enum": [
+            "forced",
+            "not_forced",
+            "independent_within_scope",
+            "incompatible",
+            "underdetermined",
+            "negative",
+            "other"
+          ]
+        }
+      }
+    },
+    "ownership": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_owner", "receiving_owner", "authority_transfer"],
+      "properties": {
+        "source_owner": {"type": "string", "minLength": 1},
+        "receiving_owner": {"const": "possibility-to-capability"},
+        "authority_transfer": {"const": false}
+      }
+    },
+    "construction_forks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "selected", "alternatives", "transfer_status"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "selected": {"type": "string", "minLength": 1},
+          "alternatives": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "transfer_status": {
+            "enum": ["source_only", "transfers", "does_not_transfer", "untested"]
+          }
+        }
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "quantifiers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "method_ledger": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "method_id",
+          "label",
+          "artifact_path",
+          "artifact_revision",
+          "result",
+          "grade",
+          "verification",
+          "premise_ids"
+        ],
+        "properties": {
+          "method_id": {"type": "string", "minLength": 1},
+          "label": {"type": "string", "minLength": 1},
+          "artifact_path": {"type": "string", "minLength": 1},
+          "artifact_revision": {"type": "string", "pattern": "^[0-9a-f]{7,40}$"},
+          "result": {"type": "string", "minLength": 1},
+          "grade": {"type": "string", "minLength": 1},
+          "verification": {"type": "string", "minLength": 1},
+          "premise_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {"type": "string", "minLength": 1}
+          }
+        }
+      }
+    },
+    "evidence_structure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "premise_ledger",
+        "method_dependency_edges",
+        "shared_load_bearing_premise_ids",
+        "raw_method_count",
+        "raw_method_count_is_independence_count"
+      ],
+      "properties": {
+        "premise_ledger": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "premise_id",
+              "exact_statement",
+              "premise_type",
+              "source_artifact_path",
+              "load_bearing_for_method_ids",
+              "source_status"
+            ],
+            "properties": {
+              "premise_id": {"type": "string", "minLength": 1},
+              "exact_statement": {"type": "string", "minLength": 1},
+              "premise_type": {
+                "enum": [
+                  "definition",
+                  "construction_choice",
+                  "axiom",
+                  "source_result",
+                  "data",
+                  "implementation",
+                  "positive_control",
+                  "other"
+                ]
+              },
+              "source_artifact_path": {"type": "string", "minLength": 1},
+              "load_bearing_for_method_ids": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {"type": "string", "minLength": 1}
+              },
+              "source_status": {
+                "enum": [
+                  "asserted_in_source",
+                  "conditional_in_source",
+                  "unknown_or_contested"
+                ]
+              }
+            }
+          }
+        },
+        "method_dependency_edges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "dependent_method_id",
+              "antecedent_method_id",
+              "dependency_type",
+              "exact_statement"
+            ],
+            "properties": {
+              "dependent_method_id": {"type": "string", "minLength": 1},
+              "antecedent_method_id": {"type": "string", "minLength": 1},
+              "dependency_type": {
+                "enum": [
+                  "uses_result",
+                  "shares_derived_lemma",
+                  "shares_data",
+                  "shares_implementation",
+                  "shares_positive_control",
+                  "other"
+                ]
+              },
+              "exact_statement": {"type": "string", "minLength": 1}
+            }
+          }
+        },
+        "shared_load_bearing_premise_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "raw_method_count": {"type": "integer", "minimum": 1},
+        "raw_method_count_is_independence_count": {"const": false}
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "statement",
+        "scope",
+        "independence_scope",
+        "independence_type",
+        "method_count",
+        "convergence",
+        "joint_argument_artifact",
+        "source_status_unchanged"
+      ],
+      "properties": {
+        "statement": {"type": "string", "minLength": 1},
+        "scope": {"type": "string", "minLength": 1},
+        "independence_scope": {
+          "description": "The source's exact independence wording. A receiving classification must reproduce this string byte-for-byte after JSON decoding.",
+          "type": "string",
+          "minLength": 1
+        },
+        "independence_type": {"$ref": "#/$defs/independence_type"},
+        "method_count": {
+          "description": "Raw ledger cardinality only; never an evidential-independence count.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "convergence": {
+          "enum": ["unanimous", "mixed", "single_method", "not_applicable"]
+        },
+        "joint_argument_artifact": {"type": "string", "minLength": 1},
+        "source_status_unchanged": {"const": true}
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifacts", "replication_status"],
+      "properties": {
+        "artifacts": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "replication_status": {"type": "string", "minLength": 1}
+      }
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "residuals": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "nonclaims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "interfaces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["target_repository", "requested_datum", "ownership_status"],
+        "properties": {
+          "target_repository": {"type": "string", "minLength": 1},
+          "requested_datum": {"type": "string", "minLength": 1},
+          "ownership_status": {
+            "enum": ["source_owned", "target_owned", "joint_seam", "unknown"]
+          }
+        }
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "hash_algorithm",
+        "canonicalization_profile",
+        "hash_scope",
+        "manifest",
+        "manifest_digest",
+        "packet_digest",
+        "bundle_digest",
+        "digest",
+        "frozen"
+      ],
+      "properties": {
+        "hash_algorithm": {"const": "sha256"},
+        "canonicalization_profile": {"const": "ptc-frozen-bundle-v1"},
+        "hash_scope": {
+          "description": "Legacy-compatible path list. It must equal the canonical manifest path sequence exactly.",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "manifest": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["path", "byte_length", "content_sha256"],
+            "properties": {
+              "path": {"type": "string", "minLength": 1},
+              "byte_length": {"type": "integer", "minimum": 0},
+              "content_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+            }
+          }
+        },
+        "manifest_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "packet_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "bundle_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "digest": {
+          "description": "v0.1-compatible alias that must equal bundle_digest.",
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "frozen": {"const": true}
+      }
+    }
+  },
+  "$defs": {
+    "independence_type": {
+      "enum": [
+        "proof_theoretic_independence",
+        "model_relative_non_forcing",
+        "transformation_class_invariance",
+        "cohomological_nonselection",
+        "fixed_point_nonselection",
+        "internal_logic_nonselection",
+        "inverse_variational_underdetermination",
+        "empirical_underdetermination",
+        "generic_underdetermination",
+        "multi_method_convergence",
+        "unknown_or_contested",
+        "not_applicable"
+      ]
+    }
+  }
+}

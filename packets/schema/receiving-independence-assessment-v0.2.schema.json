@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/disruptionjoe/possibility-to-capability/blob/main/packets/schema/receiving-independence-assessment-v0.2.schema.json",
+  "title": "Possibility to Capability Receiving Independence Assessment v0.2",
+  "description": "A receiver-owned, provisional classification beside an immutable source packet. It may preserve or weaken the source's typed independence statement, never strengthen or rewrite it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "assessment_id",
+    "assessment_status",
+    "receiving_owner",
+    "source_packet_ref",
+    "source_wording",
+    "classification",
+    "guards",
+    "nonclaims",
+    "falsifiers"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.2"},
+    "assessment_id": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9_-]*-IA-[0-9]{3,}$"
+    },
+    "assessment_status": {
+      "enum": ["provisional", "unknown", "contested"]
+    },
+    "receiving_owner": {"const": "possibility-to-capability"},
+    "source_packet_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["packet_id", "packet_digest", "source_revision"],
+      "properties": {
+        "packet_id": {"type": "string", "minLength": 1},
+        "packet_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "source_revision": {"type": "string", "pattern": "^[0-9a-f]{7,40}$"}
+      }
+    },
+    "source_wording": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "exact_independence_scope",
+        "source_independence_type",
+        "source_claim_status"
+      ],
+      "properties": {
+        "exact_independence_scope": {"type": "string", "minLength": 1},
+        "source_independence_type": {"$ref": "#/$defs/independence_type"},
+        "source_claim_status": {"type": "string", "minLength": 1}
+      }
+    },
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "independence_type",
+        "basis_method_ids",
+        "limiting_premise_ids",
+        "rationale"
+      ],
+      "properties": {
+        "independence_type": {"$ref": "#/$defs/independence_type"},
+        "basis_method_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "limiting_premise_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "rationale": {"type": "string", "minLength": 1}
+      }
+    },
+    "guards": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_wording_preserved",
+        "source_status_unchanged",
+        "authority_transfer",
+        "no_strength_upgrade"
+      ],
+      "properties": {
+        "source_wording_preserved": {"const": true},
+        "source_status_unchanged": {"const": true},
+        "authority_transfer": {"const": false},
+        "no_strength_upgrade": {"const": true}
+      }
+    },
+    "nonclaims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "falsifiers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    }
+  },
+  "$defs": {
+    "independence_type": {
+      "enum": [
+        "proof_theoretic_independence",
+        "model_relative_non_forcing",
+        "transformation_class_invariance",
+        "cohomological_nonselection",
+        "fixed_point_nonselection",
+        "internal_logic_nonselection",
+        "inverse_variational_underdetermination",
+        "empirical_underdetermination",
+        "generic_underdetermination",
+        "multi_method_convergence",
+        "unknown_or_contested",
+        "not_applicable"
+      ]
+    }
+  }
+}

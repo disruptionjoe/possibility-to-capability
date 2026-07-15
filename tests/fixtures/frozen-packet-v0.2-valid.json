@@ -1,0 +1,170 @@
+{
+  "schema_version": "0.2",
+  "packet_id": "SYNTHETIC-002",
+  "packet_status": "SOURCE_FROZEN",
+  "source": {
+    "repository": "synthetic-source",
+    "revision": "0123456789abcdef0123456789abcdef01234567",
+    "source_packet_id": "synthetic-source-packet-2",
+    "artifact_paths": [
+      "artifacts/joint-analysis.txt",
+      "artifacts/method-a.txt",
+      "artifacts/method-b.txt"
+    ],
+    "issued_at": "2026-07-14T22:00:00-05:00",
+    "claim_status": "exploration",
+    "evidence_grade": "synthetic-test"
+  },
+  "question": {
+    "exact_question": "Does the declared source structure force the binary choice?",
+    "decision_type": "not_forced"
+  },
+  "ownership": {
+    "source_owner": "synthetic-source",
+    "receiving_owner": "possibility-to-capability",
+    "authority_transfer": false
+  },
+  "construction_forks": [
+    {
+      "name": "native-versus-standard",
+      "selected": "source-native",
+      "alternatives": ["standard-field"],
+      "transfer_status": "untested"
+    }
+  ],
+  "assumptions": [
+    "The declared source model is the object under test."
+  ],
+  "quantifiers": [
+    "For every admissible transformation in the delimited source class."
+  ],
+  "method_ledger": [
+    {
+      "method_id": "M1",
+      "label": "invariance",
+      "artifact_path": "artifacts/method-a.txt",
+      "artifact_revision": "0123456789abcdef0123456789abcdef01234567",
+      "result": "RESIDUAL_STANDS",
+      "grade": "synthetic-test",
+      "verification": "deterministic fixture",
+      "premise_ids": ["P1", "P2"]
+    },
+    {
+      "method_id": "M2",
+      "label": "fixed-point",
+      "artifact_path": "artifacts/method-b.txt",
+      "artifact_revision": "1123456789abcdef0123456789abcdef01234567",
+      "result": "RESIDUAL_STANDS",
+      "grade": "synthetic-test",
+      "verification": "deterministic fixture",
+      "premise_ids": ["P1", "P3"]
+    }
+  ],
+  "evidence_structure": {
+    "premise_ledger": [
+      {
+        "premise_id": "P1",
+        "exact_statement": "The selected source-native construction is the common object under test.",
+        "premise_type": "construction_choice",
+        "source_artifact_path": "artifacts/joint-analysis.txt",
+        "load_bearing_for_method_ids": ["M1", "M2"],
+        "source_status": "asserted_in_source"
+      },
+      {
+        "premise_id": "P2",
+        "exact_statement": "Method A's declared transformation class is complete for its stated scope.",
+        "premise_type": "definition",
+        "source_artifact_path": "artifacts/method-a.txt",
+        "load_bearing_for_method_ids": ["M1"],
+        "source_status": "conditional_in_source"
+      },
+      {
+        "premise_id": "P3",
+        "exact_statement": "Method B's fixed-point construction is well formed in the declared model.",
+        "premise_type": "definition",
+        "source_artifact_path": "artifacts/method-b.txt",
+        "load_bearing_for_method_ids": ["M2"],
+        "source_status": "conditional_in_source"
+      }
+    ],
+    "method_dependency_edges": [
+      {
+        "dependent_method_id": "M2",
+        "antecedent_method_id": "M1",
+        "dependency_type": "shares_positive_control",
+        "exact_statement": "Both synthetic checks are calibrated against the same declared residual control."
+      }
+    ],
+    "shared_load_bearing_premise_ids": ["P1"],
+    "raw_method_count": 2,
+    "raw_method_count_is_independence_count": false
+  },
+  "claim": {
+    "statement": "The binary choice is located but not forced in the delimited source structure.",
+    "scope": "The declared synthetic source model and admissible class only.",
+    "independence_scope": "Internal non-forcing within the declared source model; no claim of premise-independent evidential replication.",
+    "independence_type": "model_relative_non_forcing",
+    "method_count": 2,
+    "convergence": "unanimous",
+    "joint_argument_artifact": "artifacts/joint-analysis.txt",
+    "source_status_unchanged": true
+  },
+  "verification": {
+    "artifacts": [
+      "artifacts/joint-analysis.txt",
+      "artifacts/method-a.txt",
+      "artifacts/method-b.txt"
+    ],
+    "replication_status": "synthetic contract fixture only"
+  },
+  "alternatives": [
+    "Supply an external selector.",
+    "Adopt a named conditional axiom."
+  ],
+  "residuals": [
+    "External selection remains unresolved."
+  ],
+  "nonclaims": [
+    "Raw method count is not an evidential-independence count.",
+    "The packet does not select either branch.",
+    "The packet does not transfer source claim authority."
+  ],
+  "interfaces": [
+    {
+      "target_repository": "synthetic-boundary-owner",
+      "requested_datum": "binary selector",
+      "ownership_status": "target_owned"
+    }
+  ],
+  "integrity": {
+    "hash_algorithm": "sha256",
+    "canonicalization_profile": "ptc-frozen-bundle-v1",
+    "hash_scope": [
+      "artifacts/joint-analysis.txt",
+      "artifacts/method-a.txt",
+      "artifacts/method-b.txt"
+    ],
+    "manifest": [
+      {
+        "path": "artifacts/joint-analysis.txt",
+        "byte_length": 41,
+        "content_sha256": "4e59ad3fe3fd018884bb7ee4361f3207958afa9eebd83094c1f8116df8dcabfe"
+      },
+      {
+        "path": "artifacts/method-a.txt",
+        "byte_length": 26,
+        "content_sha256": "2fde8b5092f64ed56b5856844ebd300e73ee89c402e2463e5f4823f2eecd767b"
+      },
+      {
+        "path": "artifacts/method-b.txt",
+        "byte_length": 26,
+        "content_sha256": "d56ffa88ef383a2de479a62bd8ee317c50311b1682b2550b98d6cce08179bd06"
+      }
+    ],
+    "manifest_digest": "9d4d8d5e2b7a58ed66fb16405e0fee0a80788b7c258528e1fd5dff7e4094a9bb",
+    "packet_digest": "19ad7995bea9c77214fffb3d8660ef3d7e9104649892c883a09a1632b2967c9b",
+    "bundle_digest": "60e34401eac86911fe9562e5e5bf7cf823a33b30c7d7f9cb0cc5af28085e969a",
+    "digest": "60e34401eac86911fe9562e5e5bf7cf823a33b30c7d7f9cb0cc5af28085e969a",
+    "frozen": true
+  }
+}

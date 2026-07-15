@@ -22,7 +22,15 @@ synthetic unanimous result from partial source artifacts.
 
 ## Current state
 
-- Schema: `packets/schema/frozen-packet-v0.1.schema.json`
-- Contract checks: `tests/validate_frozen_packet_contract.py`
+- Schemas: v0.1 remains supported; v0.2 adds reproducible bundle integrity,
+  method-dependency structure, and a separate non-upgrading receiving
+  independence assessment.
+- Normative v0.2 contract: `packets/schema/frozen-packet-v0.2.md`
+- Contract checks: v0.1 and v0.2 deterministic/adversarial validators under
+  `tests/`.
 - Founding-case readiness: `packets/intake/GU-001-readiness-2026-07-14.md`
 - GU-001: `NOT_YET_IMPORTABLE` pending a source-issued manifest and bundle hash.
+
+Schema hardening does not change packet readiness. A source must issue a packet
+against an explicit version; the receiver never migrates or completes it on the
+source's behalf.
