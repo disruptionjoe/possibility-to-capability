@@ -1,0 +1,105 @@
+{
+  "schema_version": "0.1",
+  "packet_id": "SYNTHETIC-001",
+  "packet_status": "SOURCE_FROZEN",
+  "source": {
+    "repository": "synthetic-source",
+    "revision": "0123456789abcdef0123456789abcdef01234567",
+    "source_packet_id": "synthetic-source-packet-1",
+    "artifact_paths": [
+      "results/method-a.md",
+      "results/joint-synthesis.md"
+    ],
+    "issued_at": "2026-07-14T20:45:00-05:00",
+    "claim_status": "exploration",
+    "evidence_grade": "computed"
+  },
+  "question": {
+    "exact_question": "Does the source structure force the binary choice?",
+    "decision_type": "not_forced"
+  },
+  "ownership": {
+    "source_owner": "synthetic-source",
+    "receiving_owner": "possibility-to-capability",
+    "authority_transfer": false
+  },
+  "construction_forks": [
+    {
+      "name": "native-versus-standard",
+      "selected": "source-native",
+      "alternatives": ["standard-field"],
+      "transfer_status": "untested"
+    }
+  ],
+  "assumptions": [
+    "The declared source model is the object under test."
+  ],
+  "quantifiers": [
+    "For every admissible transformation in the delimited source class."
+  ],
+  "method_ledger": [
+    {
+      "method_id": "M1",
+      "label": "invariance",
+      "artifact_path": "results/method-a.md",
+      "artifact_revision": "0123456789abcdef0123456789abcdef01234567",
+      "result": "RESIDUAL_STANDS",
+      "grade": "computed",
+      "verification": "12/12 deterministic checks"
+    },
+    {
+      "method_id": "M2",
+      "label": "fixed-point",
+      "artifact_path": "results/method-b.md",
+      "artifact_revision": "1123456789abcdef0123456789abcdef01234567",
+      "result": "RESIDUAL_STANDS",
+      "grade": "computed",
+      "verification": "9/9 deterministic checks"
+    }
+  ],
+  "claim": {
+    "statement": "The binary choice is located but not forced in the delimited source structure.",
+    "scope": "The declared synthetic source model and admissible class only.",
+    "independence_scope": "Internal forcing within the declared source structure.",
+    "method_count": 2,
+    "convergence": "unanimous",
+    "joint_argument_artifact": "results/joint-synthesis.md",
+    "source_status_unchanged": true
+  },
+  "verification": {
+    "artifacts": [
+      "tests/method-a.py",
+      "tests/method-b.py",
+      "tests/joint-synthesis.py"
+    ],
+    "replication_status": "internal independent methods; not externally replicated"
+  },
+  "alternatives": [
+    "Supply an external selector.",
+    "Adopt a named conditional axiom."
+  ],
+  "residuals": [
+    "External selection remains unresolved."
+  ],
+  "nonclaims": [
+    "The packet does not select either branch.",
+    "The packet does not transfer source claim authority."
+  ],
+  "interfaces": [
+    {
+      "target_repository": "synthetic-boundary-owner",
+      "requested_datum": "binary selector",
+      "ownership_status": "target_owned"
+    }
+  ],
+  "integrity": {
+    "hash_algorithm": "sha256",
+    "hash_scope": [
+      "results/method-a.md",
+      "results/method-b.md",
+      "results/joint-synthesis.md"
+    ],
+    "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "frozen": true
+  }
+}

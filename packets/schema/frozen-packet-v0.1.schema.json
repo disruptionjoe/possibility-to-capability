@@ -1,0 +1,228 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/disruptionjoe/possibility-to-capability/blob/main/packets/schema/frozen-packet-v0.1.schema.json",
+  "title": "Possibility to Capability Frozen Packet v0.1",
+  "description": "A source-issued, immutable evidence packet that preserves source ownership, scope, construction, grade, residuals, and integrity.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "packet_id",
+    "packet_status",
+    "source",
+    "question",
+    "ownership",
+    "construction_forks",
+    "assumptions",
+    "quantifiers",
+    "method_ledger",
+    "claim",
+    "verification",
+    "alternatives",
+    "residuals",
+    "nonclaims",
+    "interfaces",
+    "integrity"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "packet_id": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9_-]*-[0-9]{3,}$"
+    },
+    "packet_status": {
+      "const": "SOURCE_FROZEN"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repository",
+        "revision",
+        "source_packet_id",
+        "artifact_paths",
+        "issued_at",
+        "claim_status",
+        "evidence_grade"
+      ],
+      "properties": {
+        "repository": {"type": "string", "minLength": 1},
+        "revision": {"type": "string", "pattern": "^[0-9a-f]{7,40}$"},
+        "source_packet_id": {"type": "string", "minLength": 1},
+        "artifact_paths": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "issued_at": {"type": "string", "format": "date-time"},
+        "claim_status": {"type": "string", "minLength": 1},
+        "evidence_grade": {"type": "string", "minLength": 1}
+      }
+    },
+    "question": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["exact_question", "decision_type"],
+      "properties": {
+        "exact_question": {"type": "string", "minLength": 1},
+        "decision_type": {
+          "enum": [
+            "forced",
+            "not_forced",
+            "independent_within_scope",
+            "incompatible",
+            "underdetermined",
+            "negative",
+            "other"
+          ]
+        }
+      }
+    },
+    "ownership": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_owner", "receiving_owner", "authority_transfer"],
+      "properties": {
+        "source_owner": {"type": "string", "minLength": 1},
+        "receiving_owner": {"const": "possibility-to-capability"},
+        "authority_transfer": {"const": false}
+      }
+    },
+    "construction_forks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "selected", "alternatives", "transfer_status"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "selected": {"type": "string", "minLength": 1},
+          "alternatives": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "transfer_status": {
+            "enum": ["source_only", "transfers", "does_not_transfer", "untested"]
+          }
+        }
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "quantifiers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "method_ledger": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "method_id",
+          "label",
+          "artifact_path",
+          "artifact_revision",
+          "result",
+          "grade",
+          "verification"
+        ],
+        "properties": {
+          "method_id": {"type": "string", "minLength": 1},
+          "label": {"type": "string", "minLength": 1},
+          "artifact_path": {"type": "string", "minLength": 1},
+          "artifact_revision": {"type": "string", "pattern": "^[0-9a-f]{7,40}$"},
+          "result": {"type": "string", "minLength": 1},
+          "grade": {"type": "string", "minLength": 1},
+          "verification": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "statement",
+        "scope",
+        "independence_scope",
+        "method_count",
+        "convergence",
+        "joint_argument_artifact",
+        "source_status_unchanged"
+      ],
+      "properties": {
+        "statement": {"type": "string", "minLength": 1},
+        "scope": {"type": "string", "minLength": 1},
+        "independence_scope": {"type": "string", "minLength": 1},
+        "method_count": {"type": "integer", "minimum": 1},
+        "convergence": {"enum": ["unanimous", "mixed", "single_method", "not_applicable"]},
+        "joint_argument_artifact": {"type": "string", "minLength": 1},
+        "source_status_unchanged": {"type": "boolean"}
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifacts", "replication_status"],
+      "properties": {
+        "artifacts": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "replication_status": {"type": "string", "minLength": 1}
+      }
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "residuals": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "nonclaims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "interfaces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["target_repository", "requested_datum", "ownership_status"],
+        "properties": {
+          "target_repository": {"type": "string", "minLength": 1},
+          "requested_datum": {"type": "string", "minLength": 1},
+          "ownership_status": {"enum": ["source_owned", "target_owned", "joint_seam", "unknown"]}
+        }
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hash_algorithm", "hash_scope", "digest", "frozen"],
+      "properties": {
+        "hash_algorithm": {"const": "sha256"},
+        "hash_scope": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "frozen": {"const": true}
+      }
+    }
+  }
+}

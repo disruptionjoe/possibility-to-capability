@@ -19,3 +19,10 @@ never transfers ownership and never authorizes edits to the source repository.
 If the source packet does not yet trace all five completed legs with their
 grades and immutable provenance, record `NOT_YET_IMPORTABLE`. Do not construct a
 synthetic unanimous result from partial source artifacts.
+
+## Current state
+
+- Schema: `packets/schema/frozen-packet-v0.1.schema.json`
+- Contract checks: `tests/validate_frozen_packet_contract.py`
+- Founding-case readiness: `packets/intake/GU-001-readiness-2026-07-14.md`
+- GU-001: `NOT_YET_IMPORTABLE` pending a source-issued manifest and bundle hash.
