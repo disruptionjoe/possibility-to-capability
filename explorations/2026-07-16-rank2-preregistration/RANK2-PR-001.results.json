@@ -1,0 +1,123 @@
+{
+  "schema_version": "0.1",
+  "prereg_ref": {
+    "prereg_id": "RANK2-PR-001",
+    "expectations_path": "explorations/2026-07-16-rank2-preregistration/RANK2-PR-001.expectations.json",
+    "expectations_git_blob": "55c260dd35c93236d3fd387f06ad388b9df4a693",
+    "expectations_commit": "49baf1fa9094554a06cf27a8444ca2ec4a5ecf86"
+  },
+  "run_date": "2026-07-16",
+  "run_record": "explorations/2026-07-16-rank2-adjudication/ (harness, verbatim output, synthesis, governing referee report)",
+  "evidence": {
+    "taf_branch_packet": "TAF-001 (packets/imports/TAF-001/, bundle_digest 0b0085419670a619c9574cd2accf1c4347e68ab6f249762372d8626bd8256a94, imported at P2C commit b28d28e)",
+    "ti_branch_packet": "TI-PIT-002 (packets/imports/TI-PIT-002/, bundle_digest 9c8e4ec77ca57a2f349057f89613d4e0cb45e50979af01385353d66c19589c39, imported at P2C commit b28d28e)",
+    "rival_frame": "experiments/rival-frames/FRAME-R-access-constitutive-v0.2.md (frozen at commit f00a5c3; applied per its own rules R1/R3 and its R.-1 quarantine clause)",
+    "completion_classes": {
+      "C_TAF": "access-set interval [{h1,h2}, {h1,h2,h3,h4}] (4 completions), built mechanically from the source-supplied holder inventory by the lane-R2 contract rule, frozen in harness code before any sweep outcome",
+      "C_TI": "length-threshold projections {L2 (actual), L3, full}, built mechanically from the source-supplied projection rule and MAXLEN=4, frozen likewise"
+    }
+  },
+  "observed_checks": [
+    {
+      "check_id": "c1-taf-sovereign-issuance",
+      "expected": "ISSUED",
+      "observed": "ISSUED",
+      "match": true,
+      "detail": "TAF-001 source-issued 2026-07-16 (content freeze e0414d64, issuance ae37ec19); two-commit freeze, digests, blob hashes, and re-execution (exit 0; stdout identical to the frozen output blob after CRLF/LF normalization -- Windows text-mode stdout; the hashed blob bytes are authoritative) independently verified by the receiver; issued blind to receiver diagnostic labels (the receiver's expectations were frozen in an artifact the source never read; TaF assigns no diagnostic labels)."
+    },
+    {
+      "check_id": "c2-ti-sovereign-issuance",
+      "expected": "ISSUED",
+      "observed": "ISSUED",
+      "match": true,
+      "detail": "TI-PIT-002 source-issued 2026-07-16 (content freeze 61fc4e6f, issuance 8fa01a6f); independently verified as for c1. The packet carries a standing authorship-quarantine restriction in its nonclaims (see deviations d3)."
+    },
+    {
+      "check_id": "c3-frame-r-independent-refreeze",
+      "expected": "FROZEN_INDEPENDENT",
+      "observed": "FROZEN_INDEPENDENT for every case the frame actually scores (TAF branch); the TI branch is excluded from frame-discriminating scoring",
+      "match": true,
+      "detail": "Frame R v0.2 was adopted and re-frozen (commit f00a5c3) by an advocate that authored no case, is not the lane-C author, and declares itself blind to the TaF repository, lane-B, the mailbox, and the receiver's frozen expectations. Its diagnosis rule (R1) is extensionally equivalent to: delta_op nonzero -> CAPABILITY_CHANGE, else NO_CHANGE (verified on the scored evidence; Rule R3 well-formedness holds: every task is posable/certifiable in both legs). EXCEPTION, scored strictly: the re-freeze declaration records an incidental pre-freeze sighting of the TI-PIT-02 draft text (one interleaved source file), and Frame R v0.1's advocate (lane C) co-authored that case's draft lineage. Under frozen stop condition S5 (authored, co-authored, OR read) and the quarantine carried in both the TI-PIT-002 nonclaims and Frame R v0.2 R.-1/P4 (zero predictive credit from advocate-authored cases), Frame R may not score TI-PIT-002. Resolution under frozen judgment call J5 (branch separation): the TI branch is excluded from frame-discriminating adjudication; the frame scores only TAF cases, none of which any Frame R advocate authored or read. See deviations d3/d4."
+    },
+    {
+      "check_id": "c4-access-pair-completion-profile",
+      "expected": "ROBUST_ZERO",
+      "observed": "ROBUST_ZERO",
+      "match": true,
+      "detail": "Both sovereign-declared access-only pairs conform. TAF ALPHA (declared: access-structure change, record inventory and graph fixed): delta(c)=0 at all 4 completions of C_TAF while delta_op != 0 (gains tau2, LOSES tau5 -- access enlargement non-monotone under the reconstruction rule; a receiver-owned observation the prereg did not forbid). TI ALPHA (declared: projection-only change): delta(c)=0 at all 3 completions of C_TI while delta_op != 0 (decidable set 25 -> 30). The c4 note's evidential content is confirmed: sources CAN issue genuinely pure access pairs, and the zero profile survives the full frozen completion class, not a truncation. Both zeros are near-forced where the non-access side is byte-identical ([T]-grade component acknowledged per the prereg's own note)."
+    },
+    {
+      "check_id": "c5-capability-pair-completion-profile",
+      "expected": "ROBUST_NONZERO",
+      "observed": "NOT_APPLICABLE",
+      "match": null,
+      "detail": "No sovereign-issued factor declaration matches the check statement. The check binds over 'every pair the source declares (sealed intent label) as capability-changing with access and resources fixed'. Both sources declare targeted factors mechanically (TAF BETA: 'record-formation change, observer access set fixed'; TI BETA: 'admissibility-only change, projection bit-identical') and both packets' nonclaims explicitly refuse to assign any diagnostic label under any receiver taxonomy. 'Capability-changing' is the receiver's contested output class; reading a records-level or issuance-level factor declaration AS 'capability-changing' would be the receiver assigning purity itself, which frozen judgment call J1 forbids, and would reinterpret a mismatched check, which the prereg's retained fork 2 forbids ('mismatched checks are scored NOT_APPLICABLE, never reinterpreted'). The c4/c5 asymmetry is principled, not selective (referee correction R-D3): 'access' IS one of the five declared factors in the lane-R2 factor vocabulary, so an 'access-structure change / projection-only' declaration matches c4's trigger factor-to-factor; 'capability' is NOT a factor in that vocabulary at all -- it is the receiver's contested diagnosis token -- so c5 as written could bind only if a source adopted receiver diagnosis vocabulary, which both sources' nonclaims categorically refuse. This is a prereg authoring defect (c5's trigger vocabulary mis-specified relative to the factor-declaration practice its own construction section required), present from the draft stage (post-classification J6 examination confirms the receiver-side drafts never carried receiver-taxonomy labels either), and curable only through the prereg's own amendment policy: a NEW prereg id whose capability-side check binds to factor declarations (e.g. 'declares as targeting only a non-access factor with access and resources fixed'). CONSTRUAL FORK PRESERVED (stop S3 -- reported, not averaged): under the alternative factor-reading (lane-R2 pair-type 2: any single non-access factor targeted with access and resources fixed), the frame-neutral profiles are: TAF BETA ROBUST_NONZERO over all of C_TAF (gains tau3 at every completion); TI BETA completion-RELATIVE (delta(L2)=0, delta(L3)!=0, delta(full)=0, with delta_op=0). These are recorded as frame-neutral receiver-owned facts licensing no outcome under the primary scoring."
+    },
+    {
+      "check_id": "c6-mixed-sector-present",
+      "expected": "TRUE",
+      "observed": "FALSE",
+      "match": false,
+      "detail": "On the admissible (TAF) branch no completion-RELATIVE pair exists: both TAF pairs are completion-ROBUST over C_TAF, so no pair exhibits a RELATIVE profile with genuine defended-frame disagreement. The TI branch does contain a completion-RELATIVE pair (TI BETA: 0 at L2, + at L3, 0 at full -- non-monotone in the completion lattice), but the N-vs-R comparison on TI evidence is quarantined (d3); as frame-neutral fact its delta_op=0 and delta(top)=0. The receiver's expectation that the mixed sector would be present with frame disagreement MISSED on this evidence. Frame R's forecast that the mixed sector 'dominates real evidence' also finds no admissible support here (and R earns zero credit from the TI case per its own P4 rule)."
+    },
+    {
+      "check_id": "c7-frame-evidence-functionality",
+      "expected": "TRUE",
+      "observed": "TRUE",
+      "match": true,
+      "detail": "Both defended frames returned identical diagnoses on recomputed identical frozen evidence and completion class (TAF branch; harness check e6). Neither frame is disqualified; stop S1's runtime component does not fire (and per the prereg, the binding detector for post-hoc selection is the two-phase git mechanism, not this runtime check)."
+    },
+    {
+      "check_id": "c8-label-neutrality",
+      "expected": "TRUE",
+      "observed": "TRUE",
+      "match": true,
+      "detail": "Swapping the pre/post legs of every case pair leaves every frame diagnosis (TAF branch) and every frame-neutral profile class (both branches) unchanged (harness check e7, with a demonstrated failing direction: a direction-sensitive gain-only control frame fails the same swap test)."
+    },
+    {
+      "check_id": "c9-shared-vocabulary-admissible",
+      "expected": "TRUE",
+      "observed": "TRUE",
+      "match": true,
+      "detail": "Per branch (J5), the source-native task vocabulary (TAF: TV, 5 reconstruction tasks; TI: 30-token decidability vocabulary) is evaluable in both members of every pair without semantic distortion (harness check e8). No cross-branch vocabulary was needed or forced."
+    }
+  ],
+  "deviations": [
+    "d1: c5 scored NOT_APPLICABLE under J1 + retained fork 2; the construal fork (strict-label vs factor-reading) is preserved as first-class under stop S3 and never averaged. Under the factor-reading counterfactual the outcome mapping WOULD have yielded a SPLIT, not a victory (referee correction R-D2): rule 3 fires on the TAF branch (FAVORS_CANDIDATE, pure sector only, single branch) AND rule 4 fires on the TI branch (robustness fails on a declared-single-factor pair -> FAVORS_RIVAL pressure), the latter itself attenuated by the frame quarantine and Frame R's own zero-credit rule; per the no-joint-pass conditions the TAF-side counterfactual could never be a global candidate victory. The receiver may not select either construal after seeing these numbers, which is precisely why the primary scoring is N/A and the fork is preserved.",
+    "d2: c6 observed FALSE (expectation miss, preserved). The mixed sector did not materialize in admissible sovereign-declared evidence.",
+    "d3: TI-branch frame-discriminating adjudication EXCLUDED by the packet's carried authorship quarantine plus frozen stop S5 (Frame R advocate lineage authored/read the case's draft). TI evidence is admitted as frame-neutral receiver-owned fact only. This is a preserved constraint, not routed around.",
+    "d4: c3 scored per the case set the frame actually scores, with the TI exception declared rather than silently absorbed; a strict global reading of c3's 'before seeing any case pair' would instead invalidate the whole run via outcome-mapping rule 2. The receiver records this construal openly; the governing referee report adjudicates it.",
+    "d5: TAF ALPHA's operational delta includes a task LOSS (tau5) -- access enlargement is not monotone under the source's reconstruction rule. The prereg's c4 statement ('delta_op may be nonzero') accommodates this, but the receiver notes it was not anticipated in the prereg prose.",
+    "d6: J2 completion-class adequacy audit: the TAF BETA robustness verdict is interval-dependent -- outside the frozen contract interval (e.g. c={h3,h4}) the delta vanishes (harness [F] e3-fail). The frozen contract rule (bottom = actual observation) is load-bearing and is recorded as a named attack surface, as the prereg requires. The out-of-class probe is an audit demonstration only; no scored check value ranges over any completion outside the frozen classes (S1 respected)."
+  ],
+  "stop_condition_report": {
+    "S1": "did not fire; completion classes and frames frozen mechanically before outcomes (two-phase git mechanism is the binding detector).",
+    "S2": "did not fire; no receiver task semantics substituted (source-native semantics used per packet premises); no receiver label was visible to any issuer; receiver drafts were treated as evidence only in the exact form sovereignly issued.",
+    "S3": "FIRED for the c5 construal fork: reported as a preserved fork (d1), not averaged.",
+    "S4": "did not fire; no vocabulary distortion (c9 TRUE per branch).",
+    "S5": "would fire on any Frame-R-scores-TI-PIT-002 leg; honored by excluding that leg (d3). Does not fire for the run as executed."
+  },
+  "outcome_mapping_application": {
+    "rule_1_branch_blocked_on_issuance": "does not fire; c1 and c2 both ISSUED.",
+    "rule_2_c3_miss_invalidates": "does not fire under the per-scored-case-set construal (d4); the TI frame leg is excluded rather than run invalid.",
+    "rule_3_favors_candidate": "DOES NOT FIRE: requires c4 ROBUST_ZERO and c5 ROBUST_NONZERO on sovereign-declared pure pairs; c5 is NOT_APPLICABLE. FAVORS_CANDIDATE is not licensed on any sector.",
+    "rule_4_favors_rival": "does not fire; robustness did not fail on any source-declared-pure pair (the only declared-pure pairs are the access pairs, both ROBUST_ZERO), and no separation required making access constitutive.",
+    "rule_5_construction_fork_relativism": "does not fire on admissible evidence; no equally-admissible-frames disagreement over a completion-RELATIVE profile materialized (c6 FALSE).",
+    "rule_6_plurality": "does not fire; c9 TRUE.",
+    "rule_7_underdetermined_indistinguishable": "does not fire; the sovereign pairs are empirically distinguishable (distinct frame-neutral profiles).",
+    "sectors": "reported separately throughout; never averaged."
+  },
+  "verdicts": {
+    "taf_branch": "ADJUDICATION VALID, NO RANK-2 OUTCOME LICENSED by the frozen mapping: the pure-access side of the completion-robustness discriminator was observed (c4 ROBUST_ZERO at full class strength) but the capability side was untestable because no sovereign declaration matches c5's trigger vocabulary. Single-branch receiver-owned facts banked; the two-sided discriminator remains unexercised.",
+    "ti_branch": "BLOCKED for frame-discriminating adjudication (authorship quarantine + S5, preserved constraint d3); frame-neutral profiles banked as receiver-owned facts (ALPHA ROBUST_ZERO; BETA completion-RELATIVE with delta_op=0 and delta(top)=0).",
+    "global": "Rank 2 remains UNDISCHARGED. CONSTRUAL-INVARIANCE (referee correction R-D1, the citable form of this verdict): under EVERY admissible construal of the two contested judgment points, no Rank-2 outcome is licensed -- (i) strict-global c3 reading: the run is invalid under mapping rule 2, outcome vocabulary never engages; (ii) per-branch c3 with strict c5: no mapping rule fires (this record's primary scoring); (iii) per-branch c3 with factor-construal c5: stop S3 fires on the construal fork and the counterfactual is a preserved split, never an averaged verdict. The receiver's preferred construal is (ii), with textual support (c2's on_miss contemplates a TaF-branch-alone run; S5's forward-looking wording), but nothing citable depends on that preference. The prerequisite gap has NARROWED from 'no sovereign packets exist' to 'no sovereign pair carries a declaration matching the capability side of the frozen check vocabulary, and the strongest rival frame is quarantined against the one issued case whose profile is completion-relative'. Per the prereg's own reopener 1 and amendment policy, the capability-side discriminator requires a NEW prereg id whose check statements bind to sovereign factor-declaration practice (sources refuse receiver-taxonomy labels), plus either a fresh sovereign pair from a source with no Frame-R-advocate contamination or a successor independent Frame R advocate with no case exposure.",
+    "no_joint_pass": "No joint pass is claimed or claimable: no outcome fired; the two branches' banked facts are independent single-branch updates; a prereg-verify PASS on this artifact is necessary, not sufficient, and confers no scientific pass.",
+    "source_claims": "No source claim moves. bar(b), H59, Krein positivity, and physical issuance remain OPEN; TaF and TI claim statuses unchanged; ADAPTER2-01 governs."
+  },
+  "rival_forecast_scoring": {
+    "frame_r": "Its c4-sector forecast behaved exactly as stated (agrees delta(c)=0 on access pairs; diagnoses CAPABILITY_CHANGE where delta_op != 0; the N/R split on TAF ALPHA is preserved as substantive per J7, not resolved). Its central c5 prediction (completion-relativity of realistic capability interventions) was NOT tested: no admissible capability-declared pair exists, the designed-pure formal fixtures are outside the prediction's 'realistic intervention' scope on its own terms, and the one completion-RELATIVE pair observed (TI BETA) is a case Frame R earns zero credit from under its own P4 rule. No credit or debit to Frame R.",
+    "frame_naive": "Control behaved as forecast: diagnosed CAPABILITY_CHANGE on every pair including the access-mediated TAF ALPHA (fooled), demonstrating the discriminator's baseline.",
+    "blocked_forever_null_rival": "Partially falsified: both sources DID issue conforming frozen packets (c1, c2 ISSUED). The prereg did not expire unexercised."
+  },
+  "grade": "EXPLORATORY / receiver-owned adjudication record; exploration tier; confers no scientific pass; moves no source claim"
+}

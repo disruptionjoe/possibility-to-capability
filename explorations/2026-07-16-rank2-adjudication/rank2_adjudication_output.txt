@@ -1,0 +1,51 @@
+RANK2-PR-001 ADJUDICATION HARNESS -- sovereign evidence, receiver-owned run
+============================================================================
+
+Frame-neutral pair evidence (frozen completion classes, source-native tasks):
+  TAF ALPHA (access-structure declared): dop=+ gained=['tau2'] lost=['tau5']
+    per-completion: delta({h1,h2})=0, delta({h1,h2,h3})=0, delta({h1,h2,h4})=0, delta({h1,h2,h3,h4})=0 -> completion-ROBUST
+  TAF BETA  (record-formation declared): dop=+ gained=['tau3'] lost=[]
+    per-completion: delta({h1,h2})=+, delta({h1,h2,h3})=+, delta({h1,h2,h4})=+, delta({h1,h2,h3,h4})=+ -> completion-ROBUST
+  TI  ALPHA (projection-only declared) : dop=+ gained=['aabb', 'abab', 'abb', 'abba', 'abbb'] lost=[]
+    per-completion: delta(L2)=0, delta(L3)=0, delta(Lfull)=0 -> completion-ROBUST
+  TI  BETA  (admissibility-only declared): dop=0 gained=[] lost=[]
+    per-completion: delta(L2)=0, delta(L3)=+, delta(Lfull)=0 -> completion-RELATIVE
+
+Frame diagnoses (TAF branch only; TI branch frame-quarantined):
+  TAF_ALPHA: NAIVE=CAPABILITY_CHANGE  N=ACCESS_CHANGE  R=CAPABILITY_CHANGE   [defended frames DISAGREE]
+  TAF_BETA: NAIVE=CAPABILITY_CHANGE  N=CAPABILITY_CHANGE  R=CAPABILITY_CHANGE   [defended frames AGREE]
+
+Checks:
+  PASS  [E] e0: all frozen computation blobs re-hash to their packet manifests
+  PASS  [T] t1: TAF ALPHA per-completion deltas empty (forced: legs share one world)
+  PASS  [T] t2: TI ALPHA per-completion deltas empty (forced: legs share one system)
+  PASS  [E] e1: TAF baseline vector matches the frozen output blob claim (1,0,0,0,1)
+  PASS  [F] e1-fail: perturbed threshold k=1 flips the TAF baseline vector
+  PASS  [E] e2: TAF ALPHA delta_op nonzero (gains tau2, loses tau5) with ROBUST_ZERO completion profile
+  PASS  [E] e3: TAF BETA delta_op nonzero (gains tau3) with ROBUST_NONZERO profile over C_TAF
+  PASS  [F] e3-fail: outside the frozen interval class (c={h3,h4}) the BETA delta vanishes -- the robustness verdict has a real failing direction
+  PASS  [E] e4: TI ALPHA delta_op nonzero (decidable 25 -> 30) with ROBUST_ZERO completion profile
+  PASS  [E] e5: TI BETA delta_op ZERO with completion-RELATIVE profile (0 at L2, + at L3, 0 at full)
+  PASS  [F] e5-fail: the same record/decidable comparison detects the perturbed pairing k=0 vs k=1 at L2
+  PASS  [E] e6: c7 evidence-functionality -- both defended frames return identical diagnoses on recomputed identical evidence (TAF branch)
+  PASS  [E] e7: c8 label-neutrality -- swapping pre/post legs of every pair leaves every frame diagnosis and profile class unchanged
+  PASS  [F] e7-fail: a direction-sensitive gain-only frame FAILS the same swap test -- the neutrality check has a real failing direction
+  PASS  [E] e8: c9 shared vocabulary -- every task in each branch vocabulary is evaluable in both members of every pair
+
+EVIDENTIAL CHECKS (headline): 9 [E] + 4 [F] = 13, all passing
+[T] theorem-consequence checks (no evidential weight): 2
+
+OBSERVED VALUES FOR THE PREREGISTERED CHECKS (scoring in results.json):
+  c1: ISSUED (TAF-001, two-commit freeze verified, imported b28d28e)
+  c2: ISSUED (TI-PIT-002, two-commit freeze verified, imported b28d28e)
+  c3: FROZEN_INDEPENDENT for every case the frame scores (TAF branch);
+      TI branch frame-discrimination EXCLUDED by S5 + packet quarantine
+  c4: ROBUST_ZERO on both sovereign access-declared pairs (TAF ALPHA, TI ALPHA)
+  c5: NOT_APPLICABLE -- no sovereign declaration matches 'capability-changing'
+      (both sources refuse receiver-taxonomy labels; J1 + retained fork 2);
+      construal fork preserved: under the factor-reading counterfactual,
+      TAF BETA is ROBUST_NONZERO over C_TAF and TI BETA is completion-RELATIVE
+  c6: FALSE on admissible evidence -- no completion-RELATIVE pair with a
+      defended-frame disagreement (TAF pairs both ROBUST; TI quarantined,
+      and its RELATIVE pair has delta_op=0 and delta(top)=0)
+  c7: TRUE   c8: TRUE   c9: TRUE
