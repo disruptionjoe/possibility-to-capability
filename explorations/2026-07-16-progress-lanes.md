@@ -6,14 +6,27 @@ constitutional: false
 created: 2026-07-16
 ---
 
-# Standing progress lanes (Joe, 2026-07-16)
+# Standing progress lanes (Joe, 2026-07-16; purpose/priority distinction ratified same day)
+
+**North Star (unchanged, not demotable by lane success):** the repo's purpose remains the charter's
+guiding hypothesis — the possibility → dynamics → records → access → capability → finality hierarchy as a
+falsifiable diagnostic (`governance/CHARTER.md`). Only the charter's own failure conditions demote it;
+no byproduct result, however strong, supplants it. The Bounded Fiber Theorem is this repo's first
+**byproduct spine** (structurally analogous to GU's Located-Not-Forced: a lead result that fell out of
+driving the North Star question hard — an artifact of the purpose, not the purpose). Joe, 2026-07-16:
+"primary" below means **scheduling weight for current hourly progress runs**, never purpose. If lane
+priority ever starts scoring work items by "does it harden the theorem?" instead of "does it advance or
+test the hierarchy?", that is the local-minimum failure mode this paragraph exists to catch.
 
 Two lanes stay open concurrently; hourly Progress runs should select from whichever lane has the most
 worthy eligible item, preferring non-overlapping work when both are active. Supersedes the ranked list in
 `explorations/2026-07-16-fiber-closure/SYNTHESIS.md` as the durable selection surface (that list's items
 are absorbed below).
 
-## Lane 1 — PRIMARY: the Bounded Fiber Theorem and its doors
+## Lane 1 — current HIGH-EXPLOIT tactical lane: the Bounded Fiber Theorem and its doors
+
+(Top scheduling priority while it yields; instrumental to the North Star — its findings are input to the
+hierarchy's finality level, and its doors are the hierarchy's stress tests. Cannot close or replace Lane 2.)
 
 Anchor: `synthesis/2026-07-16-bounded-fiber-theorem-v1.0.md` (refereed pre-commit; the claim-chain table
 governs). The lane's work is hardening the theorem and walking its enumerated doors:
@@ -36,7 +49,7 @@ Out of lane (routed elsewhere): the electroweak-parity-violation literature ques
 physics-literature/deep-research item, not a P2C fixture — route via mailbox/deep-research when Joe wants
 it; the SSB/equilibrium-selection reframe (signal 4) feeds Lane 2's vocabulary.
 
-## Lane 2 — SECONDARY (kept open per Joe): Hierarchy v0.2 (charter core)
+## Lane 2 — the NORTH STAR lane (kept open per Joe; the repo's purpose): Hierarchy v0.2
 
 Anchor: `synthesis/2026-07-14-coherent-story-v0.1.md` + the ranked decisive-test program
 (`experiments/2026-07-14-ranked-decisive-test-program-v0.1.md`). The charter's actual thesis — the

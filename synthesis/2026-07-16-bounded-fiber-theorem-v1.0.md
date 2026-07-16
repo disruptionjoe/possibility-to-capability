@@ -4,7 +4,7 @@ status: provisional
 created: 2026-07-16
 construction: bounded_negative_synthesis
 evidence_grade: toy_family_exhaustive_plus_shipped_code_plus_class_relative_proof
-governance_role: primary_progress_lane_anchor
+governance_role: byproduct_spine_lead_result
 constitutional: false
 ---
 
