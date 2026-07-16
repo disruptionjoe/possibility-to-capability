@@ -1,0 +1,37 @@
+COMPLETIONCLASS-P2C v0.1: COMPOSITION CLOSURE AND DERIVED FIREWALL
+========================================================================
+PASS  [T] t1: containment completions are stateless, so mixed composites prune to their channel part: True
+PASS  [T] t2: relabeling and gauge are equivalence-only by construction: True
+PASS  [E] w1: every single local kind fails the witness; only the certified family contains it: True
+PASS  [E] c1: no sequential composite of local completions absorbs the witness staircase: True
+PASS  [F] c1-fail: composites still fail with the local-invariance signature dropped: False
+PASS  [E] c2: carrier dichotomy -- every locally-invariant composite carries only the null readout: True
+PASS  [E] c3: composition strictly exceeds singles -- the register target needs depth 2: True
+PASS  [E] c4: composition closure reaches a fixpoint by depth 3 (depth 4 adds no new profile): True
+PASS  [E] p1: ordinary-novelty controls are absorbed (eddy, register, relaxed): True
+PASS  [E] p2: the alien staircase stays an unabsorbed residual (class is not unrestricted): True
+PASS  [E] f1: the after-fact hull is total while the certified family excludes the alien target: True
+PASS  [E] f2: the capped scorer keeps the operational verdict map non-constant (A-CAL holds): True
+PASS  [F] f2-fail: the uncapped mutant keeps the operational verdict map non-constant: False
+PASS  [E] f3: the certified whole-family earns containment on the witness, never operational strength: True
+PASS  [F] f3-fail: the capability-positive class stays non-empty under the unbudgeted-servo mutant: False
+PASS  [E] f4: outcome-independent certification keeps the containment verdict map non-constant (A-UNIF holds): True
+PASS  [F] f4-fail: admitting after-fact hulls keeps the containment verdict map non-constant: False
+
+channel composites enumerated (depth <= 3): 819; distinct profiles: 3 (fixpoint at depth 3)
+
+composite frontier vs the witness's three signatures at a=3/5:
+  staircase=1 I=0 P=1  e.g. hidden_state o access
+  staircase=0 I=1 P=1  e.g. hidden_state
+  staircase=0 I=0 P=0  e.g. boundary
+
+zoo verdicts under CompletionClass-P2C v0.1 (capped scorer):
+    witness: CONTAINMENT_ABSORPTION_ONLY (firewalled)
+       eddy: OPERATIONAL_ABSORPTION
+   register: OPERATIONAL_ABSORPTION
+    relaxed: OPERATIONAL_ABSORPTION
+      alien: UNABSORBED_RESIDUAL
+
+EVIDENTIAL CHECKS (headline): 11 [E] + 4 [F] = 15
+[T] theorem-consequence checks (no evidential weight): 2
+All checks match expectations. Exit 0.
