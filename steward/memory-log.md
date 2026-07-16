@@ -43,3 +43,29 @@
   output, governing referee report, synthesis).
 - Per HARD-CORE lane doctrine, the Rank-2 runway belt lane is RESOLVED; priority
   reverts to the core wager (P2C-REAL-PHYSICAL-WITNESS).
+
+## 2026-07-16 — Cross-repo combining adjudication executed (P2C-W1)
+
+- TAF-002 (time-as-finality) and TI-WFA-001 (temporal-issuance) sovereign frozen
+  returns on the UNCHANGED P2C-W1 witness passed the full acceptance gate chain
+  and were imported byte-exact (`packets/imports/TAF-002/`,
+  `packets/imports/TI-WFA-001/`; commit 6ff1faa). TI issued under its native
+  packet convention; the P2C v0.2-contract deviation was recorded and
+  adjudicated openly in the import record, not suppressed.
+- The gated item `P2C-CROSS-REPO-ADJUDICATION` executed its combining
+  adjudication, referee-governed
+  (`explorations/2026-07-16-cross-repo-adjudication/`; commit 512638a).
+  Combined verdict: SCOPED SURVIVOR, CLASS-SPLIT at exploration tier —
+  frame-indexed capability change survives every declared completion class
+  singly, including the whole-family absorber (legitimately capped at
+  global/ontological under CompletionClass v1), while the witness is
+  simultaneously legitimately absorbed at global/ontological strength.
+  Conditions C1-C4 binding; composite local completions untested (referee D2);
+  finality gate NOT_REACHED (vacuous, recorded).
+- F1: LIVE, NARROWED — the fiat-trivialization branch discharged relative to
+  CompletionClass v1 only; the firewall-derivability question and the D2
+  composition gap are now owned by `P2C-NULL-COMPLETION-CLOSURE` (rank 1,
+  next swing). F5: watch note (result permanently frame-indexed).
+- The most quotable honest line: the fixed-family absorber is universally
+  available but nowhere free — it either changes the frame (TaF Clause 3) or
+  caps the conclusion below the capability class (TI firewall).
