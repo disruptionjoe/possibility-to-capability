@@ -67,7 +67,11 @@ is the program's thinnest surface. Work items:
 
 1. Execute the ranked decisive tests (v0.1 list, unexecuted).
 2. Typed level/transition definitions + an executable disclosure-vs-enlargement discriminator with
-   absorber controls (the guiding hypothesis's core discriminator).
+   absorber controls (the guiding hypothesis's core discriminator). **Design requirement (I-6, Joe
+   2026-07-16): the typed definitions must be process-level (morphism-labeled, issuance-carrying), not
+   state-snapshot-level — the static-sheaf amputation argument; see
+   `explorations/INTERPRETATIONS-REGISTER.md`.** The finality level's draft must engage the register's
+   live operator-taxonomy rows (I-1..I-5) — that is north-star content, not a third lane.
 3. Import the SSB/equilibrium-selection framing (panel signal 4): instability vs susceptibility vs lock-in
    as hierarchy vocabulary for "finality-shaped" transitions.
 4. Second specimen import (TI or TaF packet; mailbox request for source-issued freezing) — tests that the
