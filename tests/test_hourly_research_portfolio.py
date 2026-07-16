@@ -23,8 +23,21 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
             if item["state"] == "READY" and item["hourly_eligible"]
         ]
         self.assertGreaterEqual(len(ready), 1)
-        selected = max(ready, key=lambda item: item["priority_score"])
-        self.assertEqual(selected["id"], "P2C-BOUNDARY-ADAPTER")
+        # Explicit rank overrides raw priority_score (Joe-ratified rerank,
+        # 2026-07-16: the real physical witness leads; the real system
+        # disciplines the definitions).
+        self.assertTrue(self.data["selection_contract"][
+            "explicit_rank_field_overrides_priority_score"])
+        selected = min(ready, key=lambda item: item["rank"])
+        self.assertEqual(selected["id"], "P2C-REAL-PHYSICAL-WITNESS")
+
+    def test_hard_core_and_doctrine_fields(self) -> None:
+        self.assertIn("HARD-CORE.md", self.data["hard_core"]["statement_owner"])
+        self.assertIn("reach swing", self.data["selection_contract"]["reach_swing_cadence"])
+        for lane in self.data["lanes"]:
+            self.assertTrue(lane.get("relation_to_hard_core"))
+            for item in lane.get("internal_work_items", []):
+                self.assertTrue(item.get("relation_to_hard_core"))
 
     def test_gated_work_has_activation_and_material_rule(self) -> None:
         for lane in self.data["lanes"]:
@@ -42,7 +55,12 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
         self.assertIn(self.data["north_star_lane"], context)
         active = next(lane for lane in self.data["lanes"] if lane["state"] == "ACTIVE")
         self.assertIn("ADAPTER2-01", active["current_authority"])
-        self.assertIn("not the failed GU-sign/finality-polarity adapter", active["internal_work_items"][0]["next_swing"])
+        adapter = next(
+            item
+            for item in active["internal_work_items"]
+            if item["id"] == "P2C-BOUNDARY-ADAPTER"
+        )
+        self.assertIn("not the failed GU-sign/finality-polarity adapter", adapter["next_swing"])
 
 
 if __name__ == "__main__":

@@ -13,6 +13,11 @@ possibilities become dynamics, records, access, capability, and finality, and
 use it to locate exactly what cross-repository evidence establishes without
 manufacturing agreement.
 
+The program's hard core (the big claim as thesis) and the lane doctrine
+(core-wager vs belt-lane priority, with the reversion invariant) live in
+`governance/HARD-CORE.md` (Joe ratified 2026-07-16). Every portfolio lane
+states its relation to that hard core.
+
 ## Long-Term Objectives
 
 - Force or falsify the explanatory hierarchy on real frozen cases.

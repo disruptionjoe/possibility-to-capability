@@ -2,15 +2,24 @@
   "version": 1,
   "updated": "2026-07-16",
   "authority": "repo-local stewardship",
+  "hard_core": {
+    "statement_owner": "governance/HARD-CORE.md",
+    "requirement": "Every lane and internal work item states relation_to_hard_core: core wager, or belt with its legitimacy/byproduct function.",
+    "lane_doctrine": "Lane 1 is always the aggressive boundary-pushing core wager. Belt lanes (adapters, gates, packet machinery, legitimacy infrastructure) may legitimately LEAD priority when required for the legitimacy of the research/methodology, or when a byproduct is exciting enough (papers, potential spin-off repos). Invariant: once those resolve, priority shifts back to the core and continues pushing.",
+    "belt_lane_record_2026_07_16": "The Rank-2 runway (two-phase preregistration, firewalled packet drafts, independent Frame R re-freeze) is a belt lane that correctly LED while the legitimacy of the adjudication methodology required it. That runway is laid; priority now reverts to the core wager. Joe ratified this doctrine and record in direct chat, 2026-07-16.",
+    "provenance": "Joe ratified the five-persona panel synthesis with his own doctrine refinement, 2026-07-16, direct chat (trusted control channel)."
+  },
   "north_star_lane": "BOUNDARY-TO-ISSUANCE-WITNESS",
   "selection_contract": {
     "progress_must_load_this_file": true,
     "select_highest_ranked_unblocked_item": true,
+    "explicit_rank_field_overrides_priority_score": true,
     "one_active_technical_item_per_run": true,
     "continue_to_linked_checkpoint_when_first_closes_quickly": true,
     "rerank_after_every_material_run": true,
     "difficulty_is_not_a_demotion_signal": true,
     "blocked_is_not_complete": true,
+    "reach_swing_cadence": "Every third Progress swing must be a reach swing: attempt the opacity bound as a real theorem over a native formalism, or attempt the real physical witness. A failed reach swing is preserved as a first-class result, never suppressed or retried silently. Ratified by Joe 2026-07-16.",
     "minimum_material_output": "A model, theorem target, proof, counterexample, executable discriminator, or physical-case adjudication. A new schema, queue, packet wrapper, or narrative alone is insufficient.",
     "ranking_formula": "2*impact + 2*information_gain + readiness + distinctiveness - effort - wall_risk - duplication_risk"
   },
@@ -20,6 +29,7 @@
       "state": "ACTIVE",
       "hourly_eligible": true,
       "owner": "possibility-to-capability",
+      "relation_to_hard_core": "IS the core wager: force or falsify the hierarchy's disclosure-vs-capability-change discrimination on a real physical case. Always the aggressive boundary-pushing lane; never demoted by difficulty.",
       "purpose": "Construct or kill a source-neutral physical boundary adapter and a real candidate witness that can be tested for capability change and irreducible issuance without absorbing source-repo truth.",
       "current_authority": "ADAPTER2-01 returned the GU-sign/finality-polarity identity to OPEN because the profile functor forgets the sign fiber. This lane concerns a physical boundary/source-to-capability adapter and must not silently retry that failed polarity adapter.",
       "priority_score": 24,
@@ -32,14 +42,28 @@
         "wall_risk": 4,
         "duplication_risk": 0
       },
+      "rerank_2026_07_16": "P2C-REAL-PHYSICAL-WITNESS promoted above P2C-BOUNDARY-ADAPTER via explicit rank fields; honest priority scores unchanged (27 adapter, 25 witness). Rationale (five-persona panel, Joe ratified 2026-07-16 in direct chat): pick the real system first and let it discipline the definitions, rather than perfecting the adapter in the abstract and fitting a system to it.",
       "kill_condition": "If every admissible boundary transition factors through declared fixed dynamics, access, resources, or a legitimate completion, preserve the scoped no-go and narrow the hierarchy rather than inventing issuance.",
       "forbidden_shortcut": "Do not treat a packet schema, GU analogy, irreversible process, stochastic outcome, or added branch label as a constructed adapter or physical witness. Do not spend an hourly run retrying ADAPTER2-01 without new native source or target structure that meets its reopen burden.",
       "internal_work_items": [
         {
+          "id": "P2C-REAL-PHYSICAL-WITNESS",
+          "state": "READY",
+          "rank": 1,
+          "priority_score": 25,
+          "hourly_eligible": true,
+          "relation_to_hard_core": "Core wager, most direct form: the hard core's claim is diagnosable-on-real-physical-cases, and this item supplies the real case. Promoted to lead 2026-07-16 (Joe-ratified): the real system disciplines the definitions.",
+          "next_swing": "Select one real physical system, freeze its source theory, region, interventions, resources, costs, records, access, and observable response, then construct the strongest candidate capability-changing boundary event and its strongest ordinary completion rival.",
+          "success_condition": "A source-grounded candidate has matched before and after descriptions, a fixed intervention menu and budget, a native response, and a concrete discriminator from its strongest completion rival.",
+          "kill_condition": "The candidate reduces to unpredictability, irreversibility, hidden state, changed resources, changed access, stochastic seed, or a completed-history description."
+        },
+        {
           "id": "P2C-BOUNDARY-ADAPTER",
           "state": "READY",
+          "rank": 2,
           "priority_score": 27,
           "hourly_eligible": true,
+          "relation_to_hard_core": "Belt serving the core directly: the adapter is the typed interface the core wager's witness must cross. Retains its honest score but yields lead to the real witness (rerank_2026_07_16); adapter work should be disciplined by the selected real system.",
           "next_swing": "Define the smallest source-neutral physical boundary/source-to-capability adapter on explicit physical inputs, state its composition and invariance laws, and attempt either a nontrivial construction or a counterexample. This is not the failed GU-sign/finality-polarity adapter. Test at least one positive control and one circularity control. Do not carry the desired capability or issuance verdict as an input label.",
           "success_condition": "A typed nonconstant adapter acts on physical transition data, respects declared equivalences and composition, and exposes a testable residual without importing its polarity or verdict.",
           "kill_condition": "Every candidate is constant, verdict-carrying, representation-dependent, or equivalent to adding the missing datum by hand."
@@ -47,26 +71,21 @@
         {
           "id": "P2C-NULL-COMPLETION-CLOSURE",
           "state": "READY",
+          "rank": 3,
           "priority_score": 26,
           "hourly_eligible": true,
+          "relation_to_hard_core": "Belt required for legitimacy: the hard core's 'not mere completion/disclosure' clause is empty unless the legitimate completion class is formalized and closed under composition, so a witness's rival can be given its strongest hearing.",
           "next_swing": "Formalize the physically legitimate middle completion class, including compositions of hidden-state, boundary, seed, provenance, resource, whole-family, history, access, relabeling, and gauge completions. Produce omission mutants and a nontrivial escape or no-go theorem target. Compare with TI only through a frozen return.",
           "success_condition": "The class is broad enough to absorb ordinary novelty but restricted by explicit physical admissibility, with executable composition and omission tests.",
           "kill_condition": "The class is either trivially narrow or unrestricted enough to make every witness impossible by definition."
         },
         {
-          "id": "P2C-REAL-PHYSICAL-WITNESS",
-          "state": "READY",
-          "priority_score": 25,
-          "hourly_eligible": true,
-          "next_swing": "Select one real physical system, freeze its source theory, region, interventions, resources, costs, records, access, and observable response, then construct the strongest candidate capability-changing boundary event and its strongest ordinary completion rival.",
-          "success_condition": "A source-grounded candidate has matched before and after descriptions, a fixed intervention menu and budget, a native response, and a concrete discriminator from its strongest completion rival.",
-          "kill_condition": "The candidate reduces to unpredictability, irreversibility, hidden state, changed resources, changed access, stochastic seed, or a completed-history description."
-        },
-        {
           "id": "P2C-CROSS-REPO-ADJUDICATION",
           "state": "GATED_FROZEN_RETURNS",
+          "rank": 4,
           "priority_score": 23,
           "hourly_eligible": false,
+          "relation_to_hard_core": "Core wager's cross-repository closure step: combining sovereign returns on one frozen witness is how the hard core's 'locate exactly what cross-repository evidence establishes' clause is finally tested. Gated on frozen returns; legitimacy machinery (packets, gates) is its belt.",
           "activation": "A frozen p2c witness plus sovereign TaF capability and TI completion returns exist for the same construction.",
           "next_swing": "Check one-chain compatibility, construction identity, source sovereignty, and no-artificial-success. Preserve split or negative returns.",
           "success_condition": "One unchanged witness survives the neutral formation, completion, capability, finality, and neutrality gates.",
@@ -85,6 +104,7 @@
       "state": "RESERVE",
       "hourly_eligible": true,
       "priority_score": 14,
+      "relation_to_hard_core": "Belt: definitions, literature, casebook, and reproducibility work that de-risks the core wager's witness campaign, or banks byproducts exciting enough to lead briefly (papers, spin-off candidates). May lead only per the lane doctrine; leadership reverts to the core when the leading item resolves.",
       "purpose": "Definitions, literature, casebook, and reader reproducibility work that directly de-risks the active witness campaign.",
       "activation": "Select only when it closes a named blocker for the active lane or no active technical item is executable.",
       "forbidden_shortcut": "Do not substitute synthesis prose or persona aggregation for a physical witness or discriminator."
