@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "updated": "2026-07-16",
+  "authority": "repo-local stewardship",
+  "north_star_lane": "BOUNDARY-TO-ISSUANCE-WITNESS",
+  "selection_contract": {
+    "progress_must_load_this_file": true,
+    "select_highest_ranked_unblocked_item": true,
+    "one_active_technical_item_per_run": true,
+    "continue_to_linked_checkpoint_when_first_closes_quickly": true,
+    "rerank_after_every_material_run": true,
+    "difficulty_is_not_a_demotion_signal": true,
+    "blocked_is_not_complete": true,
+    "minimum_material_output": "A model, theorem target, proof, counterexample, executable discriminator, or physical-case adjudication. A new schema, queue, packet wrapper, or narrative alone is insufficient.",
+    "ranking_formula": "2*impact + 2*information_gain + readiness + distinctiveness - effort - wall_risk - duplication_risk"
+  },
+  "lanes": [
+    {
+      "id": "BOUNDARY-TO-ISSUANCE-WITNESS",
+      "state": "ACTIVE",
+      "hourly_eligible": true,
+      "owner": "possibility-to-capability",
+      "purpose": "Construct or kill a source-neutral physical boundary adapter and a real candidate witness that can be tested for capability change and irreducible issuance without absorbing source-repo truth.",
+      "priority_score": 24,
+      "score": {
+        "impact": 5,
+        "information_gain": 5,
+        "readiness": 3,
+        "distinctiveness": 5,
+        "effort": 5,
+        "wall_risk": 4,
+        "duplication_risk": 0
+      },
+      "kill_condition": "If every admissible boundary transition factors through declared fixed dynamics, access, resources, or a legitimate completion, preserve the scoped no-go and narrow the hierarchy rather than inventing issuance.",
+      "forbidden_shortcut": "Do not treat a packet schema, GU analogy, irreversible process, stochastic outcome, or added branch label as a constructed adapter or physical witness.",
+      "internal_work_items": [
+        {
+          "id": "P2C-BOUNDARY-ADAPTER",
+          "state": "READY",
+          "priority_score": 27,
+          "hourly_eligible": true,
+          "next_swing": "Define the smallest source-neutral boundary-adapter object on explicit physical inputs, state its composition and invariance laws, and attempt either a nontrivial construction or a counterexample. Test at least one positive control and one circularity control. Do not carry the desired capability or issuance verdict as an input label.",
+          "success_condition": "A typed nonconstant adapter acts on physical transition data, respects declared equivalences and composition, and exposes a testable residual without importing its polarity or verdict.",
+          "kill_condition": "Every candidate is constant, verdict-carrying, representation-dependent, or equivalent to adding the missing datum by hand."
+        },
+        {
+          "id": "P2C-NULL-COMPLETION-CLOSURE",
+          "state": "READY",
+          "priority_score": 26,
+          "hourly_eligible": true,
+          "next_swing": "Formalize the physically legitimate middle completion class, including compositions of hidden-state, boundary, seed, provenance, resource, whole-family, history, access, relabeling, and gauge completions. Produce omission mutants and a nontrivial escape or no-go theorem target. Compare with TI only through a frozen return.",
+          "success_condition": "The class is broad enough to absorb ordinary novelty but restricted by explicit physical admissibility, with executable composition and omission tests.",
+          "kill_condition": "The class is either trivially narrow or unrestricted enough to make every witness impossible by definition."
+        },
+        {
+          "id": "P2C-REAL-PHYSICAL-WITNESS",
+          "state": "READY",
+          "priority_score": 25,
+          "hourly_eligible": true,
+          "next_swing": "Select one real physical system, freeze its source theory, region, interventions, resources, costs, records, access, and observable response, then construct the strongest candidate capability-changing boundary event and its strongest ordinary completion rival.",
+          "success_condition": "A source-grounded candidate has matched before and after descriptions, a fixed intervention menu and budget, a native response, and a concrete discriminator from its strongest completion rival.",
+          "kill_condition": "The candidate reduces to unpredictability, irreversibility, hidden state, changed resources, changed access, stochastic seed, or a completed-history description."
+        },
+        {
+          "id": "P2C-CROSS-REPO-ADJUDICATION",
+          "state": "GATED_FROZEN_RETURNS",
+          "priority_score": 23,
+          "hourly_eligible": false,
+          "activation": "A frozen p2c witness plus sovereign TaF capability and TI completion returns exist for the same construction.",
+          "next_swing": "Check one-chain compatibility, construction identity, source sovereignty, and no-artificial-success. Preserve split or negative returns.",
+          "success_condition": "One unchanged witness survives the neutral formation, completion, capability, finality, and neutrality gates.",
+          "kill_condition": "The apparent pass combines different constructions, incompatible assumptions, or partial results."
+        }
+      ],
+      "handoffs": {
+        "to_time_as_finality": "Freeze and propose the same witness for an invariant capability-change adjudication; do not include a desired verdict.",
+        "to_temporal_issuance": "Freeze and propose the same witness for whole-family completion attack; do not assert source issuance.",
+        "to_gu_formalization": "Send only an adapter or witness packet whose interface is relevant to one frozen GU construction. GU retains native-versus-forced authority.",
+        "return_activation": "Any frozen sovereign return is a stewardship reranking signal, not automatic joint success."
+      }
+    },
+    {
+      "id": "HIERARCHY-HARDENING",
+      "state": "RESERVE",
+      "hourly_eligible": true,
+      "priority_score": 14,
+      "purpose": "Definitions, literature, casebook, and reader reproducibility work that directly de-risks the active witness campaign.",
+      "activation": "Select only when it closes a named blocker for the active lane or no active technical item is executable.",
+      "forbidden_shortcut": "Do not substitute synthesis prose or persona aggregation for a physical witness or discriminator."
+    }
+  ]
+}

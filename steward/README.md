@@ -20,6 +20,36 @@ manufacturing agreement.
 - Distinguish fixed-family disclosure from genuine capability change.
 - Preserve negative results and the possibility that the hierarchy is wrong.
 
+## Current Hourly Research Portfolio
+
+The machine-readable owner is `steward/research-portfolio.json`. Every Repo
+Progress run must load it, select the highest-ranked unblocked internal work
+item, execute a material research swing, and re-rank the remaining items in its
+Next-Work Handoff. Repo Stewardship may revise the ranking when a real
+falsifier, survivor, dependency change, or frozen sovereign return changes the
+frontier.
+
+The active lane is `BOUNDARY-TO-ISSUANCE-WITNESS`. It owns substantive
+repo-independent construction and falsification work:
+
+1. construct or kill the source-neutral physical boundary adapter;
+2. close the legitimate null/completion class under declared compositions;
+3. build and red-team a real physical witness; and
+4. combine sovereign returns only after the same frozen witness has been
+   tested independently.
+
+The founding GU packet sequence remains a live gate, but missing source
+provenance is not a reason for Progress to idle. While a source-issued packet
+is absent, work the highest-ranked repo-owned adapter, completion, or witness
+item. Packet wrappers, new queues, synthesis prose, and persona aggregation do
+not count as a material hourly swing unless they directly close a named
+technical blocker.
+
+Cross-repo execution remains serialized through frozen packets and mailboxes:
+TaF owns capability adjudication, TI owns issuance-versus-completion, and GU
+owns whether a returned ingredient is native or forced in GU. Their results
+are reranking signals, never an automatic joint pass.
+
 ## North-Star And Byproduct Posture
 
 The North Star is the high-level exploit and remains the primary Progress
@@ -136,6 +166,11 @@ CapacityOS registration, mailbox, and System-overlay sockets are present.
 Mailbox Processing, Progress, Stewardship, and Discovery are active through the
 standard repository steward package. No repo-specific trigger is needed.
 
+Repo Progress loads `steward/research-portfolio.json` before selecting work.
+Repo Stewardship keeps that portfolio aligned with the charter, completed run
+handoffs, and frozen cross-repo returns. Difficulty alone cannot park the
+active lane, and a gated item must retain an explicit activation condition.
+
 Multi-persona Discovery defaults to discipline/method batches of roughly 5-12
 personas per child agent, with one frozen brief, isolated per-persona outputs,
 no within-batch synthesis, and a separate final synthesizer. One child per
@@ -149,3 +184,4 @@ persona is reserved for unique-tool, unique-evidence, or high-stakes cases.
 - `governance/README.md`
 - `governance/CHARTER.md`
 - `AGENTS.md`
+- `steward/research-portfolio.json`
