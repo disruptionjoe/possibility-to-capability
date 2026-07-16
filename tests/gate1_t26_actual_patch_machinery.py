@@ -79,9 +79,11 @@ from __future__ import annotations
 import sys
 from dataclasses import replace
 from itertools import combinations, product
+from pathlib import Path
 
-TAF_ROOT = r"C:/Users/joe/JB/CapacityOS/repos/public/time-as-finality"
-sys.path.insert(0, TAF_ROOT)
+PUBLIC_REPOS_ROOT = Path(__file__).resolve().parents[2]
+TAF_ROOT = PUBLIC_REPOS_ROOT / "time-as-finality"
+sys.path.insert(0, str(TAF_ROOT))
 
 import models.d1_restriction_system as t26  # noqa: E402  (TaF actual code)
 
