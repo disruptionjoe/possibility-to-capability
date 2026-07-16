@@ -1,0 +1,114 @@
+{
+  "witness_id": "P2C-W1",
+  "bundle_name": "P2C-W1-superconducting-ring-v0.1",
+  "bundle_status": "WITNESS_FROZEN",
+  "schema_note": "P2C-owned witness-freeze bundle, mirroring the exports/packets convention TaF and TI established (TAF-001, TI source-packet practice). This is NOT a source-issued packet from another repo; possibility-to-capability is the source and owner of the witness construction. Physics inside is cited at literature grade only.",
+  "created": "2026-07-16",
+  "source": {
+    "repository": "possibility-to-capability",
+    "content_revision": "850521c2fc07b277734e293cd68c0928bb0cb6de",
+    "content_revision_note": "The git revision at which every blob's originating artifact (explorations/2026-07-16-real-physical-witness/{WITNESS-FREEZE,REFEREE-REPORT}.md, tests/physical_witness_discriminator.py) exists byte-identically in-tree. Blobs are byte-exact copies pinned by sha256 below; the freezing mechanism is the hash manifest, not the copy.",
+    "claim_status": "exploration",
+    "evidence_grade": "literature_grade_physics + definitional_hierarchy_mapping + toy_executable_discriminator",
+    "governing_document": "blobs/REFEREE-REPORT.md (the referee report GOVERNS grades and corrections; read before citing)"
+  },
+  "integrity": {
+    "hash_algorithm": "sha256",
+    "frozen": true,
+    "manifest": [
+      {
+        "path": "blobs/WITNESS-FREEZE.md",
+        "byte_length": 19964,
+        "content_sha256": "694443cacddfcd784a81e01a6e059557b5b1e6aaeea8c0a7616a4f0ac6b71b51"
+      },
+      {
+        "path": "blobs/REFEREE-REPORT.md",
+        "byte_length": 9188,
+        "content_sha256": "dfd966259d9e8e2f58bc3725f53f5751c08e0f6b4015c01c333548e09eca0113"
+      },
+      {
+        "path": "blobs/physical_witness_discriminator.py",
+        "byte_length": 16916,
+        "content_sha256": "42f647eb7a1f6533e26ae9f6f321824693a77517540259fe505ce968d59ea9eb"
+      },
+      {
+        "path": "blobs/discriminator_output.txt",
+        "byte_length": 2550,
+        "content_sha256": "b917f59b2e5f6ee3221a08260ce3f22043c7b843c89343a0fe7e778eb84db45f"
+      }
+    ]
+  },
+  "system": {
+    "construction": "superconducting_ring_persistent_supercurrent",
+    "construction_fork_selected": "GL/London macroscopic order-parameter picture",
+    "construction_forks_retained": [
+      "BCS microscopic (same fluxoid quantization from pairing)",
+      "topological/TQFT (winding as homotopy invariant of S^1 -> U(1))",
+      "thermodynamic / Landau two-phase reading (retained AND weaponized as the steelman rival)"
+    ],
+    "source_theory_citations_literature_grade": [
+      "BCS microscopic theory (Bardeen-Cooper-Schrieffer 1957)",
+      "Ginzburg-Landau theory (1950); London equations (1935)",
+      "Fluxoid quantization (F. London 1948; Deaver-Fairbank and Doll-Nabauer experiments, 1961)",
+      "Persistent supercurrent / phase-slip barrier (textbook: Tinkham; Annett)"
+    ],
+    "intervention_menu": ["COOL(T->T')", "THREAD(Phi_app)", "PROBE_READ", "DEFORM"],
+    "signature_vector": {
+      "Q": "quantization - trapped value in Z*Phi_0, a global winding invariant (measurable: fluxoid staircase, D-Q)",
+      "I": "local-operation invariance - winding n unchanged by DEFORM / gauge / local latent-state change (measurable: D-I)",
+      "P": "persistence - n does not relax; macroscopic phase-slip barrier; graded 'effectively infinite (literature)', NOT 'provably infinite' (D-P; history leg capped, not killed)"
+    }
+  },
+  "frame_declaration": {
+    "rule": "Referee correction R-D1, applied and load-bearing. The capability claim is FRAME-INDEXED per Hierarchy v0.2 section 2.5 (the normalization frame is a parameter of the Capability type, not a derived fact).",
+    "declared_frame": "budget-matched counterfactual pair: ring in S versus a reference normal conductor of matched geometry at the same fixed final temperature T_f < Tc, after the same COOL and THREAD budget has been spent on both; PROBE_READ metrology budget identical across branches.",
+    "explicitly_not_claimed": "the literal single-system before/after (same ring at T > Tc versus T < Tc) is NOT budget-matched (two temperatures) and carries no frame-free matched-before/after claim."
+  },
+  "candidate": {
+    "boundary_event": "cooling the ring N -> S through Tc while flux is present",
+    "candidate_capability_task": "hold a quantized circulating memory indefinitely at zero maintenance cost, robust to local perturbation",
+    "candidate_statement": "In the declared frame, the task above is realizable in the S branch (signatures Q, I, P) and not realizable in the N branch at any budget (maintenance cost I^2*R*t diverges; value continuous, non-invariant, decays in L/R).",
+    "steelman_rival": "whole-family disclosure (N and S as two regions of one fixed phase diagram) backed by the seed reading of the stored value and the metastability reading of persistence, at matched resource."
+  },
+  "executable_discriminator": {
+    "artifact": "blobs/physical_witness_discriminator.py",
+    "content_sha256": "42f647eb7a1f6533e26ae9f6f321824693a77517540259fe505ce968d59ea9eb",
+    "true_output": "blobs/discriminator_output.txt",
+    "verification": "python blobs/physical_witness_discriminator.py; byte-compare stdout against blobs/discriminator_output.txt (deterministic; verified byte-identical at freeze time; exit 0)",
+    "evidential_headline": "7 [E] + 4 [F] = 11 evidential checks; 2 [T] theorem-consequence checks carrying no evidential weight; tef_check_tag_linter.py --strict clean",
+    "key_checks": {
+      "k1": "[E] nine LOCAL completion classes fail at least one of the (Q,I,P) signatures",
+      "k2": "[E] the whole-family-WITH-target-phase completion ABSORBS the candidate (intentional exhibition of the pre-declared kill vector; licenses no capability claim)",
+      "k2-fail": "[F] whole-family WITHOUT the target phase does NOT absorb it (the absorption is caused specifically by admitting the target phase)",
+      "n1/n1-fail": "[E]/[F] discriminator verdict is branch-label-invariant, with a demonstrated failing direction"
+    }
+  },
+  "frozen_disposition": "SURVIVES_LOCAL_COMPLETIONS / UNDISCHARGED_VS_WHOLE_FAMILY, frame-indexed to the matched-budget counterfactual pair. No capability-enlargement verdict is licensed or directionally asserted.",
+  "open_question_routed": "Whether admitting the target superconducting phase into the fixed completion family is a legitimate completion (the fixed-family absorber; P2C hierarchy falsifier F1). Not resolvable inside P2C.",
+  "interfaces": [
+    {
+      "target_repository": "time-as-finality",
+      "ownership_status": "target_owned",
+      "requested_datum": "an invariant capability-change adjudication of the frozen witness under TaF's own standards (record/access machinery, D1 profile, task-achievability semantics): is the declared counterfactual pair a capability change, or does it factor through TaF's record/access/resource machinery? No desired verdict is included.",
+      "proposal": "CapacityOS/system/mailboxes/time-as-finality/20260716-p2cw1-superconducting-ring-witness-capability-adjudication.md"
+    },
+    {
+      "target_repository": "temporal-issuance",
+      "ownership_status": "target_owned",
+      "requested_datum": "a whole-family completion attack on the same frozen witness under TI's CompletionClass machinery: is admitting the superconducting phase into the fixed completion family a legitimate whole_family completion? No source issuance is asserted and no desired verdict is included.",
+      "proposal": "CapacityOS/system/mailboxes/temporal-issuance/20260716-p2cw1-superconducting-ring-witness-whole-family-attack.md"
+    }
+  ],
+  "same_frozen_witness_rule": "Per steward/research-portfolio.json handoffs.return_activation and P2C-CROSS-REPO-ADJUDICATION activation: sovereign returns may be combined ONLY if both sovereigns were tested on THIS bundle, unchanged, identified by the sha256 manifest above. Any modification produces a different witness and voids combination.",
+  "nonclaims": [
+    "No claim that superconductivity 'is' finality, issuance, or a GU/TI/TaF object; no source claim moves; bar(b), H59, Krein positivity, physical issuance remain OPEN and untouched.",
+    "No claim the candidate is validated as capability enlargement; it is explicitly UNDISCHARGED against the whole-family completion.",
+    "The discriminator fixture is a finite instrument; its evidential checks validate instrument behavior under stipulated witnesses, not real superconductors. Real-experiment backing for D-Q/D-I is cited at literature grade, not re-run.",
+    "Persistence (P) is 'effectively infinite' at literature grade, not 'provably infinite' at finite ring size; the history/metastability leg is capped, not fully killed.",
+    "TaF and TI are sovereign: they may adopt, reject, adapt, or ignore the proposals; split or negative returns are first-class and will be preserved as such."
+  ],
+  "ownership": {
+    "source_owner": "possibility-to-capability",
+    "authority_transfer": false
+  }
+}

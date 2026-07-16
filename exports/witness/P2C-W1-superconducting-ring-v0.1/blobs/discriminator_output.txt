@@ -1,0 +1,40 @@
+PHYSICAL WITNESS DISCRIMINATOR (superconducting ring)
+========================================================================
+PASS  [T] s1: winding is an integer by construction: True
+PASS  [T] s2: a global gauge shift preserves winding by construction: True
+PASS  [E] q1: candidate trapped value is integer-quantized across a field interval: True
+PASS  [F] q1-fail: a continuous-boundary completion is NOT integer-quantized: False
+PASS  [E] q2: seed/access/boundary completions store a NON-integer value: True
+PASS  [E] i1: candidate winding is invariant under every LOCAL completion op: True
+PASS  [F] i1-fail: a metastable rival value CHANGES under the same local ops: False
+PASS  [E] p1: candidate winding does not relax; history completion decays to zero: True
+PASS  [E] k1: nine local completion classes fail at least one discriminating signature: True
+PASS  [E] k2: the whole-family-with-target-phase completion ABSORBS the candidate: True
+PASS  [F] k2-fail: whole-family WITHOUT the target phase does NOT absorb it: False
+PASS  [E] n1: swapping the two branch labels leaves every discriminator verdict fixed: True
+PASS  [F] n1-fail: a label-sensitive scorer WOULD flip under the swap: False
+
+candidate staircase (applied -> trapped winding):
+  applied=  1/4  ->  w=0   (seed rival stores 1/4, decays)
+  applied=  2/5  ->  w=0   (seed rival stores 2/5, decays)
+  applied=  3/5  ->  w=1   (seed rival stores 3/5, decays)
+  applied=  4/5  ->  w=1   (seed rival stores 4/5, decays)
+  applied=11/10  ->  w=1   (seed rival stores 11/10, decays)
+  applied=  7/5  ->  w=1   (seed rival stores 7/5, decays)
+
+completion-class scoreboard vs candidate (a=3/5):
+                       gauge: value=    0 Q=1 I=1 P=0  -> fails
+                  relabeling: value=    0 Q=1 I=1 P=0  -> fails
+                hidden_state: value=    0 Q=1 I=1 P=0  -> fails
+                    boundary: value=  3/5 Q=0 I=0 P=0  -> fails
+                        seed: value=  3/5 Q=0 I=0 P=0  -> fails
+                      access: value=  3/5 Q=0 I=0 P=0  -> fails
+                    resource: value=  3/5 Q=0 I=0 P=0  -> fails
+                     history: value=    0 Q=1 I=1 P=0  -> fails
+                  provenance: value=    0 Q=1 I=1 P=0  -> fails
+       whole_family_no_phase: value=    0 Q=1 I=1 P=0  -> fails
+     whole_family_with_phase: value=    1 Q=1 I=1 P=1  -> ABSORBS
+
+EVIDENTIAL CHECKS (headline): 7 [E] + 4 [F] = 11
+[T] theorem-consequence checks (no evidential weight): 2
+All checks match expectations. Exit 0.
