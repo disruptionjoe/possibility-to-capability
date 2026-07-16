@@ -25,17 +25,15 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
                                   "RESOLVED_SCOPED_SURVIVOR")
         ]
         self.assertGreaterEqual(len(selectable), 1)
-        # Explicit rank overrides raw priority_score. The completion-closure
-        # swing executed 2026-07-16 (explorations/2026-07-16-completion-class-
-        # firewall/): firewall DERIVED, referee D2 composition gap closed at
-        # model grade, item resolved and demoted. Per the lane-doctrine
-        # invariant (belt resolved -> core wager leads), priority reverts to
-        # P2C-REAL-PHYSICAL-WITNESS (rerank_2026_07_16f), whose next swing is
-        # the designated REACH swing per reach_swing_accounting_2026_07_16.
+        # Explicit rank overrides raw priority_score. Joe's 2026-07-16 role
+        # clarification makes cross-domain typed-change transfer the due reach
+        # swing. Physical witnesses remain severe specimens at rank 2.
         self.assertTrue(self.data["selection_contract"][
             "explicit_rank_field_overrides_priority_score"])
         selected = min(selectable, key=lambda item: item["rank"])
-        self.assertEqual(selected["id"], "P2C-REAL-PHYSICAL-WITNESS")
+        self.assertEqual(
+            selected["id"], "P2C-CROSS-DOMAIN-TRANSITION-ADJUDICATION"
+        )
         self.assertIn("reach_swing_accounting_2026_07_16",
                       self.data["selection_contract"])
 
@@ -46,6 +44,27 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
             self.assertTrue(lane.get("relation_to_hard_core"))
             for item in lane.get("internal_work_items", []):
                 self.assertTrue(item.get("relation_to_hard_core"))
+
+    def test_two_lane_typed_change_role_is_durable(self) -> None:
+        self.assertEqual(len(self.data["lanes"]), 2)
+        self.assertEqual(
+            self.data["north_star_lane"], "HIERARCHY-FORCE-OR-FALSIFY"
+        )
+        contract = self.data["selection_contract"]
+        self.assertIn("not a separate meta lane",
+                      contract["no_third_lane_for_meta_role"])
+        self.assertIn("not the scope", contract["physics_specimen_rule"])
+
+        charter = (ROOT / "governance" / "CHARTER.md").read_text(
+            encoding="utf-8"
+        )
+        hard_core = (ROOT / "governance" / "HARD-CORE.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("## Agent-Capability Role", charter)
+        self.assertIn("typed change", charter.lower())
+        self.assertIn("Physics is not the scope", charter)
+        self.assertIn("## The P2C-specific agent capability", hard_core)
 
     def test_gated_work_has_activation_and_material_rule(self) -> None:
         for lane in self.data["lanes"]:

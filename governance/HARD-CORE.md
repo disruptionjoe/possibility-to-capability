@@ -25,9 +25,9 @@ possibility through dynamics, records, access, capability, and finality can
 reliably distinguish fixed-family disclosure from genuine capability
 enlargement, remain invariant under admissible reformulation, and survive
 explicit null-class and completion tests when applied to frozen evidence from
-real physical cases. The program wagers that this hierarchy, applied through
-neutral gates to real cross-repository evidence, locates exactly what that
-evidence establishes — without manufacturing agreement.
+real cases across domains. The program wagers that this hierarchy, applied
+through neutral gates to heterogeneous evidence, locates exactly what changed
+and what that evidence establishes, without manufacturing agreement.
 
 This is the charter's guiding hypothesis and the steward North Star stated as
 the program's thesis (see `governance/CHARTER.md`; the falsification
@@ -44,7 +44,8 @@ the claim; it is what makes pursuing the claim legitimate.
 ## The lane doctrine (not binary)
 
 - **Lane 1 is always the aggressive, boundary-pushing core wager**: force or
-  falsify the hierarchy on real cases. Its difficulty, distance, or
+  falsify the hierarchy and its typed transition distinctions on real cases
+  across domains. Its difficulty, distance, or
   uncertainty never demotes it; only the charter's own failure conditions do.
 - **Belt lanes** — adapters, gates, packet machinery, preregistration and
   refereeing infrastructure, and other legitimacy infrastructure — may
@@ -62,15 +63,31 @@ correctly LED while the legitimacy of the adjudication methodology required
 it. With that runway laid, priority now reverts to the core wager, per this
 doctrine.
 
+## The P2C-specific agent capability
+
+The capability under test is whether agents can determine what kind of change
+occurred without confusing containment with execution, information with
+access, access with resources, resources with capability, or irreversibility
+with finality. The test is passed only when the classification survives
+declared counterfactual frames, completion classes, representation changes,
+cross-source sovereignty, and adversarial controls. An honest `UNDERDEFINED`
+or abstention is better than a fluent category error.
+
+Physical witnesses are high-discipline specimens inside this test. They are
+not its scope. Transfer to nonphysical cases is required to establish that the
+hierarchy is a reusable reasoning capability rather than a physics-specific
+vocabulary.
+
 ## The through-line (Joe-stated purpose, not research evidence)
 
-The missing world capability this program instantiates is rigorously taking
-heterodox ideas seriously at AI speed: holding a large, unfashionable claim to
-full evidential discipline — prereg, adversarial refereeing, sovereign
-evidence boundaries — while moving at the cadence AI-driven research makes
-possible. This repository is an instance of that capability, not a proof of
-it. This paragraph is cited as Joe-stated purpose (2026-07-16), never as
-research evidence. Pointer: thinking-wiki
+The missing world capability this program instantiates is typed change
+reasoning at AI speed: taking heterogeneous claims seriously, preserving their
+distinct meanings, and determining whether a transition changed description,
+access, resources, executable tasks, or finality. It inherits the wider
+through-line of rigorous attention to heterodox ideas, but its distinctive
+test is semantic adjudication rather than theory defense. This repository is
+an instance of that capability, not a proof of it. This paragraph is cited as
+Joe-stated purpose (2026-07-16), never as research evidence. Pointer: thinking-wiki
 `inbox/2026-07-16-heterodox-rigor-through-line-and-lane-doctrine.md`.
 
 ## Requirement on the portfolio

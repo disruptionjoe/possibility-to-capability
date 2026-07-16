@@ -1,6 +1,6 @@
 # Charter: Possibility to Capability
 
-Status: ratified by Joe on 2026-07-14.
+Status: ratified by Joe on 2026-07-14; agent-capability role clarified and ratified by Joe on 2026-07-16.
 
 ## Repository Name
 
@@ -14,8 +14,32 @@ Visibility: public.
 
 Develop the smallest rigorous, repo-independent account of how admissible
 possibilities become dynamics, records, access, capability, and finality, and
-use it to locate exactly what cross-repository evidence establishes without
-manufacturing agreement.
+use it to determine what kind of change actually occurred across heterogeneous
+domains without manufacturing agreement.
+
+## Agent-Capability Role
+
+This repository tests whether research agents can perform **typed change
+reasoning**: distinguish something becoming possible, dynamically selected,
+recorded, accessible, resourced, executable, or final, rather than collapsing
+those changes into one vague story of progress or novelty.
+
+The agent must be able to take heterogeneous evidence, preserve each source's
+meaning and authority, declare the comparison frame and resource budget, give
+ordinary completion and redescription rivals their strongest hearing, and
+return either a typed classification or an honest abstention. Apparent
+opposites may both survive when they belong to different claim classes, such
+as global containment and operational capability.
+
+Physics supplies severe specimens because its tasks, resources, invariances,
+and counterfactuals can often be stated sharply. Physics is not the scope of
+the capability under test. The same discipline must transfer without analogy
+collapse to computation, security, organizations, institutions, biology, and
+other domains with source-grounded tasks and interventions.
+
+This is a research and evaluation role, not evidence that agents already have
+the capability. Reproducible disagreement, forced abstention, or failure to
+transfer across domains is a first-class result.
 
 ## Guiding Hypothesis
 
@@ -23,7 +47,8 @@ manufacturing agreement.
 records, access, capability, and finality reliably distinguish fixed-family
 disclosure from genuine capability enlargement, remain invariant under
 admissible reformulation, and survive explicit null-class and completion tests
-when applied to frozen physical evidence packets?**
+when applied to frozen evidence packets from real physical and nonphysical
+cases?**
 
 This is a falsifiable research question, not a presumed conclusion.
 
@@ -36,7 +61,8 @@ The hypothesis fails or requires substantial revision if:
   completion or null class;
 - source repositories cannot be connected without silently changing their
   claims, scopes, or proof standards; or
-- no physically meaningful frozen packet survives the full gate sequence.
+- no meaningful frozen case survives the full gate sequence, or the same
+  definitions cannot transfer beyond one domain without ad hoc reinterpretation.
 
 ## Founding Motivation
 
@@ -97,7 +123,9 @@ This repository owns the repo-independent research layer, including:
 - packet schemas and interface contracts for importing frozen results;
 - synthesis results proved from correctly imported packets;
 - negative results, incompatibility results, and failed syntheses;
-- the distinction between a located obstruction and a forced resolution; and
+- the distinction between a located obstruction and a forced resolution;
+- typed change adjudication that distinguishes description, access, resources,
+  operational capability, containment, and finality across domains; and
 - its own hypotheses, experiments, literature map, and explanatory models.
 
 A theorem proved entirely within this repository may become this repository's
@@ -114,7 +142,8 @@ This repository may coordinate:
 - questions whose resolution requires more than one source repository;
 - handoffs through repository mailboxes and explicit cross-repository gates;
   and
-- program sequencing with JoeOps.
+- attention-relevant adjudication signals supplied to JoeOps for Joe's
+  prioritization.
 
 It does not own:
 
@@ -122,13 +151,22 @@ It does not own:
 - Temporal Issuance's definitions, proofs, claim status, or canonical truth;
 - Time as Finality's definitions, proofs, claim status, or canonical truth;
 - WI-069's emergence, obstruction, or transduction research;
-- JoeOps program authority or operational coordination;
+- JoeOps attention authority or attention-dependent orchestration;
 - source-repository edits; or
 - authority to upgrade a source claim from plausible to proved.
 
-JoeOps coordinates the research program. Source repositories own their source
-truth. This repository owns only the neutral joint layer and conclusions
-independently established here.
+Source repositories own their source truth. This repository owns only the
+neutral joint layer and conclusions independently established here. Cross-repo
+work is orchestrated by the owner or workflow designated by its governing
+protocol. JoeOps enters when Joe's attention, prioritization, or decision is
+required.
+
+The boundary is scientific adjudication versus operational orchestration. P2C
+may decide what a valid combination of frozen packets establishes and may
+coordinate its authorized packet and interface workflows. It does not thereby
+own every cross-repo workflow. JoeOps owns Joe's attention and the cross-repo
+orchestration that specifically depends on that attention, not cross-repo
+orchestration in general.
 
 ## Relationship to WI-069
 

@@ -10,8 +10,10 @@ Load this file for stewardship and routing context. `AGENTS.md` and
 
 Develop the smallest rigorous, repo-independent account of how admissible
 possibilities become dynamics, records, access, capability, and finality, and
-use it to locate exactly what cross-repository evidence establishes without
-manufacturing agreement.
+use it to determine what kind of change actually occurred across heterogeneous
+domains without manufacturing agreement. This is the repo's distinctive agent-
+capability test: typed change reasoning with honest abstention when the evidence
+does not determine the type.
 
 The program's hard core (the big claim as thesis) and the lane doctrine
 (core-wager vs belt-lane priority, with the reversion invariant) live in
@@ -20,7 +22,8 @@ states its relation to that hard core.
 
 ## Long-Term Objectives
 
-- Force or falsify the explanatory hierarchy on real frozen cases.
+- Force or falsify the hierarchy and its typed transition distinctions on real
+  frozen cases across physical and nonphysical domains.
 - Build trustworthy packet and gate interfaces without absorbing source truth.
 - Distinguish fixed-family disclosure from genuine capability change.
 - Preserve negative results and the possibility that the hierarchy is wrong.
@@ -40,14 +43,24 @@ particular, ADAPTER2-01 already closes the current GU-sign/finality-polarity
 adapter attempt; the active boundary adapter is the physical
 boundary/source-to-capability object, not a retry under a new label.
 
-The active lane is `BOUNDARY-TO-ISSUANCE-WITNESS`. It owns substantive
+The active lane is `HIERARCHY-FORCE-OR-FALSIFY`. It owns substantive,
 repo-independent construction and falsification work:
 
-1. construct or kill the source-neutral physical boundary adapter;
-2. close the legitimate null/completion class under declared compositions;
-3. build and red-team a real physical witness; and
-4. combine sovereign returns only after the same frozen witness has been
+1. adjudicate source-grounded transitions using explicit frames, tasks,
+   resources, records, access, and completion rivals;
+2. test whether the same definitions transfer between physical and
+   nonphysical domains without analogy-only substitution;
+3. preserve principled abstention and hierarchy revision as valid outcomes;
+4. use physical witnesses and boundary adapters as severe specimens inside
+   the lane, not as the scope of the repository; and
+5. combine sovereign returns only after the same frozen witness has been
    tested independently.
+
+The current highest-ranked item is
+`P2C-CROSS-DOMAIN-TRANSITION-ADJUDICATION`: one preregistered, source-grounded
+nonphysics transition with positive and failing-direction controls. The
+superconducting-ring and neutral-BEC work remains the strongest physical
+specimen family and the next physical continuation is retained at rank 2.
 
 The founding GU packet sequence remains a live gate, but missing source
 provenance is not a reason for Progress to idle. While a source-issued packet
@@ -67,19 +80,20 @@ The North Star is the high-level exploit and remains the primary Progress
 driver until genuinely falsified. Hard, distant, or uncertain work is not wild
 exploration when the North Star controls it.
 
-Run two explicit lanes:
+Run two explicit research lanes. Stewardship remains an administrative mode,
+not a third research lane:
 
-- Track 1 forces or falsifies the largest repo-owned question on real frozen
-  cases.
-- Track 2 banks useful conditional results: proofs, no-go results, interfaces,
-  tests, reports, paper candidates, and explainers that may help the field, the
-  public, or Joe's credibility.
+- Lane 1, `HIERARCHY-FORCE-OR-FALSIFY`, tests the hierarchy and its transition
+  distinctions on real frozen cases across domains.
+- Lane 2, `HIERARCHY-HARDENING`, hardens the definitions, literature map,
+  casebook, benchmark protocol, and independent-reader reproducibility needed
+  to trust Lane 1. It also banks useful conditional results and byproducts.
 
-Track 2 is valuable work, not consolation work. It must state how it tests,
-unlocks, de-risks, or records progress toward Track 1, and its easier closure
+Lane 2 is valuable work, not consolation work. It must state how it tests,
+unlocks, de-risks, or records progress toward Lane 1, and its easier closure
 must not silently reprioritize it above an unfalsified North Star.
 
-Before demoting Track 1, require a reproducible falsifier and verify that the
+Before demoting Lane 1, require a reproducible falsifier and verify that the
 wall is not confined to one construction, class, normalization frame,
 representation, factorization scope, packet version, or missing-provenance
 state. Preserve `BLOCKED`, `INDETERMINATE`, null, forked, and hierarchy-
@@ -107,7 +121,7 @@ Temporary countermeasures:
 The repo owns the repo-independent hierarchy, packet schemas, neutral gates,
 abstract joint-seam object, and results independently established here. It
 coordinates but does not own source-packet requests, source truth, or JoeOps
-program sequencing.
+attention allocation.
 
 ## What This Repo Must Not Absorb
 

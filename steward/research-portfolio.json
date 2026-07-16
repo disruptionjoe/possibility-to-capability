@@ -5,12 +5,14 @@
   "hard_core": {
     "statement_owner": "governance/HARD-CORE.md",
     "requirement": "Every lane and internal work item states relation_to_hard_core: core wager, or belt with its legitimacy/byproduct function.",
+    "agent_capability_role": "Test whether agents can perform typed change reasoning across heterogeneous domains: distinguish possibility, dynamics, records, access, resources, executable capability, containment, and finality, or abstain honestly when the type is underdetermined.",
+    "agent_role_provenance": "Joe clarified the agent-capability role and its separation from the falsifiable research object in direct chat, 2026-07-16.",
     "lane_doctrine": "Lane 1 is always the aggressive boundary-pushing core wager. Belt lanes (adapters, gates, packet machinery, legitimacy infrastructure) may legitimately LEAD priority when required for the legitimacy of the research/methodology, or when a byproduct is exciting enough (papers, potential spin-off repos). Invariant: once those resolve, priority shifts back to the core and continues pushing.",
     "belt_lane_record_2026_07_16": "The Rank-2 runway (two-phase preregistration, firewalled packet drafts, independent Frame R re-freeze) is a belt lane that correctly LED while the legitimacy of the adjudication methodology required it. That runway is laid; priority now reverts to the core wager. Joe ratified this doctrine and record in direct chat, 2026-07-16.",
     "rank2_resolution_2026_07_16": "The preregistered Rank-2 adjudication (RANK2-PR-001) EXECUTED on sovereign TAF-001 + TI-PIT-002 evidence (both accepted and imported, all gates PASS; prereg_verify all seven gates PASS). Referee-governed verdict: NO Rank-2 outcome licensed, construal-invariant; c4 access-side ROBUST_ZERO observed on both branches; c5 NOT_APPLICABLE (sovereign factor-declaration practice does not match the check's capability vocabulary -- successor needs a NEW prereg id); c6 missed; TI frame leg quarantine-blocked. Rank 2 is UNDISCHARGED with a narrowed prerequisite; the successor prereg is a banked belt item, NOT the next swing. The runway belt lane is RESOLVED: per the lane doctrine invariant, priority reverts to the core wager (P2C-REAL-PHYSICAL-WITNESS, rank 1). Record: explorations/2026-07-16-rank2-adjudication/.",
     "provenance": "Joe ratified the five-persona panel synthesis with his own doctrine refinement, 2026-07-16, direct chat (trusted control channel)."
   },
-  "north_star_lane": "BOUNDARY-TO-ISSUANCE-WITNESS",
+  "north_star_lane": "HIERARCHY-FORCE-OR-FALSIFY",
   "selection_contract": {
     "progress_must_load_this_file": true,
     "select_highest_ranked_unblocked_item": true,
@@ -20,21 +22,23 @@
     "rerank_after_every_material_run": true,
     "difficulty_is_not_a_demotion_signal": true,
     "blocked_is_not_complete": true,
-    "reach_swing_cadence": "Every third Progress swing must be a reach swing: attempt the opacity bound as a real theorem over a native formalism, or attempt the real physical witness. A failed reach swing is preserved as a first-class result, never suppressed or retried silently. Ratified by Joe 2026-07-16.",
+    "physics_specimen_rule": "Physical witnesses are severe specimens inside Lane 1, not the scope of the lane. The same typed definitions and null/completion discipline must transfer to nonphysical cases without analogy-only substitutions.",
+    "no_third_lane_for_meta_role": "Typed change reasoning is the evaluation lens on Lane 1's falsifiable hierarchy research, not a separate meta lane and not a replacement North Star. Lane 2 hardens the hierarchy, casebook, literature position, and reader reproducibility that make Lane 1 trustworthy.",
+    "reach_swing_cadence": "Every third Progress swing must be a reach swing: attempt a real theorem over a native formalism, a real physical witness, or a source-grounded cross-domain transition adjudication. A failed reach swing is preserved as a first-class result, never suppressed or retried silently. Ratified by Joe 2026-07-16 and broadened by the same-day agent-capability role clarification.",
     "reach_swing_accounting_2026_07_16": "Since the last reach swing (P2C-REAL-PHYSICAL-WITNESS, commit ba1a055): witness-boundary-adapter (1), cross-repo combining adjudication (2), completion-class firewall swing (3), then the 2026-07-16 BEC/superfluid circulation reach swing. The reach obligation is discharged at exploration tier by an independent-domain neutral carrier replication. Next Progress may return to adapter consolidation or spend another reach swing only if the selected frontier explicitly warrants it.",
-    "reach_swing_accounting_2026_07_16i": "After the BEC reach swing, two material non-reach swings have now executed: carrier-neutral adapter consolidation and P2C-W1 second-standard local adjudication. The next Progress swing should satisfy the reach cadence unless a blocker appears; preferred target is P2C-REAL-PHYSICAL-WITNESS Alternate B (topological entanglement entropy gamma=log D) or an equivalent harder real-witness transfer test.",
-    "minimum_material_output": "A model, theorem target, proof, counterexample, executable discriminator, or physical-case adjudication. A new schema, queue, packet wrapper, or narrative alone is insufficient.",
+    "reach_swing_accounting_2026_07_16i": "After the BEC reach swing, two material non-reach swings executed: carrier-neutral adapter consolidation and P2C-W1 second-standard local adjudication. Joe's agent-capability role clarification now directs the due reach swing to P2C-CROSS-DOMAIN-TRANSITION-ADJUDICATION. A source-grounded nonphysics fixture is a harder transfer test of the hierarchy's meaning than another same-domain carrier refinement.",
+    "minimum_material_output": "A model, theorem target, proof, counterexample, executable discriminator, or source-grounded case adjudication. A new schema, queue, packet wrapper, or narrative alone is insufficient.",
     "ranking_formula": "2*impact + 2*information_gain + readiness + distinctiveness - effort - wall_risk - duplication_risk"
   },
   "lanes": [
     {
-      "id": "BOUNDARY-TO-ISSUANCE-WITNESS",
+      "id": "HIERARCHY-FORCE-OR-FALSIFY",
       "state": "ACTIVE",
       "hourly_eligible": true,
       "owner": "possibility-to-capability",
-      "relation_to_hard_core": "IS the core wager: force or falsify the hierarchy's disclosure-vs-capability-change discrimination on a real physical case. Always the aggressive boundary-pushing lane; never demoted by difficulty.",
-      "purpose": "Construct or kill a source-neutral physical boundary adapter and a real candidate witness that can be tested for capability change and irreducible issuance without absorbing source-repo truth.",
-      "current_authority": "ADAPTER2-01 returned the GU-sign/finality-polarity identity to OPEN because the profile functor forgets the sign fiber. This lane concerns a physical boundary/source-to-capability adapter and must not silently retry that failed polarity adapter.",
+      "relation_to_hard_core": "IS the core wager: force or falsify whether the hierarchy can classify what kind of change occurred across real heterogeneous cases without collapsing disclosure, access, resources, capability, containment, and finality. The agent-capability role is evaluated by this work but does not replace the research object. Always the aggressive boundary-pushing lane; never demoted by difficulty.",
+      "purpose": "Test the hierarchy through source-grounded transition adjudications across physical and nonphysical domains, with declared frames, tasks, resources, completion rivals, invariance tests, and honest abstention. Boundary adapters and physical witnesses are work items inside this purpose, not the lane's scope.",
+      "current_authority": "The superconducting-ring and neutral-BEC fixtures show that the typed diagnostic can survive two carrier-distinct physical specimens at finite-model exploration grade. That is evidence for a hard specimen family, not cross-domain transfer. ADAPTER2-01 remains OPEN and must not be retried without its reopen burden. The next generality test is a source-grounded nonphysics transition adjudication.",
       "priority_score": 24,
       "score": {
         "impact": 5,
@@ -46,13 +50,26 @@
         "duplication_risk": 0
       },
       "rerank_2026_07_16": "P2C-REAL-PHYSICAL-WITNESS promoted above P2C-BOUNDARY-ADAPTER via explicit rank fields; honest priority scores unchanged (27 adapter, 25 witness). Rationale (five-persona panel, Joe ratified 2026-07-16 in direct chat): pick the real system first and let it discipline the definitions, rather than perfecting the adapter in the abstract and fitting a system to it.",
-      "kill_condition": "If every admissible boundary transition factors through declared fixed dynamics, access, resources, or a legitimate completion, preserve the scoped no-go and narrow the hierarchy rather than inventing issuance.",
-      "forbidden_shortcut": "Do not treat a packet schema, GU analogy, irreversible process, stochastic outcome, or added branch label as a constructed adapter or physical witness. Do not spend an hourly run retrying ADAPTER2-01 without new native source or target structure that meets its reopen burden.",
+      "kill_condition": "If the same definitions cannot distinguish transition types across source-grounded domains, competent readers cannot reproduce the classification, or every candidate reduces to description, access, resources, fixed dynamics, or legitimate completion, preserve the scoped failure and revise the hierarchy rather than inventing capability.",
+      "forbidden_shortcut": "Do not treat analogy, fluent narrative, a packet schema, irreversible process, stochastic outcome, added label, or domain-specific relabeling as typed adjudication. Do not spend an hourly run retrying ADAPTER2-01 without new native source or target structure that meets its reopen burden.",
       "internal_work_items": [
+        {
+          "id": "P2C-CROSS-DOMAIN-TRANSITION-ADJUDICATION",
+          "state": "READY",
+          "rank": 1,
+          "priority_score": 23,
+          "hourly_eligible": true,
+          "relation_to_hard_core": "Core wager in its generality-testing form: establish whether the same typed change discipline that survived physical specimens can classify a nonphysics transition without analogy collapse or domain-specific redefinition.",
+          "next_swing": "Preregister and execute one source-grounded nonphysics transition packet. Prefer a controlled AI/computation, security, or organizational case with an explicit before/after pair, fixed intervention menu and resource budget, operational task set, record/access distinction, strongest completion rival, and an abstention path. Apply Hierarchy v0.2 and CompletionClass-P2C without changing their meanings, run positive and failing-direction controls, then obtain an adversarial referee report. Rank the next two nonphysics domains only after the first fixture reveals the real transfer obstruction.",
+          "success_condition": "One nonphysics case receives a reproducible typed verdict or principled abstention using unchanged definitions, explicit counterfactuals, and a completion/null attack; the result identifies what changed and what did not without relying on metaphor.",
+          "kill_condition": "The classification requires domain-specific redefinition, hides a resource or access change inside capability, cannot state an executable task, or changes when the same evidence is competently reframed under an admissible representation.",
+          "forbidden_shortcut": "Do not use a merely illustrative analogy or a case whose desired classification is embedded in its labels. Source-ground the transition and make the failing direction executable.",
+          "candidate_lead": "Continuity Ledger K0 individuation and after-the-fact relabeling is an unverified lead supplied outside P2C. It becomes eligible only through a source-issued, frozen, provenance-bearing CL packet. Do not reconstruct or accept the source finding from a peer note; if no packet exists, choose another controlled case."
+        },
         {
           "id": "P2C-REAL-PHYSICAL-WITNESS",
           "state": "ADVANCED_OPEN_FRONTIER",
-          "rank": 1,
+          "rank": 2,
           "rerank_2026_07_16f": "Promoted to rank 1 after P2C-NULL-COMPLETION-CLOSURE resolved (derived firewall, D2 closed at model grade). Lane doctrine invariant: belt resolved -> core wager leads. The NEXT Progress swing on this item is the designated REACH swing (see selection_contract.reach_swing_accounting_2026_07_16): Alternate C (BEC quantized circulation, independent domain replication) or Alternate B (topological entanglement entropy gamma=log D). Both are now triply motivated: C4 per-construction transfer, F5 watch, and the completion-closure result's own transfer test -- the composite attack reached Q and P, so the first question for any new witness model is whether its local-invariance leg is stronger or weaker than the ring's.",
           "priority_score": 22,
           "hourly_eligible": true,
@@ -61,7 +78,8 @@
           "swing_2026_07_16g": "Independent-domain reach replication executed. Added tests/bec_circulation_witness.py and explorations/2026-07-16-bec-circulation-witness/SYNTHESIS.md. Result: INDEPENDENT_DOMAIN_REPLICATION / UNDISCHARGED_VS_WHOLE_FAMILY. The neutral superfluid/BEC circulation fixture transfers the QIP discriminator away from superconducting charged-pair/fluxoid primitives: quantized neutral winding, local phase-relabel invariance, and persistence survive local completions; composite local absorbers reach Q and P but not I; whole-family-with-condensate still absorbs. Fixture exit 0, strict TEF lint clean, headline 7 [E] + 4 [F] = 11. This discharges the current reach-swing obligation at exploration tier but leaves the F1 whole-family seam live.",
           "disposition_update_2026_07_16": "Receiver disposition upgraded by the cross-repo combining adjudication (commit 512638a, conditions C1-C4 binding): from SURVIVES_LOCAL_COMPLETIONS / UNDISCHARGED_VS_WHOLE_FAMILY to SURVIVES_DECLARED_COMPLETION_FAMILY_AT_OPERATIONAL_CLASS / ABSORBED_AT_GLOBAL_ONTOLOGICAL_CLASS (frame-indexed; composite local completions untested per referee D2). No source status moved; the frozen P2C-W1 bundle is unchanged.",
           "rerank_2026_07_16i": "Promoted to rank 1 after the second-standard P2C-W1 read confirmed the scoped-survivor class split under CompletionClass-P2C v0.1 and the carrier-neutral adapter. Current P2C-W1 belt checkpoints are closed for current inputs; reach cadence has two non-reach swings since the BEC replication, so the next material Progress swing should be Alternate B (topological entanglement entropy gamma=log D) or an equivalent harder real-witness transfer test.",
-          "next_swing": "Alternate C replication is complete at finite-model exploration tier. Next eligible swing is Alternate B (topological entanglement entropy gamma=log D) or a finer physical witness model that tests whether the local-invariance leg weakens under a harder domain. Preserve no-verdict posture and do not cite the P2C-W1 scoped survivor as a general capability claim.",
+          "rerank_2026_07_16j": "Moved to rank 2 after Joe clarified that P2C's distinctive agent-capability test is typed change adjudication across heterogeneous domains, not physics-specific witness production. The two physical carriers remain valuable hard specimens. Cross-domain transfer now has higher information value; Alternate B remains the strongest physical continuation after that transfer swing or if the nonphysics fixture exposes a physics-specific dependency.",
+          "next_swing": "Hold Alternate B (topological entanglement entropy gamma=log D) as the strongest physical continuation after the cross-domain transfer swing, or activate it sooner only if the nonphysics fixture exposes a physical-invariance dependency that it can test. Preserve no-verdict posture and do not cite the P2C-W1 scoped survivor as a general capability claim.",
           "success_condition": "A source-grounded candidate has matched before and after descriptions, a fixed intervention menu and budget, a native response, and a concrete discriminator from its strongest completion rival.",
           "kill_condition": "The candidate reduces to unpredictability, irreversibility, hidden state, changed resources, changed access, stochastic seed, or a completed-history description."
         },
@@ -99,7 +117,7 @@
         {
           "id": "P2C-CROSS-REPO-ADJUDICATION",
           "state": "RESOLVED_SECOND_STANDARD_CONFIRMED",
-          "rank": 4,
+          "rank": 5,
           "priority_score": 23,
           "hourly_eligible": false,
           "re_arm_2026_07_16": "Re-arm condition branch 2 is now MET: CompletionClass-P2C v0.1 exists (explorations/2026-07-16-completion-class-firewall/) and is ready for a second-standard re-adjudication of P2C-W1. That re-adjudication is a LOCAL swing: it re-runs the completion leg under the P2C-owned standard using the frozen witness bundle and the already-imported sovereign packets read-only; it requires NO new cross-repo action and NO proposals. Expected value: tests whether the scoped-survivor verdict is stable when C2's v1-relativity is replaced by P2C's derived firewall. Ranked below the witness reach swing and the unblocked adapter rerun because the derived cap agrees with v1's in content, so the re-adjudication's information gain is confirmatory unless an axiom fails on contact.",
@@ -125,10 +143,10 @@
       "state": "RESERVE",
       "hourly_eligible": true,
       "priority_score": 14,
-      "relation_to_hard_core": "Belt: definitions, literature, casebook, and reproducibility work that de-risks the core wager's witness campaign, or banks byproducts exciting enough to lead briefly (papers, spin-off candidates). May lead only per the lane doctrine; leadership reverts to the core when the leading item resolves.",
-      "purpose": "Definitions, literature, casebook, and reader reproducibility work that directly de-risks the active witness campaign.",
-      "activation": "Select only when it closes a named blocker for the active lane or no active technical item is executable.",
-      "forbidden_shortcut": "Do not substitute synthesis prose or persona aggregation for a physical witness or discriminator."
+      "relation_to_hard_core": "Belt: definitions, literature, casebook, reader reproducibility, and benchmark design that make Lane 1's typed adjudications trustworthy across domains, or bank byproducts exciting enough to lead briefly. May lead only per the lane doctrine; leadership reverts to the core when the leading item resolves.",
+      "purpose": "Harden the hierarchy, completion classes, casebook, literature comparison, adjudication protocol, and independent-reader reproducibility required for cross-domain typed change reasoning.",
+      "activation": "Select when it closes a named semantic, literature, benchmark, or reproducibility blocker for Lane 1, or no active Lane 1 work item is executable.",
+      "forbidden_shortcut": "Do not substitute synthesis prose, persona agreement, or benchmark labels for a source-grounded transition adjudication."
     }
   ]
 }

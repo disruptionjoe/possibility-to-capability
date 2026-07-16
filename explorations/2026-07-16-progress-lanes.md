@@ -1,12 +1,22 @@
 ---
 artifact_type: exploration
-status: active
+status: superseded
 governance_role: progress_lane_state
 constitutional: false
 created: 2026-07-16
 ---
 
-# Standing progress lanes (Joe, 2026-07-16; purpose/priority distinction ratified same day)
+# Historical progress-lane snapshot
+
+Superseded on 2026-07-16 by the machine-readable owner at
+`steward/research-portfolio.json`. The current durable research lanes are:
+
+1. `HIERARCHY-FORCE-OR-FALSIFY`, the protected North Star; and
+2. `HIERARCHY-HARDENING`, the definitions, literature, casebook, benchmark,
+   reproducibility, and byproduct lane.
+
+The legacy labels below record earlier workstream history. They are not current
+lane identifiers or automation priorities.
 
 **North Star (unchanged, not demotable by lane success):** the repo's purpose remains the charter's
 guiding hypothesis — the possibility → dynamics → records → access → capability → finality hierarchy as a

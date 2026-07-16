@@ -106,3 +106,19 @@
   (Alternate B/C); P2C-BOUNDARY-ADAPTER unblocked (rerun against v0.1);
   P2C-CROSS-REPO-ADJUDICATION re-arm branch 2 MET (local second-standard
   re-adjudication of P2C-W1 now available; no proposals sent this swing).
+
+## 2026-07-16 — Agent-capability role and two-lane clarification
+
+- Joe clarified that P2C's distinctive role is not to become another
+  fundamental-physics program. It tests whether agents can perform typed
+  change reasoning across heterogeneous domains: preserve source meaning and
+  distinguish description, records, access, resources, executable capability,
+  containment, and finality, including honest abstention.
+- No third research lane was created. Lane 1 is now
+  `HIERARCHY-FORCE-OR-FALSIFY`, the protected North Star. Lane 2 remains
+  `HIERARCHY-HARDENING`. Typed change reasoning is the agent-capability
+  evaluation lens, not a replacement for the falsifiable hierarchy research
+  object. Stewardship remains an administrative mode.
+- Physics remains a severe specimen family inside Lane 1, not the scope of the
+  repo. A preregistered, source-grounded nonphysics transition adjudication was
+  installed at rank 1; the next physical witness continuation moved to rank 2.

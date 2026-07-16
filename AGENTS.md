@@ -21,6 +21,14 @@ repo-independent possibility -> dynamics -> records -> access -> capability ->
 finality hierarchy and for joint-seam results that no source repository can own
 without crossing its boundary.
 
+Its distinctive agent-capability test is typed change reasoning: determine
+whether a real transition changed possibility, dynamics, records, access,
+resources, executable capability, containment, or finality while preserving
+source meaning, counterfactual frame, and honest abstention. Physics supplies
+severe specimens, but it is not the scope of the capability. The same
+definitions must transfer to source-grounded nonphysical cases without analogy
+collapse or domain-specific relabeling.
+
 Read `governance/CHARTER.md` before research work.
 
 When stewardship context is needed, load `steward/README.md`. Do not load
@@ -64,8 +72,9 @@ authorization. Never send email.
   `NOT_YET_IMPORTABLE`, and hierarchy-revising outcomes are first-class results.
 - Apply the Neutrality Rule. The correct result must not depend on rooting for
   GU, TI, TaF, emergence, finality, capability enlargement, or unification.
-- CapacityOS owns architecture and automation. JoeOps owns program sequencing.
-  This repository owns neither.
+- CapacityOS owns architecture and automation. JoeOps owns Joe's attention
+  allocation and attention-dependent orchestration. This repository owns
+  neither.
 - Scratch, caches, temporary renders, and intermediate outputs belong in
   `_local/`.
 
@@ -85,6 +94,12 @@ This repository owns:
 It coordinates but does not own source-packet requests, cross-repo testing, and
 program handoffs. It must not absorb source theory, source claim status, JoeOps
 coordination truth, CapacityOS architecture, or WI-069's transduction program.
+
+Cross-repo adjudication and orchestration are different. This repository may
+determine what a valid combination of frozen packets establishes. Operational
+orchestration follows the owner or workflow designated by its governing
+protocol. JoeOps owns Joe's attention and only the orchestration that depends
+on his attention or decision.
 
 ## WI-069 Boundary
 
@@ -153,10 +168,13 @@ program's preferred construction.
 
 ## Research And Claim Discipline
 
-The North Star is force-or-falsify the hierarchy on real cases, not merely
-finish attractive definitions. Bank useful formal byproducts, but do not let an
-easy schema refinement displace the founding-case gate run while that run is
-hard rather than falsified.
+The North Star is force-or-falsify the hierarchy and its typed transition
+distinctions on real cases across domains, not merely finish attractive
+definitions. The agent-capability role explains why running that research is
+valuable; it does not replace the falsifiable research object or count as
+evidence that agents already possess the capability. Bank useful formal
+byproducts, but do not let an easy schema refinement displace a harder
+transition adjudication while that adjudication is hard rather than falsified.
 
 ### North-Star Pursuit And Byproduct Firewall
 
@@ -182,18 +200,21 @@ following:
 Difficulty is not falsification. A no-go scoped to one class or construction is
 a result about that class or construction until transfer is established.
 
-Use two tracks with a firewall:
+Use two research lanes with a firewall. Do not create a separate meta lane for
+the agent-capability role; it is the evaluation lens on Lane 1's falsifiable
+work. Stewardship is an administrative mode, not a numbered research lane.
 
-- **Track 1 — North Star:** unconditional force-or-falsify work on the largest
-  repo-owned question. This controls Progress priority.
-- **Track 2 — banked byproducts:** conditional theorems, negative results,
-  reusable interfaces, tests, technical reports, paper candidates, explainers,
-  and other work that may help science, the public, or Joe's credibility.
-  These are real outputs and should be finished when valuable, but they report
-  upward to Track 1 and never silently replace it.
+- **Lane 1 — Hierarchy Force or Falsify:** unconditional tests of the hierarchy
+  and its transition distinctions on real cases across domains. This controls
+  Progress priority.
+- **Lane 2 — Hierarchy Hardening:** definitions, literature comparison,
+  casebook and counterexamples, benchmark design, independent-reader
+  reproducibility, conditional theorems, reusable interfaces, tests, reports,
+  and publication-oriented byproducts. These are real outputs, but they report
+  upward to Lane 1 and never silently replace it.
 
 A byproduct may temporarily lead execution when it directly unlocks, tests, or
-de-risks Track 1, or when it can be closed in a bounded lane without consuming
+de-risks Lane 1, or when it can be closed in a bounded lane without consuming
 the North-Star progression. State that relationship explicitly in the run
 plan. Papers and public-facing drafts remain provisional and subject to the
 Publication Rule.
@@ -259,7 +280,8 @@ reason to spend an agent process on every rhetorical lens.
 - Repo-independent hierarchy, packets, gates, and local synthesis: this repo.
 - GU, TI, TaF, WI-069, or another source's truth: that source repository.
 - Cross-repo request: the receiving repository's CapacityOS mailbox.
-- Program sequencing and portfolio decisions: JoeOps.
+- Joe-attention allocation and attention-dependent cross-repo decisions:
+  JoeOps.
 - CapacityOS architecture or automation: CapacityOS System.
 - External publication or outreach: Joe approval.
 
