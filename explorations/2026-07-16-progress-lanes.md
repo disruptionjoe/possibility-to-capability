@@ -41,6 +41,10 @@ governs). The lane's work is hardening the theorem and walking its enumerated do
    candidate on the board.
 4. **Native-tier battery** (door 3): TaF FORMALISM-grade primitives (incl. scalar/vector projections,
    `compare_systems` beyond source-audit grade; T24 labels; site-map families) and TI `OnlineIssuance^LC`.
+4a. **Per-block observability fixture** (boundary-switch interpretation, Joe 2026-07-16): verify that
+   absolute-label observables are flip-variant while block-relative alignments are flip-invariant and
+   sensitive to independent per-block relabelings; single-block control must show no flip-invariant
+   choice-sensitive observable. Spec: `explorations/2026-07-16-boundary-switch-interpretation.md`.
 5. Housekeeping: convert legacy fixtures to the check-registry convention (`tests/tef_check_tag_linter.py
    --strict` clean); adopt two-phase pre-registration commits; text-verify the five classical-core
    citations.
