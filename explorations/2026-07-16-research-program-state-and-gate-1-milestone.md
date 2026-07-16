@@ -72,6 +72,20 @@ independent physical principle, or does it smuggle the label in? If it only rela
 
 ## Ranked next worthy work (for Progress selection)
 
+**UPDATE 2026-07-16:** all four items below were executed by the 2026-07-16 big swing
+(`explorations/2026-07-16-big-swing/`, four lanes, each adversarially refereed). Results, referee-corrected
+grades, and the SUPERSEDING ranked list live in `explorations/2026-07-16-big-swing/SYNTHESIS.md`. Headlines:
+(1) GU-001 is **IMPORTABLE at receiver-verified grade** (pin `77879e5`, three receiver annotations) — the
+import itself is now the top-ranked action; (2) gate #1 resolved SPLIT at toy tier (profiles-only collapse is
+definitional; D1Field functor exists with fiber equivariantly-transported-but-undetermined; **native-tier
+remains open**); (3) novelty scan: NEW-FRAMING-ONLY near NOTHING-NEW (closest prior: Abramsky et al. 2015) —
+do not write up the hard core standalone; (4) aliveness anchor: **FAILS-NEUTRALITY** at this grade (framework
+theorem: the rule relabels, does not select), honestly parked with a precise 3-part revival condition; the
+one open door is the Krein-dynamical norm-link. Fixtures persisted and reproduced in-repo:
+`tests/gate1_branch_preserving_functor.py`, `tests/aliveness_neutrality_test.py` (both exit 0).
+
+Original ranking (retained for provenance):
+
 1. **Founding-packet provenance:** determine whether GU can freeze a source packet at a pinned revision that
    reflects the corrected status (`bar(b)` OPEN; five-method located-not-forced; adapter downgrade). If not,
    keep `GU-001` at `NOT_YET_IMPORTABLE` with the missing source gates named. (Charter Deliverable 1B.)
