@@ -13,3 +13,9 @@ until its owners, source packets, and execution authority are resolved.
   with owners, boundaries, prerequisites, outcomes, and qualitative updates
   among the candidate and its reductive, operational-context,
   constraint-first, and pluralist rivals. It authorizes no source-repo work.
+
+## Rival frames
+
+- `rival-frames/` hosts frozen rival normalization frames authored by their own
+  advocates (see `rival-frames/README.md`). Currently: Frame R
+  (access-constitutive) v0.2, independent-advocate re-freeze of 2026-07-16.
