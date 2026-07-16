@@ -1,0 +1,116 @@
+> Part of the 2026-07-16 decisive-tests swing (north-star lane; ranked program v0.1, ranks 1-4). Exploration tier; receiver updates only; the attached referee report GOVERNS — its corrected receiver update supersedes the lane headline.
+
+# Rank 1 Adjudication — Does the completed GU-001 run satisfy Rank 1?
+
+Adjudicated 2026-07-16 against `experiments/2026-07-14-ranked-decisive-test-program-v0.1.md` (read in full), the P2C charter, the frozen GU-001 import directory, its governing referee report, and the p2c git history. Exploration tier; receiver updates only; no source claim moves; bar(b)/H59/Krein positivity/physical issuance stay OPEN; ADAPTER2-01 governs throughout.
+
+## 1. Prerequisite audit (Rank 1's five prerequisites, one by one)
+
+| # | Prerequisite | Verdict | Evidence |
+|---|---|---|---|
+| (i) | Newly pinned source revision with source-issued candidate bundle | **SATISFIED** | `packets/imports/GU-001/GU-001-import-record-2026-07-16.md` — source-issued GU-001 under Frozen-Packet Contract v0.2, `packet_status: SOURCE_FROZEN`; issuance commit `dde3792` (2026-07-15 14:29, in gu-formalization, AFTER the program was written 2026-07-14 22:15); import pin `77879e5` p2c-selected, evidence pin `d62a82f3` its ancestor, all referee-confirmed by ancestry checks. No packet substitution: it is GU-001 itself, as the program requires. |
+| (ii) | All raw blobs + canonical `ptc-frozen-bundle-v1` manifest | **SATISFIED, with one logged bounding note** | Same record: 16/16 manifest blobs re-extracted at the pin, all `byte_length` + `content_sha256` match (referee re-executed). Bounding note = Annotation E: the bundle is byte-frozen but not runtime-closed (W210 imports `gen_sector_bridge.py` outside `hash_scope`; verified byte-identical at pin, sha `dc9b8297…`). All manifest-scoped blobs are present, so the prerequisite as written is met; the self-containedness gap is preserved as a first-class finding, not hidden. |
+| (iii) | Matching source-issued manifest, packet, and bundle digests | **SATISFIED** | Import record + `GU-001-GR-001-gate-run-v0.1.json` provenance gate: `manifest_digest 964f398f…`, `packet_digest a3f7fc5d…`, `bundle_digest ab64dbea…` all recomputed under `ptc-frozen-bundle-v1` and match; `validate_frozen_packet_v0_2_contract.py` + jsonschema 0 errors; independently reproduced by the lane referee (report attached to `explorations/2026-07-16-swing-2/lane-1-gu001-import-execution.md`). |
+| (iv) | Exact source premise/dependency structure and joint argument | **SATISFIED** | Frozen packet's `evidence_structure.premise_ledger` carried byte-exact; joint argument pinned as `GU-001-W211-LOCATED-NOT-FORCED` @ `d62a82f3` (sha `0e1c213d…`) in the gate run's `one_chain_control`; independence received at exactly source strength via `GU-001-IA-001` (five methods = ONE convergence unit, no upgrade, no downgrade; contract-valid, 0 errors). RESEARCH-STATUS wording variance logged as source-owned, not silently repaired. |
+| (v) | Preregistration of receiver constructions, normalization frame, factorization search, rival forecasts, and stop conditions BEFORE gate outcomes inspected | **PARTIALLY SATISFIED** — see §2 | Split verdict below, element by element, from git history. |
+
+## 2. Adversarial finding on prerequisite (v)
+
+Git facts (p2c repo):
+
+- `100af73` 2026-07-14 21:25 — gate-run schema (`interfaces/gate-run-v0.1.schema.json`), gate criteria doc, `evaluate_gate_run.py`, contract tests, fixtures. **Committed ~17 hours BEFORE the source bundle even existed** (GU issuance `dde3792`, 2026-07-15 14:29).
+- `a800d04` 2026-07-14 22:15 — the ranked program itself, containing Rank 1's six-outcome menu (rival forecasts at program grade) and binding stop conditions. Also pre-issuance.
+- `aeea411` 2026-07-16 01:33 — import + IA-001 + gate run + lane report land in **one commit**. There is no GU-001-specific preregistration commit between `100af73` and `aeea411`. The run was built and evaluated inside one swing lane.
+
+Element-by-element:
+
+| Element | Preregistered before outcomes inspected? | Grade |
+|---|---|---|
+| Receiver constructions (8 gates, outcome model, success rule, one-chain control, malformed→INVALID) | YES — committed as executable contract before the packet existed; the strongest possible form of "before outcomes inspected" | committed-artifact grade |
+| Stop conditions | YES — Rank 1's "stop at provenance," no-substitution rule, and "preflight never rewritten into a pass" committed 07-14 | committed-artifact grade |
+| Rival forecasts | PARTIAL — the six-outcome menu with rival-updates was committed 07-14, but at program grade (generic to Rank 1), not GU-001-instantiated forecasts | program grade only |
+| Normalization frame | NOT preregistered for this run (it is Rank 2 machinery; the gate run does not depend on one, but the prerequisite lists it) | unmet as written |
+| Factorization search | NOT independently preregistered — the completion-null gate evaluated the packet's own DECLARED completions (source-declared, hence frozen pre-run), but no receiver factorization search space was frozen before evaluation | partial (source-frozen, not receiver-preregistered) |
+| **Run-specific judgment calls** | **NOT preregistered** — annotations A/B/C, the chain/branch selection, and above all the Gate-6 definitional construal ("owner identified" = typed joint seam, referee defect D7) were authored in the same lane that evaluated the gates. D7 is exactly the freedom preregistration exists to remove: a stricter construal yields INDETERMINATE, not PASS. Likewise the neutrality control is recorded-metamorphic, not an executed swap re-run (referee D3). | unmet |
+
+**Honest conclusion on (v): PARTIALLY MET.** The mechanical skeleton (gate criteria, evaluator, outcome menu, stop conditions) was genuinely committed before the source bundle existed — that is real, checkable preregistration and it is what makes the run non-worthless. But the discretionary layer that converted two potentially-INDETERMINATE gates into PASS (finality construal, neutrality-control grade) was chosen in-flight with no separately-committed preregistration artifact. Under the program's sequence rule, an incomplete prerequisite grades the output **PROVISIONAL/PREPARATION, stated conditionally, never averaged into a pass**. The gate-run file's own `evaluation_status: provisional` already concedes this.
+
+## 3. Rank 1 receiver update
+
+**Outcome slot reached (from Rank 1's own menu):** "One-chain, neutral, independently reviewed full pass" — the closest match: one argument chain (W211), one branch (program-native), 8/8 contract-valid PASS, adversarially refereed with every executable claim independently re-executed (SOUND-WITH-CORRECTIONS). It is NOT any of: blocked-at-provenance, formation/construction failure, finality-blocked, finality-factors-through, or branch-disagreement.
+
+**Receiver update: `FAVORS_CANDIDATE` — at PROVISIONAL/PREPARATION grade, stated conditionally, with a named repair.**
+
+Exactly as the task's candidate phrasing anticipates: a one-chain neutral full pass was achieved and independently verified, but the preregistration prerequisite is only partially proven, so the update is FAVORS_CANDIDATE **conditional on** the discretionary layer surviving a preregistered re-run, with the named repair being a preregistered re-run on the next source packet. Conditionality scope:
+
+- What it favors, even provisionally: the candidate over the claim that the interface cannot form a real joint object from a real source-issued packet. That specific rival prediction (interface-cannot-form) took a genuine, referee-verified hit — prerequisites (i)-(iv) and the mechanical contract were fully preregistered and fully passed.
+- What it does not do: it is not averaged into a pass of Rank 1; it establishes only this case and construction; the neutrality pass is at recorded-metamorphic grade; the finality pass is definition-relative (typed-boundary construal, disclosed); no physics, no branch selection, no debit cleared, no source promotion; bar(b), H59, Krein positivity, physical issuance remain OPEN; ADAPTER2-01 untouched.
+- It is explicitly NOT `BLOCKED` (all material prerequisites present or partially present, run executed and refereed) and NOT `REMAINS_UNDERDETERMINED` (the run did discriminate against interface-cannot-form).
+
+## 4. What Rank 1 requires to be FULLY discharged
+
+Concrete repair path, in order:
+
+1. **Separately-committed preregistration artifact** (e.g. `experiments/GU-XXX-prereg-v1.md` or a `prereg-v0.1.schema.json` instance) for the NEXT source-issued packet — GU-001 v0.3, or a second packet under its own identifier per the no-substitution rule — freezing BEFORE any gate evaluation: (a) chain and branch selection, (b) all receiver annotations/readings, (c) the Gate-6 ownership construal (typed-boundary vs object-identification, chosen in advance), (d) packet-instantiated rival forecasts mapped to the six-outcome menu, (e) the factorization/completion search space the receiver will accept, (f) stop conditions. The commit hash of this artifact must predate the commit containing any gate verdict.
+2. **Executed neutrality control** in that run: an actual re-run of the label-swapped evaluation (not an authored recorded-metamorphic pair), upgrading the neutrality pass from argued-from-lemmas to executed grade; keep the [F]-style failing-direction demonstration.
+3. **Gate-6 at the preregistered construal only** — if the stricter object-identification construal is chosen and yields INDETERMINATE, that is the recorded result (maps to the "passes through capability but finality blocked/indeterminate" outcome; still a legitimate program outcome, per Failure-Preservation).
+4. On completion: re-adjudicate Rank 1. If the preregistered run reproduces the one-chain full pass, `FAVORS_CANDIDATE` is issued at full (non-provisional) grade and Rank 1 is discharged; GU-001-GR-001 then stands as the founding specimen, and the preregistered run as the confirming instance. If it diverges, the divergence itself is the result (likely `REVISE_HIERARCHY` or the finality-blocked slot) and is preserved.
+5. Bookkeeping now (no re-run needed): record this adjudication's provisional grading alongside the import; do not restate GR-001's 8/8 as a Rank 1 discharge anywhere.
+
+**Bottom line:** the completed GU-001 run satisfies Rank 1 prerequisites (i)-(iv) fully at receiver-verified grade, satisfies (v) only for the mechanical contract layer (genuinely committed pre-issuance) and not for the run-specific discretionary layer; the receiver update is `FAVORS_CANDIDATE` at provisional/preparation grade, conditional, with the named repair being a fully preregistered re-run on the next source-issued packet. Rank 1 is materially advanced — its evidential class did change, as the program predicted a real case would — but it is not yet fully discharged.
+
+Key evidence files:
+- `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/packets/imports/GU-001/GU-001-import-record-2026-07-16.md`
+- `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json`
+- `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/packets/imports/GU-001/GU-001-IA-001-receiving-independence-v0.2.json`
+- `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/explorations/2026-07-16-swing-2/lane-1-gu001-import-execution.md` (governing referee report, defects D3/D7 load-bearing here)
+- Git anchors: contract `100af73` (07-14 21:25), program `a800d04` (07-14 22:15), GU issuance `dde3792` (07-15 14:29, source repo), run `aeea411` (07-16 01:33, single commit, no intervening GU-001 prereg)
+
+---
+
+# ATTACHED ADVERSARIAL REFEREE REPORT (governs; corrected receiver update supersedes)
+
+# Referee Report — R1-adjudicate-founding-intake
+
+## 1. VERDICT: SOUND-WITH-CORRECTIONS
+
+Every executable and archival claim was independently re-run before grading. Confirmed: evaluator on the written repo paths (`valid:true`, 8/8 PASS, computed_aggregate PASS, exit 0); all four file sha256s (`0f972016…`, `b2695247…`, `f79bdc9c…`, `5f7fc7cd…`) match exactly; Frozen-Packet v0.2 contract 38/38 PASS; all three digests independently recomputed under `ptc-frozen-bundle-v1` (`964f398f…`/`a3f7fc5d…`/`ab64dbea…`, all match); 16/16 manifest blobs re-extracted and re-hashed at **both** pins (evidence `d62a82f3` and import `77879e5`), all match; `validate_assessment(IA-001)` → 0 errors; W211 argument sha `0e1c213d…` identical at both pins; `gen_sector_bridge.py` sha `dc9b8297…` identical at both pins (Annotation E stands); ancestry `dde3792`/`d62a82f3` → `77879e5` confirmed; all commit timestamps confirmed (`100af73` 07-14 21:25; `a800d04` 07-14 22:15; `dde3792` 07-15 14:29 in gu-formalization; `aeea411` 07-16 01:33, single commit); GU-001 preflight artifacts untouched since `4c5a2cd`. No ADAPTER2-01 contradiction anywhere in the adjudication; bar(b)/H59/Krein positivity/physical issuance stay OPEN throughout; no source claim moves; no borrowed factorization legs; no receiver-fiat representation-equivalence.
+
+The prerequisite audit (i)-(iv) is accurate and receiver-verified. The split verdict on (v) is directionally right. The defects below are authority-citation fabrications, one false git-history claim, one missed program step, and one self-inconsistent slot assignment — none flips the update's direction; all tighten its conditionality.
+
+## 2. Defects
+
+**D1 — MAJOR (fabricated program rule as the load-bearing bridge).** "Under the program's sequence rule, an incomplete prerequisite grades the output **PROVISIONAL/PREPARATION, stated conditionally, never averaged into a pass**." No such grading rule or vocabulary exists in the program. The actual serialization text says: "Actual receiver verdicts remain serialized: validate packet, assess without upgrade, run gates, diagnose transition, then update rivals. No parallel partial pass can satisfy a later rank"; "never average" appears only in the branch-disagreement outcome. The program's own handling of an absent prerequisite is `BLOCKED` ("a prerequisite is absent; downstream judgments are not run"). The lane invents an intermediate grade tier and attributes it to the program — this is exactly the source-claim-movement pattern applied to the program contract itself. The provisional-conditional posture is *defensible as receiver conservatism*, but it must be owned as the adjudicator's construction, not cited to the program.
+*Corrected wording:* "The program's own vocabulary offers no graded update; strictly, an absent prerequisite element yields `BLOCKED` for Rank-1 discharge. As a receiver-conservative construction (not a program rule), the run's evidence is recorded as a conditional, scoped `FAVORS_CANDIDATE` pending the named repair; Rank-1 discharge itself remains `BLOCKED` at prerequisite (v)."
+
+**D2 — MODERATE (schema constant cited as the run's own concession).** "The gate-run file's own `evaluation_status: provisional` already concedes this." False corroboration: `gate-run-v0.1.schema.json` line 31 defines `"evaluation_status": {"const": "provisional"}` — every contract-valid run must carry this value; it cannot concede anything about prerequisite (v).
+*Corrected wording:* "The gate-run interface is graded provisional by design (schema constant); it neither concedes nor contests the preregistration gap."
+
+**D3 — MODERATE (false git-history claim; the un-preregistered layer is narrower than stated).** "There is no GU-001-specific preregistration commit between `100af73` and `aeea411`" and "annotations A/B/C … were authored in the same lane that evaluated the gates" are both false. Commit `0bfd2e9` (2026-07-16 00:48, 45 minutes before the gate-run commit) contains `explorations/2026-07-16-big-swing/lane-A-packet-provenance.md` with Annotations A/B/C in near-final wording, the import-pin selection (`77879e5`), and the RESEARCH-STATUS variance treatment — all committed before any gate outcome existed; its attached referee report also pre-commits the `issued_at` anachronism (Annotation D's content). `4c5a2cd` (07-14 22:01) is likewise GU-001-specific. The genuinely in-flight discretionary layer is only: the Gate-6 ownership construal (D7), the chain/branch identifiers, Annotation E, and the choice of neutrality relabeling artifact. The error cuts *against* the candidate, but it misstates the record and overstates the repair's scope.
+*Corrected wording:* "Annotations A/B/C, the import pin, and the wording-variance treatment were committed in `0bfd2e9` (00:48) before any gate outcome existed — artifact-backed prereg at commit grade. The un-preregistered discretion is confined to the Gate-6 construal, chain/branch identifiers, Annotation E, and the neutrality artifact selection; the Gate-6 construal remains the load-bearing gap, so the provisional grade stands."
+
+**D4 — MODERATE (missed serialization step: no transition diagnosis before the rival update).** The very sequence rule the lane cites contains "diagnose transition" between "run gates" and "update rivals." The transition-diagnosis contract has existed since `4e5392c` (07-14 21:37, preregistered), but no transition-diagnosis instance exists for GU-001-GR-001 anywhere in the repo (only 07-14 synthetic results). The adjudication issues a rival update with this step skipped, and the five-step repair path omits it.
+*Correction:* add to the repair path: "Run the transition-diagnosis contract (`classify_transition.py`) on the GU-001 specimen; no non-provisional rival update may issue before it."
+
+**D5 — MINOR (self-inconsistent, unconditional outcome-slot assignment).** "It is NOT any of: … finality-blocked …" is asserted flatly, while the same report holds (correctly, per referee D7) that the stricter un-preregistered Gate-6 construal yields INDETERMINATE — which maps exactly to the "passes through capability but finality is blocked/indeterminate" slot. The slot assignment is construal-dependent and the construal is the report's own headline un-preregistered freedom.
+*Corrected wording:* "Outcome slot is construal-conditional: 'one-chain, neutral, independently reviewed full pass' under the disclosed typed-boundary construal; 'passes through capability but finality blocked/indeterminate' under the stricter object-identification construal. Both slots defeat interface-cannot-form; only the second is construal-robust."
+
+**D6 — MINOR (normalization-frame mitigation understated).** "The gate run does not depend on one" is too quick: Gate 5's PASS is precisely a capability-vs-representation/access/description discrimination — the judgment the full-strength access-constitutive rival contests — made with no frozen access-constitutive alternative. Acceptable only because the update is scoped away from Rank-2 territory; say so.
+*Corrected wording:* "Gate 5 embeds a normalization-type judgment made without the preregistered frame or an access-constitutive rival; this further supports the provisional grade and forbids any Rank-2 borrowing from this run."
+
+**D7 — NOTE (neutrality-control design was preregistered; only its instantiation was in-flight).** The report files the recorded-metamorphic control under un-preregistered judgment calls. The contract committed at `100af73` explicitly defines Gate 8 as "a syntactic metamorphic control" requiring "a substantive, reviewable relabeling artifact" and warns "merely filling the fields does not establish physical neutrality" — the *design* was preregistered pre-issuance; the in-flight discretion was only the artifact choice and its sufficiency. The executed-swap repair item remains a genuine upgrade and stays.
+
+## 3. Receiver update the evidence ACTUALLY earns
+
+Two-part, in program vocabulary, with conditionality:
+
+1. **`FAVORS_CANDIDATE` — conditional and scoped to the interface-formation discrimination only.** The rival prediction that the interface cannot form a real joint object from a real source-issued packet took a referee-verified hit through gates whose criteria, evaluator, outcome model, and stop conditions were committed ~17 hours before the source bundle existed, and through receiver readings (Annotations A/B/C, pin, variance treatment) committed before any gate outcome existed. Conditional on: (a) a fully preregistered re-run (Gate-6 construal, chain/branch ids, factorization/completion acceptance space, and packet-instantiated rival forecasts frozen in a commit predating any verdict) reproducing the result on the next source-issued packet, and (b) the transition-diagnosis step being executed before any non-provisional update. On the finality axis, the construal-robust earned content is only the program's slot-3 reading: supports the typed discrimination while leaving finality open; it does not favor an irreducible-finality story.
+2. **Rank-1 discharge itself: `BLOCKED` at prerequisite (v)** (normalization frame, receiver factorization search space, Gate-6 construal, packet-instantiated forecasts, plus the unrun transition diagnosis). Not `REMAINS_UNDERDETERMINED` (the run did discriminate); not a full-grade `FAVORS_CANDIDATE` (the program has no provisional tier, and inventing one is D1). "Materially advanced, not discharged" survives; the lane's repair path is correct once D4's item is added and D3's narrowing is applied.
+
+No averaging into a pass; GR-001's 8/8 stands as a contract-valid specimen, not a Rank-1 discharge; source claims, grades, and ADAPTER2-01 untouched.
+
+## 4. Stop conditions
+
+**Respected, with one gap.** (a) "Stop at provenance until a source-issued candidate exists" — respected: intake stayed blocked until `dde3792`; import followed issuance. (b) "The GU preflight is never rewritten into a pass" — respected: `packets/intake/` untouched since `4c5a2cd`; the README status line reflects new evidence, not a rewrite. (c) No packet substitution — respected: GU-001 itself, v0.2, source-issued id. (d) "No parallel partial pass can satisfy a later rank or make GU-001 importable" — respected: importability came from source issuance, not from parallel lanes; no later rank was claimed. (e) Serialization — **partially violated**: validate → assess → gates order held (and is evaluator-enforced), but the "diagnose transition" step was skipped before the rival update (D4). The adjudication report also failed to flag this in itself, which is why the verdict is SOUND-WITH-CORRECTIONS rather than SOUND.
+
+Key files: `packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json` (line 4: schema-forced `provisional`), `interfaces/gate-run-v0.1.schema.json` (line 31), `interfaces/gate-run-v0.1.md` (Neutrality section), `explorations/2026-07-16-big-swing/lane-A-packet-provenance.md` (pre-gate-run Annotations A/B/C, commit `0bfd2e9`), `experiments/2026-07-14-ranked-decisive-test-program-v0.1.md` (BLOCKED definition; serialization sentence; Rank-1 menu), `interfaces/transition-diagnosis-v0.1.md` (preregistered, unrun on GR-001) — all under `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/`.

@@ -65,7 +65,14 @@ Anchor: `synthesis/2026-07-14-coherent-story-v0.1.md` + the ranked decisive-test
 possibility → dynamics → records → access → capability → finality hierarchy as a falsifiable diagnostic —
 is the program's thinnest surface. Work items:
 
-1. Execute the ranked decisive tests (v0.1 list, unexecuted).
+1. Execute the ranked decisive tests (v0.1 list). **EXECUTED 2026-07-16** (ranks 1-4; north-star swing,
+   four lanes each adversarially refereed): Rank 1 = FAVORS_CANDIDATE conditional+scoped (the program's
+   first non-synthetic evidential hit; discharge itself BLOCKED at prereg), Ranks 2-4 = BLOCKED with
+   executable preparation + two new receipts (binary lemma breaks at |V|=3, machine-receipted; flip-
+   embedded re-encodings non-discriminating). Results + repairs:
+   `explorations/2026-07-16-decisive-tests/SYNTHESIS.md`. Next-in-lane, dependency order: (1a) transition-
+   diagnosis run on GU-001-GR-001; (1b) two-phase preregistration mechanism (converges with Lane-1
+   housekeeping); (1c) source-issued Rank-2 paired cases + independent Frame R.
 2. Typed level/transition definitions + an executable disclosure-vs-enlargement discriminator with
    absorber controls (the guiding hypothesis's core discriminator). **Design requirement (I-6, Joe
    2026-07-16): the typed definitions must be process-level (morphism-labeled, issuance-carrying), not
