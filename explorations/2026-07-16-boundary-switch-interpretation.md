@@ -7,11 +7,44 @@ created: 2026-07-16
 provenance: "Joe direct chat, 2026-07-16"
 ---
 
-# The boundary-switch interpretation (Joe): the posit as an interface, not an assumption
+# The boundary-switch interpretations (Joe): the posit as an interface, not an assumption
 
 Interpretation tier. Moves no claim; `bar(b)`, H59, Krein positivity, physical issuance stay OPEN;
 ADAPTER2-01 and the Bounded Fiber Theorem's grades govern. This note types the theorem's open slot; it
 does not fill it.
+
+**Taxonomy update (Joe, same day): these are TWO distinct interpretations of the same port — plus a third
+kept for completeness.** The theorem proves the port's SHAPE (a flip-odd input the interior cannot
+derive); the interpretations differ on the OPERATOR:
+
+- **A — observer-operated (many switches, ongoing).** Each observer's continued opt-in participation
+  sets/maintains bits through the boundary. Many operators, per-block, potentially re-made. (The original
+  reading below.)
+- **B — external operator (one switch, possibly once).** No interior observer sets anything: something
+  outside the universe/observer system entirely flipped the **on-bit for this universe**.
+  Simulation-adjacent / first-cause-adjacent; stated here as an honest heterodox frontier hypothesis with
+  respectable lineage (Bostrom's simulation argument, Wheeler's it-from-bit, classical first-cause
+  structure), carried by the structure rather than the lineage.
+- **C — no operator (frozen accident).** The bit set impersonally at some epoch (homochirality /
+  geomagnetic-orientation pattern; the stat-mech and set-once-developmentally readings from the panel).
+
+**Operator opacity (the rigorous core of the split).** The interior can discriminate the switch-profile,
+never the operator: (i) **multiplicity is interior-testable** — one GLOBAL switch is provably invisible
+(flip-invariant observables see only relative structure), while MULTIPLE per-block switches produce
+observable block-relative alignments; (ii) **re-makeability is interior-testable in principle** —
+re-made choices appear as changeable relative alignments, a set-once bit does not; (iii) **operator
+identity is NOT interior-testable** — A, B, and C are interior-equivalent whenever their switch-profiles
+match. Stated carefully, B is therefore an admissible operator assignment with a provable epistemic
+horizon: *if the universe's on-bit was set from outside as one global choice, the interior provably cannot
+detect which way it was set, or that it was set at all* — a no-signaling-style statement about the
+interior's epistemic boundary, not a metaphysical indulgence.
+
+**Discriminator between A and B/C (interior-available):** count, don't ask who. Observable per-block
+alignment structure — especially if ever CHANGEABLE — favors many-ongoing-switches (A). A fiber that
+collapses to one global bit everywhere, with nothing choice-sensitive ever observable, empties A's
+observable content and places B/C permanently behind the opacity horizon — itself a first-class bounding
+result if established. The per-block fixture (4a in the lane queue) is therefore also the A-vs-B/C
+discriminator at toy grade.
 
 ## The proposal (Joe, plain form)
 
