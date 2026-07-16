@@ -158,6 +158,46 @@ finish attractive definitions. Bank useful formal byproducts, but do not let an
 easy schema refinement displace the founding-case gate run while that run is
 hard rather than falsified.
 
+### North-Star Pursuit And Byproduct Firewall
+
+Treat the North Star as the repository's high-level exploit: the single
+highest-value directed question. Its uncertainty, distance, or difficulty does
+not make it undirected exploration. Do not demote it merely because a nearby
+lemma, tool, formalism, paper, or bounded result is easier to finish.
+
+Before declaring the North Star or a major branch falsified, record all of the
+following:
+
+1. the exact proposition and construction that failed;
+2. the evidence grade and reproducible falsifier;
+3. whether the result transfers across every materially admissible
+   construction fork;
+4. whether the wall is only class-relative, normalization-relative,
+   representation-relative, factorization-scope-relative, packet-version-
+   relative, or caused by missing source provenance;
+5. whether the outcome is `FAIL`, `BLOCKED`, `INDETERMINATE`, a null result, or
+   `HIERARCHY_REVISION`; and
+6. why no still-admissible branch continues the force-or-falsify program.
+
+Difficulty is not falsification. A no-go scoped to one class or construction is
+a result about that class or construction until transfer is established.
+
+Use two tracks with a firewall:
+
+- **Track 1 — North Star:** unconditional force-or-falsify work on the largest
+  repo-owned question. This controls Progress priority.
+- **Track 2 — banked byproducts:** conditional theorems, negative results,
+  reusable interfaces, tests, technical reports, paper candidates, explainers,
+  and other work that may help science, the public, or Joe's credibility.
+  These are real outputs and should be finished when valuable, but they report
+  upward to Track 1 and never silently replace it.
+
+A byproduct may temporarily lead execution when it directly unlocks, tests, or
+de-risks Track 1, or when it can be closed in a bounded lane without consuming
+the North-Star progression. State that relationship explicitly in the run
+plan. Papers and public-facing drafts remain provisional and subject to the
+Publication Rule.
+
 Until this repository establishes a ratified claim-status and promotion
 workflow:
 
@@ -198,6 +238,21 @@ Explore alternative hierarchies, null classes, failure modes, construction
 forks, and candidate physical cases without implementation edits to source
 repositories. Discovery must return ranked, falsifiable proposals and must
 include the possibility that the hierarchy is incomplete or wrong.
+
+For multi-persona work, preserve independent persona outputs before synthesis,
+but do not default to one persona per sub-agent. The efficient default is:
+
+- batch roughly 5-12 personas by discipline or method per sub-agent;
+- give every persona the same frozen brief and an isolated response slot;
+- forbid cross-persona synthesis, voting, or convergence claims inside the
+  generation batch;
+- keep batches independent of one another; and
+- run synthesis only after coverage and response-structure validation.
+
+Use one persona per sub-agent only when a persona requires unique tools,
+different evidence access, materially different execution, or unusually high-
+stakes independence. Independence is an epistemic output constraint, not a
+reason to spend an agent process on every rhetorical lens.
 
 ## Routing
 

@@ -20,6 +20,30 @@ manufacturing agreement.
 - Distinguish fixed-family disclosure from genuine capability change.
 - Preserve negative results and the possibility that the hierarchy is wrong.
 
+## North-Star And Byproduct Posture
+
+The North Star is the high-level exploit and remains the primary Progress
+driver until genuinely falsified. Hard, distant, or uncertain work is not wild
+exploration when the North Star controls it.
+
+Run two explicit lanes:
+
+- Track 1 forces or falsifies the largest repo-owned question on real frozen
+  cases.
+- Track 2 banks useful conditional results: proofs, no-go results, interfaces,
+  tests, reports, paper candidates, and explainers that may help the field, the
+  public, or Joe's credibility.
+
+Track 2 is valuable work, not consolation work. It must state how it tests,
+unlocks, de-risks, or records progress toward Track 1, and its easier closure
+must not silently reprioritize it above an unfalsified North Star.
+
+Before demoting Track 1, require a reproducible falsifier and verify that the
+wall is not confined to one construction, class, normalization frame,
+representation, factorization scope, packet version, or missing-provenance
+state. Preserve `BLOCKED`, `INDETERMINATE`, null, forked, and hierarchy-
+revision outcomes rather than calling them falsification.
+
 ## Measures And Countermeasures
 
 Temporary setup measures:
@@ -111,6 +135,11 @@ CapacityOS execution records.
 CapacityOS registration, mailbox, and System-overlay sockets are present.
 Mailbox Processing, Progress, Stewardship, and Discovery are active through the
 standard repository steward package. No repo-specific trigger is needed.
+
+Multi-persona Discovery defaults to discipline/method batches of roughly 5-12
+personas per child agent, with one frozen brief, isolated per-persona outputs,
+no within-batch synthesis, and a separate final synthesizer. One child per
+persona is reserved for unique-tool, unique-evidence, or high-stakes cases.
 
 ## Local Source References
 

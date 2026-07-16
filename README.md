@@ -22,6 +22,7 @@ Repo Stewardship, and Repo Discovery. Routine versioning lives at
 - `explorations/` - honestly labeled working research.
 - `synthesis/` - repo-independent explanatory synthesis.
 - `literature/` - literature maps and novelty comparisons.
+- `papers/` - provisional paper candidates and publication-oriented byproducts.
 - `tests/` - deterministic checks owned by this repo.
 - `results/` - generated or summarized test receipts.
 - `governance/` - the ratified charter and future governance records.
@@ -57,3 +58,8 @@ substantive gate remains unrun.
 Start with `synthesis/2026-07-14-coherent-story-v0.1.md` for the plain-English
 picture, `experiments/2026-07-14-ranked-decisive-test-program-v0.1.md` for the
 next tests, and `governance/CHARTER.md` plus `AGENTS.md` for boundaries.
+
+Progress uses a two-track firewall: the audacious force-or-falsify North Star
+controls priority, while useful theorems, tools, negative results, reports, and
+paper candidates are banked as real subordinate outputs. The North Star is not
+demoted for difficulty or a class-relative wall; see `AGENTS.md`.
