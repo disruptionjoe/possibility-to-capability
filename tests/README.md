@@ -133,6 +133,12 @@ does not establish novelty, physics, source truth, or the candidate story.
   relabel invariance, composition, local-completion failure, certified
   containment versus after-fact hull capping, resource-frame controls, and
   circular verdict rejection.
+- `p2c_second_standard_adjudication.py` locally re-reads unchanged P2C-W1
+  under CompletionClass-P2C v0.1 and the carrier-neutral adapter, using
+  imported TAF-002 and TI-WFA-001 packets as read-only evidence. It checks
+  C1-C4, the derived firewall substitution, D2 local-composition closure,
+  class-split preservation, source-sovereignty hygiene, and finality
+  nonreach.
 - `bec_circulation_witness.py` is an independent-domain reach fixture for a
   neutral superfluid/BEC circulation carrier. It checks quantized circulation,
   local phase-relabel invariance, persistence, local-completion failure,
@@ -145,6 +151,7 @@ Run from the repository root:
 python tests/physical_boundary_adapter.py
 python tests/physical_completion_closure.py
 python tests/witness_boundary_adapter.py
+python tests/p2c_second_standard_adjudication.py
 python tests/bec_circulation_witness.py
 ```
 
@@ -153,6 +160,9 @@ The completion closure pass means ordinary residual absorption is bounded by
 declared completions. The witness adapter pass means both QIP witnesses are
 carried as data and whole-family admission is retyped through the certified
 containment / after-fact hull split without becoming an operational verdict.
+The second-standard adjudication pass means unchanged P2C-W1's scoped-survivor
+chain survives the P2C-owned completion-standard substitution while preserving
+C1-C4 and source verdict boundaries.
 The BEC witness pass means the local-completion discriminator has a neutral
 carrier replication at finite-model/exploration tier. None of these tests
 establishes a real physical witness or promotes an unexplained residual into a
