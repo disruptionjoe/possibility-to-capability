@@ -78,9 +78,12 @@ is the program's thinnest surface. Work items:
    re-freezes Frame R; receiver expectations through the two-phase mechanism; then the preregistered
    Rank-2 run. See `explorations/2026-07-16-northstar-unblock/SYNTHESIS.md`.
 2. Typed level/transition definitions + an executable disclosure-vs-enlargement discriminator with
-   absorber controls (the guiding hypothesis's core discriminator). **DRAFTED 2026-07-16 (Hierarchy v0.2,
-   north-star unblock swing lane D; Joe review pending; referee corrections D1-D7 pending application
-   before any synthesis/ promotion):** `explorations/2026-07-16-northstar-unblock/lane-D-hierarchy-v02-draft.md`. **Design requirement (I-6, Joe
+   absorber controls (the guiding hypothesis's core discriminator). **DRAFTED + adopted-with-corrections
+   2026-07-16** (Hierarchy v0.2, north-star unblock swing lane D; Joe reviewed and adopted in direct
+   chat 2026-07-16, option A — full adoption; referee corrections D1-D7 APPLIED; promoted to
+   `synthesis/2026-07-16-hierarchy-v0.2-typed-definitions-draft.md` +
+   `tests/hierarchy_v02_typed_skeleton.py`, still below ratified-synthesis standing; source draft:
+   `explorations/2026-07-16-northstar-unblock/lane-D-hierarchy-v02-draft.md`). **Design requirement (I-6, Joe
    2026-07-16): the typed definitions must be process-level (morphism-labeled, issuance-carrying), not
    state-snapshot-level — the static-sheaf amputation argument; see
    `explorations/INTERPRETATIONS-REGISTER.md`.** The finality level's draft must engage the register's
