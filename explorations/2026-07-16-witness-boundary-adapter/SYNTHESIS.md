@@ -7,7 +7,7 @@ created: 2026-07-16
 workflow: BOUNDARY-TO-ISSUANCE-WITNESS / P2C-BOUNDARY-ADAPTER
 construction: superconducting_ring_qip_adapter
 evidence_grade: finite_contract_fixture + witness_mapping_from_prior_swing
-verification: tests/witness_boundary_adapter.py (exit 0; --strict lint clean; headline 7 [E] + 4 [F] = 11)
+verification: tests/witness_boundary_adapter.py (exit 0; headline 9 [E] + 5 [F] = 14)
 ---
 
 # Witness-consuming boundary adapter
@@ -124,3 +124,54 @@ reranking signal, not a separate queue.
 | 2 | `P2C-BOUNDARY-ADAPTER` (continue only after closure) | The adapter now exists at contract grade; its next improvement should consume the stricter completion rule, not repeat this fixture. | wait for a closed target-admission rule or a counterexample |
 | 3 | `P2C-REAL-PHYSICAL-WITNESS` | Escalate to topological entanglement entropy or independent-domain replication only after the completion rule is sharpened, unless a reach-swing cadence requires it. | no capability verdict without F1 adjudication |
 | 4 | `P2C-CROSS-REPO-ADJUDICATION` | Still gated on frozen sovereign returns for the same construction. | no cross-repo action was taken here |
+
+## 7. Carrier-neutral firewall rerun
+
+After CompletionClass-P2C v0.1 and the BEC/superfluid circulation replication,
+the adapter was rerun against two carrier-distinct QIP witnesses:
+
+- charged superconducting ring;
+- neutral superfluid/BEC annulus.
+
+The adapter now returns the same typed residual for both carriers:
+
+```text
+residual class: CERTIFIED_CONTAINMENT_ONLY
+```
+
+This replaces the older undifferentiated
+`WHOLE_FAMILY_ADMISSION_RESIDUAL`. The certified family may contain the target
+phase, but under CompletionClass-P2C v0.1 that containment is not operational
+absorption. The after-fact hull is represented separately as
+`AFTER_FACT_HULL_CAPPED`, so hull totality is visible without being allowed to
+make the adapter constant.
+
+The executable result is 17 checks total:
+
+- 3 `[T]` theorem-consequence checks;
+- 9 `[E]` checks for carrier neutrality, certified containment, hull capping,
+  local-completion failure, restricted-family control, residual hygiene,
+  resource-frame control, circularity rejection, and nonconstancy; and
+- 5 `[F]` controls for name sensitivity, restricted certification, hull-as-
+  operation collapse, resource blindness, and metadata verdict import.
+
+Disposition:
+`CARRIER_NEUTRAL_FIREWALL_CONTRACT / CERTIFIED_CONTAINMENT_ONLY`.
+
+What this closes:
+
+- the adapter can consume both superconducting and BEC QIP witnesses without
+  depending on the carrier vocabulary;
+- the adapter can use CompletionClass-P2C v0.1's certified/hull split without
+  importing a capability, issuance, or finality verdict; and
+- after-fact hull totality is exposed as capped rather than treated as
+  operational absorption.
+
+What remains open:
+
+- no source repository verdict moves;
+- no real capability enlargement is proved;
+- the local second-standard adjudication of P2C-W1 under the P2C completion
+  class remains the next ready synthesis check; and
+- a harder Alternate B witness remains useful when a future reach swing is
+  warranted.

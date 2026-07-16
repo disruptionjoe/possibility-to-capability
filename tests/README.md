@@ -127,11 +127,12 @@ does not establish novelty, physics, source truth, or the candidate story.
   finite declared middle completion closure. It checks class coverage,
   composition, omission mutants, circularity rejection, resource bounds, and an
   escape target that remains unexplained by the declared closure.
-- `witness_boundary_adapter.py` consumes the superconducting-ring witness's
-  `(Q,I,P)` signature vector and matched-budget frame. It checks relabel
-  invariance, composition, local-completion failure, target-phase whole-family
-  admission as an explicit residual, resource-frame controls, and circular
-  verdict rejection.
+- `witness_boundary_adapter.py` consumes the superconducting-ring and
+  BEC/superfluid witnesses' `(Q,I,P)` signature vectors and matched-budget
+  frames under CompletionClass-P2C v0.1. It checks carrier neutrality,
+  relabel invariance, composition, local-completion failure, certified
+  containment versus after-fact hull capping, resource-frame controls, and
+  circular verdict rejection.
 - `bec_circulation_witness.py` is an independent-domain reach fixture for a
   neutral superfluid/BEC circulation carrier. It checks quantized circulation,
   local phase-relabel invariance, persistence, local-completion failure,
@@ -149,8 +150,9 @@ python tests/bec_circulation_witness.py
 
 A pass means the adapter prototype satisfies the finite contract in that file.
 The completion closure pass means ordinary residual absorption is bounded by
-declared completions. The witness adapter pass means the QIP witness is carried
-as data and the whole-family admission question is exposed as a residual.
+declared completions. The witness adapter pass means both QIP witnesses are
+carried as data and whole-family admission is retyped through the certified
+containment / after-fact hull split without becoming an operational verdict.
 The BEC witness pass means the local-completion discriminator has a neutral
 carrier replication at finite-model/exploration tier. None of these tests
 establishes a real physical witness or promotes an unexplained residual into a

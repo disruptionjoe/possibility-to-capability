@@ -1,14 +1,14 @@
-"""Witness-consuming boundary adapter for the superconducting-ring swing.
+"""Carrier-neutral witness boundary adapter under CompletionClass-P2C v0.1.
 
-Question: can the physical boundary/source-to-capability adapter consume the
-real witness's (Q,I,P) signature vector and matched-budget frame while exposing
-whole-family admission as a testable residual instead of importing a capability
-or issuance verdict as an input label?
+Question: can the physical boundary/source-to-capability adapter consume both
+carrier-distinct QIP witnesses (superconducting ring and BEC/superfluid
+circulation) while using CompletionClass-P2C's certified/hull split instead of
+an undifferentiated whole-family residual?
 
 This is a finite contract fixture. It is not a superconductivity simulation and
 does not adjudicate Time as Finality, Temporal Issuance, GU, or any source-repo
 truth. It only checks the P2C-owned adapter behavior needed after the
-2026-07-16 real physical witness swing.
+2026-07-16 real physical witness and BEC replication swings.
 """
 
 from __future__ import annotations
@@ -20,10 +20,12 @@ CHECKS = {
     "setup: signature vectors use only declared QIP atoms": {"tag": "T"},
     "relabel invariance: branch and intervention names do not change residual": {"tag": "T"},
     "composition: staged signature deltas equal direct signature delta": {"tag": "T"},
-    "witness: QIP gain is exposed as whole-family admission residual": {"tag": "E"},
+    "carrier neutrality: superconducting and BEC witnesses receive the same typed residual": {"tag": "E"},
+    "completion firewall: certified family yields containment only, not operational absorption": {"tag": "E"},
+    "after-fact hull: hull totality is capped below operational strength": {"tag": "E"},
     "local completions: no local completion reproduces all QIP signatures": {"tag": "E"},
-    "whole-family control: target-phase admission is necessary for absorption": {"tag": "E"},
-    "residual hygiene: report asks a testable F1 question, not a verdict": {"tag": "E"},
+    "restricted-family control: target-phase certificate is necessary for containment": {"tag": "E"},
+    "residual hygiene: report asks a certified/hull F1 question, not a verdict": {"tag": "E"},
     "resource control: changed normalized frame is not called residual capability": {"tag": "E"},
     "circularity control: verdict-carrying completion input is rejected": {"tag": "E"},
     "nonconstancy: no-change transition returns no residual": {"tag": "E"},
@@ -31,9 +33,13 @@ CHECKS = {
         "tag": "F",
         "protects": "relabel invariance: branch and intervention names do not change residual",
     },
-    "whole-family-fail: restricted family without target phase does not absorb": {
+    "certified-family-fail: restricted family without target phase does not contain": {
         "tag": "F",
-        "protects": "whole-family control: target-phase admission is necessary for absorption",
+        "protects": "restricted-family control: target-phase certificate is necessary for containment",
+    },
+    "hull-fail: bad adapter treats after-fact hull as operational absorption": {
+        "tag": "F",
+        "protects": "after-fact hull: hull totality is capped below operational strength",
     },
     "resource-fail: bad adapter ignoring frame mismatch would misclassify": {
         "tag": "F",
@@ -59,6 +65,10 @@ LOCAL_COMPLETION_KINDS = frozenset({
     "provenance",
     "whole_family_without_target_phase",
 })
+CONTAINMENT_COMPLETION_KINDS = frozenset({
+    "whole_family_certified",
+    "whole_family_hull",
+})
 FORBIDDEN_METADATA_KEYS = frozenset({
     "desired_verdict",
     "claimed_level",
@@ -74,6 +84,7 @@ class WitnessFrame:
     """A physical frame reduced to data the neutral adapter may inspect."""
 
     name: str
+    carrier: str
     normalization_frame: str
     intervention_menu: tuple[str, ...]
     qip_signatures: frozenset[str]
@@ -92,7 +103,7 @@ class CompletionAttempt:
 
     kind: str
     frame: WitnessFrame
-    admits_target_phase: bool = False
+    contains_target_phase: bool = False
     provenance: str = ""
 
     def label(self) -> str:
@@ -107,7 +118,8 @@ class AdapterReport:
     lost: frozenset[str]
     rejected: tuple[str, ...]
     local_absorbers: tuple[str, ...]
-    whole_family_absorbers: tuple[str, ...]
+    certified_containers: tuple[str, ...]
+    hull_containers: tuple[str, ...]
     residual_class: str
     residual_question: str
 
@@ -128,8 +140,8 @@ def validate_completion(completion: CompletionAttempt) -> str | None:
         return "missing provenance"
     if has_forbidden_metadata(completion.frame):
         return "carries a verdict or desired level"
-    if completion.admits_target_phase and completion.kind != "whole_family":
-        return "target-phase admission is only a whole-family test"
+    if completion.contains_target_phase and completion.kind not in CONTAINMENT_COMPLETION_KINDS:
+        return "target-phase containment is only a whole-family test"
     if completion.kind in {"gauge", "relabeling"} and completion.frame.profile():
         return "equivalence-only completion cannot add QIP signatures"
     return None
@@ -176,26 +188,42 @@ def witness_boundary_adapter(
             if completion.kind in LOCAL_COMPLETION_KINDS
             and completion_matches_post(completion, post_profile)
         )
-        whole_family_absorbers = tuple(
+        certified_containers = tuple(
             completion.label()
             for completion in valid
-            if completion.kind == "whole_family"
-            and completion.admits_target_phase
+            if completion.kind == "whole_family_certified"
+            and completion.contains_target_phase
+            and completion_matches_post(completion, post_profile)
+        )
+        hull_containers = tuple(
+            completion.label()
+            for completion in valid
+            if completion.kind == "whole_family_hull"
+            and completion.contains_target_phase
             and completion_matches_post(completion, post_profile)
         )
 
         if local_absorbers:
             residual = "LOCAL_COMPLETION_ABSORBED"
             question = "which local completion reproduced the QIP vector?"
-        elif whole_family_absorbers:
-            residual = "WHOLE_FAMILY_ADMISSION_RESIDUAL"
+        elif certified_containers:
+            residual = "CERTIFIED_CONTAINMENT_ONLY"
             question = (
-                "is admitting the target phase into the fixed family a legitimate "
-                "completion or an F1 trivialization?"
+                "does certified target-phase containment cap below operational "
+                "absorption under CompletionClass-P2C v0.1?"
+            )
+        elif hull_containers:
+            residual = "AFTER_FACT_HULL_CAPPED"
+            question = (
+                "does after-fact family hull totality violate A-UNIF and cap "
+                "below operational strength?"
             )
         else:
             residual = "LOCAL_UNEXPLAINED_RESIDUAL"
-            question = "which admissible completion, if any, reproduces the QIP vector?"
+            question = (
+                "which admissible local or certified completion, if any, "
+                "reproduces the QIP vector?"
+            )
 
         return AdapterReport(
             pre_profile=pre_profile,
@@ -204,7 +232,8 @@ def witness_boundary_adapter(
             lost=frozenset(lost),
             rejected=tuple(rejected),
             local_absorbers=local_absorbers,
-            whole_family_absorbers=whole_family_absorbers,
+            certified_containers=certified_containers,
+            hull_containers=hull_containers,
             residual_class=residual,
             residual_question=question,
         )
@@ -216,7 +245,8 @@ def witness_boundary_adapter(
         lost=frozenset(lost),
         rejected=tuple(rejected),
         local_absorbers=(),
-        whole_family_absorbers=(),
+        certified_containers=(),
+        hull_containers=(),
         residual_class=residual,
         residual_question=question,
     )
@@ -229,6 +259,7 @@ def apply_delta(profile: frozenset[str], report: AdapterReport) -> frozenset[str
 def relabel(frame: WitnessFrame, prefix: str) -> WitnessFrame:
     return WitnessFrame(
         name=f"{prefix}_{frame.name}",
+        carrier=frame.carrier,
         normalization_frame=frame.normalization_frame,
         intervention_menu=tuple(f"{prefix}_{item}" for item in frame.intervention_menu),
         qip_signatures=frame.qip_signatures,
@@ -255,17 +286,36 @@ def bad_metadata_sensitive_adapter(completions: tuple[CompletionAttempt, ...]) -
 
 
 def build_fixture() -> tuple[WitnessFrame, WitnessFrame, tuple[CompletionAttempt, ...]]:
+    return build_carrier_fixture(
+        carrier="charged_superconducting_ring",
+        pre_name="normal_reference",
+        post_name="superconducting_ring",
+        target_name="certified_superconducting_phase",
+        hull_name="after_fact_superconducting_hull",
+    )
+
+
+def build_carrier_fixture(
+    *,
+    carrier: str,
+    pre_name: str,
+    post_name: str,
+    target_name: str,
+    hull_name: str,
+) -> tuple[WitnessFrame, WitnessFrame, tuple[CompletionAttempt, ...]]:
     menu = ("cool", "thread_flux", "probe_read", "deform")
     frame = "matched_budget_counterfactual_pair"
 
     normal = WitnessFrame(
-        "normal_reference",
+        pre_name,
+        carrier,
         frame,
         menu,
         frozenset(),
     )
-    superconducting = WitnessFrame(
-        "superconducting_ring",
+    post = WitnessFrame(
+        post_name,
+        carrier,
         frame,
         menu,
         frozenset({"Q", "I", "P"}),
@@ -283,12 +333,13 @@ def build_fixture() -> tuple[WitnessFrame, WitnessFrame, tuple[CompletionAttempt
             kind=kind,
             frame=WitnessFrame(
                 name,
+                carrier,
                 frame,
                 menu,
                 signatures,
                 metadata=metadata,
             ),
-            admits_target_phase=admits_target_phase,
+            contains_target_phase=admits_target_phase,
             provenance=f"finite {kind} control",
         )
 
@@ -308,13 +359,19 @@ def build_fixture() -> tuple[WitnessFrame, WitnessFrame, tuple[CompletionAttempt
             frozenset({"Q", "I"}),
         ),
         attempt(
-            "whole_family",
-            "fixed_family_with_target_phase",
+            "whole_family_certified",
+            target_name,
+            frozenset({"Q", "I", "P"}),
+            admits_target_phase=True,
+        ),
+        attempt(
+            "whole_family_hull",
+            hull_name,
             frozenset({"Q", "I", "P"}),
             admits_target_phase=True,
         ),
     )
-    return normal, superconducting, completions
+    return normal, post, completions
 
 
 def circular_completion() -> CompletionAttempt:
@@ -324,12 +381,13 @@ def circular_completion() -> CompletionAttempt:
         kind="whole_family",
         frame=WitnessFrame(
             "declared_capability_gain",
+            "charged_superconducting_ring",
             frame,
             menu,
             frozenset({"Q", "I", "P"}),
             metadata=(("desired_verdict", "capability_gain"),),
         ),
-        admits_target_phase=True,
+        contains_target_phase=True,
         provenance="self-labeled desired conclusion",
     )
 
@@ -337,14 +395,28 @@ def circular_completion() -> CompletionAttempt:
 def changed_resource_frame(post: WitnessFrame) -> WitnessFrame:
     return WitnessFrame(
         name=post.name,
+        carrier=post.carrier,
         normalization_frame="unmatched_before_after_temperature_path",
         intervention_menu=post.intervention_menu,
         qip_signatures=post.qip_signatures,
     )
 
 
+def bad_hull_as_operational_adapter(report: AdapterReport) -> str:
+    if report.hull_containers:
+        return "LOCAL_COMPLETION_ABSORBED"
+    return report.residual_class
+
+
 def main() -> None:
     normal, superconducting, completions = build_fixture()
+    bec_normal, bec_post, bec_completions = build_carrier_fixture(
+        carrier="neutral_superfluid_bec_annulus",
+        pre_name="thermal_neutral_reference",
+        post_name="bec_superfluid_annulus",
+        target_name="certified_condensate_phase",
+        hull_name="after_fact_condensate_hull",
+    )
 
     checks: list[tuple[str, bool, bool]] = []
 
@@ -352,10 +424,16 @@ def main() -> None:
         checks.append((name, bool(value), expected))
 
     witness_report = witness_boundary_adapter(normal, superconducting, completions)
+    bec_report = witness_boundary_adapter(bec_normal, bec_post, bec_completions)
     restricted_completions = tuple(
-        completion for completion in completions if not completion.admits_target_phase
+        completion for completion in completions if not completion.contains_target_phase
     )
     restricted_report = witness_boundary_adapter(normal, superconducting, restricted_completions)
+    hull_only_report = witness_boundary_adapter(
+        normal,
+        superconducting,
+        tuple(completion for completion in completions if completion.kind == "whole_family_hull"),
+    )
     relabeled_report = witness_boundary_adapter(
         relabel(normal, "r"),
         relabel(superconducting, "r"),
@@ -375,6 +453,7 @@ def main() -> None:
 
     q_only = WitnessFrame(
         "quantized_only_mid",
+        normal.carrier,
         normal.normalization_frame,
         normal.intervention_menu,
         frozenset({"Q"}),
@@ -399,35 +478,50 @@ def main() -> None:
         composed == direct == superconducting.profile(),
     )
     check(
-        "witness: QIP gain is exposed as whole-family admission residual",
+        "carrier neutrality: superconducting and BEC witnesses receive the same typed residual",
         witness_report.gained == frozenset({"Q", "I", "P"})
-        and witness_report.residual_class == "WHOLE_FAMILY_ADMISSION_RESIDUAL",
+        and bec_report.gained == witness_report.gained
+        and bec_report.residual_class == witness_report.residual_class
+        and bec_post.carrier != superconducting.carrier,
+    )
+    check(
+        "completion firewall: certified family yields containment only, not operational absorption",
+        witness_report.residual_class == "CERTIFIED_CONTAINMENT_ONLY"
+        and witness_report.certified_containers
+        and not witness_report.local_absorbers,
+    )
+    check(
+        "after-fact hull: hull totality is capped below operational strength",
+        hull_only_report.residual_class == "AFTER_FACT_HULL_CAPPED"
+        and hull_only_report.hull_containers
+        and not hull_only_report.local_absorbers,
     )
     check(
         "local completions: no local completion reproduces all QIP signatures",
         not witness_report.local_absorbers,
     )
     check(
-        "whole-family control: target-phase admission is necessary for absorption",
-        witness_report.whole_family_absorbers
+        "restricted-family control: target-phase certificate is necessary for containment",
+        witness_report.certified_containers
         and restricted_report.residual_class == "LOCAL_UNEXPLAINED_RESIDUAL",
     )
     check(
-        "residual hygiene: report asks a testable F1 question, not a verdict",
-        "F1" in witness_report.residual_question
-        and "legitimate" in witness_report.residual_question
+        "residual hygiene: report asks a certified/hull F1 question, not a verdict",
+        "CompletionClass-P2C" in witness_report.residual_question
+        and "operational" in witness_report.residual_question
         and "CAPABILITY" not in witness_report.residual_class,
     )
     check(
         "resource control: changed normalized frame is not called residual capability",
         resource_report.residual_class == "RESOURCE_FRAME_CHANGED"
-        and not resource_report.whole_family_absorbers,
+        and not resource_report.certified_containers
+        and not resource_report.hull_containers,
     )
     check(
         "circularity control: verdict-carrying completion input is rejected",
         circular_report.rejected
         and circular_report.residual_class == "LOCAL_UNEXPLAINED_RESIDUAL"
-        and not circular_report.whole_family_absorbers,
+        and not circular_report.certified_containers,
     )
     check(
         "nonconstancy: no-change transition returns no residual",
@@ -440,8 +534,13 @@ def main() -> None:
         expected=False,
     )
     check(
-        "whole-family-fail: restricted family without target phase does not absorb",
-        bool(restricted_report.whole_family_absorbers),
+        "certified-family-fail: restricted family without target phase does not contain",
+        bool(restricted_report.certified_containers),
+        expected=False,
+    )
+    check(
+        "hull-fail: bad adapter treats after-fact hull as operational absorption",
+        bad_hull_as_operational_adapter(hull_only_report) == "AFTER_FACT_HULL_CAPPED",
         expected=False,
     )
     check(
@@ -477,7 +576,9 @@ def main() -> None:
     print(f"residual class:    {witness_report.residual_class}")
     print(f"residual question: {witness_report.residual_question}")
     print(f"local absorbers:   {witness_report.local_absorbers}")
-    print(f"whole-family:      {witness_report.whole_family_absorbers}")
+    print(f"certified family:  {witness_report.certified_containers}")
+    print(f"after-fact hull:   {hull_only_report.hull_containers}")
+    print(f"BEC residual:      {bec_report.residual_class} ({bec_post.carrier})")
     print(f"circular rejected: {circular_report.rejected}")
     print()
     print(f"EVIDENTIAL CHECKS (headline): {n_e} [E] + {n_f} [F] = {n_e + n_f}")
