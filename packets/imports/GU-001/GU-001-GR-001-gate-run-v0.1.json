@@ -1,0 +1,373 @@
+{
+  "schema_version": "0.1",
+  "run_id": "GU-001-GR-001",
+  "evaluation_status": "provisional",
+  "receiving_owner": "possibility-to-capability",
+  "source_packet_ref": {
+    "packet_id": "GU-001",
+    "packet_digest": "a3f7fc5d99f3810ad86b783365e130749d137e227e6ac97021c26a54a9fff1be",
+    "source_revision": "d62a82f3a74731b322a5d65b5ee15a2b861e2855"
+  },
+  "receiver_assessment_ref": {
+    "assessment_id": "GU-001-IA-001",
+    "assessment_sha256": "77646c7d381f391a4f882848ca6689987fb68a13636f8a935843dc006dbafe02"
+  },
+  "source_preservation": {
+    "source_packet_frozen": true,
+    "source_content_modified": false,
+    "source_status_unchanged": true,
+    "authority_transfer": false
+  },
+  "outcome_model": {
+    "gate_outcomes": [
+      "PASS",
+      "FAIL",
+      "BLOCKED",
+      "INDETERMINATE"
+    ],
+    "malformed_outcome": "INVALID",
+    "success_rule": "ALL_EIGHT_PASS_ONE_CHAIN_LABEL_INVARIANT"
+  },
+  "one_chain_control": {
+    "required_argument_chain_id": "GU-001-W211-LOCATED-NOT-FORCED",
+    "required_construction_branch_id": "program-native",
+    "single_argument_ref": "gu-formalization:explorations/W211-krein-sign-godel-independent-five-method-synthesis-2026-07-14.md@d62a82f3 (sha256 0e1c213d2ab60d644113efc4b9b4fe884186761489ba320dc37834520b9928b6), read under receiver annotations A/B/C"
+  },
+  "neutrality_control": {
+    "label_permutation": {
+      "left_before": "C_good / record-count mode Krein-NEGATIVE (eta_+ positive-definite)",
+      "right_before": "C_path / record-count mode Krein-POSITIVE (indefinite total metric)",
+      "left_after": "C_path / record-count mode Krein-POSITIVE (indefinite total metric)",
+      "right_after": "C_good / record-count mode Krein-NEGATIVE (eta_+ positive-definite)"
+    },
+    "verdict_before": "NO_BRANCH_SELECTED",
+    "verdict_after": "NO_BRANCH_SELECTED",
+    "label_invariant": true,
+    "artifact_ref": "gu-formalization:tests/W210_decisive_bit_helmholtz.py (sign-blindness lemma, re-run exit 0) + explorations/time-as-finality-crosswalk/adapter2-correction-polarity-fiber-not-axis-2026-07-15.md (two flipped anchors) at pin 77879e5"
+  },
+  "gate_results": [
+    {
+      "gate_id": "provenance",
+      "ordinal": 1,
+      "prerequisite_gate_ids": [],
+      "status": "PASS",
+      "status_reason": "Every statement in the packet traces to frozen source truth at evidence pin d62a82f3 (ancestor of import pin 77879e5): 16/16 manifest blob hashes verified, three digests recomputed and matching, v0.2 contract 0 errors. Two logged variances do not defeat provenance: (i) source.issued_at (12:00:00-05:00) predates the evidence pin's commit time (14:14:51) and the issuance commit (14:29) - internally anachronistic, git commit times govern; (ii) RESEARCH-STATUS.md line 124 says 'FIVE independent methods' while the packet's stricter typing (raw_method_count_is_independence_count=false) governs; (iii) the hash_scope freezes bytes but not the runtime closure: tests/W210_decisive_bit_helmholtz.py imports tests/generation-sector/gen_sector_bridge.py, which is OUTSIDE the 16-file hash_scope (verified byte-identical at pin and HEAD, sha256 dc9b8297f392d49147944edfbf9636cda86b2ede7c9f2bf5283bc9396e0a4ec7), so W210's re-execution receipt comes from the pinned repo tree, not the extracted bundle alone.",
+      "argument_chain_id": "GU-001-W211-LOCATED-NOT-FORCED",
+      "construction_branch_id": "program-native",
+      "argument_ref": "gu-formalization:explorations/W211-krein-sign-godel-independent-five-method-synthesis-2026-07-14.md@d62a82f3 (sha256 0e1c213d2ab60d644113efc4b9b4fe884186761489ba320dc37834520b9928b6), read under receiver annotations A/B/C",
+      "source_evidence_refs": [
+        "/integrity",
+        "/source",
+        "/evidence_structure/raw_method_count_is_independence_count"
+      ],
+      "receiver_assessment_refs": [
+        "/source_packet_ref",
+        "/guards",
+        "/source_wording"
+      ],
+      "receiver_judgment": {
+        "owner": "possibility-to-capability",
+        "statement": "The frozen packet, its 16-artifact bundle, and the receiver assessment all pin the same packet identity and bytes; the two wording/timestamp variances are logged in the import record as receiver-side annotations, not packet edits.",
+        "grade": "exploration-tier receiver-verified structural judgment; confers no promotion of the source claim (exploration) or its grades",
+        "verification": "16/16 manifest blobs re-extracted from git pin 77879e5 and re-hashed (all match byte_length + content_sha256); manifest/packet/bundle digests recomputed under ptc-frozen-bundle-v1 (match); v0.2 contract validate_packet 0 errors; packet-pair blob sha256s recorded in the import record."
+      },
+      "falsifiers": [
+        "Any manifest blob at the pin fails its byte_length or content_sha256.",
+        "Any of manifest_digest, packet_digest, or bundle_digest fails recomputation under ptc-frozen-bundle-v1 (the live CRLF working-tree rendering of the packet JSON, sha256 385f97b1..., demonstrates the byte-level check has a real failing direction; the frozen blob 0f972016... is what passes).",
+        "A packet statement cites a source artifact absent from the pinned revision."
+      ],
+      "nonclaims": [
+        "This provenance pass does not establish any physical claim or the truth of any method's conclusion.",
+        "Logging the issued_at anachronism does not amend the packet; the field stands as issued.",
+        "The manifest freezes bytes, not execution environments; the W210 runtime-closure gap is a logged bundle limitation (receiver Annotation E), not a packet defect or edit."
+      ]
+    },
+    {
+      "gate_id": "construction",
+      "ordinal": 2,
+      "prerequisite_gate_ids": [
+        "provenance"
+      ],
+      "status": "PASS",
+      "status_reason": "Both material construction forks are explicit in the frozen packet with transfer status: (1) program-native Krein/C-operator objects vs standard-field machinery (selected: program-native; transfers); (2) grading sign derived-in-form vs posited-in-sign (selected: posited-in-sign, RESIDUAL-BIT-STANDS; does_not_transfer). The Cl(9,5)=M(64,H) rep-canonicity caveat is carried as an explicit conditional construction premise.",
+      "argument_chain_id": "GU-001-W211-LOCATED-NOT-FORCED",
+      "construction_branch_id": "program-native",
+      "argument_ref": "gu-formalization:explorations/W211-krein-sign-godel-independent-five-method-synthesis-2026-07-14.md@d62a82f3 (sha256 0e1c213d2ab60d644113efc4b9b4fe884186761489ba320dc37834520b9928b6), read under receiver annotations A/B/C",
+      "source_evidence_refs": [
+        "/construction_forks/0",
+        "/construction_forks/1",
+        "/evidence_structure/premise_ledger/0"
+      ],
+      "receiver_assessment_refs": [
+        "/classification/limiting_premise_ids"
+      ],
+      "receiver_judgment": {
+        "owner": "possibility-to-capability",
+        "statement": "The construction choices this run depends on are visible, typed, and retained; the does_not_transfer status of fork 2 is exactly the located-not-forced content, so no admissible branch has been silently removed (Construction-Fork Rule respected: both sign branches remain live).",
+        "grade": "exploration-tier receiver-verified structural judgment; confers no promotion of the source claim (exploration) or its grades",
+        "verification": "Both construction_forks read from the frozen packet with transfer_status; the rep-canonicity caveat is carried as premise P-CL95-REPCANON (conditional_in_source) and as limiting premise in GU-001-IA-001."
+      },
+      "falsifiers": [
+        "A materially admissible construction branch is absent from the frozen packet.",
+        "The run's conclusions require the standard-field branch where the packet only established the program-native one (fork 2's transfer_status = does_not_transfer marks precisely where transfer would fail)."
+      ],
+      "nonclaims": [
+        "The pass does not show the result transfers to a standard-field-only construction; fork 2 is explicitly non-transferring.",
+        "The rep-canonicity caveat is not discharged; it is carried."
+      ]
+    },
+    {
+      "gate_id": "formation",
+      "ordinal": 3,
+      "prerequisite_gate_ids": [
+        "provenance",
+        "construction"
+      ],
+      "status": "PASS",
+      "status_reason": "One coherent joint object forms without changing source meanings: GU's good-stable structure plus exactly one external Z/2 datum at a typed GU/TI/TaF boundary. All five methods address the same frame, the same fork, and the same external datum (all five share all five load-bearing premises); the joint argument is the single frozen artifact W211. Formation succeeds only under receiver Annotation A: the '=' chains in P-EXTERNAL-C-OPERATOR and the 'TaF-owned finality activation' apposition inside claim.statement are read as typed-interface descriptions per the packet's own nonclaims, with the 2026-07-15 adapter-2 correction governing.",
+      "argument_chain_id": "GU-001-W211-LOCATED-NOT-FORCED",
+      "construction_branch_id": "program-native",
+      "argument_ref": "gu-formalization:explorations/W211-krein-sign-godel-independent-five-method-synthesis-2026-07-14.md@d62a82f3 (sha256 0e1c213d2ab60d644113efc4b9b4fe884186761489ba320dc37834520b9928b6), read under receiver annotations A/B/C",
+      "source_evidence_refs": [
+        "/claim/joint_argument_artifact",
+        "/method_ledger",
+        "/evidence_structure/shared_load_bearing_premise_ids",
+        "/nonclaims/1"
+      ],
+      "receiver_assessment_refs": [
+        "/classification/basis_method_ids",
+        "/classification/rationale"
+      ],
+      "receiver_judgment": {
+        "owner": "possibility-to-capability",
+        "statement": "The five method results are interpretable over one declared object (the good-stable structure with one residual Z/2 at a typed boundary) without rewriting any source statement; the only reading that would break coherence - taking the premise-ledger '=' chain as established cross-repo identity - is exactly what Annotation A and the source's own nonclaims forbid.",
+        "grade": "exploration-tier receiver-verified structural judgment; confers no promotion of the source claim (exploration) or its grades",
+        "verification": "The joint object was formed from packet fields only (question, claim, method_ledger, interfaces) under annotations A/B/C; no source wording was altered (validate_assessment source_wording checks pass)."
+      },
+      "falsifiers": [
+        "The methods cannot be interpreted over the same declared object without altering a source meaning.",
+        "Forming the joint object requires asserting the withdrawn bar(b)=finality-axis-polarity identity (ADAPTER2-01); the run would then FAIL formation, not annotate it."
+      ],
+      "nonclaims": [
+        "Formation does not imply evidential independence among the five methods (they are one dependence-driven unit per GU-001-IA-001).",
+        "Formation does not identify the external datum with any specific TaF object; that identification is OPEN."
+      ]
+    },
+    {
+      "gate_id": "completion-null",
+      "ordinal": 4,
+      "prerequisite_gate_ids": [
+        "provenance",
+        "construction",
+        "formation"
+      ],
+      "status": "PASS",
+      "status_reason": "The residual survives the agreed completions and null classes carried by the packet: (i) 'compute harder inside GU' is ruled out by the five-method convergence (each method IS a completion attempt in a different register - invariance, cohomology, fixed-point, internal logic, variational - and all leave the bit free); (ii) refining the good-stable structure ENLARGES the invariant-form space (dim 2 -> 4), never shrinks it to 1; (iii) the null-class test fails to absorb the bit: the two branches are not gauge-equivalent (positive-definite vs indefinite physical inner product is a basis-invariant distinction), and the full-group completion that WOULD absorb it (so(9,5) Schur, nulldim=1) is exactly the completion the good-stable conditioning breaks. Scope: only the declared completions are exhausted; unbuilt completions (interacting C-operator, nonlocal Z_U, kappa) are named residuals, not tested completions.",
+      "argument_chain_id": "GU-001-W211-LOCATED-NOT-FORCED",
+      "construction_branch_id": "program-native",
+      "argument_ref": "gu-formalization:explorations/W211-krein-sign-godel-independent-five-method-synthesis-2026-07-14.md@d62a82f3 (sha256 0e1c213d2ab60d644113efc4b9b4fe884186761489ba320dc37834520b9928b6), read under receiver annotations A/B/C",
+      "source_evidence_refs": [
+        "/alternatives",
+        "/residuals",
+        "/quantifiers/4",
+        "/quantifiers/0"
+      ],
+      "receiver_assessment_refs": [
+        "/classification/rationale",
+        "/classification/limiting_premise_ids"
+      ],
+      "receiver_judgment": {
+        "owner": "possibility-to-capability",
+        "statement": "Within the packet's declared completion family the residual Z/2 stands; the demonstrated failing direction is real: under the FULL gauge group the residual disappears (nulldim=1), so this gate's test genuinely distinguishes completions that absorb the bit from conditionings that liberate it.",
+        "grade": "exploration-tier receiver-verified structural judgment; confers no promotion of the source claim (exploration) or its grades",
+        "verification": "Declared completions read from /alternatives; null-class check via /quantifiers/4 (refinement enlarges the residual, dim 2 -> 4) and the W203 nulldim=1 guardrail reproduced in every method test; W211 convergence test re-run at pin, exit 0."
+      },
+      "falsifiers": [
+        "An agreed, declared completion absorbs the residual (as the full so(9,5) group in fact does for the ungraded metric - the W203 guardrail every method reproduces).",
+        "The residual is shown to lie in a null class (pure relabeling with no invariant distinction between branches)."
+      ],
+      "nonclaims": [
+        "This does not exhaust all mathematically or physically admissible completions; the unbuilt interacting C-operator and the nonlocal Z_U completion are explicitly untested.",
+        "Survival of the residual does not select its value."
+      ]
+    },
+    {
+      "gate_id": "capability",
+      "ordinal": 5,
+      "prerequisite_gate_ids": [
+        "provenance",
+        "construction",
+        "formation",
+        "completion-null"
+      ],
+      "status": "PASS",
+      "status_reason": "The choice changes capability rather than only representation, access, or description - at the packet's structural grade: the two branches are C_good (eta_+ positive-definite; record-count mode Krein-negative; unitary record sector) and C_path (indefinite; the W178/W186 pathological EP). Signature of the physical inner product on the record-count block is a basis-invariant, so the branch difference survives admissible reformulation and is not a description change. The demonstrated failing direction: on a definite (14,0) frame (W208's matched negative control) the invariant-form space does NOT jump and the fork vanishes - so this gate's discriminator can return null. Qualifier carried: the physical cash-out (loop unitarity, bar(b)) rests on STRUCTURAL/ARGUED lifts and remains OPEN; the pass is about invariant branch-inequivalence, not demonstrated physical issuance.",
+      "argument_chain_id": "GU-001-W211-LOCATED-NOT-FORCED",
+      "construction_branch_id": "program-native",
+      "argument_ref": "gu-formalization:explorations/W211-krein-sign-godel-independent-five-method-synthesis-2026-07-14.md@d62a82f3 (sha256 0e1c213d2ab60d644113efc4b9b4fe884186761489ba320dc37834520b9928b6), read under receiver annotations A/B/C",
+      "source_evidence_refs": [
+        "/question/exact_question",
+        "/quantifiers/1",
+        "/method_ledger/2",
+        "/residuals/0"
+      ],
+      "receiver_assessment_refs": [
+        "/classification/rationale",
+        "/nonclaims/3"
+      ],
+      "receiver_judgment": {
+        "owner": "possibility-to-capability",
+        "statement": "The residual is classified as capability-relevant at exploration/structural grade: the branches differ by an invariant (definiteness of the physical inner product on the record sector), which bounds admissible states and unitarity of record dynamics, not merely their labels; whether nature realizes the capability difference is exactly the OPEN bar(b) question and is not decided here.",
+        "grade": "exploration-tier receiver-verified structural judgment; confers no promotion of the source claim (exploration) or its grades",
+        "verification": "Branch inequivalence rests on the frozen invariant facts: two distinct fixed points C_good (positive-definite eta_+) vs C_path (indefinite) per /quantifiers/1, with the matched (14,0) negative control in W208 (re-run, exit 0) showing the fork vanishes on a definite frame."
+      },
+      "falsifiers": [
+        "Both branches have the same operational possibility set under the declared tests (as actually happens on the (14,0) definite control frame, where the gate's discriminator correctly reports no fork).",
+        "The definite/indefinite distinction is shown to be removable by an admissible change of representation."
+      ],
+      "nonclaims": [
+        "This classification is not evidence that a real physical capability change occurs; bar(b), H59, Krein positivity, and physical issuance remain OPEN.",
+        "Encoding-level facts (finite (9,5) linear-algebra models) are not asserted as formalism-level facts; the lifts are STRUCTURAL/ARGUED as graded in the packet."
+      ]
+    },
+    {
+      "gate_id": "finality",
+      "ordinal": 6,
+      "prerequisite_gate_ids": [
+        "provenance",
+        "construction",
+        "formation",
+        "completion-null",
+        "capability"
+      ],
+      "status": "PASS",
+      "status_reason": "The selecting datum is genuinely external to the source theory: proof-theoretic (Godel) independence of the sign from GU's good-stable axioms (true in the good model, false in the pathological model of the same theory). Its owner is identified WITHOUT asserting the withdrawn TaF identification: the packet's interfaces name time-as-finality as target_repository with ownership_status joint_seam - a typed request at the GU/TI/TaF boundary, explicitly 'gated and no cross-repo identity is asserted'. Per the adapter-2 correction (present at import pin 77879e5), bar(b)=finality-axis polarity is OPEN; the accountable owner is the typed joint seam, and nothing in this run identifies the datum with any specific TaF object. Located-Is-Not-Forced applies at the seam too.",
+      "argument_chain_id": "GU-001-W211-LOCATED-NOT-FORCED",
+      "construction_branch_id": "program-native",
+      "argument_ref": "gu-formalization:explorations/W211-krein-sign-godel-independent-five-method-synthesis-2026-07-14.md@d62a82f3 (sha256 0e1c213d2ab60d644113efc4b9b4fe884186761489ba320dc37834520b9928b6), read under receiver annotations A/B/C",
+      "source_evidence_refs": [
+        "/interfaces/1",
+        "/nonclaims/1",
+        "/claim/independence_type",
+        "/nonclaims/4"
+      ],
+      "receiver_assessment_refs": [
+        "/nonclaims",
+        "/falsifiers"
+      ],
+      "receiver_judgment": {
+        "owner": "possibility-to-capability",
+        "statement": "Externality is established at the source's stated grade and the boundary owner is named as a typed joint seam (time-as-finality, joint_seam), which satisfies owner-identification without reopening ADAPTER2-01; selecting WHICH branch, and whether any TaF object in fact supplies the datum, remain open questions owned at that seam.",
+        "grade": "exploration-tier receiver-verified structural judgment; confers no promotion of the source claim (exploration) or its grades",
+        "verification": "Externality: proof_theoretic_independence per /claim/independence_type; owner: /interfaces/1 names time-as-finality with ownership_status joint_seam as a typed request only; the withdrawn identification checked against ADAPTER2-01 correction (present at import pin 77879e5) and NOT asserted anywhere in this run."
+      },
+      "falsifiers": [
+        "The selector is derived within the declared source model (any one of the five methods forcing the sign would do it - all five demonstrably fail to).",
+        "No accountable boundary owner is identified in the frozen packet.",
+        "The run asserts the withdrawn bar(b)=finality-axis-polarity identity to name the owner (this would fail the gate as a Located-Is-Not-Forced violation, not pass it)."
+      ],
+      "nonclaims": [
+        "This does not show the named seam supplies or uniquely fixes the selector; the six-condition reopen burden of ADAPTER2-01 is untouched.",
+        "Owner identification is at typed-boundary grade, not object-identification grade."
+      ]
+    },
+    {
+      "gate_id": "no-artificial-success",
+      "ordinal": 7,
+      "prerequisite_gate_ids": [
+        "provenance",
+        "construction",
+        "formation",
+        "completion-null",
+        "capability",
+        "finality"
+      ],
+      "status": "PASS",
+      "status_reason": "One explicit argument satisfies the whole chain: every substantive gate above runs on the single frozen joint argument (W211 at d62a82f3, read under annotations A/B/C), the single construction branch (program-native), and the single chain id. No gate borrowed the withdrawn adapter-2 argument, a TaF-side premise, or a second construction branch to pass. Enforced mechanically: evaluate_gate_run.py checks singleton set-equality of chain/branch/argument across gates 1-6 against one_chain_control.",
+      "argument_chain_id": "GU-001-W211-LOCATED-NOT-FORCED",
+      "construction_branch_id": "program-native",
+      "argument_ref": "gu-formalization:explorations/W211-krein-sign-godel-independent-five-method-synthesis-2026-07-14.md@d62a82f3 (sha256 0e1c213d2ab60d644113efc4b9b4fe884186761489ba320dc37834520b9928b6), read under receiver annotations A/B/C",
+      "source_evidence_refs": [
+        "/claim",
+        "/evidence_structure"
+      ],
+      "receiver_assessment_refs": [
+        "/guards/no_strength_upgrade",
+        "/classification"
+      ],
+      "receiver_judgment": {
+        "owner": "possibility-to-capability",
+        "statement": "The run's success is not assembled from partial successes of different repositories: GU supplies the entire located-not-forced argument; the receiver supplies only typing preservation and annotations; no TI/TaF result is combined in.",
+        "grade": "exploration-tier receiver-verified structural judgment; confers no promotion of the source claim (exploration) or its grades",
+        "verification": "Deterministic set-equality over gates 1-6: argument_chain_id, construction_branch_id, argument_ref each form a singleton equal to one_chain_control; enforced mechanically by evaluate_gate_run.py."
+      },
+      "falsifiers": [
+        "Any substantive gate changes argument chain, construction branch, or argument reference (the evaluator then forces this gate to FAIL).",
+        "A gate's pass is shown to depend on an argument outside the declared chain (e.g. the superseded adapter-2 hardening certificate)."
+      ],
+      "nonclaims": [
+        "A single chain identifier does not prove the referenced argument is scientifically sound; soundness is carried at the source's exploration grade."
+      ]
+    },
+    {
+      "gate_id": "neutrality",
+      "ordinal": 8,
+      "prerequisite_gate_ids": [
+        "provenance",
+        "construction",
+        "formation",
+        "completion-null",
+        "capability",
+        "finality",
+        "no-artificial-success"
+      ],
+      "status": "PASS",
+      "status_reason": "The verdict is unchanged under reversal of the physical branch labels: swapping C_good/record-count-Krein-negative with C_path/record-count-Krein-positive exchanges two admissible anchors and alters no gate outcome, because every load-bearing fact is sign-symmetric - the invariant-form dimensions count both branches, W208's fixed-point count is 2 regardless of labeling, W209's non-decidability is label-free, and W210's sign-blindness lemma states Helmholtz self-adjointness holds for eta.C iff it holds for eta. The verdict before and after the swap is NO_BRANCH_SELECTED. The gate has a demonstrated failing direction in this repository: the lane-D aliveness anchor FAILS this same gate (tests/aliveness_neutrality_test.py, exit 0), so neutrality is not a cannot-fail check.",
+      "argument_chain_id": "GU-001-W211-LOCATED-NOT-FORCED",
+      "construction_branch_id": "program-native",
+      "argument_ref": "gu-formalization:explorations/W211-krein-sign-godel-independent-five-method-synthesis-2026-07-14.md@d62a82f3 (sha256 0e1c213d2ab60d644113efc4b9b4fe884186761489ba320dc37834520b9928b6), read under receiver annotations A/B/C",
+      "source_evidence_refs": [
+        "/nonclaims/4",
+        "/quantifiers/3",
+        "/alternatives"
+      ],
+      "receiver_assessment_refs": [
+        "/guards",
+        "/nonclaims"
+      ],
+      "receiver_judgment": {
+        "owner": "possibility-to-capability",
+        "statement": "No step of this run privileges a branch: the packet's decision_type is not_forced, the receiver selects nothing, and an exact label swap leaves every gate status and the aggregate unchanged; a rule that DID select a branch (aliveness) has already been shown to fail this gate at its stated grade.",
+        "grade": "exploration-tier receiver-verified structural judgment; confers no promotion of the source claim (exploration) or its grades",
+        "verification": "Exact-swap metamorphic control recorded in neutrality_control; sign-blindness of the methods per /quantifiers/3 (W210 lemma) and the two-flipped-anchors finding of the adapter-2 correction; the in-repo failing instance of this gate (lane D aliveness anchor, tests/aliveness_neutrality_test.py) demonstrates the check can fail."
+      },
+      "falsifiers": [
+        "Any gate status or the aggregate changes after an exact reversal of the two branch labels.",
+        "A load-bearing fact is found to be sign-asymmetric (e.g. a method result that holds for eta.C but not for eta.(-C))."
+      ],
+      "nonclaims": [
+        "One label reversal does not prove invariance under every admissible reformulation.",
+        "Label-invariance of the verdict does not show the two branches are physically equivalent - only that this run does not choose between them."
+      ]
+    }
+  ],
+  "declared_aggregate": "PASS",
+  "assumptions": [
+    "GU-001 has passed the Frozen-Packet v0.2 contract (validate_packet, 0 errors, blob-level bundle check 16/16) and GU-001-IA-001 has passed the receiving-independence contract before this run.",
+    "The import pin is 77879e544cb3856db4201c917383b456949b812f, which contains both the frozen packet and the ADAPTER2-01 correction; the correction governs all TaF-identifying wording (receiver Annotation A).",
+    "Receiver judgments are exploration-tier structural judgments about the frozen packet, not claims about nature."
+  ],
+  "nonclaims": [
+    "This gate run does not establish any physics and does not promote the source claim above exploration tier.",
+    "An all-PASS aggregate means the founding specimen is a coherent joint-seam object that survives the charter's structural gates; it does not select a value for the grading sign, clear bar(b) or H59, or reopen the withdrawn bar(b)=finality-axis-polarity identity.",
+    "The capability-gate pass is at invariant-branch-inequivalence grade only; demonstrated physical capability change would require the OPEN bar(b)/issuance questions to close.",
+    "This run does not make the possibility-to-capability hierarchy universal; it is one specimen."
+  ],
+  "reopening_conditions": [
+    "The ADAPTER2-01 six-condition reopen burden is met by a frozen construction, changing what the finality gate may assert about the seam.",
+    "A GU-frozen artifact forces the sign internally (any method upgraded from located to forced), which would flip the completion-null and finality analyses.",
+    "A declared completion currently listed as unbuilt (interacting C-operator, nonlocal Z_U) is built and absorbs the residual.",
+    "A sign-asymmetric load-bearing fact is found, breaking the neutrality control.",
+    "The source repository revises GU-001 (claim status, grades, or wording), which requires re-import and a fresh run."
+  ]
+}

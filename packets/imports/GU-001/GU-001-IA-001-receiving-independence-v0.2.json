@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.2",
+  "assessment_id": "GU-001-IA-001",
+  "assessment_status": "provisional",
+  "receiving_owner": "possibility-to-capability",
+  "source_packet_ref": {
+    "packet_id": "GU-001",
+    "packet_digest": "a3f7fc5d99f3810ad86b783365e130749d137e227e6ac97021c26a54a9fff1be",
+    "source_revision": "d62a82f3a74731b322a5d65b5ee15a2b861e2855"
+  },
+  "source_wording": {
+    "exact_independence_scope": "These are FIVE methodologically distinct routes (R16 counterfactual-invariance, W206; R9 Dirac-BRST constraint cohomology, W207; R7 Lawvere/Cantor diagonal fixed point, W208; R12 topos internal logic, W209; R1 Helmholtz inverse-variational, W210) that UNANIMOUSLY (5/5) return the SAME verdict RESIDUAL-BIT-STANDS. Convergence is NOT independence: all five share the SAME load-bearing premises (the W203 Schur-forced ungraded eta / nulldim=1 guardrail; the good-stable stabilizer = C-commutant = maximal compact SO(9)xSO(5), which LIBERATES the invariant-form space from 1 to 2; the (6,4)-fiber geometric-positive / record-count-negative Krein split; the Cl(9,5)=M(64,H) rep-canonicity caveat; and the SAME single external Z/2 posit, the unbuilt interacting C-operator / C2-closing Y14-curvature spectral section) and each reduces to that one external datum, so their agreement is dependence-driven shared-premise convergence, NOT premise-independent evidential replication. The raw method count (5) is NOT an independence count. The independence the RESULT establishes is proof-theoretic (Godel) independence of the C-grading SIGN from GU's good-stable axioms: the sign is TRUE in the good model and FALSE in the pathological model of the SAME self-consistency theory (W208 bistability), so it is neither derivable nor refutable inside GU and must be posited or supplied by the external TI/time-as-finality datum. No evidential-independence type is asserted for the five methods; the raw method count is NOT an independence count.",
+    "source_independence_type": "proof_theoretic_independence",
+    "source_claim_status": "exploration"
+  },
+  "classification": {
+    "independence_type": "proof_theoretic_independence",
+    "basis_method_ids": [
+      "W206",
+      "W207",
+      "W208",
+      "W209",
+      "W210"
+    ],
+    "limiting_premise_ids": [
+      "P-CL95-REPCANON",
+      "P-EXTERNAL-C-OPERATOR",
+      "P-FIBER-KREIN",
+      "P-SCHUR-ETA",
+      "P-STABILIZER-LIBERATION"
+    ],
+    "rationale": "The receiver preserves the source's own typing at exactly source strength: what is independent is the RESULT (the C-operator grading sign is Godel-independent of GU's good-stable axioms), not the five methods from one another. All five methods share all five load-bearing premises and reduce to one external Z/2 posit (P-EXTERNAL-C-OPERATOR), so the five-method convergence is received as ONE dependence-driven convergence unit, never as five evidential units. This assessment neither strengthens nor weakens the source typing."
+  },
+  "guards": {
+    "source_wording_preserved": true,
+    "source_status_unchanged": true,
+    "authority_transfer": false,
+    "no_strength_upgrade": true
+  },
+  "nonclaims": [
+    "This assessment does not convert the five method rows into independent evidential units; the raw method count is not an independence count.",
+    "This assessment does not upgrade the source claim status (exploration) or any grade (EXACT/STRONG/STRUCTURAL/ARGUED, internal-tier verification only).",
+    "This assessment does not assert any GU/TI/TaF cross-repository identity; per the 2026-07-15 adapter-2 correction (ADAPTER2-01), the GU-sign-to-TaF-finality-axis-polarity identification is OPEN and the withdrawn identity is not reopened here.",
+    "This assessment does not select a value for the grading sign; bar(b), H59, Krein positivity, and physical issuance remain OPEN in their source repositories."
+  ],
+  "falsifiers": [
+    "The copied source wording differs from the frozen GU-001 packet at packet_digest a3f7fc5d99f3810ad86b783365e130749d137e227e6ac97021c26a54a9fff1be.",
+    "The classification requires a stronger independence type than proof_theoretic_independence as issued by the source.",
+    "A named basis method or limiting premise is absent from the frozen packet.",
+    "A frozen source artifact shows two or more methods do NOT share the five load-bearing premises, which would require re-typing rather than this preservation."
+  ]
+}

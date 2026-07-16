@@ -37,6 +37,13 @@ throughout; no source claim moves; `bar(b)`, H59, Krein positivity, physical iss
 
 ## Ranked next work (supersedes the ranking in `2026-07-16-research-program-state-and-gate-1-milestone.md`)
 
+**UPDATE (later on 2026-07-16):** items 1–4 below were all executed by swing 2
+(`explorations/2026-07-16-swing-2/`). GU-001 is IMPORTED and the 8-gate run PASSES (Deliverables 1B + 1C
+complete); the Gate-#1 lift survived at enriched-toy tier with a new (ℤ/2)^blocks bounding result; the
+norm-link probe returned REDUCED (the posit relocates to the sector-asymmetric spectral condition);
+the citation spine is verified at split grade. See `explorations/2026-07-16-swing-2/SYNTHESIS.md` for the
+current superseding ranking.
+
 1. **Execute the GU-001 import** (Deliverable 1B): copy the frozen packet byte-identical, write the
    receiver-side import record with annotations A/B/C + the `claim.statement` annotation + the `issued_at`
    log line, then run the charter's 8-gate sequence (Deliverable 1C) on it. Everything needed is in

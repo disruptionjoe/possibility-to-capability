@@ -31,7 +31,7 @@ synthetic unanimous result from partial source artifacts.
 - Founding-case readiness: `packets/intake/GU-001-readiness-2026-07-14.md`
 - Founding-case blocked preflight:
   `packets/intake/GU-001-blocked-preflight-v0.1-2026-07-14.json`
-- GU-001: `NOT_YET_IMPORTABLE` pending a source-issued manifest and bundle hash.
+- GU-001: IMPORTED 2026-07-16 at pin `77879e5`; see `packets/imports/GU-001/`.
 
 Schema hardening does not change packet readiness. A source must issue a packet
 against an explicit version; the receiver never migrates or completes it on the
