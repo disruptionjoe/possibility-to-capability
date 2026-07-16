@@ -17,9 +17,25 @@ does not fill it.
 kept for completeness.** The theorem proves the port's SHAPE (a flip-odd input the interior cannot
 derive); the interpretations differ on the OPERATOR:
 
-- **A — observer-operated (many switches, ongoing).** Each observer's continued opt-in participation
-  sets/maintains bits through the boundary. Many operators, per-block, potentially re-made. (The original
-  reading below.)
+- **A — observer-operated (many switches).** Each observer's opt-in participation sets bits through the
+  boundary. Refined same day (Joe) into two sub-cases:
+  - **A-ongoing:** the bit is maintained continually — re-made with participation.
+  - **A′ — per-sheaf once-bit (Joe's refined reading):** for the sheaf that IS the observer's slice — the
+    geometry with no time series attached — there is a SINGLE on-bit, quasi-prior ("almost present from
+    before"). Delivery mechanism: hashgraph-style **validity metadata riding the record-creation acts**
+    (gossip-about-gossip) — not derived from the system's contents, but injected at the OUTPUT (each new
+    record) and looping around the boundary back in. Underneath it: the **static-sheaf amputation
+    argument** — a single sheaf ("that exact set of columns and rows for that observer") is a snapshot
+    that cuts off the ongoing collection of records; the bit is not derivable from the snapshot because
+    the snapshot is DEFINED by forgetting the process the bit rides on.
+
+  **Formal resonances of A′ (checked, not asserted):** (i) TI E160's positive shape verbatim — nontrivial
+  ℤ/2 transport requires a composition-compatible label ON MORPHISMS (the issuance acts, not the states);
+  A′ names what flows through that port. (ii) TI RUN-0025's thin-shadow warning — morphism-level data can
+  differ while the induced state-order is identical; the amputation argument is that warning as physics.
+  (iii) The original Gate-2a PASSING branch — a composition-compatible injected morphism-bit descends to a
+  per-slice potential (vertex-sourced 0-cochain), which is exactly the branch that proved globally
+  consistent, domain-free, and churn-stable. A′ supplies that branch's missing delivery story.
 - **B — external operator (one switch, possibly once).** No interior observer sets anything: something
   outside the universe/observer system entirely flipped the **on-bit for this universe**.
   Simulation-adjacent / first-cause-adjacent; stated here as an honest heterodox frontier hypothesis with
@@ -38,6 +54,20 @@ match. Stated carefully, B is therefore an admissible operator assignment with a
 horizon: *if the universe's on-bit was set from outside as one global choice, the interior provably cannot
 detect which way it was set, or that it was set at all* — a no-signaling-style statement about the
 interior's epistemic boundary, not a metaphysical indulgence.
+
+**Switch-profile table (updated for the A split and the B split from the persona panel):**
+
+| operator | multiplicity | re-made? | interior signature |
+|---|---|---|---|
+| A-ongoing | per-slice | yes | observable relative alignments, CHANGEABLE |
+| A′ per-sheaf once | per-slice | no (set with the slice's existence) | observable relative alignments, FIXED; bit-count grows with observer count |
+| B-live | global | possibly | timing/consequence side-channels only |
+| B-fired-and-forgot / C | global | no | behind the opacity horizon |
+
+A′ is distinguishable from A-ongoing by a NULL result on the re-making channel, and from B/C by the
+presence of inter-slice structure at all. A′ does not evade the no-go: the injected label is flip-odd —
+it IS the posit; A′ specifies its granularity (per-slice) and delivery point (per-issuance-morphism),
+nothing more.
 
 **Discriminator between A and B/C (interior-available):** count, don't ask who. Observable per-block
 alignment structure — especially if ever CHANGEABLE — favors many-ongoing-switches (A). A fiber that

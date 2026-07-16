@@ -45,6 +45,11 @@ governs). The lane's work is hardening the theorem and walking its enumerated do
    absolute-label observables are flip-variant while block-relative alignments are flip-invariant and
    sensitive to independent per-block relabelings; single-block control must show no flip-invariant
    choice-sensitive observable. Spec: `explorations/2026-07-16-boundary-switch-interpretation.md`.
+4b. **Composition-compatibility descent fixture** (A-prime refinement, Joe 2026-07-16): verify that a
+   composition-compatible morphism-level injected bit FORCES descent to a per-slice potential
+   (vertex-sourced 0-cochain -- the Gate-2a passing branch), and that a non-composition-compatible
+   injection fails to define any per-sheaf bit (E160 case-5 control as the failing direction). Also test
+   the A-prime signature: per-slice structure observable, re-making channel null. Spec: same note.
 5. Housekeeping: convert legacy fixtures to the check-registry convention (`tests/tef_check_tag_linter.py
    --strict` clean); adopt two-phase pre-registration commits; text-verify the five classical-core
    citations.
