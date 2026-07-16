@@ -157,3 +157,21 @@ python tests/relational_dissolution_fixture.py
 A pass is toy-grade evidence that binary absolute representative dependence
 dissolves to relative alignment unless an extra anchor is supplied. It does
 not rule out richer native-formalism or physical doors.
+
+## Per-block observability fixture
+
+- `per_block_observability_fixture.py` checks the finite boundary-switch
+  profile claim. It verifies that a single global switch has no neutral
+  observable content, while multi-block relative alignments are global-flip
+  invariant and sensitive to independent per-block choices.
+
+Run from the repository root:
+
+```text
+python tests/per_block_observability_fixture.py
+```
+
+A pass is toy-grade evidence for operator opacity: multiplicity can be visible
+through relative alignment, while absolute labels and operator identity remain
+unsettled. It does not establish observer agency, physical issuance, or any
+source-repo verdict.
