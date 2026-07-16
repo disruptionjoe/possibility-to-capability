@@ -32,6 +32,11 @@ synthetic unanimous result from partial source artifacts.
 - Founding-case blocked preflight:
   `packets/intake/GU-001-blocked-preflight-v0.1-2026-07-14.json`
 - GU-001: IMPORTED 2026-07-16 at pin `77879e5`; see `packets/imports/GU-001/`.
+- TAF-001: IMPORTED 2026-07-16 (source-issued by time-as-finality, issuance
+  commit `ae37ec19`); see `packets/imports/TAF-001/`.
+- TI-PIT-002: IMPORTED 2026-07-16 (source-issued by temporal-issuance, issuance
+  commit `8fa01a6f`); see `packets/imports/TI-PIT-002/`, including the standing
+  authorship-quarantine restriction recorded in its import record.
 
 Schema hardening does not change packet readiness. A source must issue a packet
 against an explicit version; the receiver never migrates or completes it on the

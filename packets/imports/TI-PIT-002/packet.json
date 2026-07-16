@@ -1,0 +1,333 @@
+{
+  "alternatives": [
+    "A Glue_n-exercising multi-observer variant (two observers plus nontrivial reconciliation) was considered and deferred to a possible follow-up packet; this packet keeps Glue_n present-but-unexercised as declared."
+  ],
+  "assumptions": [
+    "A1 (definition): TI's RUN-0081 OnlineIssuance^LC seven-component signature and source gate, per the frozen blobs/TI-FORMAL-OBJECT.md.",
+    "A2 (construction_choice): the specific finite systems (alphabet {a,b}, Gamma_0={'a'}, MAXLEN=4, four stages, deterministic issue-all Iss_n); designed witnesses.",
+    "A3 (definition): the reconstruction model with declared hypothesis class H = {0,1,2,3}; REC-facts are relative to H.",
+    "A4 (implementation): the frozen fixture correctly implements A1 over A2/A3, carries w_n as explicit per-event trace fields, and enforces the [T]/[E]/[F] control discipline at exit.",
+    "A5 (construction_choice): Ext_n trivialized as declared in the instantiation map; Glue_n present but not exercised."
+  ],
+  "claim": {
+    "convergence": "not_applicable",
+    "independence_scope": "The three evaluations share one implementation, one run, one baseline system, and one task vocabulary; they are not evidentially independent methods, and this packet asserts no independence result of any type.",
+    "independence_type": "not_applicable",
+    "joint_argument_artifact": "blobs/ti_pit_02_semantics.md",
+    "method_count": 3,
+    "scope": "One designed finite deterministic single-observer system family and one 30-token task vocabulary, at the pinned revision; exploration tier, formal-only grade; absorbed under the RUN-0081 gate clause 4; no physical substrate; no general theorem.",
+    "source_status_unchanged": true,
+    "statement": "In the designed finite OnlineIssuance^LC instantiation, under the declared reconstruction model: (1) ALPHA (projection-only change Proj_{L=2} -> Proj_full) leaves the source issuance set exactly fixed while enlarging the observer's decidable set 25 -> 30, all five new decisions negative; (2) BETA (admissibility-only change Adm_1 -> Adm_2) enlarges the issuance set 9 -> 13 while the L=2 projected record and decidable set are bit-for-bit unchanged; (3) the same admissibility change under the fixed wider projection L=3 is observer-visible and simultaneously enlarges issuance and shrinks reconstruction decidability by one task (abbb)."
+  },
+  "construction_forks": [
+    {
+      "alternatives": [
+        "a genuinely witness-bearing extension category with morphisms and composition"
+      ],
+      "name": "extension category Ext_n",
+      "selected": "trivialized: finite (e, w) pairs over the gate-clause CandExt(Gamma_n); no categorical structure exercised (premise A5)",
+      "transfer_status": "source_only"
+    },
+    {
+      "alternatives": [
+        "other finite hypothesis classes; REC-facts are relative to H by construction"
+      ],
+      "name": "reconstruction hypothesis class",
+      "selected": "H = {0,1,2,3} over the admissibility parameter k, declared before evaluation",
+      "transfer_status": "untested"
+    },
+    {
+      "alternatives": [
+        "a multi-observer Glue_n-exercising variant (offered as a follow-up packet, not issued here)"
+      ],
+      "name": "reconciliation Glue_n",
+      "selected": "present in the signature, not exercised: single observer, identity reconciliation",
+      "transfer_status": "untested"
+    },
+    {
+      "alternatives": [
+        "sampled or physically measured systems"
+      ],
+      "name": "witness family",
+      "selected": "designed finite deterministic token systems over {a,b}; not sampled or physically measured",
+      "transfer_status": "source_only"
+    }
+  ],
+  "evidence_structure": {
+    "method_dependency_edges": [
+      {
+        "antecedent_method_id": "M1",
+        "dependency_type": "shares_implementation",
+        "dependent_method_id": "M2",
+        "exact_statement": "M1, M2, and M3 are three paired evaluations of one implementation (blobs/ti_pit_02_fixture.py), one deterministic run."
+      },
+      {
+        "antecedent_method_id": "M2",
+        "dependency_type": "shares_implementation",
+        "dependent_method_id": "M1",
+        "exact_statement": "M1, M2, and M3 are three paired evaluations of one implementation (blobs/ti_pit_02_fixture.py), one deterministic run."
+      },
+      {
+        "antecedent_method_id": "M1",
+        "dependency_type": "shares_implementation",
+        "dependent_method_id": "M3",
+        "exact_statement": "M1, M2, and M3 are three paired evaluations of one implementation (blobs/ti_pit_02_fixture.py), one deterministic run."
+      },
+      {
+        "antecedent_method_id": "M3",
+        "dependency_type": "shares_implementation",
+        "dependent_method_id": "M1",
+        "exact_statement": "M1, M2, and M3 are three paired evaluations of one implementation (blobs/ti_pit_02_fixture.py), one deterministic run."
+      },
+      {
+        "antecedent_method_id": "M2",
+        "dependency_type": "shares_implementation",
+        "dependent_method_id": "M3",
+        "exact_statement": "M1, M2, and M3 are three paired evaluations of one implementation (blobs/ti_pit_02_fixture.py), one deterministic run."
+      },
+      {
+        "antecedent_method_id": "M3",
+        "dependency_type": "shares_implementation",
+        "dependent_method_id": "M2",
+        "exact_statement": "M1, M2, and M3 are three paired evaluations of one implementation (blobs/ti_pit_02_fixture.py), one deterministic run."
+      },
+      {
+        "antecedent_method_id": "M1",
+        "dependency_type": "shares_data",
+        "dependent_method_id": "M2",
+        "exact_statement": "M1, M2, and M3 share the same baseline system (k=1), hypothesis class H={0,1,2,3}, and 30-token task vocabulary."
+      },
+      {
+        "antecedent_method_id": "M1",
+        "dependency_type": "shares_data",
+        "dependent_method_id": "M3",
+        "exact_statement": "M1, M2, and M3 share the same baseline system (k=1), hypothesis class H={0,1,2,3}, and 30-token task vocabulary."
+      },
+      {
+        "antecedent_method_id": "M2",
+        "dependency_type": "shares_data",
+        "dependent_method_id": "M3",
+        "exact_statement": "M1, M2, and M3 share the same baseline system (k=1), hypothesis class H={0,1,2,3}, and 30-token task vocabulary."
+      }
+    ],
+    "premise_ledger": [
+      {
+        "exact_statement": "TI's RUN-0081 seven-component source object OnlineIssuance^LC = (Gamma_n, Adm_n, Ext_n, Iss_n, Proj_{o,n}, Glue_n, tau_n) with its source gate, including gate clause 2 witnesses w_n : Adm_n(e_n), as fixed in FORMAL-OBJECT.md.",
+        "load_bearing_for_method_ids": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "premise_id": "A1",
+        "premise_type": "definition",
+        "source_artifact_path": "blobs/TI-FORMAL-OBJECT.md",
+        "source_status": "asserted_in_source"
+      },
+      {
+        "exact_statement": "The finite instantiation: binary alphabet {a,b}, Gamma_0={'a'}, MAXLEN=4, four stages, Adm_k(e) iff e novel and |e| <= 4 and #b(e) <= k, Iss_n issues all admissible candidates in sorted order deterministically; single observer; Glue_n present in the signature but not exercised.",
+        "load_bearing_for_method_ids": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "premise_id": "A2",
+        "premise_type": "construction_choice",
+        "source_artifact_path": "blobs/ti_pit_02_semantics.md",
+        "source_status": "asserted_in_source"
+      },
+      {
+        "exact_statement": "The reconstruction model: the observer knows Gamma_0, CandExt, Iss, the stage count, and the projection rule, and knows Adm = Adm_k for some k in the declared hypothesis class H = {0,1,2,3} without knowing k; REC(s) is decided iff every k in H whose projected trace equals the observed one agrees on ISS(s). H is a declared free parameter; REC-facts are relative to H.",
+        "load_bearing_for_method_ids": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "premise_id": "A3",
+        "premise_type": "definition",
+        "source_artifact_path": "blobs/ti_pit_02_semantics.md",
+        "source_status": "asserted_in_source"
+      },
+      {
+        "exact_statement": "The frozen Python program blobs/ti_pit_02_fixture.py correctly implements the A1 signature instantiation over the A2 systems and the A3 reconstruction model, with per-event admissibility witnesses w = (novel, length, b_count) carried in tau_n, and with the [T]/[E]/[F] check discipline (1 [T], 4 [E], 6 [F]; every [F] failing-direction probe must fail for exit 0).",
+        "load_bearing_for_method_ids": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "premise_id": "A4",
+        "premise_type": "implementation",
+        "source_artifact_path": "blobs/ti_pit_02_fixture.py",
+        "source_status": "asserted_in_source"
+      },
+      {
+        "exact_statement": "Ext_n is trivialized: represented by the finite set of pairs (e, w) over the gate-clause candidate object CandExt(Gamma_n), with no nontrivial categorical structure exercised; declared in the instantiation map, not silently dropped.",
+        "load_bearing_for_method_ids": [
+          "M1",
+          "M2",
+          "M3"
+        ],
+        "premise_id": "A5",
+        "premise_type": "construction_choice",
+        "source_artifact_path": "blobs/ti_pit_02_semantics.md",
+        "source_status": "asserted_in_source"
+      }
+    ],
+    "raw_method_count": 3,
+    "raw_method_count_is_independence_count": false,
+    "shared_load_bearing_premise_ids": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5"
+    ]
+  },
+  "integrity": {
+    "bundle_digest": "9c8e4ec77ca57a2f349057f89613d4e0cb45e50979af01385353d66c19589c39",
+    "canonicalization_profile": "ptc-frozen-bundle-v1",
+    "digest": "9c8e4ec77ca57a2f349057f89613d4e0cb45e50979af01385353d66c19589c39",
+    "frozen": true,
+    "hash_algorithm": "sha256",
+    "hash_scope": [
+      "blobs/TI-FORMAL-OBJECT.md",
+      "blobs/ti_pit_02_fixture.py",
+      "blobs/ti_pit_02_output.txt",
+      "blobs/ti_pit_02_semantics.md"
+    ],
+    "manifest": [
+      {
+        "byte_length": 23751,
+        "content_sha256": "cee37f4164567e7e7434d58183400d349a3707f8ab4e8d07f38b43fc19eb7bfa",
+        "path": "blobs/TI-FORMAL-OBJECT.md"
+      },
+      {
+        "byte_length": 10371,
+        "content_sha256": "8888afc78847a2f9930ed453e2a1e16b62b2e647542cb23cc99eb15230ea4bed",
+        "path": "blobs/ti_pit_02_fixture.py"
+      },
+      {
+        "byte_length": 4999,
+        "content_sha256": "a14642b7cd27bcce510bbe28f5112d93b13db415434ae2f3d416048ec4a62475",
+        "path": "blobs/ti_pit_02_output.txt"
+      },
+      {
+        "byte_length": 32021,
+        "content_sha256": "7a5233c3ff2e0b0e7dcdd6cd59f8f8bc175e8d2fcf7dc85d0bccbe6b77a4c301",
+        "path": "blobs/ti_pit_02_semantics.md"
+      }
+    ],
+    "manifest_digest": "f96c8443dbf0baf8d8d4692b254d4fe158634600b512b532378bc4ce567919af",
+    "packet_digest": "cbf8dceda29c14364398da2ce2c14b93385953d4592aa3c0c23d703e29b44d19"
+  },
+  "interfaces": [
+    {
+      "ownership_status": "target_owned",
+      "requested_datum": "any classification of the ALPHA/BETA/BETA-prime intervention triple under the receiver's preregistered gate machinery, subject to the authorship restriction in nonclaims",
+      "target_repository": "possibility-to-capability"
+    }
+  ],
+  "method_ledger": [
+    {
+      "artifact_path": "blobs/ti_pit_02_fixture.py",
+      "artifact_revision": "61fc4e6f8530d8620c0a3b66446c2e28e4fda164",
+      "grade": "computation (deterministic, stdlib-only Python 3; output frozen and hashed)",
+      "label": "ALPHA evaluation (projection-side intervention: Proj_{L=2} -> Proj_full, issuance structure bit-identical)",
+      "method_id": "M1",
+      "premise_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "result": "The source issuance set is exactly fixed at 9 tokens (a [T] by-construction identity, protected by an [F] probe); the observer's decidable set grows 25 -> 30 of 30; the five newly decidable tasks (abb, aabb, abab, abba, abbb) are all decided negative.",
+      "verification": "Re-run blobs/ti_pit_02_fixture.py; byte-compare stdout against blobs/ti_pit_02_output.txt (exit 0 requires all six [F] probes to fail)."
+    },
+    {
+      "artifact_path": "blobs/ti_pit_02_fixture.py",
+      "artifact_revision": "61fc4e6f8530d8620c0a3b66446c2e28e4fda164",
+      "grade": "computation (deterministic, stdlib-only Python 3; output frozen and hashed)",
+      "label": "BETA evaluation (admissibility-side intervention: Adm_1 -> Adm_2, projection bit-identical at Proj_{L=2})",
+      "method_id": "M2",
+      "premise_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "result": "The source issuance set grows 9 -> 13 tokens, each new issuance carrying its explicit trace witness; the observer's projected record and entire decidable set are bit-for-bit unchanged: through the fixed L=2 projection, BETA is invisible.",
+      "verification": "Re-run blobs/ti_pit_02_fixture.py; byte-compare stdout against blobs/ti_pit_02_output.txt (exit 0 requires all six [F] probes to fail)."
+    },
+    {
+      "artifact_path": "blobs/ti_pit_02_fixture.py",
+      "artifact_revision": "61fc4e6f8530d8620c0a3b66446c2e28e4fda164",
+      "grade": "computation (deterministic, stdlib-only Python 3; output frozen and hashed)",
+      "label": "BETA-prime evaluation (same admissibility intervention under the fixed wider projection Proj_{L=3})",
+      "method_id": "M3",
+      "premise_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "result": "The same admissibility change is observer-visible (abb enters the record at stage 2) and shrinks reconstruction decidability by one task (abbb becomes undecidable: consistent hypotheses {2,3} disagree) while enlarging issuance 9 -> 13.",
+      "verification": "Re-run blobs/ti_pit_02_fixture.py; byte-compare stdout against blobs/ti_pit_02_output.txt (exit 0 requires all six [F] probes to fail)."
+    }
+  ],
+  "nonclaims": [
+    "No physical or source-issuance significance: the fixture is absorbed under the RUN-0081 gate clause 4 (finite/computable/fixed-law) and must not be cited as evidence for Issue[S] of any type; Issue[S]^physical remains false.",
+    "No TI claim status changes: TI-C019 and TI-C020 are untouched; issuing this packet moves no TI verdict.",
+    "TI assigns no diagnostic label of any kind to ALPHA, BETA, or BETA-prime under any receiver taxonomy; the intervention descriptions are mechanical statements of which signature component was edited, and any label the receiver assigns is receiver-owned and must not be attributed to TI.",
+    "The [T]-tagged ALPHA issuance-invariance identity holds by construction and carries no evidential weight; it is excluded from the evidential headline (4 [E] + 6 [F]).",
+    "Three methods are not three independent evidential units (see evidence_structure).",
+    "This packet cites, scores, and advocates no normalization frame, receiver frame, or rival frame. Authorship restriction (carried from the governing referee, surviving issuance): this packet and any frame authored by its originating P2C lane may not be used together as a frame-discriminating pair in any receiver adjudication; the receiver's independent-reviewer and blind-issuer roles must be satisfied by other parties.",
+    "The designed witnesses do not establish that real systems exhibit these dissociations."
+  ],
+  "ownership": {
+    "authority_transfer": false,
+    "receiving_owner": "possibility-to-capability",
+    "source_owner": "temporal-issuance"
+  },
+  "packet_id": "TI-PIT-002",
+  "packet_status": "SOURCE_FROZEN",
+  "quantifiers": [
+    "All computed facts are existential: they hold for the specific finite systems, projections, and declared hypothesis class H at the pinned revision; no universal claim over systems, thresholds, hypothesis classes, or task semantics is made.",
+    "The BETA invisibility fact (projected record and decidable set unchanged under Proj_{L=2}) is a parameter fact of L=2, not a structural necessity; the BETA-prime leg exhibits the same intervention as observer-visible at L=3.",
+    "Consistency and decidability sweeps are exhaustive over the declared finite hypothesis class H = {0,1,2,3} and the 30-token vocabulary only."
+  ],
+  "question": {
+    "decision_type": "other",
+    "exact_question": "In one finite deterministic instantiation of TI's OnlineIssuance^LC signature with a declared reconstruction hypothesis class H, what are the exact issuance-set and observer-decidability consequences of (ALPHA) changing only the observer projection Proj_{o,n} with issuance structure bit-identical, versus (BETA) changing only the admissibility predicate Adm_n with the projection bit-identical, including the same admissibility change under a fixed wider projection (BETA-prime)?"
+  },
+  "residuals": [
+    "R-1: Glue_n is not exercised; any receiver analysis needing reconciliation structure requires a further packet.",
+    "R-2: REC-facts are relative to the declared hypothesis class H; sensitivity to other hypothesis classes is not swept.",
+    "R-3: The family is deterministic and single-observer, hence globally patchable by construction; case families with incompatible interface contexts are out of this fixture's scope (semantics body section 2.7).",
+    "R-4: The composite ALPHA-then-BETA system is not computed; interventions are evaluated separately from the shared baseline."
+  ],
+  "schema_version": "0.2",
+  "source": {
+    "artifact_paths": [
+      "blobs/TI-FORMAL-OBJECT.md",
+      "blobs/ti_pit_02_fixture.py",
+      "blobs/ti_pit_02_output.txt",
+      "blobs/ti_pit_02_semantics.md"
+    ],
+    "claim_status": "exploration",
+    "evidence_grade": "formal only (finite executable toy fixture; absorbed under the RUN-0081 gate clause 4)",
+    "issued_at": "2026-07-16T00:00:00Z",
+    "repository": "temporal-issuance",
+    "revision": "61fc4e6f8530d8620c0a3b66446c2e28e4fda164",
+    "source_packet_id": "TI-PIT-002"
+  },
+  "verification": {
+    "artifacts": [
+      "blobs/ti_pit_02_fixture.py",
+      "blobs/ti_pit_02_output.txt",
+      "blobs/ti_pit_02_semantics.md"
+    ],
+    "replication_status": "Replicated. Re-executed by the TI steward at adjudication and again from the frozen blob at issuance (2026-07-16): exit 0, stdout byte-identical to blobs/ti_pit_02_output.txt; script and output content hashes match the author's pinned values; the inlined script in the semantics body is byte-identical to the frozen blob; all six [F] failing-direction probes fail as required; the fixture lints clean under the receiver's tests/tef_check_tag_linter.py --strict (1 [T], 4 [E], 6 [F], 0 untagged)."
+  }
+}
