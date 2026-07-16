@@ -40,6 +40,9 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
         context = (ROOT / "steward" / "README.md").read_text(encoding="utf-8")
         self.assertIn("steward/research-portfolio.json", context)
         self.assertIn(self.data["north_star_lane"], context)
+        active = next(lane for lane in self.data["lanes"] if lane["state"] == "ACTIVE")
+        self.assertIn("ADAPTER2-01", active["current_authority"])
+        self.assertIn("not the failed GU-sign/finality-polarity adapter", active["internal_work_items"][0]["next_swing"])
 
 
 if __name__ == "__main__":

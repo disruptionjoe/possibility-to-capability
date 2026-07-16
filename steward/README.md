@@ -29,6 +29,12 @@ Next-Work Handoff. Repo Stewardship may revise the ranking when a real
 falsifier, survivor, dependency change, or frozen sovereign return changes the
 frontier.
 
+This portfolio is the durable hourly priority owner. A recent exploration or
+Next-Work Handoff is evidence for reranking, not a replacement queue. In
+particular, ADAPTER2-01 already closes the current GU-sign/finality-polarity
+adapter attempt; the active boundary adapter is the physical
+boundary/source-to-capability object, not a retry under a new label.
+
 The active lane is `BOUNDARY-TO-ISSUANCE-WITNESS`. It owns substantive
 repo-independent construction and falsification work:
 

@@ -21,6 +21,7 @@
       "hourly_eligible": true,
       "owner": "possibility-to-capability",
       "purpose": "Construct or kill a source-neutral physical boundary adapter and a real candidate witness that can be tested for capability change and irreducible issuance without absorbing source-repo truth.",
+      "current_authority": "ADAPTER2-01 returned the GU-sign/finality-polarity identity to OPEN because the profile functor forgets the sign fiber. This lane concerns a physical boundary/source-to-capability adapter and must not silently retry that failed polarity adapter.",
       "priority_score": 24,
       "score": {
         "impact": 5,
@@ -32,14 +33,14 @@
         "duplication_risk": 0
       },
       "kill_condition": "If every admissible boundary transition factors through declared fixed dynamics, access, resources, or a legitimate completion, preserve the scoped no-go and narrow the hierarchy rather than inventing issuance.",
-      "forbidden_shortcut": "Do not treat a packet schema, GU analogy, irreversible process, stochastic outcome, or added branch label as a constructed adapter or physical witness.",
+      "forbidden_shortcut": "Do not treat a packet schema, GU analogy, irreversible process, stochastic outcome, or added branch label as a constructed adapter or physical witness. Do not spend an hourly run retrying ADAPTER2-01 without new native source or target structure that meets its reopen burden.",
       "internal_work_items": [
         {
           "id": "P2C-BOUNDARY-ADAPTER",
           "state": "READY",
           "priority_score": 27,
           "hourly_eligible": true,
-          "next_swing": "Define the smallest source-neutral boundary-adapter object on explicit physical inputs, state its composition and invariance laws, and attempt either a nontrivial construction or a counterexample. Test at least one positive control and one circularity control. Do not carry the desired capability or issuance verdict as an input label.",
+          "next_swing": "Define the smallest source-neutral physical boundary/source-to-capability adapter on explicit physical inputs, state its composition and invariance laws, and attempt either a nontrivial construction or a counterexample. This is not the failed GU-sign/finality-polarity adapter. Test at least one positive control and one circularity control. Do not carry the desired capability or issuance verdict as an input label.",
           "success_condition": "A typed nonconstant adapter acts on physical transition data, respects declared equivalences and composition, and exposes a testable residual without importing its polarity or verdict.",
           "kill_condition": "Every candidate is constant, verdict-carrying, representation-dependent, or equivalent to adding the missing datum by hand."
         },
