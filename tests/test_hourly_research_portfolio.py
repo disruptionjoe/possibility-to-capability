@@ -17,24 +17,27 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
     def test_active_lane_and_ready_work_exist(self) -> None:
         active = [lane for lane in self.data["lanes"] if lane["state"] == "ACTIVE"]
         self.assertEqual([lane["id"] for lane in active], [self.data["north_star_lane"]])
-        ready = [
+        selectable = [
             item
             for item in active[0]["internal_work_items"]
-            if item["state"] == "READY" and item["hourly_eligible"]
+            if item["hourly_eligible"]
+            and item["state"] in ("READY", "ADVANCED_OPEN_FRONTIER",
+                                  "RESOLVED_SCOPED_SURVIVOR")
         ]
-        self.assertGreaterEqual(len(ready), 1)
-        # Explicit rank overrides raw priority_score. The real physical witness
-        # led and EXECUTED its REACH swing on 2026-07-16
-        # (explorations/2026-07-16-real-physical-witness/); per the lane-doctrine
-        # invariant (a leading item resolved -> continue pushing the core through
-        # its typed interface), priority reverted to P2C-BOUNDARY-ADAPTER, which
-        # then executed the witness-consuming QIP adapter. That exposed the
-        # target-phase whole-family admission residual, so priority now moves to
-        # P2C-NULL-COMPLETION-CLOSURE (rerank_2026_07_16c).
+        self.assertGreaterEqual(len(selectable), 1)
+        # Explicit rank overrides raw priority_score. The completion-closure
+        # swing executed 2026-07-16 (explorations/2026-07-16-completion-class-
+        # firewall/): firewall DERIVED, referee D2 composition gap closed at
+        # model grade, item resolved and demoted. Per the lane-doctrine
+        # invariant (belt resolved -> core wager leads), priority reverts to
+        # P2C-REAL-PHYSICAL-WITNESS (rerank_2026_07_16f), whose next swing is
+        # the designated REACH swing per reach_swing_accounting_2026_07_16.
         self.assertTrue(self.data["selection_contract"][
             "explicit_rank_field_overrides_priority_score"])
-        selected = min(ready, key=lambda item: item["rank"])
-        self.assertEqual(selected["id"], "P2C-NULL-COMPLETION-CLOSURE")
+        selected = min(selectable, key=lambda item: item["rank"])
+        self.assertEqual(selected["id"], "P2C-REAL-PHYSICAL-WITNESS")
+        self.assertIn("reach_swing_accounting_2026_07_16",
+                      self.data["selection_contract"])
 
     def test_hard_core_and_doctrine_fields(self) -> None:
         self.assertIn("HARD-CORE.md", self.data["hard_core"]["statement_owner"])

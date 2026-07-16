@@ -69,3 +69,40 @@
 - The most quotable honest line: the fixed-family absorber is universally
   available but nowhere free — it either changes the frame (TaF Clause 3) or
   caps the conclusion below the capability class (TI firewall).
+
+## 2026-07-16 — Completion-class firewall swing (P2C-NULL-COMPLETION-CLOSURE executed)
+
+- CompletionClass-P2C v0.1 built: P2C's own legitimate-completion class (nine
+  channel constructors + certified/hull containment constructors, three claim
+  classes, sequential-composition closure verified as a fixpoint), governed by
+  three admissibility axioms whose provenance PREDATES the swing (A-FRAME =
+  witness frame declaration + adapter RESOURCE_FRAME_CHANGED; A-UNIF = adapter
+  verdict-carrying rejection; A-CAL = the item's own pre-declared kill
+  condition).
+- FIREWALL VERDICT: DERIVED. The conclusion-class firewall (containment-type
+  absorption never discharges an operational claim) is a theorem of the finite
+  model from type-free axioms, not a stipulated table entry (contrast TI v1)
+  and not refuted. The refutation branch was run, not assumed away: the
+  unrestricted absorber reopens absorption AND collapses the instrument
+  (constant verdict map). Binding scope (referee R1): derivation binds
+  non-constant, outcome-independent, frame-preserving diagnostic standards;
+  condition C2 is NARROWED to axiom-relativity, not eliminated.
+- REFEREE D2 CLOSED at model grade: no composite of local completions absorbs
+  the P2C-W1 (Q,I,P) delta (fixpoint-exhaustive), the closure strictly exceeds
+  the singles (register target needs depth 2), and the escape is theorem-shaped
+  (carrier dichotomy: every locally-invariant composite carries only the null
+  readout). HEADLINE: the composite attack came within ONE signature of killing
+  the scoped survivor — composites reach quantization and persistence; the
+  escape hangs entirely on local-op invariance.
+- Kill condition checked executably in both pre-declared directions, NOT
+  triggered. F1: legitimacy-standard remainder discharged (model-relative);
+  F1 stays LIVE via the individuation-fork and family-exhaustiveness legs.
+- Record: `explorations/2026-07-16-completion-class-firewall/` (class contract,
+  synthesis, governing referee report, frozen output);
+  `tests/p2c_completion_class_closure.py` (11 [E] + 4 [F] = 15, strict lint
+  clean, exit 0).
+- Portfolio: item resolved and demoted (rank 4, dormant with re-arm);
+  P2C-REAL-PHYSICAL-WITNESS back to rank 1 as the designated REACH swing
+  (Alternate B/C); P2C-BOUNDARY-ADAPTER unblocked (rerun against v0.1);
+  P2C-CROSS-REPO-ADJUDICATION re-arm branch 2 MET (local second-standard
+  re-adjudication of P2C-W1 now available; no proposals sent this swing).
