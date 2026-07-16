@@ -1,0 +1,171 @@
+{
+  "schema_version": "0.1",
+  "prereg_id": "RANK2-PR-001",
+  "created": "2026-07-16",
+  "status": "frozen-on-commit (immutable per two-phase-preregistration-v0.1; any revision is a NEW file with a NEW prereg id)",
+  "question": "When the Rank-2 access-versus-capability paired-intervention adjudication runs on sovereign-issued evidence (a TaF-adopted paired-intervention bundle and a TI-adopted paired case) under an independently re-frozen Frame R, what does the receiver honestly expect the frame-neutral pair evidence and frame diagnoses to show, and which Rank-2 outcome does each evidence pattern map to?",
+  "governing_interfaces": [
+    "interfaces/two-phase-preregistration-v0.1.md",
+    "experiments/2026-07-14-ranked-decisive-test-program-v0.1.md (Rank 2 section; outcome menu is closed)",
+    "explorations/2026-07-16-decisive-tests/lane-R2-access-capability-pilot.md (comparison contract v0.1 + governing referee corrections D1-D7)"
+  ],
+  "results_path_declared": "explorations/2026-07-16-rank2-preregistration/RANK2-PR-001.results.json",
+  "construction": {
+    "statement": "Comparison contract per lane-R2 Deliverable 1 as referee-corrected: shared task vocabulary V fixed before classification; access-completion class C built only from the source-supplied record-channel inventory and frozen before any outcome; frame-neutral pair evidence (delta_op, delta(c) for every c in C, robustness bit); Frame N (fixed-completion normalization, candidate) and Frame R (operational-context relativism, access-constitutive rival, independently re-frozen) as pure functions of the frozen evidence; NAIVE as undefended control.",
+    "forks_retained": [
+      "TaF-branch and TI-branch are adjudicated as separate branches; neither construal is selected over the other and no result transfers between them without an explicit transfer argument.",
+      "If sovereign adoption materially alters a case's semantics relative to the receiver-side draft shape, the altered semantics govern and this prereg's per-branch expectations apply only where the sovereign-issued factor declarations still match the check statements; mismatched checks are scored NOT_APPLICABLE, never reinterpreted."
+    ]
+  },
+  "declared_checks": [
+    {
+      "check_id": "c1-taf-sovereign-issuance",
+      "statement": "The TaF steward adopts and issues the record-access vs record-formation paired-intervention bundle (possibly with revisions) as source-issued frozen evidence meeting the Rank-2 packet spec (lane-R2 section 7), issued blind to receiver diagnostic labels.",
+      "expected": "ISSUED",
+      "tag": "E",
+      "on_miss": "Rank 2 remains BLOCKED on the TaF branch; no synthetic or receiver-side substitute is admissible."
+    },
+    {
+      "check_id": "c2-ti-sovereign-issuance",
+      "statement": "The TI steward adopts and issues TI-PIT-02 (possibly with revisions) as source-issued frozen evidence meeting the Rank-2 packet spec, issued blind to receiver diagnostic labels.",
+      "expected": "ISSUED",
+      "tag": "E",
+      "on_miss": "Rank 2 remains BLOCKED on the TI branch; the TaF branch may still run alone but yields at most a single-branch update."
+    },
+    {
+      "check_id": "c3-frame-r-independent-refreeze",
+      "statement": "An advocate independent of every case it will score (in particular, not the lane-C author for TI-PIT-02) adopts and re-freezes Frame R before seeing any case pair, with a diagnosis rule extensionally equivalent to: delta_op nonzero -> CAPABILITY_CHANGE, else NO_CHANGE.",
+      "expected": "FROZEN_INDEPENDENT",
+      "tag": "E",
+      "on_miss": "The adjudication must not run; running with a receiver-authored Frame R violates the program's owner boundaries and stop condition S5."
+    },
+    {
+      "check_id": "c4-access-pair-completion-profile",
+      "statement": "For every pair the source declares (sealed intent label) as access-only: delta(c) = 0 for every c in the frozen completion class C (completion-ROBUST zero profile), while delta_op may be nonzero.",
+      "expected": "ROBUST_ZERO",
+      "tag": "E",
+      "note": "Where the source holds the repertoire exactly fixed this is near-forced; the evidential content is whether sources can issue genuinely pure access pairs at all, and whether the profile survives the full sovereign completion class rather than a truncation."
+    },
+    {
+      "check_id": "c5-capability-pair-completion-profile",
+      "statement": "For every pair the source declares (sealed intent label) as capability-changing with access and resources fixed: delta(c) != 0 for every c in C (completion-ROBUST nonzero profile).",
+      "expected": "ROBUST_NONZERO",
+      "tag": "E",
+      "note": "This is the receiver's genuine risk point and the rival's central attack surface: Frame R predicts completion-RELATIVITY on realistic interventions. The receiver's expectation here is falsifiable and is NOT protected by construction."
+    },
+    {
+      "check_id": "c6-mixed-sector-present",
+      "statement": "At least one sovereign-issued pair (or one pair the sources decline to declare pure) shows a completion-RELATIVE delta(c) profile with genuine, non-verbal disagreement between Frame N and Frame R.",
+      "expected": "TRUE",
+      "tag": "E",
+      "note": "The receiver expects the mixed sector to be real, and preserves it as a fork rather than forcing it either way."
+    },
+    {
+      "check_id": "c7-frame-evidence-functionality",
+      "statement": "Both defended frames return identical diagnoses on rerun over the identical frozen pair evidence and frozen completion class (frames are pure functions of the evidence).",
+      "expected": "TRUE",
+      "tag": "E",
+      "on_miss": "The non-functional frame is disqualified and stop condition S1 fires."
+    },
+    {
+      "check_id": "c8-label-neutrality",
+      "statement": "Swapping the physical branch labels of every case pair leaves every frame diagnosis and every outcome mapping unchanged.",
+      "expected": "TRUE",
+      "tag": "E"
+    },
+    {
+      "check_id": "c9-shared-vocabulary-admissible",
+      "statement": "A single shared task vocabulary is admissible across both members of every sovereign-issued pair without semantically distorting either case.",
+      "expected": "TRUE",
+      "tag": "E",
+      "on_miss": "Route to the program's no-shared-comparison branch (favors plurality / possible new type); do not force a vocabulary."
+    }
+  ],
+  "outcome_mapping": {
+    "note": "Outcomes range only over the Rank-2 menu (referee correction D4: REVISE_HIERARCHY is not a Rank-2 outcome; the signature-not-label idea may be recorded only as a candidate future hierarchy revision). FAVORS_CANDIDATE is reachable solely through the completion-robustness discriminator on independently issued pure pairs (referee correction D3: no receiver may declare the frames' disagreement merely verbal).",
+    "rules": [
+      "IF c1 or c2 = NOT ISSUED for a branch: that branch is BLOCKED; no substitute evidence.",
+      "IF c3 misses: do not run; adjudication invalid, not scored.",
+      "IF c4 = ROBUST_ZERO and c5 = ROBUST_NONZERO on sovereign-declared pure pairs under the independently frozen Frame R: FAVORS_CANDIDATE on the pure sector only.",
+      "IF robustness fails on source-declared-pure pairs, or separation appears only after access is made constitutive: FAVORS_RIVAL and the receiver's normalization rule must be revised.",
+      "IF equally admissible frames disagree with no invariant quotient (expected on the mixed sector per c6): favors operational-context relativism / CONSTRUCTION_FORK on that sector.",
+      "IF c9 = FALSE: favors plurality / possible new type.",
+      "IF pairs are empirically indistinguishable: REMAINS_UNDERDETERMINED.",
+      "Sectors are reported separately and never averaged into one verdict."
+    ]
+  },
+  "no_joint_pass_conditions": [
+    "A TaF-branch favorable result plus a TI-branch favorable result do NOT combine into a joint pass unless one explicit argument satisfies the entire gate chain on the same frozen witness (No-Artificial-Success Rule). Absent that argument, the honest maximum is two independent single-branch updates.",
+    "A prereg-verify PASS on this artifact plus favorable observed values is NOT a pass: the mechanism's own billing is that a prereg PASS is necessary, not sufficient.",
+    "FAVORS_CANDIDATE on the pure sector plus CONSTRUCTION_FORK on the mixed sector is NOT a global candidate victory; the fork is preserved as a first-class outcome.",
+    "No Rank-2 outcome, favorable or not, moves any source-repository claim: bar(b), H59, Krein positivity, and physical issuance remain OPEN regardless; ADAPTER2-01 governs.",
+    "Receiver-side drafts (lane B, lane C) count as evidence only in the exact form a sovereign steward adopts and issues; agreement between a sovereign return and a receiver draft is provenance hygiene, not additional evidential weight."
+  ],
+  "concession_conditions": [
+    "If sovereign-declared pure capability pairs come out completion-RELATIVE (c5 misses), the receiver concedes Frame R's central prediction is confirmed on that evidence and records FAVORS_RIVAL pressure rather than reinterpreting purity after the fact.",
+    "If no source can issue any pure pair, the receiver concedes the pure-sector discriminator is untestable on real evidence and the access/capability boundary as a binary label is unsupported at this rank (favors operational-context relativism / CONSTRUCTION_FORK).",
+    "If separation is recoverable only by enriching the completion class after outcomes, the receiver concedes the run is invalid (stop S1), not that the enriched result counts."
+  ],
+  "frozen_judgment_calls": [
+    {
+      "call_id": "J1-purity-from-sealed-source-label",
+      "ruling": "Whether a pair is 'pure access-only' or 'pure capability' is taken exclusively from the source's sealed intent label, unsealed only after classification; the receiver never reclassifies purity after seeing outcomes."
+    },
+    {
+      "call_id": "J2-completion-class-provenance",
+      "ruling": "The completion class C is built only from the source-supplied record-channel inventory, frozen before any outcome is inspected; enriching or truncating C after outcomes is a stop-condition violation, and completion-class adequacy is a named attack surface to be audited, not assumed."
+    },
+    {
+      "call_id": "J3-outcome-vocabulary-closed",
+      "ruling": "Outcome vocabulary is restricted to the Rank-2 menu; REVISE_HIERARCHY and other program-level terms are excluded at this rank (referee D4)."
+    },
+    {
+      "call_id": "J4-sector-separation",
+      "ruling": "Pure-sector and mixed-sector results are reported separately; no averaging, and no sector's result silently qualifies another's."
+    },
+    {
+      "call_id": "J5-branch-separation",
+      "ruling": "TaF-branch and TI-branch adjudications are separate; transfer requires an explicit argument."
+    },
+    {
+      "call_id": "J6-draft-blindness",
+      "ruling": "This prereg was authored without reading the lane-B or lane-C draft contents, the CapacityOS mailbox for this repo, or the TaF/TI repositories; any diff between sovereign returns and receiver drafts is examined only after classification."
+    },
+    {
+      "call_id": "J7-verbal-disagreement-ban",
+      "ruling": "The receiver may not resolve a Frame N vs Frame R disagreement by declaring it verbal (referee D3); the only candidate-favoring route is the completion-robustness discriminator."
+    }
+  ],
+  "rival_forecasts": [
+    {
+      "rival": "Frame R (operational-context relativism, access-constitutive, at full strength)",
+      "forecast": "On c4 access-only pairs with repertoire fixed: agrees delta(c)=0 (trivially) but diagnoses CAPABILITY_CHANGE wherever delta_op != 0, and holds that the N/R split there is substantive, not verbal. On c5 realistic capability pairs: predicts completion-RELATIVE profiles (its central prediction: no completion-stable, frame-neutral fact separates access-only from capability once realistic interventions are admitted). On c6: predicts TRUE and predicts the mixed sector dominates real evidence."
+    },
+    {
+      "rival": "Frame NAIVE (control, not defended)",
+      "forecast": "Any repertoire change or any operational gain diagnoses CAPABILITY_CHANGE on every pair; expected to be fooled by action-mediated access changes."
+    },
+    {
+      "rival": "Blocked-forever null rival",
+      "forecast": "Neither TaF nor TI issues a conforming packet (c1 = c2 = NOT_ISSUED) and Rank 2 never leaves BLOCKED; this prereg then expires unexercised and is superseded by a new prereg id when conditions change."
+    }
+  ],
+  "stop_conditions": [
+    "S1: STOP if any normalization frame or completion class is selected, modified, enriched, or truncated after any outcome is seen. Detector: the frozen-before-outcomes git timestamps of this two-phase mechanism (P1-P7), not any runtime self-check (referee D1: runtime detectors for post-hoc frame selection are vacuous).",
+    "S2: STOP if source and receiver evidence blend: receiver-authored task semantics substituted for source-issued ones, receiver diagnostic labels visible to any issuer, or a receiver draft treated as issued evidence.",
+    "S3: STOP (do not average) if construction branches disagree; report the fork as a first-class outcome.",
+    "S4: STOP if the shared vocabulary is achievable only by semantically distorting either case; route to the no-common-vocabulary branch.",
+    "S5: STOP if Frame R's advocate authored, co-authored, or read prior to freezing any case the frame will score."
+  ],
+  "assumptions": [
+    "The two-phase mechanism's own falsifier list applies (history rewriting defeats it; prompt push and no force-push are the standing guard).",
+    "Sovereign returns may differ from receiver-side draft shapes; expectations bind only where sovereign-issued factor declarations match the check statements (else NOT_APPLICABLE).",
+    "The receiver's completion-robustness discriminator is only as good as the sovereign record-channel inventory; its adequacy is an audited assumption, not a given."
+  ],
+  "grade": "EXPLORATORY / receiver-owned process artifact; preparation-tier; confers no scientific pass and moves no source claim",
+  "reopeners": [
+    "Sovereign adoption materially changes case semantics or the record-channel inventory: author a NEW expectations file with a NEW prereg id before the run (amendment policy); this file stays in history unmodified.",
+    "The independent Frame R advocate freezes a diagnosis rule not extensionally equivalent to the placeholder: new prereg id required, since rival_forecasts here would misstate the actual rival.",
+    "The ranked program revises the Rank-2 outcome menu: new prereg id required."
+  ]
+}
