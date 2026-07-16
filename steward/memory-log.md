@@ -24,3 +24,22 @@
 - The current repo-owned position is provisional: the hierarchy survives as a
   typed partial diagnostic, not as a strict sequence. GU-001 remains
   `NOT_YET_IMPORTABLE`; provenance is blocked and no physical gate has run.
+
+## 2026-07-16 — Rank-2 adjudication executed (the preregistered run)
+
+- TAF-001 (time-as-finality) and TI-PIT-002 (temporal-issuance) sovereign frozen
+  packets were accepted through the full gate chain and imported byte-exact
+  (`packets/imports/TAF-001/`, `packets/imports/TI-PIT-002/`), each with a
+  receiver import record beside the immutable content. Mailbox returns archived
+  with processing receipts.
+- The preregistered Rank-2 adjudication RANK2-PR-001 executed on that evidence;
+  results at the pre-declared path; `prereg_verify` all seven gates PASS
+  (necessary, not sufficient). Referee-governed verdict: NO Rank-2 outcome
+  licensed, construal-invariant. c4's access side observed ROBUST_ZERO on both
+  branches; c5 NOT_APPLICABLE (prereg vocabulary vs sovereign label-refusal
+  practice — successor requires a NEW prereg id); c6 missed; the TI frame leg is
+  quarantine-blocked. Rank 2 remains UNDISCHARGED with a narrowed prerequisite.
+- Full record: `explorations/2026-07-16-rank2-adjudication/` (harness, verbatim
+  output, governing referee report, synthesis).
+- Per HARD-CORE lane doctrine, the Rank-2 runway belt lane is RESOLVED; priority
+  reverts to the core wager (P2C-REAL-PHYSICAL-WITNESS).
