@@ -49,23 +49,25 @@
       "internal_work_items": [
         {
           "id": "P2C-REAL-PHYSICAL-WITNESS",
-          "state": "READY",
-          "rank": 1,
-          "priority_score": 25,
+          "state": "ADVANCED_OPEN_FRONTIER",
+          "rank": 2,
+          "priority_score": 22,
           "hourly_eligible": true,
-          "relation_to_hard_core": "Core wager, most direct form: the hard core's claim is diagnosable-on-real-physical-cases, and this item supplies the real case. Promoted to lead 2026-07-16 (Joe-ratified): the real system disciplines the definitions.",
-          "next_swing": "Select one real physical system, freeze its source theory, region, interventions, resources, costs, records, access, and observable response, then construct the strongest candidate capability-changing boundary event and its strongest ordinary completion rival.",
+          "relation_to_hard_core": "Core wager, most direct form: the hard core's claim is diagnosable-on-real-physical-cases, and this item supplies the real case. Led and executed a REACH swing 2026-07-16.",
+          "swing_2026_07_16": "REACH swing executed (Joe-authorized, direct chat). Survey of 8 physical systems across domains; picked the superconducting ring (quantized persistent supercurrent, BCS/Ginzburg-Landau) as the strongest non-toy capability candidate under Joe's frontier constraint. Candidate boundary event: cool N->S with flux present -> hold a quantized, locally-invariant, zero-maintenance-cost persistent circulating memory, a task absent in N at any budget. Strongest steelman rival: whole-family disclosure (fixed phase diagram) backed by seed(value) + metastability(persistence), at matched resource. Discriminator: fluxoid staircase (D-Q) + winding local-invariance (D-I) + persistence (D-P), first two measurable and real (Deaver-Fairbank/Doll-Nabauer 1961). Executable: tests/physical_witness_discriminator.py (exit 0, --strict clean, 7 [E] + 4 [F] = 11). Referee-governed disposition: SURVIVES_LOCAL_COMPLETIONS / UNDISCHARGED_VS_WHOLE_FAMILY, frame-indexed to a matched-budget counterfactual pair (R-D1). Candidate is NOT reduced by any local completion class on two measurable signatures; it survives only by refusing to admit the target phase into the fixed family -- the fixed-family absorber (falsifier F1), a cross-repo (TaF+TI) adjudication, NOT P2C-local. No enlargement verdict licensed. Files: explorations/2026-07-16-real-physical-witness/{SYNTHESIS,WITNESS-FREEZE,REFEREE-REPORT}.md. Success condition MET at exploration tier, scoped to the declared frame; item advanced with an open frontier, not closed.",
+          "next_swing": "Continue only after the adapter swing, OR escalate the discriminator to Alternate B (topological entanglement entropy gamma=log D) or replicate in Alternate C (BEC quantized circulation, independent domain). Preserve the whole-family absorber question for cross-repo return; do not resolve F1 by fiat.",
           "success_condition": "A source-grounded candidate has matched before and after descriptions, a fixed intervention menu and budget, a native response, and a concrete discriminator from its strongest completion rival.",
           "kill_condition": "The candidate reduces to unpredictability, irreversibility, hidden state, changed resources, changed access, stochastic seed, or a completed-history description."
         },
         {
           "id": "P2C-BOUNDARY-ADAPTER",
           "state": "READY",
-          "rank": 2,
+          "rank": 1,
           "priority_score": 27,
           "hourly_eligible": true,
-          "relation_to_hard_core": "Belt serving the core directly: the adapter is the typed interface the core wager's witness must cross. Retains its honest score but yields lead to the real witness (rerank_2026_07_16); adapter work should be disciplined by the selected real system.",
-          "next_swing": "Define the smallest source-neutral physical boundary/source-to-capability adapter on explicit physical inputs, state its composition and invariance laws, and attempt either a nontrivial construction or a counterexample. This is not the failed GU-sign/finality-polarity adapter. Test at least one positive control and one circularity control. Do not carry the desired capability or issuance verdict as an input label.",
+          "relation_to_hard_core": "Belt serving the core directly: the adapter is the typed interface the core wager's witness must cross. Now LEADS (rerank_2026_07_16b): the real witness has disciplined the definitions per the prior rerank's intent, so the adapter should be built to consume the witness's concrete structure.",
+          "rerank_2026_07_16b": "After the P2C-REAL-PHYSICAL-WITNESS REACH swing executed, priority reverts to the adapter (rank 1) per the lane doctrine invariant (a leading item resolved -> continue pushing the core through its typed interface). The witness swing produced the concrete inputs the adapter now has to consume: the (Q,I,P) signature vector (quantization, local-op invariance, persistence), the matched-budget counterfactual frame, and the whole-family-admission residual (falsifier F1). The witness item drops to rank 2 (ADVANCED_OPEN_FRONTIER, honest score 22): its next move is either the gamma=log D escalation or a cross-repo return, both of which are better served after the adapter can carry the witness.",
+          "next_swing": "Define the smallest source-neutral physical boundary/source-to-capability adapter that CONSUMES the 2026-07-16 superconducting-ring witness: input the (Q,I,P) signature vector and the matched-budget counterfactual frame; expose the whole-family-admission (F1) as a TESTABLE residual, not an input label. State composition and invariance laws; attempt a nontrivial construction or a counterexample. This is not the failed GU-sign/finality-polarity adapter. Test at least one positive control and one circularity control. Do not carry the desired capability or issuance verdict as an input label.",
           "success_condition": "A typed nonconstant adapter acts on physical transition data, respects declared equivalences and composition, and exposes a testable residual without importing its polarity or verdict.",
           "kill_condition": "Every candidate is constant, verdict-carrying, representation-dependent, or equivalent to adding the missing datum by hand."
         },

@@ -23,13 +23,16 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
             if item["state"] == "READY" and item["hourly_eligible"]
         ]
         self.assertGreaterEqual(len(ready), 1)
-        # Explicit rank overrides raw priority_score (Joe-ratified rerank,
-        # 2026-07-16: the real physical witness leads; the real system
-        # disciplines the definitions).
+        # Explicit rank overrides raw priority_score. The real physical witness
+        # led and EXECUTED its REACH swing on 2026-07-16
+        # (explorations/2026-07-16-real-physical-witness/); per the lane-doctrine
+        # invariant (a leading item resolved -> continue pushing the core through
+        # its typed interface), priority reverts to P2C-BOUNDARY-ADAPTER, now
+        # rank 1, built to consume that frozen witness (rerank_2026_07_16b).
         self.assertTrue(self.data["selection_contract"][
             "explicit_rank_field_overrides_priority_score"])
         selected = min(ready, key=lambda item: item["rank"])
-        self.assertEqual(selected["id"], "P2C-REAL-PHYSICAL-WITNESS")
+        self.assertEqual(selected["id"], "P2C-BOUNDARY-ADAPTER")
 
     def test_hard_core_and_doctrine_fields(self) -> None:
         self.assertIn("HARD-CORE.md", self.data["hard_core"]["statement_owner"])
