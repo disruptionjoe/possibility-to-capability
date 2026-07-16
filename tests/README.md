@@ -132,6 +132,11 @@ does not establish novelty, physics, source truth, or the candidate story.
   invariance, composition, local-completion failure, target-phase whole-family
   admission as an explicit residual, resource-frame controls, and circular
   verdict rejection.
+- `bec_circulation_witness.py` is an independent-domain reach fixture for a
+  neutral superfluid/BEC circulation carrier. It checks quantized circulation,
+  local phase-relabel invariance, persistence, local-completion failure,
+  whole-family absorption, and a carrier-independence control that rejects
+  superconducting fluxoid primitives.
 
 Run from the repository root:
 
@@ -139,14 +144,17 @@ Run from the repository root:
 python tests/physical_boundary_adapter.py
 python tests/physical_completion_closure.py
 python tests/witness_boundary_adapter.py
+python tests/bec_circulation_witness.py
 ```
 
 A pass means the adapter prototype satisfies the finite contract in that file.
 The completion closure pass means ordinary residual absorption is bounded by
 declared completions. The witness adapter pass means the QIP witness is carried
 as data and the whole-family admission question is exposed as a residual.
-None of these tests establishes a real physical witness or promotes an
-unexplained residual into a proved capability enlargement.
+The BEC witness pass means the local-completion discriminator has a neutral
+carrier replication at finite-model/exploration tier. None of these tests
+establishes a real physical witness or promotes an unexplained residual into a
+proved capability enlargement.
 
 ## Relational-dissolution fixture
 
