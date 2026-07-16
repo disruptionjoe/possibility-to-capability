@@ -86,12 +86,17 @@ promote a source claim, or validate the receiver judgments' substance.
   example that rejects a declared capability-enlargement claim.
 - `fixtures/transition-diagnosis-v0.1-cases.json` is the machine-readable
   adversarial case table.
+- `cross_domain_transition_adjudication.py` applies the same classifier to the
+  imported `TAF-001` nonphysics packet as a receiver-owned transfer test. It
+  classifies ALPHA as access change and BETA as record formation while rejecting
+  capability, access-relabeling, and finality overclaim controls.
 
 Run from the repository root:
 
 ```text
 python tests/validate_transition_diagnosis_contract.py
 python tests/classify_transition.py tests/fixtures/transition-diagnosis-v0.1-valid.json
+python tests/cross_domain_transition_adjudication.py
 ```
 
 A classification diagnoses supplied receiver witnesses. It does not establish

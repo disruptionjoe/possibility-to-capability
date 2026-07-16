@@ -55,12 +55,15 @@
       "internal_work_items": [
         {
           "id": "P2C-CROSS-DOMAIN-TRANSITION-ADJUDICATION",
-          "state": "READY",
-          "rank": 1,
+          "state": "ADVANCED_OPEN_FRONTIER",
+          "rank": 2,
           "priority_score": 23,
           "hourly_eligible": true,
           "relation_to_hard_core": "Core wager in its generality-testing form: establish whether the same typed change discipline that survived physical specimens can classify a nonphysics transition without analogy collapse or domain-specific redefinition.",
           "next_swing": "Preregister and execute one source-grounded nonphysics transition packet. Prefer a controlled AI/computation, security, or organizational case with an explicit before/after pair, fixed intervention menu and resource budget, operational task set, record/access distinction, strongest completion rival, and an abstention path. Apply Hierarchy v0.2 and CompletionClass-P2C without changing their meanings, run positive and failing-direction controls, then obtain an adversarial referee report. Rank the next two nonphysics domains only after the first fixture reveals the real transfer obstruction.",
+          "swing_2026_07_16": "Executed first source-grounded nonphysics transfer on imported TAF-001 (finite record/access intervention packet). Added tests/cross_domain_transition_adjudication.py and explorations/2026-07-16-cross-domain-transition-adjudication/SYNTHESIS.md. Result: CROSS_DOMAIN_TRANSFER_PASS_SCOPED. ALPHA classifies as ACCESS_CHANGE while quarantining TaF-native nonmonotone reconstructibility deltas from P2C capability; BETA classifies as RECORD_FORMATION under fixed holder access; capability, access-relabeling, and finality overclaim controls fail as intended. Validation headline: 7 [E] + 3 [F] = 10. Scope: designed finite source packet only; no TaF claim status, public posture, capability enlargement, or finality verdict moved.",
+          "rerank_2026_07_16": "Advanced and moved to rank 2 after the first cross-domain transfer fixture. The item remains open for a harder real nonphysics packet with operational capability-side evidence, but the immediate due reach swing is discharged for current available frozen inputs. Priority returns to P2C-REAL-PHYSICAL-WITNESS Alternate B unless a stronger source-grounded nonphysics packet arrives first.",
+          "state_after_2026_07_16": "ADVANCED_OPEN_FRONTIER",
           "success_condition": "One nonphysics case receives a reproducible typed verdict or principled abstention using unchanged definitions, explicit counterfactuals, and a completion/null attack; the result identifies what changed and what did not without relying on metaphor.",
           "kill_condition": "The classification requires domain-specific redefinition, hides a resource or access change inside capability, cannot state an executable task, or changes when the same evidence is competently reframed under an admissible representation.",
           "forbidden_shortcut": "Do not use a merely illustrative analogy or a case whose desired classification is embedded in its labels. Source-ground the transition and make the failing direction executable.",
@@ -69,7 +72,7 @@
         {
           "id": "P2C-REAL-PHYSICAL-WITNESS",
           "state": "ADVANCED_OPEN_FRONTIER",
-          "rank": 2,
+          "rank": 1,
           "rerank_2026_07_16f": "Promoted to rank 1 after P2C-NULL-COMPLETION-CLOSURE resolved (derived firewall, D2 closed at model grade). Lane doctrine invariant: belt resolved -> core wager leads. The NEXT Progress swing on this item is the designated REACH swing (see selection_contract.reach_swing_accounting_2026_07_16): Alternate C (BEC quantized circulation, independent domain replication) or Alternate B (topological entanglement entropy gamma=log D). Both are now triply motivated: C4 per-construction transfer, F5 watch, and the completion-closure result's own transfer test -- the composite attack reached Q and P, so the first question for any new witness model is whether its local-invariance leg is stronger or weaker than the ring's.",
           "priority_score": 22,
           "hourly_eligible": true,
@@ -79,6 +82,7 @@
           "disposition_update_2026_07_16": "Receiver disposition upgraded by the cross-repo combining adjudication (commit 512638a, conditions C1-C4 binding): from SURVIVES_LOCAL_COMPLETIONS / UNDISCHARGED_VS_WHOLE_FAMILY to SURVIVES_DECLARED_COMPLETION_FAMILY_AT_OPERATIONAL_CLASS / ABSORBED_AT_GLOBAL_ONTOLOGICAL_CLASS (frame-indexed; composite local completions untested per referee D2). No source status moved; the frozen P2C-W1 bundle is unchanged.",
           "rerank_2026_07_16i": "Promoted to rank 1 after the second-standard P2C-W1 read confirmed the scoped-survivor class split under CompletionClass-P2C v0.1 and the carrier-neutral adapter. Current P2C-W1 belt checkpoints are closed for current inputs; reach cadence has two non-reach swings since the BEC replication, so the next material Progress swing should be Alternate B (topological entanglement entropy gamma=log D) or an equivalent harder real-witness transfer test.",
           "rerank_2026_07_16j": "Moved to rank 2 after Joe clarified that P2C's distinctive agent-capability test is typed change adjudication across heterogeneous domains, not physics-specific witness production. The two physical carriers remain valuable hard specimens. Cross-domain transfer now has higher information value; Alternate B remains the strongest physical continuation after that transfer swing or if the nonphysics fixture exposes a physics-specific dependency.",
+          "rerank_2026_07_16k": "Moved back to rank 1 after the first source-grounded nonphysics transfer fixture advanced P2C-CROSS-DOMAIN-TRANSITION-ADJUDICATION for current available frozen inputs. Next swing is Alternate B topological-order / gamma-log-D witness reach, unless a stronger nonphysics source packet with operational capability-side evidence arrives first.",
           "next_swing": "Hold Alternate B (topological entanglement entropy gamma=log D) as the strongest physical continuation after the cross-domain transfer swing, or activate it sooner only if the nonphysics fixture exposes a physical-invariance dependency that it can test. Preserve no-verdict posture and do not cite the P2C-W1 scoped survivor as a general capability claim.",
           "success_condition": "A source-grounded candidate has matched before and after descriptions, a fixed intervention menu and budget, a native response, and a concrete discriminator from its strongest completion rival.",
           "kill_condition": "The candidate reduces to unpredictability, irreversibility, hidden state, changed resources, changed access, stochastic seed, or a completed-history description."

@@ -25,14 +25,14 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
                                   "RESOLVED_SCOPED_SURVIVOR")
         ]
         self.assertGreaterEqual(len(selectable), 1)
-        # Explicit rank overrides raw priority_score. Joe's 2026-07-16 role
-        # clarification makes cross-domain typed-change transfer the due reach
-        # swing. Physical witnesses remain severe specimens at rank 2.
+        # Explicit rank overrides raw priority_score. The first cross-domain
+        # transfer fixture has advanced for current available frozen inputs, so
+        # the next frontier returns to the strongest physical continuation.
         self.assertTrue(self.data["selection_contract"][
             "explicit_rank_field_overrides_priority_score"])
         selected = min(selectable, key=lambda item: item["rank"])
         self.assertEqual(
-            selected["id"], "P2C-CROSS-DOMAIN-TRANSITION-ADJUDICATION"
+            selected["id"], "P2C-REAL-PHYSICAL-WITNESS"
         )
         self.assertIn("reach_swing_accounting_2026_07_16",
                       self.data["selection_contract"])
