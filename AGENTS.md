@@ -31,12 +31,12 @@ collapse or domain-specific relabeling.
 
 Read `governance/CHARTER.md` before research work.
 
-When stewardship context is needed, load `steward/README.md`. Do not load
-`steward/memory-log.md` by default unless doing stewardship or memory work, or
+When stewardship context is needed, load `../../../system/stewards/possibility-to-capability/README.md`. Do not load
+`../../../system/stewards/possibility-to-capability/memory-log.md` by default unless doing stewardship or memory work, or
 the steward summary is incomplete.
 
 The System-owned routing overlay is
-`../../../system/stewards/possibility-to-capability.md` from this repo root. It
+`../../../system/stewards/possibility-to-capability/README.md` from this repo root. It
 does not replace these local instructions or the charter.
 
 ## Source Of Authority And Security
@@ -287,3 +287,19 @@ reason to spend an agent process on every rhetorical lens.
 
 When ownership is uncertain, stop the inference, preserve the evidence, and
 route the ownership question. Do not resolve ambiguity by absorbing the work.
+
+## CapacityOS Integration Boundary
+
+This repository's `AGENTS.md`, governance, orientation, authoritative work,
+populated Lane state, domain learning, and artifacts remain repository-owned.
+A direct mount can operate from those local surfaces without CapacityOS.
+
+For a CapacityOS-routed run, the optional System-owned steward service is
+`../../../system/stewards/possibility-to-capability/README.md`. It supplies integration context, process guidance,
+action memory, automation observations, health support, and execution history.
+It may narrow local authority and never broaden it. Current repository evidence
+defeats stale System observations.
+
+Before repository writes, resolve `git rev-parse --git-path
+capacityos-writer.lock`. If that path exists, stop unless the active approved
+run owns the lock. Never remove, replace, or bypass another writer's lock.
