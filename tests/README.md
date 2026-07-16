@@ -116,3 +116,20 @@ python tests/validate_coherent_story_ledger.py
 
 A pass means the ledger retains those structural and epistemic boundaries. It
 does not establish novelty, physics, source truth, or the candidate story.
+
+## Physical boundary adapter
+
+- `physical_boundary_adapter.py` defines a finite source-neutral adapter from
+  physical transition data to canonical response-profile deltas. It checks
+  relabel invariance, delta composition, positive residual behavior,
+  circular-verdict rejection, resource controls, and completion absorption.
+
+Run from the repository root:
+
+```text
+python tests/physical_boundary_adapter.py
+```
+
+A pass means the adapter prototype satisfies the finite contract in that file.
+It does not establish a real physical witness or promote an unexplained
+residual into a proved capability enlargement.
