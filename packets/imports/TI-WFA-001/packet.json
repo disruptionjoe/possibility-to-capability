@@ -1,0 +1,123 @@
+{
+  "packet_id": "TI-WFA-001",
+  "packet_status": "SOURCE_FROZEN",
+  "packet_kind": "sovereign_completion_adjudication",
+  "schema_version": "0.2",
+  "ownership": {
+    "source_owner": "temporal-issuance",
+    "receiving_owner": "possibility-to-capability",
+    "authority_transfer": false
+  },
+  "question": {
+    "decision_type": "adjudication",
+    "exact_question": "Under CompletionClass v1's whole_family primitive (conclusion class global/ontological), including v1's closure under declared product and sequential composition and its frozen-comparison contract, is admitting the target superconducting phase into the fixed completion family a legitimate whole_family completion of the frozen witness P2C-W1 -- or does legitimacy require an admissibility restriction without which every physically realized phase is absorbable by fiat (the fixed-family-absorber / F1 question)?"
+  },
+  "verdict": {
+    "label": "LEGITIMATE_BUT_CONCLUSION_CAPPED",
+    "one_line": "Admitting the S phase is a LEGITIMATE whole_family completion of P2C-W1 earning GLOBAL_ONTOLOGICAL_ABSORPTION only; legitimacy DOES require an admissibility restriction against fiat-absorption, and CompletionClass v1 ALREADY carries it as the conclusion-class firewall; the operational/capability residue is NOT absorbed by this move. The F1 dichotomy is false under v1: it is both a legitimate completion and already restriction-governed.",
+    "dichotomy_resolution": "false_dichotomy_both_and",
+    "conclusion_class_earned": "GLOBAL_ONTOLOGICAL_ABSORPTION",
+    "conclusion_classes_not_earned": [
+      "PHYSICAL_PREDICTIVE_ABSORPTION",
+      "OPERATIONAL_CONTEXT_ABSORPTION"
+    ]
+  },
+  "scope": "Resolves ONLY the legitimacy and conclusion strength of the whole_family primitive for P2C-W1, at exploration tier, formal-only grade; absorbed under RUN-0081 gate clause 4. NOT a SURVIVES_BOUNDED_COMPLETION_CLASS return (only one of eleven primitives at issue; a full survival requires all eleven with verified nonfactorization certificates under declared composition closure). Establishes no physical source issuance; asserts no capability change (time-as-finality's question); moves no TI claim.",
+  "findings": [
+    "F-1 (checks e1, s1): admitting the S phase is a legitimate whole_family completion because v1 maps whole_family to the global/ontological class and a global witness need not be predictive; physical admissibility is scientific input, discharged for this witness at literature grade (one BCS/Ginzburg-Landau Hamiltonian, one phase diagram whose two regions are N and S), so the admission is not classifier fiat. It legitimately blocks an absolute semantic/metaphysical novelty claim.",
+    "F-2 (checks e2, e2-fail, s2): the admissibility restriction P2C asks about already exists in v1 as the conclusion-class firewall -- v1 forbids upgrading a global/ontological absorption into a physical/predictive or operational/context one, and states outright that treating unrestricted global completions as ordinary physical explanations 'would make the positive class empty by definition.' The fixture makes the restriction load-bearing: removing the cap operationally absorbs even the null phase (fiat collapse), emptying the operational positive class; the capped scorer keeps it non-empty.",
+    "F-3 (checks e3, e3-fail, e4, e4-fail): the witness's operational/capability residue (realize the task from the N frame at matched budget) is an operational/context-class claim that the global absorption does not touch; no operational or physical witness (resource, access, boundary, seed, hidden-state) reproduces the (Q,I,P)+persistence signature from N (TI's mirror of P2C's k1), and a class-blind merge that read an operational verdict off the global witness would wrongly report the capability absorbed."
+  ],
+  "verification_of_input_bundle": {
+    "bundle": "possibility-to-capability/exports/witness/P2C-W1-superconducting-ring-v0.1/",
+    "freeze_commit": "4c9c28bbad0bdca45377dd2265b28b1fec3cc9ef",
+    "content_revision": "850521c2fc07b277734e293cd68c0928bb0cb6de",
+    "blob_sha256_recomputed_and_matched": [
+      "WITNESS-FREEZE.md 694443cacddfcd784a81e01a6e059557b5b1e6aaeea8c0a7616a4f0ac6b71b51",
+      "REFEREE-REPORT.md dfd966259d9e8e2f58bc3725f53f5751c08e0f6b4015c01c333548e09eca0113",
+      "physical_witness_discriminator.py 42f647eb7a1f6533e26ae9f6f321824693a77517540259fe505ce968d59ea9eb",
+      "discriminator_output.txt b917f59b2e5f6ee3221a08260ce3f22043c7b843c89343a0fe7e778eb84db45f"
+    ],
+    "discriminator_rerun": "exit 0; stdout byte-identical to the frozen discriminator_output.txt (7 [E] + 4 [F] = 11, 2 [T])",
+    "p2c_touched": false
+  },
+  "method_ledger": [
+    {
+      "method_id": "M1",
+      "label": "CompletionClass v1 conclusion-class adjudication fixture",
+      "artifact_path": "blobs/ti_wfa_01_fixture.py",
+      "grade": "computation (deterministic, stdlib-only Python 3; output frozen and hashed); absorbed under RUN-0081 gate clause 4",
+      "result": "5 [E] + 5 [F] = 10 evidential checks + 2 [T] by-construction; every [F] flips a protected [E] on a shared code path; exit 0. Establishes: e1 whole_family_with_phase reproduces the (Q,I,P) signature; e2 that absorption licenses ONLY global/ontological; e2-fail removing the cap empties the operational positive class; e3 no operational/physical witness reproduces the signature from N; e4 the capability claim is left unadjudicated by the global absorption.",
+      "verification": "Re-run blobs/ti_wfa_01_fixture.py; normalize CR and byte-compare stdout against blobs/ti_wfa_01_output.txt (exit 0 requires all five [F] probes to fail)."
+    }
+  ],
+  "premises": [
+    "A1 (definition): CompletionClass v1 as frozen in blobs/COMPLETION-CLASS.md -- the eleven-primitive inventory, the primitive->conclusion-class map, the four non-interchangeable conclusion strengths, the admissibility rules, and the frozen-comparison contract.",
+    "A2 (definition): TI's RUN-0081 OnlineIssuance^LC gate, clause 4 (finite/computable/fixed-law => absorbed), under which the fixture itself is absorbed and carries no source-issuance weight.",
+    "A3 (scientific_input): the physical admissibility of the whole_family completion for THIS witness -- that the N and S phases are two regions of one fixed BCS/Ginzburg-Landau Hamiltonian's phase diagram -- is cited at P2C's literature grade, read-only; TI does not re-derive physics.",
+    "A4 (construction_choice): the finite deterministic model of v1's conclusion-class bookkeeping in blobs/ti_wfa_01_fixture.py, mirroring P2C-W1's (Q,I,P) signature and P2C's k1/k2/k2-fail structure without importing P2C's hierarchy vocabulary or grades."
+  ],
+  "nonclaims": [
+    "No physical or source-issuance significance: the fixture is absorbed under RUN-0081 gate clause 4 and must not be cited as evidence for Issue[S] of any type; Issue[S]^physical remains false.",
+    "No TI claim status changes: TI-C019 (formalizing) and TI-C020 (parked) are untouched; E177 is unmodified; no claim is promoted or demoted.",
+    "No capability verdict: whether the operational/capability residue is an actual capability change is time-as-finality's question; TI neither asserts nor denies it.",
+    "No import of P2C's hierarchy, grades, or falsifier bookkeeping; TI answers only in its own CompletionClass v1 formalism. Whether this discharges P2C's F1 is P2C's sovereign call (authority_transfer = false).",
+    "This is not a SURVIVES_BOUNDED_COMPLETION_CLASS return; only the whole_family primitive was adjudicated.",
+    "The designed fixture models v1's contract behavior, not real superconductors; the physics of P2C-W1 is cited at literature grade, not re-run."
+  ],
+  "residuals": [
+    "R-1: Whether a claimed 'fixed family' legitimately pre-contains a signature is domain-specific scientific input v1's classifier cannot decide in general (v1 'Honest limits'); discharged here at literature grade for the superconducting-ring phase diagram only.",
+    "R-2: The general F1 trivialization worry ('does admitting any realized phase empty the capability level?') is not answered by family-exhaustiveness but is dissolved by the conclusion-class cap; a family-exhaustiveness certificate remains an open v1 proof obligation in the general case.",
+    "R-3: Only the whole_family primitive was scored; a full completion tournament over all eleven primitives with nonfactorization certificates was not run (not requested)."
+  ],
+  "integrity": {
+    "frozen": true,
+    "hash_algorithm": "sha256",
+    "canonicalization_profile": "ti-frozen-bundle-v1: manifest_digest = sha256 over the LF-joined 'sha256  blobs/<path>' lines, paths sorted lexicographically, trailing newline; all blobs are LF-normalized -text bytes.",
+    "hash_scope": [
+      "blobs/COMPLETION-CLASS.md",
+      "blobs/ti_wfa_01_fixture.py",
+      "blobs/ti_wfa_01_output.txt",
+      "blobs/ti_wfa_01_semantics.md"
+    ],
+    "manifest": [
+      {
+        "path": "blobs/COMPLETION-CLASS.md",
+        "byte_length": 7014,
+        "content_sha256": "4e22994f57e17e562fce0b3c8bf65c4e0d1b54f72b441ffcf25df10d4ced1e18"
+      },
+      {
+        "path": "blobs/ti_wfa_01_fixture.py",
+        "byte_length": 20326,
+        "content_sha256": "652ef23e1afb3d9aac44e48237068c6e6658879fe76a7bdb040d126fd219f828"
+      },
+      {
+        "path": "blobs/ti_wfa_01_output.txt",
+        "byte_length": 2549,
+        "content_sha256": "d040c772e75ab83b2776d5f95fb2f6ded76db82692ef49af717f3cee13bce74d"
+      },
+      {
+        "path": "blobs/ti_wfa_01_semantics.md",
+        "byte_length": 9891,
+        "content_sha256": "96448a2a9e80307632d24d106014dcf3c98d588361eeed6b5431dee5fedeabbc"
+      }
+    ],
+    "manifest_digest": "2190631fd4aa9d499cec765026d8ddf40e177b42b798bbb5d86cdc6eef2dbd7d"
+  },
+  "source": {
+    "repository": "temporal-issuance",
+    "claim_status": "exploration",
+    "evidence_grade": "formal only (finite executable adjudication fixture; absorbed under RUN-0081 gate clause 4)",
+    "issued_at": "2026-07-16T00:00:00Z",
+    "adjudication_record": "agent-runs/RUN-0169-p2cw1-whole-family-adjudication.md",
+    "revision": "a336132d5ef3d6e3b31c704d07ecb39d28c753b1"
+  },
+  "verification": {
+    "artifacts": [
+      "blobs/ti_wfa_01_fixture.py",
+      "blobs/ti_wfa_01_output.txt",
+      "blobs/COMPLETION-CLASS.md"
+    ],
+    "replication_status": "Re-executed by the TI steward at adjudication: exit 0; stdout (CR-normalized) byte-identical to blobs/ti_wfa_01_output.txt; all five [F] failing-direction probes fail as required; blob sha256 values match the manifest; blobs/COMPLETION-CLASS.md is byte-identical to temporal-issuance/COMPLETION-CLASS.md at the pinned revision."
+  }
+}

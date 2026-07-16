@@ -1,0 +1,70 @@
+========================================================================
+SECTION 0: P2C-W1 witness bundle self-re-verification
+========================================================================
+[PASS] blob re-hash blobs/WITNESS-FREEZE.md
+[PASS] blob re-hash blobs/REFEREE-REPORT.md
+[PASS] blob re-hash blobs/physical_witness_discriminator.py
+[PASS] blob re-hash blobs/discriminator_output.txt
+[PASS] P2C freeze commit 4c9c28b exists
+[PASS] P2C content revision 850521c exists
+[PASS] witness.json pinned content_revision matches
+[PASS] P2C-W1 discriminator re-run exit 0 + stdout matches frozen output
+
+========================================================================
+SECTION 1: TAF-002 (time-as-finality)
+========================================================================
+[PASS] packet.json source.revision == claimed commit 1
+[PASS] commit 1 exists in TaF
+[PASS] commit 2 exists in TaF
+[PASS] commit 1 is strict ancestor of commit 2
+[PASS] commit 2 is ancestor of TaF HEAD -- HEAD=1f59de9f913b
+[PASS] two-commit freeze: packet.json ABSENT at commit 1
+[PASS] packet.json byte-identical to commit-2 blob
+[PASS] ISSUANCE.md byte-identical to commit-2 blob
+[PASS] blob re-hash blobs/FORMALISM.md
+[PASS] blob re-hash blobs/T583-capability-contract-v1.md
+[PASS] blob re-hash blobs/T584-capability-invariance-morphism-gate.md
+[PASS] blob re-hash blobs/taf002_output.txt
+[PASS] blob re-hash blobs/taf002_p2cw1_adjudication.py
+[PASS] blob re-hash blobs/taf002_semantics.md
+[PASS] blob byte-identical at pinned commit 1: blobs/FORMALISM.md
+[PASS] blob byte-identical at pinned commit 1: blobs/T583-capability-contract-v1.md
+[PASS] blob byte-identical at pinned commit 1: blobs/T584-capability-invariance-morphism-gate.md
+[PASS] blob byte-identical at pinned commit 1: blobs/taf002_output.txt
+[PASS] blob byte-identical at pinned commit 1: blobs/taf002_p2cw1_adjudication.py
+[PASS] blob byte-identical at pinned commit 1: blobs/taf002_semantics.md
+[PASS] manifest_digest recomputed -- 6826fc19dfbddaaab6b2226620a41b70b0a9d936efe509ebe908142ec0255487
+[PASS] packet_digest recomputed -- 4bf8c8efe8ad6f9bbeb9a7b7b920bd613e2bcb4439b1c040a374992c54159c72
+[PASS] bundle_digest/digest recomputed -- 0237f93b6e075968600b065b08dbd2ee334290dd428b3821eb4c57502e17ed79
+[PASS] mailbox-claimed digests match
+[PASS] P2C v0.2-contract validate_packet: 0 errors
+[PASS] TAF-002 fixture re-run exit 0 + stdout matches frozen output
+[PASS] TAF-002 bundle-verification section pins the SAME P2C-W1 manifest
+
+========================================================================
+SECTION 2: TI-WFA-001 (temporal-issuance)
+========================================================================
+[PASS] packet.json source.revision == claimed commit 1
+[PASS] commit 1 exists in TI
+[PASS] packet.json has exactly one authoring commit (frozen) -- 7db52289cecf874ec9d8fc16078db3385018457b
+       issuance commit (commit 2) located: 7db52289cecf874ec9d8fc16078db3385018457b
+[PASS] two-commit freeze: packet.json ABSENT at commit 1
+[PASS] commit 1 is strict ancestor of commit 2
+[PASS] commit 2 is ancestor of TI HEAD -- HEAD=7db52289cecf
+[PASS] packet.json byte-identical to commit-2 blob
+[PASS] blob re-hash blobs/COMPLETION-CLASS.md
+[PASS] blob re-hash blobs/ti_wfa_01_fixture.py
+[PASS] blob re-hash blobs/ti_wfa_01_output.txt
+[PASS] blob re-hash blobs/ti_wfa_01_semantics.md
+[PASS] blob byte-identical at pinned commit 1: blobs/COMPLETION-CLASS.md
+[PASS] blob byte-identical at pinned commit 1: blobs/ti_wfa_01_fixture.py
+[PASS] blob byte-identical at pinned commit 1: blobs/ti_wfa_01_output.txt
+[PASS] blob byte-identical at pinned commit 1: blobs/ti_wfa_01_semantics.md
+[PASS] ti-frozen-bundle-v1 manifest_digest recomputed -- 2190631fd4aa9d499cec765026d8ddf40e177b42b798bbb5d86cdc6eef2dbd7d
+[PASS] blobs/COMPLETION-CLASS.md byte-identical to temporal-issuance/COMPLETION-CLASS.md at pin
+[PASS] TI-WFA-001 fixture re-run exit 0 + stdout matches frozen output (CR-normalized)
+[PASS] TI-WFA-001 verification_of_input_bundle pins the SAME P2C-W1 manifest
+[OBS ] P2C v0.2-contract validate_packet on TI-WFA-001 -- 14 errors (TI-native schema; adjudicated in import record): top-level fields must match v0.2; source fields must match v0.2; source artifacts missing; source.source_packet_id must be nonempty; assumptions must be explicit; quantifiers must be explicit; construction forks missing; method 0 fields mismatch; method 0 premises missing; method 0 revision invalid; evidence_structure must be an object; claim must be an object
+
+========================================================================
+RESULT: ALL REQUIRED CHECKS PASS

@@ -1,0 +1,34 @@
+TI WHOLE-FAMILY ADJUDICATION FIXTURE (P2C-W1 superconducting ring)
+========================================================================
+PASS  [T] s1: v1 maps whole_family to the global/ontological class by construction: True
+PASS  [T] s2: conclusion classes carry no upgrade edge into the causal classes by construction: True
+PASS  [E] e1: whole_family_with_phase reproduces the (Q,I,P) signature (legitimate global absorption): True
+PASS  [F] e1-fail: whole_family_without_phase does NOT reproduce it: False
+PASS  [E] e2: the global absorption licenses ONLY global/ontological, not physical/operational: True
+PASS  [F] e2-fail: removing the cap empties the operational positive class (fiat collapse): False
+PASS  [E] e3: no operational/physical witness reproduces the capability signature from N: True
+PASS  [F] e3-fail: an operational (seed) witness value is NON-invariant/decaying, so cannot match: False
+PASS  [E] e4: global absorption leaves the operational-class capability claim unadjudicated: True
+PASS  [F] e4-fail: a class-blind merge would wrongly report the capability operationally absorbed: False
+PASS  [E] n1: assigned conclusion class is a property of the primitive, invariant under branch relabel: True
+PASS  [F] n1-fail: a label-only scorer flips under the branch relabel: False
+
+conclusion-class scoreboard (a=3/5):
+  whole_family_with_phase   : reproduces_sig=1 class=GLOBAL_ONTOLOGICAL_ABSORPTION
+    v1-capped licenses       : ['GLOBAL_ONTOLOGICAL_ABSORPTION']
+    unrestricted licenses    : ['GLOBAL_ONTOLOGICAL_ABSORPTION', 'OPERATIONAL_CONTEXT_ABSORPTION', 'PHYSICAL_PREDICTIVE_ABSORPTION', 'REPRESENTATIONAL_SURPLUS_ABSORPTION']
+         resource_capability: reproduces_sig=0 class=OPERATIONAL_CONTEXT_ABSORPTION
+  observer_information_access: reproduces_sig=0 class=OPERATIONAL_CONTEXT_ABSORPTION
+          boundary_condition: reproduces_sig=0 class=PHYSICAL_PREDICTIVE_ABSORPTION
+             stochastic_seed: reproduces_sig=0 class=PHYSICAL_PREDICTIVE_ABSORPTION
+                hidden_state: reproduces_sig=0 class=PHYSICAL_PREDICTIVE_ABSORPTION
+
+F1 DICHOTOMY RESOLUTION (TI-native): admitting the S phase is a
+LEGITIMATE whole_family completion AND is conclusion-capped at
+GLOBAL_ONTOLOGICAL_ABSORPTION; the admissibility restriction that
+blocks fiat-absorption ALREADY EXISTS in v1 (the conclusion-class
+firewall). The operational/capability residue is NOT absorbed.
+
+EVIDENTIAL CHECKS (headline): 5 [E] + 5 [F] = 10
+[T] theorem-consequence checks (no evidential weight): 2
+All checks match expectations. Exit 0.
