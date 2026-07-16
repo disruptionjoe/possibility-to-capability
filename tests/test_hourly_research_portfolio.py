@@ -27,12 +27,14 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
         # led and EXECUTED its REACH swing on 2026-07-16
         # (explorations/2026-07-16-real-physical-witness/); per the lane-doctrine
         # invariant (a leading item resolved -> continue pushing the core through
-        # its typed interface), priority reverts to P2C-BOUNDARY-ADAPTER, now
-        # rank 1, built to consume that frozen witness (rerank_2026_07_16b).
+        # its typed interface), priority reverted to P2C-BOUNDARY-ADAPTER, which
+        # then executed the witness-consuming QIP adapter. That exposed the
+        # target-phase whole-family admission residual, so priority now moves to
+        # P2C-NULL-COMPLETION-CLOSURE (rerank_2026_07_16c).
         self.assertTrue(self.data["selection_contract"][
             "explicit_rank_field_overrides_priority_score"])
         selected = min(ready, key=lambda item: item["rank"])
-        self.assertEqual(selected["id"], "P2C-BOUNDARY-ADAPTER")
+        self.assertEqual(selected["id"], "P2C-NULL-COMPLETION-CLOSURE")
 
     def test_hard_core_and_doctrine_fields(self) -> None:
         self.assertIn("HARD-CORE.md", self.data["hard_core"]["statement_owner"])
@@ -63,7 +65,7 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
             for item in active["internal_work_items"]
             if item["id"] == "P2C-BOUNDARY-ADAPTER"
         )
-        self.assertIn("not the failed GU-sign/finality-polarity adapter", adapter["next_swing"])
+        self.assertIn("Do not repeat the 2026-07-16c QIP fixture", adapter["next_swing"])
 
 
 if __name__ == "__main__":

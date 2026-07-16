@@ -127,18 +127,26 @@ does not establish novelty, physics, source truth, or the candidate story.
   finite declared middle completion closure. It checks class coverage,
   composition, omission mutants, circularity rejection, resource bounds, and an
   escape target that remains unexplained by the declared closure.
+- `witness_boundary_adapter.py` consumes the superconducting-ring witness's
+  `(Q,I,P)` signature vector and matched-budget frame. It checks relabel
+  invariance, composition, local-completion failure, target-phase whole-family
+  admission as an explicit residual, resource-frame controls, and circular
+  verdict rejection.
 
 Run from the repository root:
 
 ```text
 python tests/physical_boundary_adapter.py
 python tests/physical_completion_closure.py
+python tests/witness_boundary_adapter.py
 ```
 
 A pass means the adapter prototype satisfies the finite contract in that file.
 The completion closure pass means ordinary residual absorption is bounded by
-declared completions. Neither test establishes a real physical witness or
-promotes an unexplained residual into a proved capability enlargement.
+declared completions. The witness adapter pass means the QIP witness is carried
+as data and the whole-family admission question is exposed as a residual.
+None of these tests establishes a real physical witness or promotes an
+unexplained residual into a proved capability enlargement.
 
 ## Relational-dissolution fixture
 
