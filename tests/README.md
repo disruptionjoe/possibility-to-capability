@@ -139,3 +139,21 @@ A pass means the adapter prototype satisfies the finite contract in that file.
 The completion closure pass means ordinary residual absorption is bounded by
 declared completions. Neither test establishes a real physical witness or
 promotes an unexplained residual into a proved capability enlargement.
+
+## Relational-dissolution fixture
+
+- `relational_dissolution_fixture.py` exhaustively checks finite binary
+  global-flip orbits. It verifies that flip-invariant Boolean observables for
+  `n=3` and `n=4` factor through pairwise relative alignment, with failing
+  controls for absolute selectors, held-fixed anchors, and disconnected
+  incomplete profiles.
+
+Run from the repository root:
+
+```text
+python tests/relational_dissolution_fixture.py
+```
+
+A pass is toy-grade evidence that binary absolute representative dependence
+dissolves to relative alignment unless an extra anchor is supplied. It does
+not rule out richer native-formalism or physical doors.
