@@ -70,11 +70,17 @@ is the program's thinnest surface. Work items:
    first non-synthetic evidential hit; discharge itself BLOCKED at prereg), Ranks 2-4 = BLOCKED with
    executable preparation + two new receipts (binary lemma breaks at |V|=3, machine-receipted; flip-
    embedded re-encodings non-discriminating). Results + repairs:
-   `explorations/2026-07-16-decisive-tests/SYNTHESIS.md`. Next-in-lane, dependency order: (1a) transition-
-   diagnosis run on GU-001-GR-001; (1b) two-phase preregistration mechanism (converges with Lane-1
-   housekeeping); (1c) source-issued Rank-2 paired cases + independent Frame R.
+   `explorations/2026-07-16-decisive-tests/SYNTHESIS.md`. **Repairs 1a+1b DONE 2026-07-16** (north-star
+   unblock swing: transition diagnosis executed -- `packets/imports/GU-001/GU-001-TD-001-*.json`; two-phase
+   prereg mechanism adopted provisionally -- `interfaces/two-phase-preregistration-v0.1.md` +
+   `tests/prereg_verify.py`; PASS = necessary-not-sufficient). **Rank-2 runway** (remaining, owned steps):
+   TaF/TI stewards adopt+issue the firewalled packet drafts (mailbox proposals filed); independent advocate
+   re-freezes Frame R; receiver expectations through the two-phase mechanism; then the preregistered
+   Rank-2 run. See `explorations/2026-07-16-northstar-unblock/SYNTHESIS.md`.
 2. Typed level/transition definitions + an executable disclosure-vs-enlargement discriminator with
-   absorber controls (the guiding hypothesis's core discriminator). **Design requirement (I-6, Joe
+   absorber controls (the guiding hypothesis's core discriminator). **DRAFTED 2026-07-16 (Hierarchy v0.2,
+   north-star unblock swing lane D; Joe review pending; referee corrections D1-D7 pending application
+   before any synthesis/ promotion):** `explorations/2026-07-16-northstar-unblock/lane-D-hierarchy-v02-draft.md`. **Design requirement (I-6, Joe
    2026-07-16): the typed definitions must be process-level (morphism-labeled, issuance-carrying), not
    state-snapshot-level — the static-sheaf amputation argument; see
    `explorations/INTERPRETATIONS-REGISTER.md`.** The finality level's draft must engage the register's

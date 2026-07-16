@@ -1,0 +1,239 @@
+{
+  "schema_version": "0.1",
+  "assessment_id": "GU-001-TD-001",
+  "status": "provisional",
+  "question": "In the possibility->dynamics->records->access->capability->finality vocabulary, what transition type does the GU-001 grading-sign specimen witness: the located-not-forced disclosure that actually occurred (W211 characterizing the residual Z/2 datum), and the prospective branch-selecting transition that supplying the external datum would constitute?",
+  "construction": {
+    "fork_identified": true,
+    "selected_branch_id": null,
+    "retention_statement": "Two admissible receiver construals are retained and neither is selected: (1) the witnessed-event construal, reading GU-001 as a description-level disclosure inside the fixed good-stable possibility family, and (2) the prospective-selection construal, reading the residual as a not-yet-executed transition whose witnesses do not exist while bar(b)/H59/Krein positivity/physical issuance are OPEN. Selecting between them would presuppose an answer to those OPEN questions; both stay live per the Construction-Fork Rule."
+  },
+  "branch_relation": "ALTERNATIVE_CONSTRUCTIONS",
+  "branches": [
+    {
+      "branch_id": "witnessed-disclosure",
+      "label": "GU-001 as the event that actually occurred: the residual located and characterized, nothing selected",
+      "admissibility": "ADMISSIBLE",
+      "witness": {
+        "possibility_family_relation": {
+          "value": "SAME",
+          "evidence_refs": [
+            "packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json#/gate_results/2/status_reason (formation: one joint object over the unchanged good-stable structure; no family change)"
+          ]
+        },
+        "representation_relation": {
+          "value": "EQUIVALENT",
+          "evidence_refs": [
+            "packets/imports/GU-001/GU-001-grading-sign-barb-v0.2.json#/claim (located-not-forced: the disclosure alters no representation of GU's structure; both sign branches remain exactly as they were)"
+          ]
+        },
+        "description_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "gu-formalization:explorations/W211-krein-sign-godel-independent-five-method-synthesis-2026-07-14.md@d62a82f3 (sha256 0e1c213d2ab60d644113efc4b9b4fe884186761489ba320dc37834520b9928b6) - the residual Z/2 datum is newly located, typed, and characterized as Godel-independent"
+          ]
+        },
+        "dynamics_change": {
+          "value": "NO",
+          "evidence_refs": [
+            "packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json#/gate_results/0 (provenance: the packet freezes existing source structure; no state trajectory, kernel, or law of the assessed structure changed)"
+          ]
+        },
+        "persistent_record": {
+          "value": "NO",
+          "evidence_refs": [
+            "receiver judgment J1 (frozen in the companion diagnosis record): the packet and W-series artifacts are meta-level documentation ABOUT the assessed GU structure, not a new object-level record inside it; conflating the two would collapse the records/description distinction the contract exists to police"
+          ]
+        },
+        "access_change": {
+          "value": "NO",
+          "evidence_refs": [
+            "packets/imports/GU-001/GU-001-import-record-2026-07-16.md (the import changes receiver-side holdings only; no conditioning, reachability, observability, or control relation of the assessed structure changed)"
+          ]
+        },
+        "control_change": {
+          "value": "NO",
+          "evidence_refs": [
+            "packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json#/neutrality_control (NO_BRANCH_SELECTED: the receiver exercises no control over the source structure and selects nothing)"
+          ]
+        },
+        "raw_task_set_relation": {
+          "value": "EQUAL",
+          "evidence_refs": [
+            "receiver judgment J2 (identity frame, frozen in the companion diagnosis record): a description-level event leaves the operational task set of the assessed structure unchanged by construction"
+          ]
+        },
+        "normalized_task_set_relation": {
+          "value": "EQUAL",
+          "evidence_refs": [
+            "receiver judgment J2 (identity frame, normalized reading): with description, representation, resources, access, and control held fixed, both task sets are the pre-disclosure sets"
+          ]
+        },
+        "irreversible": {
+          "value": "NO",
+          "evidence_refs": [
+            "packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json#/reopening_conditions (a source revision of GU-001 requires re-import and a fresh run; descriptions are revisable)"
+          ]
+        },
+        "settlement": {
+          "value": "NO",
+          "evidence_refs": [
+            "packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json#/neutrality_control/verdict_before (NO_BRANCH_SELECTED: the disclosure settles nothing; the sign remains unselected)"
+          ]
+        },
+        "preceding_layer_factorization": {
+          "value": "NOT_APPLICABLE",
+          "evidence_refs": [
+            "no settlement is claimed for the disclosure event, so factorization of a settlement through preceding layers does not arise for this branch"
+          ]
+        },
+        "reopenable_by_admissible_continuation": {
+          "value": "YES",
+          "evidence_refs": [
+            "packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json#/reopening_conditions/4 (source revision reopens; the disclosure is an admissibly continuable description)"
+          ]
+        },
+        "ordering_relation": {
+          "value": "ORDER_COMPATIBLE",
+          "evidence_refs": [
+            "packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json#/gate_results (the serialized eight-gate run ordered this event's witnesses without cycles or unrepresentable relations)"
+          ]
+        }
+      },
+      "normalization_frame": "Identity frame (receiver judgment J2): the disclosure event changes receiver-side description only; description, representation, resources, access, and control of the assessed GU good-stable structure are held fixed by construction, so the raw and normalized task sets are both the unchanged pre-disclosure sets.",
+      "factorization_search_scope": null,
+      "declared_claims": ["FIXED_FAMILY_DISCLOSURE"],
+      "evidence_grade": "EXPLORATORY",
+      "verification": "UNVERIFIED"
+    },
+    {
+      "branch_id": "prospective-selection",
+      "label": "the residual as a not-yet-executed transition: what supplying the external Z/2 datum would be",
+      "admissibility": "ADMISSIBLE",
+      "witness": {
+        "possibility_family_relation": {
+          "value": "SAME",
+          "evidence_refs": [
+            "packets/imports/GU-001/GU-001-IA-001-receiving-independence-v0.2.json#/source_wording/exact_independence_scope (W208 bistability: the sign is TRUE in the good model and FALSE in the pathological model of the SAME self-consistency theory)"
+          ]
+        },
+        "representation_relation": {
+          "value": "INEQUIVALENT",
+          "evidence_refs": [
+            "packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json#/gate_results/4/status_reason (capability gate: definiteness of the physical inner product on the record-count block is basis-invariant; the branch difference survives admissible reformulation and is not a relabeling)"
+          ]
+        },
+        "description_change": {
+          "value": "UNKNOWN",
+          "evidence_refs": [
+            "no source-issued witness exists for an executed selection event; the selection has not occurred (NO_BRANCH_SELECTED throughout GU-001-GR-001)"
+          ]
+        },
+        "dynamics_change": {
+          "value": "UNKNOWN",
+          "evidence_refs": [
+            "packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json#/gate_results/4/nonclaims (the loop-unitarity cash-out rests on STRUCTURAL/ARGUED lifts; whether a selection changes record-sector dynamics is exactly the OPEN bar(b) question)"
+          ]
+        },
+        "persistent_record": {
+          "value": "UNKNOWN",
+          "evidence_refs": [
+            "no witness: whether a selection event would form a new persistent, discriminable record is part of the OPEN physical-issuance question"
+          ]
+        },
+        "access_change": {
+          "value": "UNKNOWN",
+          "evidence_refs": [
+            "no witness: no source has specified an access relation for a selection event on this specimen"
+          ]
+        },
+        "control_change": {
+          "value": "UNKNOWN",
+          "evidence_refs": [
+            "no witness: which process would supply the external Z/2 datum is owned at the typed GU/TI/TaF joint seam and is OPEN per ADAPTER2-01 (six-condition reopen burden untouched)"
+          ]
+        },
+        "raw_task_set_relation": {
+          "value": "UNKNOWN",
+          "evidence_refs": [
+            "no executed task-set comparison exists for the two branches; Rank-2 receiver preparation is synthetic-toy grade only (explorations/2026-07-16-decisive-tests/SYNTHESIS.md, Rank 2 row)"
+          ]
+        },
+        "normalized_task_set_relation": {
+          "value": "UNKNOWN",
+          "evidence_refs": [
+            "no independently defended normalization frame has been executed against this specimen; supplying one is exactly the missing Rank-2 input (source-issued paired cases + independent Frame R)"
+          ]
+        },
+        "irreversible": {
+          "value": "UNKNOWN",
+          "evidence_refs": [
+            "no witness: reversibility of a selection event is part of the OPEN issuance question"
+          ]
+        },
+        "settlement": {
+          "value": "NO",
+          "evidence_refs": [
+            "packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json#/neutrality_control (verdict NO_BRANCH_SELECTED before and after the exact label swap: nothing has settled)"
+          ]
+        },
+        "preceding_layer_factorization": {
+          "value": "NO_FACTOR_FOUND",
+          "evidence_refs": [
+            "packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json#/gate_results/3/status_reason (completion-null: each of the five method registers is a completion attempt in a different register and all leave the bit free; declared refinements enlarge, never absorb, the residual, dim 2 -> 4)"
+          ]
+        },
+        "reopenable_by_admissible_continuation": {
+          "value": "YES",
+          "evidence_refs": [
+            "packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json#/reopening_conditions (the unbuilt interacting C-operator and nonlocal Z_U completions could absorb the residual; the ADAPTER2-01 reopen burden could change what the seam may assert)"
+          ]
+        },
+        "ordering_relation": {
+          "value": "UNKNOWN",
+          "evidence_refs": [
+            "no witness: where a selection event would sit relative to record/access/capability changes is unspecified while issuance is OPEN"
+          ]
+        }
+      },
+      "normalization_frame": null,
+      "factorization_search_scope": "GU-001's declared completion family at the frozen pin only: the five method registers (W206 counterfactual-invariance, W207 Dirac-BRST cohomology, W208 Lawvere fixed point, W209 topos internal logic, W210 Helmholtz inverse-variational) plus the packet's /alternatives refinements. Explicitly outside the search: the unbuilt interacting C-operator, the nonlocal Z_U completion, kappa, and any TaF-side supply of the datum.",
+      "declared_claims": [],
+      "evidence_grade": "EXPLORATORY",
+      "verification": "UNVERIFIED"
+    }
+  ],
+  "label_neutrality": {
+    "left_label": "C_good / record-count mode Krein-NEGATIVE (eta_+ positive-definite)",
+    "right_label": "C_path / record-count mode Krein-POSITIVE (indefinite total metric)",
+    "required": true
+  },
+  "assumptions": [
+    "The frozen GU-001 packet, GU-001-IA-001, and GU-001-GR-001 supply the only admissible witnesses; the classifier does not establish their truth or sufficiency.",
+    "The receiver's meta-level/object-level record distinction (judgment call J1) and identity normalization frame (J2) are admissible receiver construals; both are disclosed as un-preregistered discretion in the companion diagnosis record.",
+    "ADAPTER2-01 governs all TaF-identifying wording; no cross-repository identity is asserted anywhere in this record."
+  ],
+  "evidence_grade": "EXPLORATORY",
+  "tests": [
+    "python tests/classify_transition.py packets/imports/GU-001/GU-001-TD-001-transition-diagnosis-v0.1.json (this record)",
+    "python tests/validate_transition_diagnosis_contract.py (contract regression)"
+  ],
+  "falsifiers": [
+    "A pure branch or endpoint relabeling changes the computed diagnosis.",
+    "A frozen source artifact witnesses an executed selection event, making the prospective branch's UNKNOWN values dishonest rather than conservative.",
+    "An independently defended normalization frame executed against this specimen returns a non-UNKNOWN normalized task-set relation, superseding the prospective branch's abstention.",
+    "The witnessed-disclosure branch's persistent_record = NO is defeated by showing the packet artifacts are object-level records of the assessed structure rather than meta-level documentation about it."
+  ],
+  "nonclaims": [
+    "This diagnosis establishes no physics, selects no branch, and promotes no source claim; bar(b), H59, Krein positivity, and physical issuance remain OPEN.",
+    "The aggregate outcome is a receiver diagnosis of supplied witnesses, not evidence against the candidate hierarchy or for any rival.",
+    "FIXED_FAMILY_DISCLOSURE for the witnessed event does not diminish the capability gate's branch-inequivalence result, which concerns the prospective transition, not the disclosure.",
+    "This record was not itself preregistered under the two-phase mechanism; it cannot support a non-provisional Rank-1 update by itself."
+  ],
+  "reopening_conditions": [
+    "A source-issued witness for an executed selection event arrives; re-run the diagnosis with real witnesses.",
+    "A Rank-2-grade normalization frame is independently defended and executed against this specimen.",
+    "Per the contract's own reopening clause, this first real frozen-packet classification triggers review of transition-diagnosis v0.1.",
+    "A preregistered (two-phase) re-run of this diagnosis supersedes this record."
+  ]
+}
