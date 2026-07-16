@@ -123,13 +123,19 @@ does not establish novelty, physics, source truth, or the candidate story.
   physical transition data to canonical response-profile deltas. It checks
   relabel invariance, delta composition, positive residual behavior,
   circular-verdict rejection, resource controls, and completion absorption.
+- `physical_completion_closure.py` turns the adapter's completion hook into a
+  finite declared middle completion closure. It checks class coverage,
+  composition, omission mutants, circularity rejection, resource bounds, and an
+  escape target that remains unexplained by the declared closure.
 
 Run from the repository root:
 
 ```text
 python tests/physical_boundary_adapter.py
+python tests/physical_completion_closure.py
 ```
 
 A pass means the adapter prototype satisfies the finite contract in that file.
-It does not establish a real physical witness or promote an unexplained
-residual into a proved capability enlargement.
+The completion closure pass means ordinary residual absorption is bounded by
+declared completions. Neither test establishes a real physical witness or
+promotes an unexplained residual into a proved capability enlargement.
