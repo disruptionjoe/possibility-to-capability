@@ -12,7 +12,6 @@
     "rank2_resolution_2026_07_16": "The preregistered Rank-2 adjudication (RANK2-PR-001) EXECUTED on sovereign TAF-001 + TI-PIT-002 evidence (both accepted and imported, all gates PASS; prereg_verify all seven gates PASS). Referee-governed verdict: NO Rank-2 outcome licensed, construal-invariant; c4 access-side ROBUST_ZERO observed on both branches; c5 NOT_APPLICABLE (sovereign factor-declaration practice does not match the check's capability vocabulary -- successor needs a NEW prereg id); c6 missed; TI frame leg quarantine-blocked. Rank 2 is UNDISCHARGED with a narrowed prerequisite; the successor prereg is a banked belt item, NOT the next swing. The runway belt lane is RESOLVED: per the lane doctrine invariant, priority reverts to the core wager (P2C-REAL-PHYSICAL-WITNESS, rank 1). Record: explorations/2026-07-16-rank2-adjudication/.",
     "provenance": "Joe ratified the five-persona panel synthesis with his own doctrine refinement, 2026-07-16, direct chat (trusted control channel)."
   },
-  "north_star_lane": "HIERARCHY-FORCE-OR-FALSIFY",
   "selection_contract": {
     "progress_must_load_this_file": true,
     "select_highest_ranked_unblocked_item": true,
@@ -30,7 +29,9 @@
     "minimum_material_output": "A model, theorem target, proof, counterexample, executable discriminator, or source-grounded case adjudication. A new schema, queue, packet wrapper, or narrative alone is insufficient.",
     "ranking_formula": "2*impact + 2*information_gain + readiness + distinctiveness - effort - wall_risk - duplication_risk"
   },
-  "lanes": [
+  "lane_manifest_ref": "LANES.yaml",
+  "artifact_role": "Repository-owned work and ranking portfolio. Durable Lane definitions and control state exist only in root LANES.yaml.",
+  "work_groups": [
     {
       "id": "HIERARCHY-FORCE-OR-FALSIFY",
       "state": "ACTIVE",
@@ -140,7 +141,8 @@
         "to_temporal_issuance": "Freeze and propose the same witness for whole-family completion attack; do not assert source issuance.",
         "to_gu_formalization": "Send only an adapter or witness packet whose interface is relevant to one frozen GU construction. GU retains native-versus-forced authority.",
         "return_activation": "Any frozen sovereign return is a stewardship reranking signal, not automatic joint success."
-      }
+      },
+      "parent_lane_id": "1"
     },
     {
       "id": "HIERARCHY-HARDENING",
@@ -150,7 +152,9 @@
       "relation_to_hard_core": "Belt: definitions, literature, casebook, reader reproducibility, and benchmark design that make Lane 1's typed adjudications trustworthy across domains, or bank byproducts exciting enough to lead briefly. May lead only per the lane doctrine; leadership reverts to the core when the leading item resolves.",
       "purpose": "Harden the hierarchy, completion classes, casebook, literature comparison, adjudication protocol, and independent-reader reproducibility required for cross-domain typed change reasoning.",
       "activation": "Select when it closes a named semantic, literature, benchmark, or reproducibility blocker for Lane 1, or no active Lane 1 work item is executable.",
-      "forbidden_shortcut": "Do not substitute synthesis prose, persona agreement, or benchmark labels for a source-grounded transition adjudication."
+      "forbidden_shortcut": "Do not substitute synthesis prose, persona agreement, or benchmark labels for a source-grounded transition adjudication.",
+      "parent_lane_id": "2"
     }
-  ]
+  ],
+  "lane_1_work_group": "HIERARCHY-FORCE-OR-FALSIFY"
 }

@@ -1,3 +1,5 @@
+> Superseded design evidence (WI-078, 2026-07-16): the historical inverted numbering below is preserved for provenance. Root `LANES.yaml` is authoritative: Lane 1 is the core wager and Lane 2 is the legitimacy belt.
+
 ---
 artifact_type: exploration
 status: superseded

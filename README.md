@@ -82,3 +82,13 @@ design, independent-reader reproducibility, and publication-oriented
 byproducts. Stewardship is administrative rather than a third research lane.
 The North Star is not demoted for difficulty or a class-relative wall; see
 `AGENTS.md`.
+
+## First-Class Lanes
+
+Load root `LANES.yaml` after this repository's governance and before selecting
+work. It is the owner-authoritative source for durable Lane definitions,
+admission, and normal control state; authoritative work remains at the paths it
+references. Numbered Lanes are Progress, lettered Lanes are Stewardship, and
+Discovery is Lane-less. A direct mount uses these local surfaces without
+CapacityOS. System observations, health, schedules, and execution history are
+not Lane truth.
