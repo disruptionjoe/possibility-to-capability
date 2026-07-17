@@ -190,8 +190,9 @@ Run opened after clean sync and collision checks.
   subthreshold/superthreshold split.
 - Exact-zero, blocked-injection, no-regeneration, and externally timed controls
   failed in their intended directions.
-- Source-scope and repository-diff checks remained to be completed immediately
-  before commit.
+- `git diff --check` and the declared-output scope check passed before commit.
+- Pre-commit sync confirmed local and `origin/main` were even at
+  `2944d610bdeb9654aee9eecd5e0a9d69a709204c`.
 
 ## Receipt
 
@@ -216,4 +217,5 @@ Run opened after clean sync and collision checks.
 - Authority pins: manifest, definition, control, selection-flow, and emergency
   revocation evidence are recorded in `LaneSelection`; no emergency state was
   present.
-- Commit and push: pending final diff validation.
+- Commit and push: discovery outputs committed as `e5d2719` and pushed to
+  `origin/main`; this receipt finalization is the closeout follow-up.
