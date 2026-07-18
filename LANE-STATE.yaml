@@ -1,0 +1,22 @@
+lane_state_version: '1.0'
+owner_id: possibility-to-capability
+manifest_ref: LANES.yaml
+manifest_revision: 1
+evaluated_at: '2026-07-18T11:46:00-05:00'
+run_ref: RUN-20260718-487-repository-work-cycle-cai-hourly
+lanes:
+- lane_id: '1'
+  light: green
+  reason_code: active_next_discriminator
+  evidence_ref: steward/research-portfolio.json#P2C-BOUNDARY-EXTERNALITY-DISCRIMINATOR
+  summary: Boundary externality and signal taxonomy is admitted as the next discriminator work item.
+- lane_id: '2'
+  light: green
+  reason_code: hardening_reserve_defined
+  evidence_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
+  summary: Hierarchy hardening remains a reserve belt with explicit relation to Lane 1.
+- lane_id: A
+  light: green
+  reason_code: mailbox_disposition_recorded
+  evidence_ref: steward/research-portfolio.json#P2C-BOUNDARY-EXTERNALITY-DISCRIMINATOR
+  summary: System mailbox proposal was dispositioned without moving source truth or external posture.
