@@ -2,22 +2,22 @@ lane_state_version: '1.0'
 owner_id: possibility-to-capability
 manifest_ref: LANES.yaml
 manifest_revision: 1
-evaluated_at: '2026-07-18T22:41:00-05:00'
-run_ref: RUN-20260718-516-repository-work-cycle-cai-hourly
+evaluated_at: '2026-07-19T07:44:00-05:00'
+run_ref: RUN-20260719-524-repository-work-cycle-cai-hourly
 lanes:
 - lane_id: '1'
   work_status: moving
-  last_movement: Boundary outside/signal discriminator executed at exploration tier.
-  movement_ref: tests/boundary_externality_signal_discriminator.py
+  last_movement: CAI entryway governance transition classified at exploration tier.
+  movement_ref: tests/cai_entryway_transition_adjudication.py
   steering_attention: watch
-  steering_prompt: Use only with frozen source packets; otherwise choose next transfer test.
-  steering_ref: steward/research-portfolio.json#P2C-BOUNDARY-EXTERNALITY-DISCRIMINATOR
+  steering_prompt: Cross-domain current inputs are advanced; next eligible frontier is real-witness Alternate B.
+  steering_ref: steward/research-portfolio.json#P2C-REAL-PHYSICAL-WITNESS
   light: green
-  reason_code: discriminator_executed
-  evidence_ref: explorations/2026-07-18-boundary-externality-discriminator/SYNTHESIS.md
-  summary: Boundary outside/signal classes now have executable classifier and abstention gates.
-  evaluated_at: '2026-07-18T22:41:00-05:00'
-  run_ref: RUN-20260718-516-repository-work-cycle-cai-hourly
+  reason_code: governance_transition_classified
+  evidence_ref: explorations/2026-07-19-cai-entryway-transition-adjudication/SYNTHESIS.md
+  summary: CAI entryway transition typed as record/access/scoped routing capability.
+  evaluated_at: '2026-07-19T07:44:00-05:00'
+  run_ref: RUN-20260719-524-repository-work-cycle-cai-hourly
 - lane_id: '2'
   work_status: thin
   last_movement: none found
@@ -29,11 +29,11 @@ lanes:
   reason_code: hardening_reserve_defined
   evidence_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
   summary: Hardening remains a reserve belt with explicit Lane 1 relation.
-  evaluated_at: '2026-07-18T22:41:00-05:00'
-  run_ref: RUN-20260718-516-repository-work-cycle-cai-hourly
+  evaluated_at: '2026-07-19T07:44:00-05:00'
+  run_ref: RUN-20260719-524-repository-work-cycle-cai-hourly
 - lane_id: A
   work_status: moving
-  last_movement: Portfolio and Lane state refreshed after discriminator swing.
+  last_movement: Portfolio and Lane state refreshed after CAI entryway swing.
   movement_ref: LANE-STATE.yaml
   steering_attention: none
   steering_prompt: none
@@ -42,5 +42,5 @@ lanes:
   reason_code: cycle_closed_cleanly
   evidence_ref: LANE-STATE.yaml
   summary: Stewardship closed cleanly; no live mailbox proposal or source-truth movement.
-  evaluated_at: '2026-07-18T22:41:00-05:00'
-  run_ref: RUN-20260718-516-repository-work-cycle-cai-hourly
+  evaluated_at: '2026-07-19T07:44:00-05:00'
+  run_ref: RUN-20260719-524-repository-work-cycle-cai-hourly

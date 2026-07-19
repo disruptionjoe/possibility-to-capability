@@ -25,14 +25,14 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
                                   "RESOLVED_SCOPED_SURVIVOR")
         ]
         self.assertGreaterEqual(len(selectable), 1)
-        # Explicit rank overrides raw priority_score. The first cross-domain
-        # transfer fixture remains the next eligible frontier after the
-        # boundary externality discriminator advanced for current inputs.
+        # Explicit rank overrides raw priority_score, while hourly_eligible
+        # suppresses items advanced for current inputs. After the CAI entryway
+        # transfer, the next eligible frontier is the real physical witness.
         self.assertTrue(self.data["selection_contract"][
             "explicit_rank_field_overrides_priority_score"])
         selected = min(selectable, key=lambda item: item["rank"])
         self.assertEqual(
-            selected["id"], "P2C-CROSS-DOMAIN-TRANSITION-ADJUDICATION"
+            selected["id"], "P2C-REAL-PHYSICAL-WITNESS"
         )
         boundary = next(
             item
@@ -41,6 +41,14 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
         )
         self.assertFalse(boundary["hourly_eligible"])
         self.assertIn("do not repeat the taxonomy", boundary["next_swing"])
+        cross_domain = next(
+            item
+            for item in active[0]["internal_work_items"]
+            if item["id"] == "P2C-CROSS-DOMAIN-TRANSITION-ADJUDICATION"
+        )
+        self.assertFalse(cross_domain["hourly_eligible"])
+        self.assertIn("CAI public-entryway", cross_domain["swing_2026_07_19"])
+        self.assertIn("Advanced for current", cross_domain["next_swing"])
         self.assertIn("reach_swing_accounting_2026_07_16",
                       self.data["selection_contract"])
 
@@ -90,6 +98,7 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
         self.assertIn("LANES.yaml", agents)
         active = next(group for group in self.data["work_groups"] if group["state"] == "ACTIVE")
         self.assertIn("boundary-externality", active["current_authority"])
+        self.assertIn("CAI entryway", active["current_authority"])
         adapter = next(
             item
             for item in active["internal_work_items"]
