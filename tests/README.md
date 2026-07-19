@@ -154,6 +154,10 @@ does not establish novelty, physics, source truth, or the candidate story.
   indistinguishable sectors, noncontractible loop access, distance-scaling
   memory, local-completion failure, whole-family absorption, and anyon-label
   neutrality.
+- `topological_order_source_freeze.py` checks the Lane 2 source-freeze record
+  for the topological-order witness. It requires primary literature anchors,
+  source-bounded witness-leg mapping, nonclaim firewalls, and a reader rerun
+  protocol.
 
 Run from the repository root:
 
@@ -164,6 +168,7 @@ python tests/witness_boundary_adapter.py
 python tests/p2c_second_standard_adjudication.py
 python tests/bec_circulation_witness.py
 python tests/topological_order_witness.py
+python tests/topological_order_source_freeze.py
 ```
 
 A pass means the adapter prototype satisfies the finite contract in that file.
@@ -177,9 +182,10 @@ C1-C4 and source verdict boundaries.
 The BEC witness pass means the local-completion discriminator has a neutral
 carrier replication at finite-model/exploration tier. The topological-order
 witness pass means Alternate B has a finite loop/gamma/distance stress test
-with the fixed-family absorber still explicit. None of these tests establishes
-a real physical witness or promotes an unexplained residual into a proved
-capability enlargement.
+with the fixed-family absorber still explicit. The source-freeze pass means the
+reader-facing literature spine names its primary anchors and keeps the witness
+mapping bounded. None of these tests establishes a real physical witness or
+promotes an unexplained residual into a proved capability enlargement.
 
 ## Relational-dissolution fixture
 

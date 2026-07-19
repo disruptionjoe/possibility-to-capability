@@ -2,38 +2,38 @@ lane_state_version: '1.0'
 owner_id: possibility-to-capability
 manifest_ref: LANES.yaml
 manifest_revision: 1
-evaluated_at: '2026-07-19T08:39:45-05:00'
-run_ref: RUN-20260719-526-repository-work-cycle-cai-hourly
+evaluated_at: '2026-07-19T09:41:04-05:00'
+run_ref: RUN-20260719-529-repository-work-cycle-cai-hourly
 lanes:
 - lane_id: '1'
-  work_status: moving
-  last_movement: Topological-order Alternate B witness added at exploration tier.
-  movement_ref: tests/topological_order_witness.py
+  work_status: watch
+  last_movement: Lane 2 source freeze hardened the Alternate B witness spine.
+  movement_ref: literature/2026-07-19-topological-order-source-freeze.md
   steering_attention: watch
-  steering_prompt: Alternate B advanced; re-open only for source-backed or finer completion evidence.
+  steering_prompt: Re-open only for finer specimen, new completion rival, or source-issued nonphysics evidence.
   steering_ref: steward/research-portfolio.json#P2C-REAL-PHYSICAL-WITNESS
   light: green
-  reason_code: topological_order_witness_added
-  evidence_ref: explorations/2026-07-19-topological-order-witness/SYNTHESIS.md
-  summary: Alternate B now has a finite gamma/loop/distance witness with no verdict moved.
-  evaluated_at: '2026-07-19T08:39:45-05:00'
-  run_ref: RUN-20260719-526-repository-work-cycle-cai-hourly
+  reason_code: topological_source_spine_hardened
+  evidence_ref: literature/2026-07-19-topological-order-source-freeze.md
+  summary: Alternate B now has primary-source spine; core verdict remains unchanged.
+  evaluated_at: '2026-07-19T09:41:04-05:00'
+  run_ref: RUN-20260719-529-repository-work-cycle-cai-hourly
 - lane_id: '2'
-  work_status: thin
-  last_movement: none found
-  movement_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
+  work_status: moving
+  last_movement: Added topological-order source freeze and validator.
+  movement_ref: literature/2026-07-19-topological-order-source-freeze.md
   steering_attention: none
   steering_prompt: none
   steering_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
   light: green
-  reason_code: hardening_reserve_defined
-  evidence_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
-  summary: Hardening remains a reserve belt with explicit Lane 1 relation.
-  evaluated_at: '2026-07-19T08:39:45-05:00'
-  run_ref: RUN-20260719-526-repository-work-cycle-cai-hourly
+  reason_code: source_freeze_validation_added
+  evidence_ref: tests/topological_order_source_freeze.py
+  summary: Lane 2 hardened reader reproducibility for the topological witness.
+  evaluated_at: '2026-07-19T09:41:04-05:00'
+  run_ref: RUN-20260719-529-repository-work-cycle-cai-hourly
 - lane_id: A
   work_status: moving
-  last_movement: Portfolio and Lane state refreshed after topological-order swing.
+  last_movement: Portfolio and Lane state refreshed after source-freeze hardening.
   movement_ref: LANE-STATE.yaml
   steering_attention: none
   steering_prompt: none
@@ -41,6 +41,6 @@ lanes:
   light: green
   reason_code: cycle_closed_cleanly
   evidence_ref: LANE-STATE.yaml
-  summary: Stewardship closed cleanly; no live mailbox proposal or source-truth movement.
-  evaluated_at: '2026-07-19T08:39:45-05:00'
-  run_ref: RUN-20260719-526-repository-work-cycle-cai-hourly
+  summary: Stewardship closed cleanly; no mailbox or source-truth movement.
+  evaluated_at: '2026-07-19T09:41:04-05:00'
+  run_ref: RUN-20260719-529-repository-work-cycle-cai-hourly

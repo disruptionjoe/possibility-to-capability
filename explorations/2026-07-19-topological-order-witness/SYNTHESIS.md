@@ -122,3 +122,17 @@ The next useful frontier should be one of:
   into a less toy-localized specimen; or
 - a Lane 2 reproducibility/literature hardening pass if reader trust becomes
   the blocker.
+
+## Lane 2 Hardening
+
+The first reader-facing literature freeze now exists at:
+
+```text
+literature/2026-07-19-topological-order-source-freeze.md
+```
+
+It backs the witness vocabulary with primary toric-code, topological-memory,
+and topological-entanglement-entropy anchors while preserving the same
+nonclaims. This closes only the bounded source-spine gap; it does not supply a
+Hamiltonian-grade specimen, empirical sample, source packet, capability
+verdict, or finality verdict.
