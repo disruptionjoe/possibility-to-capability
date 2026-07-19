@@ -2,22 +2,22 @@ lane_state_version: '1.0'
 owner_id: possibility-to-capability
 manifest_ref: LANES.yaml
 manifest_revision: 1
-evaluated_at: '2026-07-19T07:44:00-05:00'
-run_ref: RUN-20260719-524-repository-work-cycle-cai-hourly
+evaluated_at: '2026-07-19T08:39:45-05:00'
+run_ref: RUN-20260719-526-repository-work-cycle-cai-hourly
 lanes:
 - lane_id: '1'
   work_status: moving
-  last_movement: CAI entryway governance transition classified at exploration tier.
-  movement_ref: tests/cai_entryway_transition_adjudication.py
+  last_movement: Topological-order Alternate B witness added at exploration tier.
+  movement_ref: tests/topological_order_witness.py
   steering_attention: watch
-  steering_prompt: Cross-domain current inputs are advanced; next eligible frontier is real-witness Alternate B.
+  steering_prompt: Alternate B advanced; re-open only for source-backed or finer completion evidence.
   steering_ref: steward/research-portfolio.json#P2C-REAL-PHYSICAL-WITNESS
   light: green
-  reason_code: governance_transition_classified
-  evidence_ref: explorations/2026-07-19-cai-entryway-transition-adjudication/SYNTHESIS.md
-  summary: CAI entryway transition typed as record/access/scoped routing capability.
-  evaluated_at: '2026-07-19T07:44:00-05:00'
-  run_ref: RUN-20260719-524-repository-work-cycle-cai-hourly
+  reason_code: topological_order_witness_added
+  evidence_ref: explorations/2026-07-19-topological-order-witness/SYNTHESIS.md
+  summary: Alternate B now has a finite gamma/loop/distance witness with no verdict moved.
+  evaluated_at: '2026-07-19T08:39:45-05:00'
+  run_ref: RUN-20260719-526-repository-work-cycle-cai-hourly
 - lane_id: '2'
   work_status: thin
   last_movement: none found
@@ -29,11 +29,11 @@ lanes:
   reason_code: hardening_reserve_defined
   evidence_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
   summary: Hardening remains a reserve belt with explicit Lane 1 relation.
-  evaluated_at: '2026-07-19T07:44:00-05:00'
-  run_ref: RUN-20260719-524-repository-work-cycle-cai-hourly
+  evaluated_at: '2026-07-19T08:39:45-05:00'
+  run_ref: RUN-20260719-526-repository-work-cycle-cai-hourly
 - lane_id: A
   work_status: moving
-  last_movement: Portfolio and Lane state refreshed after CAI entryway swing.
+  last_movement: Portfolio and Lane state refreshed after topological-order swing.
   movement_ref: LANE-STATE.yaml
   steering_attention: none
   steering_prompt: none
@@ -42,5 +42,5 @@ lanes:
   reason_code: cycle_closed_cleanly
   evidence_ref: LANE-STATE.yaml
   summary: Stewardship closed cleanly; no live mailbox proposal or source-truth movement.
-  evaluated_at: '2026-07-19T07:44:00-05:00'
-  run_ref: RUN-20260719-524-repository-work-cycle-cai-hourly
+  evaluated_at: '2026-07-19T08:39:45-05:00'
+  run_ref: RUN-20260719-526-repository-work-cycle-cai-hourly

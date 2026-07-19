@@ -149,6 +149,11 @@ does not establish novelty, physics, source truth, or the candidate story.
   local phase-relabel invariance, persistence, local-completion failure,
   whole-family absorption, and a carrier-independence control that rejects
   superconducting fluxoid primitives.
+- `topological_order_witness.py` is the Alternate B reach fixture for a
+  topological-order carrier. It checks `gamma = log D`, locally
+  indistinguishable sectors, noncontractible loop access, distance-scaling
+  memory, local-completion failure, whole-family absorption, and anyon-label
+  neutrality.
 
 Run from the repository root:
 
@@ -158,6 +163,7 @@ python tests/physical_completion_closure.py
 python tests/witness_boundary_adapter.py
 python tests/p2c_second_standard_adjudication.py
 python tests/bec_circulation_witness.py
+python tests/topological_order_witness.py
 ```
 
 A pass means the adapter prototype satisfies the finite contract in that file.
@@ -169,9 +175,11 @@ The second-standard adjudication pass means unchanged P2C-W1's scoped-survivor
 chain survives the P2C-owned completion-standard substitution while preserving
 C1-C4 and source verdict boundaries.
 The BEC witness pass means the local-completion discriminator has a neutral
-carrier replication at finite-model/exploration tier. None of these tests
-establishes a real physical witness or promotes an unexplained residual into a
-proved capability enlargement.
+carrier replication at finite-model/exploration tier. The topological-order
+witness pass means Alternate B has a finite loop/gamma/distance stress test
+with the fixed-family absorber still explicit. None of these tests establishes
+a real physical witness or promotes an unexplained residual into a proved
+capability enlargement.
 
 ## Relational-dissolution fixture
 
