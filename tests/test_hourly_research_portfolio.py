@@ -14,9 +14,9 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.data = json.loads(PORTFOLIO.read_text(encoding="utf-8"))
 
-    def test_active_lane_and_ready_work_exist(self) -> None:
-        active = [lane for lane in self.data["lanes"] if lane["state"] == "ACTIVE"]
-        self.assertEqual([lane["id"] for lane in active], [self.data["north_star_lane"]])
+    def test_active_work_group_and_ready_work_exist(self) -> None:
+        active = [group for group in self.data["work_groups"] if group["state"] == "ACTIVE"]
+        self.assertEqual([group["id"] for group in active], [self.data["lane_1_work_group"]])
         selectable = [
             item
             for item in active[0]["internal_work_items"]
@@ -26,29 +26,36 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
         ]
         self.assertGreaterEqual(len(selectable), 1)
         # Explicit rank overrides raw priority_score. The first cross-domain
-        # transfer fixture has advanced for current available frozen inputs, so
-        # the next frontier returns to the strongest physical continuation.
+        # transfer fixture remains the next eligible frontier after the
+        # boundary externality discriminator advanced for current inputs.
         self.assertTrue(self.data["selection_contract"][
             "explicit_rank_field_overrides_priority_score"])
         selected = min(selectable, key=lambda item: item["rank"])
         self.assertEqual(
-            selected["id"], "P2C-REAL-PHYSICAL-WITNESS"
+            selected["id"], "P2C-CROSS-DOMAIN-TRANSITION-ADJUDICATION"
         )
+        boundary = next(
+            item
+            for item in active[0]["internal_work_items"]
+            if item["id"] == "P2C-BOUNDARY-EXTERNALITY-DISCRIMINATOR"
+        )
+        self.assertFalse(boundary["hourly_eligible"])
+        self.assertIn("do not repeat the taxonomy", boundary["next_swing"])
         self.assertIn("reach_swing_accounting_2026_07_16",
                       self.data["selection_contract"])
 
     def test_hard_core_and_doctrine_fields(self) -> None:
         self.assertIn("HARD-CORE.md", self.data["hard_core"]["statement_owner"])
         self.assertIn("reach swing", self.data["selection_contract"]["reach_swing_cadence"])
-        for lane in self.data["lanes"]:
-            self.assertTrue(lane.get("relation_to_hard_core"))
-            for item in lane.get("internal_work_items", []):
+        for group in self.data["work_groups"]:
+            self.assertTrue(group.get("relation_to_hard_core"))
+            for item in group.get("internal_work_items", []):
                 self.assertTrue(item.get("relation_to_hard_core"))
 
     def test_two_lane_typed_change_role_is_durable(self) -> None:
-        self.assertEqual(len(self.data["lanes"]), 2)
+        self.assertEqual(len(self.data["work_groups"]), 2)
         self.assertEqual(
-            self.data["north_star_lane"], "HIERARCHY-FORCE-OR-FALSIFY"
+            self.data["lane_1_work_group"], "HIERARCHY-FORCE-OR-FALSIFY"
         )
         contract = self.data["selection_contract"]
         self.assertIn("not a separate meta lane",
@@ -67,8 +74,8 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
         self.assertIn("## The P2C-specific agent capability", hard_core)
 
     def test_gated_work_has_activation_and_material_rule(self) -> None:
-        for lane in self.data["lanes"]:
-            for item in lane.get("internal_work_items", []):
+        for group in self.data["work_groups"]:
+            for item in group.get("internal_work_items", []):
                 if item["state"].startswith("GATED"):
                     self.assertTrue(item.get("activation"))
         contract = self.data["selection_contract"]
@@ -76,12 +83,13 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
         self.assertTrue(contract["rerank_after_every_material_run"])
         self.assertIn("insufficient", contract["minimum_material_output"])
 
-    def test_steward_context_routes_progress_to_portfolio(self) -> None:
-        context = (ROOT / "steward" / "README.md").read_text(encoding="utf-8")
-        self.assertIn("steward/research-portfolio.json", context)
-        self.assertIn(self.data["north_star_lane"], context)
-        active = next(lane for lane in self.data["lanes"] if lane["state"] == "ACTIVE")
-        self.assertIn("ADAPTER2-01", active["current_authority"])
+    def test_manifest_routes_progress_to_portfolio(self) -> None:
+        manifest = (ROOT / "LANES.yaml").read_text(encoding="utf-8")
+        agents = (ROOT / "AGENTS.md").read_text(encoding="utf-8")
+        self.assertIn("steward/research-portfolio.json", manifest)
+        self.assertIn("LANES.yaml", agents)
+        active = next(group for group in self.data["work_groups"] if group["state"] == "ACTIVE")
+        self.assertIn("boundary-externality", active["current_authority"])
         adapter = next(
             item
             for item in active["internal_work_items"]
