@@ -2,22 +2,22 @@ lane_state_version: '1.0'
 owner_id: possibility-to-capability
 manifest_ref: LANES.yaml
 manifest_revision: 1
-evaluated_at: '2026-07-19T15:40:55-05:00'
-run_ref: RUN-20260719-543-repository-work-cycle-cai-hourly
+evaluated_at: '2026-07-19T17:39:59-05:00'
+run_ref: RUN-20260719-547-repository-work-cycle-cai-hourly
 lanes:
 - lane_id: '1'
   work_status: watch
-  last_movement: GU source-object critical-path mailbox accepted as wait signal.
-  movement_ref: steward/research-portfolio.json#mailbox_2026_07_19_gu_source_object_critical_path
+  last_movement: GU construction-space interface mailbox accepted as packet-readiness constraint.
+  movement_ref: steward/research-portfolio.json#mailbox_2026_07_19_gu_construction_space_source_object_interface_p5
   steering_attention: watch
-  steering_prompt: Wait for GU frozen interface spec or source-owned object; do not reconstruct from mailbox note.
-  steering_ref: steward/research-portfolio.json#mailbox_2026_07_19_gu_source_object_critical_path
+  steering_prompt: Use the GU interface pointer for future validation only; wait for a source-owned object or packet.
+  steering_ref: steward/research-portfolio.json#mailbox_2026_07_19_gu_construction_space_source_object_interface_p5
   light: green
-  reason_code: gu_source_object_spec_wait
-  evidence_ref: steward/research-portfolio.json#mailbox_2026_07_19_gu_source_object_critical_path
-  summary: GU critical path is source-owned and not yet importable by P2C.
-  evaluated_at: '2026-07-19T15:40:55-05:00'
-  run_ref: RUN-20260719-543-repository-work-cycle-cai-hourly
+  reason_code: gu_interface_pointer_recorded
+  evidence_ref: steward/research-portfolio.json#mailbox_2026_07_19_gu_construction_space_source_object_interface_p5
+  summary: GU interface pointer recorded; no P2C import or source truth moved.
+  evaluated_at: '2026-07-19T17:39:59-05:00'
+  run_ref: RUN-20260719-547-repository-work-cycle-cai-hourly
 - lane_id: '2'
   work_status: watch
   last_movement: Added topological-order source freeze and validator.
@@ -29,18 +29,18 @@ lanes:
   reason_code: source_freeze_validation_added
   evidence_ref: tests/topological_order_source_freeze.py
   summary: Lane 2 hardened reader reproducibility for the topological witness.
-  evaluated_at: '2026-07-19T15:40:55-05:00'
-  run_ref: RUN-20260719-543-repository-work-cycle-cai-hourly
+  evaluated_at: '2026-07-19T17:39:59-05:00'
+  run_ref: RUN-20260719-547-repository-work-cycle-cai-hourly
 - lane_id: A
   work_status: moving
-  last_movement: Processed GU source-object critical-path mailbox into repo-local wait state.
+  last_movement: Processed GU construction-space source-object interface mailbox.
   movement_ref: LANE-STATE.yaml
   steering_attention: none
   steering_prompt: none
   steering_ref: LANES.yaml#A
   light: green
   reason_code: mailbox_disposition_recorded
-  evidence_ref: steward/research-portfolio.json#mailbox_2026_07_19_gu_source_object_critical_path
-  summary: Mailbox disposition recorded without moving source truth or packet status.
-  evaluated_at: '2026-07-19T15:40:55-05:00'
-  run_ref: RUN-20260719-543-repository-work-cycle-cai-hourly
+  evidence_ref: steward/research-portfolio.json#mailbox_2026_07_19_gu_construction_space_source_object_interface_p5
+  summary: Interface mailbox disposition recorded without packet import or source-truth movement.
+  evaluated_at: '2026-07-19T17:39:59-05:00'
+  run_ref: RUN-20260719-547-repository-work-cycle-cai-hourly
