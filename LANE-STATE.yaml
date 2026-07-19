@@ -2,22 +2,22 @@ lane_state_version: '1.0'
 owner_id: possibility-to-capability
 manifest_ref: LANES.yaml
 manifest_revision: 1
-evaluated_at: '2026-07-19T17:39:59-05:00'
-run_ref: RUN-20260719-547-repository-work-cycle-cai-hourly
+evaluated_at: '2026-07-19T18:51:56-05:00'
+run_ref: RUN-20260719-548-repository-work-cycle-cai-hourly
 lanes:
 - lane_id: '1'
   work_status: watch
-  last_movement: GU construction-space interface mailbox accepted as packet-readiness constraint.
-  movement_ref: steward/research-portfolio.json#mailbox_2026_07_19_gu_construction_space_source_object_interface_p5
+  last_movement: GU finite-payload follow-up mailbox accepted as wait signal.
+  movement_ref: steward/research-portfolio.json#mailbox_2026_07_19_gu_candidate_minimal_payload_follow_up
   steering_attention: watch
-  steering_prompt: Use the GU interface pointer for future validation only; wait for a source-owned object or packet.
-  steering_ref: steward/research-portfolio.json#mailbox_2026_07_19_gu_construction_space_source_object_interface_p5
+  steering_prompt: Wait for GU source-owned finite payload or packet; do not reconstruct from mailbox notes.
+  steering_ref: steward/research-portfolio.json#mailbox_2026_07_19_gu_candidate_minimal_payload_follow_up
   light: green
-  reason_code: gu_interface_pointer_recorded
-  evidence_ref: steward/research-portfolio.json#mailbox_2026_07_19_gu_construction_space_source_object_interface_p5
-  summary: GU interface pointer recorded; no P2C import or source truth moved.
-  evaluated_at: '2026-07-19T17:39:59-05:00'
-  run_ref: RUN-20260719-547-repository-work-cycle-cai-hourly
+  reason_code: gu_finite_payload_signal_recorded
+  evidence_ref: steward/research-portfolio.json#mailbox_2026_07_19_gu_candidate_minimal_payload_follow_up
+  summary: GU finite-payload follow-up recorded; no packet import or source truth moved.
+  evaluated_at: '2026-07-19T18:51:56-05:00'
+  run_ref: RUN-20260719-548-repository-work-cycle-cai-hourly
 - lane_id: '2'
   work_status: watch
   last_movement: Added topological-order source freeze and validator.
@@ -29,18 +29,18 @@ lanes:
   reason_code: source_freeze_validation_added
   evidence_ref: tests/topological_order_source_freeze.py
   summary: Lane 2 hardened reader reproducibility for the topological witness.
-  evaluated_at: '2026-07-19T17:39:59-05:00'
-  run_ref: RUN-20260719-547-repository-work-cycle-cai-hourly
+  evaluated_at: '2026-07-19T18:51:56-05:00'
+  run_ref: RUN-20260719-548-repository-work-cycle-cai-hourly
 - lane_id: A
   work_status: moving
-  last_movement: Processed GU construction-space source-object interface mailbox.
+  last_movement: Processed GU finite-payload follow-up mailbox.
   movement_ref: LANE-STATE.yaml
   steering_attention: none
   steering_prompt: none
   steering_ref: LANES.yaml#A
   light: green
   reason_code: mailbox_disposition_recorded
-  evidence_ref: steward/research-portfolio.json#mailbox_2026_07_19_gu_construction_space_source_object_interface_p5
-  summary: Interface mailbox disposition recorded without packet import or source-truth movement.
-  evaluated_at: '2026-07-19T17:39:59-05:00'
-  run_ref: RUN-20260719-547-repository-work-cycle-cai-hourly
+  evidence_ref: steward/research-portfolio.json#mailbox_2026_07_19_gu_candidate_minimal_payload_follow_up
+  summary: Follow-up mailbox disposition recorded without packet import or source-truth movement.
+  evaluated_at: '2026-07-19T18:51:56-05:00'
+  run_ref: RUN-20260719-548-repository-work-cycle-cai-hourly
