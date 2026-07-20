@@ -1,40 +1,40 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-20T06:36:50-05:00"
-run_ref: RUN-20260720-063650-repository-work-cycle-cai-hourly
-bottom_line: Frozen GU co-flip evidence is a qualified candidate input, not yet a P2C witness.
-decision_default: Apply the existing boundary discriminator before considering receiver-owned construction.
+updated_at: "2026-07-20T07:36:51-05:00"
+run_ref: RUN-20260720-073651-repository-work-cycle-cai-hourly
+bottom_line: GU co-flip preflight abstains because the packet lacks an adjudicable transition frame.
+decision_default: Wait for a frozen input with all seven missing discriminator prerequisites.
 needs_joe: false
 lanes:
 - lane_id: "1"
   work_status: moving
-  last_movement: P2C-IRD-001 established a hardened finite raw-transition restriction separation.
-  movement_ref: explorations/2026-07-19-indexed-restriction-diagram/SYNTHESIS.md
+  last_movement: Co-flip boundary preflight preserved an honest abstention on seven missing frame fields.
+  movement_ref: explorations/2026-07-20-coflip-holonomy-boundary-preflight/SYNTHESIS.md
   steering_attention: watch
-  steering_prompt: Classify the unchanged frozen GU packet with the existing boundary discriminator before any construction.
-  steering_ref: steward/research-portfolio.json#P2C-REAL-PHYSICAL-WITNESS
+  steering_prompt: Wait for a frozen transition with independent identity, matched frames, task delta, native response, and completion rival.
+  steering_ref: steward/research-portfolio.json#P2C-BOUNDARY-EXTERNALITY-DISCRIMINATOR
   light: green
-  reason_code: raw_restriction_separation_hardened
-  evidence_ref: tests/indexed_restriction_diagram.py
-  summary: Typed raw restrictions preserve unequal profiles under a declared construction.
-  evaluated_at: "2026-07-20T06:36:50-05:00"
-  run_ref: RUN-20260720-063650-repository-work-cycle-cai-hourly
+  reason_code: packet_not_adjudicable
+  evidence_ref: tests/coflip_holonomy_boundary_preflight.py
+  summary: The frozen candidate cannot be encoded neutrally without inventing values for unknown discriminator fields.
+  evaluated_at: "2026-07-20T07:36:51-05:00"
+  run_ref: RUN-20260720-073651-repository-work-cycle-cai-hourly
   objective: Test the hierarchy as a transition diagnostic across real source-grounded cases.
-  progress_delta: GU ETA/Z2 evidence advanced from mailbox-only signal to a verified, commit-pinned candidate input with explicit gaps.
-  scope_position: P2C-IRD-001 remains complete; GU-COFLIP-HOLONOMY-FREEZE is eligible for boundary classification but not witness import.
+  progress_delta: The qualified GU candidate was preflighted; abstention is forced before discriminator invocation by seven missing fields.
+  scope_position: Preflight complete for current packet; no admissible capability or finality classification exists.
   trend_24h: up
   confidence: med
-  recommendation: Run the existing boundary discriminator on the frozen packet; preserve abstention.
+  recommendation: Preserve abstention and wait for a complete frozen transition frame.
   findings:
-  - GU commit 32e3603 freezes a matrix-grade Z2/Kramers/co-flip candidate with explicit assumptions, falsifiers, and nonclaims.
-  - The candidate lacks independent source identity, Hamiltonian, transition frame, resource budget, native response, and completion rival.
-  - IRD result remains the active local contract for the next physical/source-grounded application.
+  - Source identity is frozen at GU commit 32e3603, but independent identity remains absent.
+  - Transition, matched resource/access frames, task delta, native response, and completion rival are all missing.
+  - Boolean defaults would manufacture either matching or mismatch, so the neutral result is abstention.
   options:
   - id: A
-    label: Classify frozen candidate
+    label: Wait for complete frame
     recommended: true
-    description: Apply the existing discriminator to unchanged frozen claims and allow abstention.
+    description: Re-open only when all missing discriminator prerequisites are frozen.
   - id: B
     label: Local IRD refinement
     recommended: false
@@ -96,7 +96,7 @@ lanes:
   evaluated_at: "2026-07-20T06:36:50-05:00"
   run_ref: RUN-20260720-063650-repository-work-cycle-cai-hourly
   objective: Keep P2C viable through mailbox, provenance, boundary, control, and escalation hygiene.
-  progress_delta: One mailbox proposal was verified, dispositioned, and routed to Lane 1 classification without importing source truth.
+  progress_delta: Mailbox remains empty; prior qualified-candidate disposition is unchanged.
   trend_24h: up
   confidence: high
   recommendation: Preserve the qualified-candidate boundary and archive the handled proposal.
@@ -120,7 +120,7 @@ lanes:
   needs_joe: false
   drift_verdict: no_drift
   action_counts:
-    mail: 1
+    mail: 0
     reconciled: 0
     integrity_repairs: 0
     seeds_routed: 0
