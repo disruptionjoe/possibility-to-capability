@@ -162,6 +162,10 @@ does not establish novelty, physics, source truth, or the candidate story.
   unchanged P2C-W1. It separates certified representation relabels from
   materially different N/R/W constructions, rejects verdict-carrying inputs,
   and exercises the declared mutation budget before selecting an outcome.
+- `profile_descent_theorem.py` proves the finite P2C-DESCENT-001 quotient and
+  two-witness top-label non-descent statements over the executed cross-frame
+  calibration class. The theorem-consequence checks are excluded from its
+  evidential headline.
 
 Run from the repository root:
 
@@ -174,6 +178,7 @@ python tests/bec_circulation_witness.py
 python tests/topological_order_witness.py
 python tests/topological_order_source_freeze.py
 python tests/cross_frame_descent_or_fork.py
+python tests/profile_descent_theorem.py
 ```
 
 A pass means the adapter prototype satisfies the finite contract in that file.
@@ -194,6 +199,10 @@ is representation-invariant while top-level labels remain construction-indexed;
 it does not prove a universal quotient or equate the constructions. None of
 these tests establishes a real physical witness or
 promotes an unexplained residual into a proved capability enlargement.
+The profile-descent fixture establishes only conditional finite mathematics:
+facts and frame outputs descend under supplied representation equivalences, but
+a faithful single Access/Capability head does not descend across N and R on the
+two calibrated witnesses.
 
 ## Relational-dissolution fixture
 

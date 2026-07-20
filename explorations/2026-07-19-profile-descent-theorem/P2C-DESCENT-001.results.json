@@ -1,0 +1,41 @@
+{
+  "schema_version": "p2c-finite-theorem-result-v0.1",
+  "theorem_id": "P2C-DESCENT-001",
+  "status": "PROVED_FINITE_CONDITIONAL",
+  "executed": "2026-07-19",
+  "target_commit": "9860815",
+  "depends_on": {
+    "experiment_id": "P2C-XFRAME-001",
+    "result_commit": "8af81e2",
+    "outcome": "INDEXED_CONSTRUCTION_FORK"
+  },
+  "result": "PROFILE_DESCENT_AND_FAITHFUL_TOP_LABEL_NON_DESCENT",
+  "augmented_dynamics_result": "COMMON_CARRIER_NOT_CANONICAL_ADJUDICATOR",
+  "finite_fixture": {
+    "presentations": 6,
+    "set_partitions_enumerated": 203,
+    "minimal_joint_carrier_classes": 5,
+    "faithful_commuting_top_label_assignments": 0,
+    "unfaithful_assignments_after_n_distinction_collapse": 3
+  },
+  "checks": {
+    "theorem_consequences": 8,
+    "imported_evidence": 1,
+    "failing_direction_controls": 5,
+    "unexpected": 0
+  },
+  "proved_statements": [
+    "Primitive profiles and frame-specific verdicts factor uniquely through certified representation-equivalence quotients.",
+    "The intersection-of-classifier-kernels quotient is the coarsest finite carrier retaining every declared frame output.",
+    "No common top-label quotient can commute on both the access-only and mechanism-change witnesses while preserving N's Access/Capability distinction.",
+    "Material construction forks remain indexed absent an explicit commuting transport."
+  ],
+  "nonclaims": [
+    "No new physical capability or universal hierarchy is proved.",
+    "No source repository claim or status moves.",
+    "C1 task semantics and the persistence cap remain binding.",
+    "The finite augmented-dynamics example does not rule out a later canonical universal construction.",
+    "Finality is not reached."
+  ],
+  "governing_referee_report": "REFEREE-REPORT.md"
+}

@@ -33,3 +33,18 @@ target using the executed P2C-XFRAME-001 calibration class.
   is proved.
 - Augmented dynamics is tested as a common carrier/reduction challenge, not
   declared either victorious or defeated by definition.
+
+## Run Receipt
+
+- The theorem target was frozen and pushed at commit `9860815` before the proof
+  fixture was created.
+- `tests/profile_descent_theorem.py` enumerates all 203 partitions of the six
+  calibration presentations and verifies a five-class minimal joint carrier.
+- The two-witness obstruction has zero faithful commuting top-label
+  assignments; collapsing N's Access/Capability distinction admits three
+  assignments in the finite three-token control.
+- Result: `PROFILE_DESCENT_AND_FAITHFUL_TOP_LABEL_NON_DESCENT`.
+- Validation: 8 `[T]` theorem consequences, 1 `[E]` imported finite result, and
+  5 `[F]` teeth controls; strict TEF lint clean; exit 0.
+- `THEOREM.md` contains the cardinality-independent proof. The governing
+  `REFEREE-REPORT.md` caps the P2C application at finite conditional grade.
