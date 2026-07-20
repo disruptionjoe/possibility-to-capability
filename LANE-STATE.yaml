@@ -1,10 +1,10 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-20T05:36:49-05:00"
-run_ref: RUN-20260720-568-repository-work-cycle-cai-hourly
-bottom_line: Public path hygiene repaired; keep P2C on source-grounded IRD application.
-decision_default: Keep Lane 1 pointed at source-grounded IRD application; preserve public repo path hygiene.
+updated_at: "2026-07-20T06:36:50-05:00"
+run_ref: RUN-20260720-063650-repository-work-cycle-cai-hourly
+bottom_line: Frozen GU co-flip evidence is a qualified candidate input, not yet a P2C witness.
+decision_default: Apply the existing boundary discriminator before considering receiver-owned construction.
 needs_joe: false
 lanes:
 - lane_id: "1"
@@ -12,28 +12,29 @@ lanes:
   last_movement: P2C-IRD-001 established a hardened finite raw-transition restriction separation.
   movement_ref: explorations/2026-07-19-indexed-restriction-diagram/SYNTHESIS.md
   steering_attention: watch
-  steering_prompt: Wait for source-grounded specimen; do not build GU ETA/Z2 habitat from mailbox text alone.
-  steering_ref: steward/research-portfolio.json#P2C-CROSS-REPO-ADJUDICATION
+  steering_prompt: Classify the unchanged frozen GU packet with the existing boundary discriminator before any construction.
+  steering_ref: steward/research-portfolio.json#P2C-REAL-PHYSICAL-WITNESS
   light: green
   reason_code: raw_restriction_separation_hardened
   evidence_ref: tests/indexed_restriction_diagram.py
   summary: Typed raw restrictions preserve unequal profiles under a declared construction.
-  evaluated_at: "2026-07-19T22:43:50-05:00"
-  run_ref: RUN-20260719-554-repository-work-cycle-cai-hourly
+  evaluated_at: "2026-07-20T06:36:50-05:00"
+  run_ref: RUN-20260720-063650-repository-work-cycle-cai-hourly
   objective: Test the hierarchy as a transition diagnostic across real source-grounded cases.
-  progress_delta: Since last state, GU ETA/Z2 mailbox note was recorded as wait-only ranking evidence.
-  scope_position: P2C-IRD-001 complete; next use needs source-grounded Hamiltonian or finer physical specimen.
+  progress_delta: GU ETA/Z2 evidence advanced from mailbox-only signal to a verified, commit-pinned candidate input with explicit gaps.
+  scope_position: P2C-IRD-001 remains complete; GU-COFLIP-HOLONOMY-FREEZE is eligible for boundary classification but not witness import.
   trend_24h: up
   confidence: med
-  recommendation: Wait for source-grounded specimen.
+  recommendation: Run the existing boundary discriminator on the frozen packet; preserve abstention.
   findings:
-  - GU mailbox text names a possible Z2/Kramers/ETA habitat but is not importable source truth.
+  - GU commit 32e3603 freezes a matrix-grade Z2/Kramers/co-flip candidate with explicit assumptions, falsifiers, and nonclaims.
+  - The candidate lacks independent source identity, Hamiltonian, transition frame, resource budget, native response, and completion rival.
   - IRD result remains the active local contract for the next physical/source-grounded application.
   options:
   - id: A
-    label: Wait for frozen source input
+    label: Classify frozen candidate
     recommended: true
-    description: Preserve packet discipline and avoid reconstructing GU content.
+    description: Apply the existing discriminator to unchanged frozen claims and allow abstention.
   - id: B
     label: Local IRD refinement
     recommended: false
@@ -83,30 +84,30 @@ lanes:
   needs_joe: false
 - lane_id: A
   work_status: moving
-  last_movement: Removed local home-path references from historical public exploration records.
-  movement_ref: explorations/2026-07-16-cross-repo-adjudication/gate_verify.py
+  last_movement: Processed the frozen GU co-flip/holonomy proposal as qualified candidate evidence.
+  movement_ref: steward/research-portfolio.json#P2C-REAL-PHYSICAL-WITNESS
   steering_attention: none
   steering_prompt: none
   steering_ref: LANES.yaml#A
   light: green
-  reason_code: public_path_hygiene_repaired
-  evidence_ref: full-repo absolute-home-path scan
-  summary: Public files no longer expose Joe home-directory paths.
-  evaluated_at: "2026-07-20T00:46:38-05:00"
-  run_ref: RUN-20260720-560-repository-work-cycle-cai-hourly
+  reason_code: frozen_candidate_intake_processed
+  evidence_ref: GU-COFLIP-HOLONOMY-FREEZE-2026-07-20@32e3603
+  summary: Frozen source evidence was verified and bounded below P2C witness-import status.
+  evaluated_at: "2026-07-20T06:36:50-05:00"
+  run_ref: RUN-20260720-063650-repository-work-cycle-cai-hourly
   objective: Keep P2C viable through mailbox, provenance, boundary, control, and escalation hygiene.
-  progress_delta: Existing historical exploration notes and one helper script were sanitized to remove local absolute home paths.
+  progress_delta: One mailbox proposal was verified, dispositioned, and routed to Lane 1 classification without importing source truth.
   trend_24h: up
   confidence: high
-  recommendation: Keep full-repo home-path scan in closeout validation.
+  recommendation: Preserve the qualified-candidate boundary and archive the handled proposal.
   findings:
   - No emergency revocation or writer lock blocked the cycle.
-  - Public path hygiene drift was repaired without packet, claim, or public posture movement.
+  - The GU freeze is candidate evidence, not an accepted P2C witness or authority to execute W1-W3.
   options:
   - id: A
-    label: Keep hygiene guard
+    label: Preserve candidate boundary
     recommended: true
-    description: Continue scanning for local home paths during public-repo closeout.
+    description: Keep frozen evidence distinct from P2C witness status and construction authority.
   - id: B
     label: Defer history cleanup
     recommended: false
@@ -117,11 +118,11 @@ lanes:
     description: Use if another public leak class appears in validation.
   decision_default: A
   needs_joe: false
-  drift_verdict: repaired
+  drift_verdict: no_drift
   action_counts:
-    mail: 0
+    mail: 1
     reconciled: 0
-    integrity_repairs: 1
+    integrity_repairs: 0
     seeds_routed: 0
     escalations: 0
-  attention_pointer: no Joe action needed; path hygiene drift repaired
+  attention_pointer: no Joe action needed; frozen candidate routed to bounded classification
