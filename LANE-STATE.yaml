@@ -1,25 +1,51 @@
-lane_state_version: '1.0'
+schema_version: "2.0"
 owner_id: possibility-to-capability
-manifest_ref: LANES.yaml
-manifest_revision: 1
-evaluated_at: '2026-07-19T22:42:00-05:00'
-run_ref: P2C-IRD-001
+group: church-of-ai
+updated_at: "2026-07-19T22:43:50-05:00"
+run_ref: RUN-20260719-554-repository-work-cycle-cai-hourly
+bottom_line: GU ETA/Z2 mailbox signal is wait-only; keep P2C on source-grounded IRD application.
+decision_default: Keep Lane 1 pointed at source-grounded IRD application; do not reconstruct GU content from mailbox text.
+needs_joe: false
 lanes:
-- lane_id: '1'
-  work_status: watch
+- lane_id: "1"
+  work_status: moving
   last_movement: P2C-IRD-001 established a hardened finite raw-transition restriction separation.
   movement_ref: explorations/2026-07-19-indexed-restriction-diagram/SYNTHESIS.md
   steering_attention: watch
-  steering_prompt: Apply the IRD contract only to a source-grounded Hamiltonian or finer physical transition specimen; do not repeat the four-state toy.
+  steering_prompt: Wait for source-grounded specimen; do not build GU ETA/Z2 habitat from mailbox text alone.
   steering_ref: steward/research-portfolio.json#P2C-CROSS-REPO-ADJUDICATION
   light: green
   reason_code: raw_restriction_separation_hardened
   evidence_ref: tests/indexed_restriction_diagram.py
-  summary: Typed raw restrictions preserve unequal profiles; successful equalizations change a declared construction component.
-  evaluated_at: '2026-07-19T22:42:00-05:00'
-  run_ref: P2C-IRD-001
-- lane_id: '2'
-  work_status: watch
+  summary: Typed raw restrictions preserve unequal profiles under a declared construction.
+  evaluated_at: "2026-07-19T22:43:50-05:00"
+  run_ref: RUN-20260719-554-repository-work-cycle-cai-hourly
+  objective: Test the hierarchy as a transition diagnostic across real source-grounded cases.
+  progress_delta: Since last state, GU ETA/Z2 mailbox note was recorded as wait-only ranking evidence.
+  scope_position: P2C-IRD-001 complete; next use needs source-grounded Hamiltonian or finer physical specimen.
+  trend_24h: up
+  confidence: med
+  recommendation: Wait for source-grounded specimen.
+  findings:
+  - GU mailbox text names a possible Z2/Kramers/ETA habitat but is not importable source truth.
+  - IRD result remains the active local contract for the next physical/source-grounded application.
+  options:
+  - id: A
+    label: Wait for frozen source input
+    recommended: true
+    description: Preserve packet discipline and avoid reconstructing GU content.
+  - id: B
+    label: Local IRD refinement
+    recommended: false
+    description: Only refine origin/current carrier coordinates if it directly supports the source-grounded application.
+  - id: C
+    label: Lane 2 hardening
+    recommended: false
+    description: Use only if reader reproducibility becomes the blocker.
+  decision_default: A
+  needs_joe: false
+- lane_id: "2"
+  work_status: thin
   last_movement: Added topological-order source freeze and validator.
   movement_ref: literature/2026-07-19-topological-order-source-freeze.md
   steering_attention: none
@@ -29,18 +55,73 @@ lanes:
   reason_code: source_freeze_validation_added
   evidence_ref: tests/topological_order_source_freeze.py
   summary: Lane 2 hardened reader reproducibility for the topological witness.
-  evaluated_at: '2026-07-19T19:41:17-05:00'
-  run_ref: RUN-20260719-549-repository-work-cycle-cai-hourly
+  evaluated_at: "2026-07-19T22:43:50-05:00"
+  run_ref: RUN-20260719-554-repository-work-cycle-cai-hourly
+  objective: Harden definitions, literature position, casebook, and reproducibility that support Lane 1.
+  progress_delta: No new Lane 2 artifact this cycle; source-freeze pass remains current.
+  scope_position: Reserve; source-freeze validator is complete for current topological-order inputs.
+  trend_24h: flat
+  confidence: med
+  recommendation: Stay reserve.
+  findings:
+  - Topological-order literature spine remains the latest hardening output.
+  - No new reader-trust blocker was found during mailbox processing.
+  options:
+  - id: A
+    label: Stay reserve
+    recommended: true
+    description: Let Lane 1 continue unless a reproducibility blocker appears.
+  - id: B
+    label: Extend source freeze
+    recommended: false
+    description: Add literature only when a concrete source-grounded specimen requires it.
+  - id: C
+    label: Casebook hardening
+    recommended: false
+    description: Use after Lane 1 exposes a new comparison gap.
+  decision_default: A
+  needs_joe: false
 - lane_id: A
   work_status: moving
-  last_movement: Processed GU payload-spec sharpening mailbox.
-  movement_ref: LANE-STATE.yaml
+  last_movement: Recorded GU ETA/Z2 mailbox signal as wait-only stewardship evidence.
+  movement_ref: steward/research-portfolio.json#mailbox_2026_07_19_instance_ladder_and_eta_demand
   steering_attention: none
   steering_prompt: none
   steering_ref: LANES.yaml#A
   light: green
-  reason_code: mailbox_disposition_recorded
-  evidence_ref: steward/research-portfolio.json#mailbox_2026_07_19_payload_spec_sharpened_by_channel_fanout
-  summary: Payload-spec mailbox disposition recorded without packet import or source-truth movement.
-  evaluated_at: '2026-07-19T19:41:17-05:00'
-  run_ref: RUN-20260719-549-repository-work-cycle-cai-hourly
+  reason_code: mailbox_wait_signal_recorded
+  evidence_ref: steward/research-portfolio.json#mailbox_2026_07_19_instance_ladder_and_eta_demand
+  summary: Mailbox disposition recorded without packet import or source-truth movement.
+  evaluated_at: "2026-07-19T22:43:50-05:00"
+  run_ref: RUN-20260719-554-repository-work-cycle-cai-hourly
+  objective: Keep P2C viable through mailbox, provenance, boundary, control, and escalation hygiene.
+  progress_delta: New GU instance-ladder and D-77-ETA mailbox note recorded as wait-only ranking evidence.
+  trend_24h: up
+  confidence: high
+  recommendation: Parent archive mailbox item.
+  findings:
+  - No emergency revocation or writer lock blocked the cycle.
+  - Mailbox content stayed proposal-only and did not move packet, claim, or public posture.
+  options:
+  - id: A
+    label: Archive through parent
+    recommended: true
+    description: Parent should archive the CapacityOS mailbox item with this repo commit as disposition evidence.
+  - id: B
+    label: Leave open
+    recommended: false
+    description: Use only if parent cannot write the central mailbox archive.
+  - id: C
+    label: Request GU packet
+    recommended: false
+    description: Route only if GU issues a source-owned object or frozen packet candidate.
+  decision_default: A
+  needs_joe: false
+  drift_verdict: clean
+  action_counts:
+    mail: 1
+    reconciled: 0
+    integrity_repairs: 0
+    seeds_routed: 0
+    escalations: 0
+  attention_pointer: nothing needs Joe; parent should archive the processed mailbox item
