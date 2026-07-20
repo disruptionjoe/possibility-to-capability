@@ -166,6 +166,10 @@ does not establish novelty, physics, source truth, or the candidate story.
   two-witness top-label non-descent statements over the executed cross-frame
   calibration class. The theorem-consequence checks are excluded from its
   evidential headline.
+- `indexed_restriction_diagram.py` exhausts the four-state P2C-IRD-001 raw
+  transition envelope. It checks typed pullbacks, minimum vector-cost task
+  profiles, faithful functional relabel transport, and preparation, resource,
+  interface-action, horizon, verifier, quotient, and index-erasure attacks.
 
 Run from the repository root:
 
@@ -179,6 +183,7 @@ python tests/topological_order_witness.py
 python tests/topological_order_source_freeze.py
 python tests/cross_frame_descent_or_fork.py
 python tests/profile_descent_theorem.py
+python tests/indexed_restriction_diagram.py
 ```
 
 A pass means the adapter prototype satisfies the finite contract in that file.
@@ -203,6 +208,9 @@ The profile-descent fixture establishes only conditional finite mathematics:
 facts and frame outputs descend under supplied representation equivalences, but
 a faithful single Access/Capability head does not descend across N and R on the
 two calibrated witnesses.
+The indexed-restriction fixture establishes only a finite scoped reachability
+separation. Every successful equalization changes a declared stage, resource,
+interface-labelled action contract, or horizon; it is not physical evidence.
 
 ## Relational-dissolution fixture
 

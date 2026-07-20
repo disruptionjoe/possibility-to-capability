@@ -2,22 +2,22 @@ lane_state_version: '1.0'
 owner_id: possibility-to-capability
 manifest_ref: LANES.yaml
 manifest_revision: 1
-evaluated_at: '2026-07-19T22:02:00-05:00'
-run_ref: P2C-DESCENT-001
+evaluated_at: '2026-07-19T22:42:00-05:00'
+run_ref: P2C-IRD-001
 lanes:
 - lane_id: '1'
-  work_status: moving
-  last_movement: P2C-DESCENT-001 proved profile descent and faithful top-label non-descent at finite conditional grade.
-  movement_ref: explorations/2026-07-19-profile-descent-theorem/THEOREM.md
-  steering_attention: active
-  steering_prompt: Execute P2C-IRD-001 on raw transitions and attack pullback equality with stage, resource, interface, verifier, and bisimulation mutations.
+  work_status: watch
+  last_movement: P2C-IRD-001 established a hardened finite raw-transition restriction separation.
+  movement_ref: explorations/2026-07-19-indexed-restriction-diagram/SYNTHESIS.md
+  steering_attention: watch
+  steering_prompt: Apply the IRD contract only to a source-grounded Hamiltonian or finer physical transition specimen; do not repeat the four-state toy.
   steering_ref: steward/research-portfolio.json#P2C-CROSS-REPO-ADJUDICATION
   light: green
-  reason_code: finite_descent_theorem_proved
-  evidence_ref: tests/profile_descent_theorem.py
-  summary: Facts and frame outputs descend; a faithful single N/R Access-Capability head does not on the calibrated class.
-  evaluated_at: '2026-07-19T22:02:00-05:00'
-  run_ref: P2C-DESCENT-001
+  reason_code: raw_restriction_separation_hardened
+  evidence_ref: tests/indexed_restriction_diagram.py
+  summary: Typed raw restrictions preserve unequal profiles; successful equalizations change a declared construction component.
+  evaluated_at: '2026-07-19T22:42:00-05:00'
+  run_ref: P2C-IRD-001
 - lane_id: '2'
   work_status: watch
   last_movement: Added topological-order source freeze and validator.

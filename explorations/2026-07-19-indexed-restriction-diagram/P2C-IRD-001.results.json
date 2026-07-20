@@ -1,0 +1,61 @@
+{
+  "schema_version": "p2c-indexed-restriction-result-v0.1",
+  "experiment_id": "P2C-IRD-001",
+  "status": "EXECUTED_HARDENED",
+  "executed": "2026-07-19",
+  "preregistration_commit": "5a675c8",
+  "depends_on": {
+    "P2C-XFRAME-001": "8af81e2",
+    "P2C-DESCENT-001": "f5eb8ea"
+  },
+  "outcome": "RESTRICTION_PROFILE_SEPARATION_SCOPED",
+  "base_contract": {
+    "states": 4,
+    "evaluation_actions": ["SET", "IDLE", "DRIVE"],
+    "preparation_action_excluded_from_evaluation": "COOL",
+    "vector_limit": {"prep": 5, "write": 1, "hold": 0},
+    "maximum_policy_length": 3,
+    "error_tolerance": 0,
+    "policies_per_direct_fiber": 40,
+    "whole_envelope_policies": 80,
+    "n_minimum_hold_cost": 1,
+    "s_minimum_hold_cost": 0,
+    "n_realizes": false,
+    "s_realizes": true,
+    "whole_envelope_contains": true
+  },
+  "pullback": {
+    "selection": "explicit state embedding plus evaluation stage and action family",
+    "n_direct_equals_restriction": true,
+    "s_direct_equals_restriction": true,
+    "carrier_relabel_faithful_functional_correspondence": true,
+    "n_s_faithful_functional_correspondence": false
+  },
+  "mutations": {
+    "altered_cost": "BLOCKED_NONFAITHFUL_RESTRICTION",
+    "omitted_policy": "POLICY_CLOSURE_INCOMPLETE_PROFILE_MAY_AGREE",
+    "cool_as_evaluation": "COLLAPSE_AFTER_PREPARATION_ADMISSION",
+    "hold_budget_one": "COLLAPSE_AFTER_RESOURCE_CHANGE",
+    "n_interface_labelled_latch_action": "INTERFACE_CONSTRUCTION_FORK",
+    "horizon_one": "HORIZON_TOO_SHORT_ALL_FAIL",
+    "coarse_union_quotient": "INVALID_COARSE_QUOTIENT",
+    "fiber_name_verifier": "TARGET_LOADED_VERIFIER_REJECTED",
+    "start_index_erasure": "BLOCKED_NONFAITHFUL_RESTRICTION",
+    "desired_verdict_field": "VERDICT_FIELD_REJECTED"
+  },
+  "coarse_quotient_witness": {
+    "classes": {"N0": "q0", "S0": "q0", "N1": "q1", "S1": "q1"},
+    "q1_idle_targets": ["q0", "q1"],
+    "deterministic": false,
+    "distinct_start_embeddings_preserved": false
+  },
+  "checks": {
+    "theorem_consequences": 5,
+    "finite_model_evidence": 7,
+    "failing_direction_controls": 9,
+    "unexpected": 0
+  },
+  "finality": "NOT_REACHED",
+  "source_truth_unchanged": true,
+  "governing_referee_report": "REFEREE-REPORT.md"
+}

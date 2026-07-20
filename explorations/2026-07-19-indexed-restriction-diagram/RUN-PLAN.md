@@ -21,3 +21,19 @@ relation_to_hard_core: core_wager_raw_transition_test
 
 No source repository, packet content, canon, public posture, or finality status
 may move.
+
+## Run Receipt
+
+- Expectations were frozen and pushed at commit `5a675c8` before the checker
+  was implemented.
+- The base finite model exhausts 40 policies in each direct fiber and 80 in W.
+  N has minimum hold cost 1; S has 0 under the same contract.
+- The first passing checker was hardened after adversarial audit: explicit
+  embeddings, full task contract, direct W containment, real coarse quotient,
+  and start-index-erasure checks were added before result acceptance.
+- Final outcome: `RESTRICTION_PROFILE_SEPARATION_SCOPED`.
+- Mutations earn separate construction-change or rejection tokens; none is
+  laundered into a base contradiction.
+- Validation: 7 `[E]` + 9 `[F]` = 16 evidential/teeth checks; 5 `[T]` theorem
+  consequences listed separately; strict TEF lint clean; exit 0.
+- `REFEREE-REPORT.md` governs all citation. No source truth or finality moved.
