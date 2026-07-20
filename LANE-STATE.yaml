@@ -1,8 +1,8 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-20T13:42:00-05:00"
-run_ref: RUN-20260720-133556-repository-work-cycle-cai-hourly
+updated_at: "2026-07-20T14:39:31-05:00"
+run_ref: RUN-20260720-143630-repository-work-cycle-cai-hourly
 bottom_line: The discrete-GfE formulas are primary-PDF verified; Hamiltonian-role and transition gaps remain open.
 decision_default: Preserve the qualified candidate boundary and seek a real source-grounded transition frame.
 needs_joe: false
@@ -85,26 +85,26 @@ lanes:
   needs_joe: false
 - lane_id: A
   work_status: moving
-  last_movement: Reconciled the material discrete-GfE exploration into the authoritative portfolio and Lane state.
-  movement_ref: steward/research-portfolio.json#P2C-REAL-PHYSICAL-WITNESS
+  last_movement: Dispositioned the four-repo persona synthesis without importing or upgrading its claims.
+  movement_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
   steering_attention: none
   steering_prompt: none
   steering_ref: LANES.yaml#A
   light: green
-  reason_code: material_commit_state_reconciled
-  evidence_ref: 6305b86; explorations/2026-07-20-discrete-gfe-specimen/SYNTHESIS.md
-  summary: The qualified candidate is now visible without upgrading its Hamiltonian, transition, or physical claim status.
-  evaluated_at: "2026-07-20T11:39:31-05:00"
-  run_ref: RUN-20260720-113624-repository-work-cycle-cai-hourly
+  reason_code: persona_synthesis_mailbox_disposition
+  evidence_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
+  summary: Existing global/local results absorbed one line; the native-reader line remains unfrozen and gated.
+  evaluated_at: "2026-07-20T14:39:31-05:00"
+  run_ref: RUN-20260720-143630-repository-work-cycle-cai-hourly
   objective: Keep P2C viable through mailbox, provenance, boundary, control, and escalation hygiene.
-  progress_delta: Corrected authoritative state lag after a material Joe-directed exploration commit.
+  progress_delta: Processed one proposal as steering data while preserving all source, Hamiltonian, transition, and completion gates.
   trend_24h: up
   confidence: high
-  recommendation: Keep the K-d-qualified/K-c-residual boundary explicit through the next evidence step.
+  recommendation: Archive the proposal after parent receipt; wait for a frozen source-grounded transition or native-reader packet.
   findings:
-  - No emergency revocation, mailbox payload, or competing writer blocked reconciliation.
-  - The exploration's provenance firewall separates the archived lead from its P2C-native justification.
-  - The d=1 result cannot be generalized to the paper's d=2 example class or to a capability verdict.
+  - The global-containment/local-capability distinction is already owner truth and gained no new evidence from persona counts.
+  - The missing-section/native-reader line lacks a frozen source object and complete transition frame.
+  - The discrete-GfE Hamiltonian-role residue, dynamical-transition gap, and whole-family absorber remain inseparable.
   options:
   - id: A
     label: Preserve qualified boundary
@@ -120,11 +120,11 @@ lanes:
     description: Use if another public leak class appears in validation.
   decision_default: A
   needs_joe: false
-  drift_verdict: corrected_authoritative_state_lag
+  drift_verdict: no_drift
   action_counts:
-    mail: 0
-    reconciled: 2
+    mail: 1
+    reconciled: 0
     integrity_repairs: 0
     seeds_routed: 0
     escalations: 0
-  attention_pointer: no Joe action needed; qualified candidate recorded with all residues intact
+  attention_pointer: no Joe action needed; proposal dispositioned with transition gates intact
