@@ -1,10 +1,10 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-20T09:36:22-05:00"
-run_ref: RUN-20260720-093622-repository-work-cycle-cai-hourly
-bottom_line: P2C now owns a two-sector holonomy/Kramers fixture; physical grounding and transition adjudication remain open.
-decision_default: Permit one bounded Lane 2 source-spine pass, then return to source-grounded Lane 1 transition work.
+updated_at: "2026-07-20T10:36:23-05:00"
+run_ref: RUN-20260720-103623-repository-work-cycle-cai-hourly
+bottom_line: A discrete cell-complex paper is a literature lead, not yet Hamiltonian grounding for W1-W3.
+decision_default: Gate arXiv:2404.08556 on an explicit Hamiltonian and order-two sector realization before use.
 needs_joe: false
 lanes:
 - lane_id: "1"
@@ -21,11 +21,11 @@ lanes:
   evaluated_at: "2026-07-20T09:36:22-05:00"
   run_ref: RUN-20260720-093622-repository-work-cycle-cai-hourly
   objective: Test the hierarchy as a transition diagnostic across real source-grounded cases.
-  progress_delta: Joe-directed W1-W3 landed and was independently revalidated; two net-new discriminator legs exceed prior witnesses.
+  progress_delta: A literature lead arrived, but primary abstract verification does not close the exact-Hamiltonian or transition gaps.
   scope_position: Finite P2C-native carrier and reader fixtures complete; whole-family absorption, physical grounding, and transition gates remain open.
   trend_24h: up
   confidence: med
-  recommendation: Bank W1-W3; pursue grounding or a complete transition rather than another fixture replay.
+  recommendation: Keep W1-W3 banked; admit no grounding claim until the primary-paper gate passes.
   findings:
   - Doubled-loop triviality separates the order-two carrier from integer winding.
   - Hermitian J-commuting probes are sector-blind while a non-quaternionic loop probe reads the sector at minimal finite grade.
@@ -47,31 +47,32 @@ lanes:
   needs_joe: false
 - lane_id: "2"
   work_status: thin
-  last_movement: Added topological-order source freeze and validator.
-  movement_ref: literature/2026-07-19-topological-order-source-freeze.md
+  last_movement: Routed arXiv:2404.08556 to a bounded primary-paper Hamiltonian and sector-realization gate.
+  movement_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
   steering_attention: watch
   steering_prompt: A bounded primary-source spine may close the two-sector carrier's named grounding gap.
   steering_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
   light: green
-  reason_code: source_freeze_validation_added
-  evidence_ref: tests/topological_order_source_freeze.py
-  summary: Lane 2 hardened reader reproducibility for the topological witness.
-  evaluated_at: "2026-07-19T22:43:50-05:00"
-  run_ref: RUN-20260719-554-repository-work-cycle-cai-hourly
+  reason_code: discrete_gfe_literature_lead
+  evidence_ref: arXiv:2404.08556
+  summary: The primary abstract verifies a discrete cell-complex action but not an exact Hamiltonian or two-sector realization.
+  evaluated_at: "2026-07-20T10:36:23-05:00"
+  run_ref: RUN-20260720-103623-repository-work-cycle-cai-hourly
   objective: Harden definitions, literature position, casebook, and reproducibility that support Lane 1.
-  progress_delta: W1-W3 exposed a new reader-trust gap for order-two flat-holonomy and Kramers probe-class grounding.
-  scope_position: Reserve with one bounded source-spine pass now justified directly by Lane 1.
+  progress_delta: One candidate primary paper was title/abstract verified and narrowed to two explicit admission questions.
+  scope_position: Source-spine pass remains open; no Hamiltonian or W1-W3 mapping has been established.
   trend_24h: flat
   confidence: med
-  recommendation: Permit one bounded source-spine pass, then return priority to Lane 1.
+  recommendation: Inspect the primary paper for an explicit Hamiltonian and order-two sector; abstain if absent.
   findings:
-  - Existing topological-order source freeze does not ground the new two-sector order-two carrier.
-  - The W2 Kramers construction is declared literature-grade and needs primary-source reader anchors.
+  - arXiv:2404.08556 names cell complexes, topological spinors, discrete Dirac operators, an action, and dynamical equations.
+  - Its abstract does not establish a Hamiltonian, one noncontractible loop, two sectors, or W1-W3 discriminator legs.
+  - arXiv:2510.24491 is a relative-entropy gravity lead, not current carrier grounding.
   options:
   - id: A
-    label: Ground two-sector carrier
+    label: Gate discrete GfE paper
     recommended: true
-    description: Freeze primary-source anchors for order-two holonomy and Kramers probe classes.
+    description: Require an explicit Hamiltonian and order-two sector realization before mapping it to W1-W3.
   - id: B
     label: Stay reserve
     recommended: false
@@ -84,26 +85,26 @@ lanes:
   needs_joe: false
 - lane_id: A
   work_status: moving
-  last_movement: Reconciled the Joe-directed two-sector W1-W3 commit into portfolio and Lane state.
-  movement_ref: explorations/2026-07-20-two-sector-witness/SYNTHESIS.md
+  last_movement: Processed the TOE/discrete-GfE proposal as an untrusted literature lead.
+  movement_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
   steering_attention: none
   steering_prompt: none
   steering_ref: LANES.yaml#A
   light: green
-  reason_code: direct_chat_work_reconciled
-  evidence_ref: afa6b0e
-  summary: Direct-chat-authorized W1-W3 work is now reflected in authoritative operational state.
-  evaluated_at: "2026-07-20T09:36:22-05:00"
-  run_ref: RUN-20260720-093622-repository-work-cycle-cai-hourly
+  reason_code: literature_lead_intake_processed
+  evidence_ref: 20260720-toe-transcripts-and-discrete-gfe-specimen-lead.md
+  summary: The proposal was verified only to primary abstracts and bounded below evidence or construction status.
+  evaluated_at: "2026-07-20T10:36:23-05:00"
+  run_ref: RUN-20260720-103623-repository-work-cycle-cai-hourly
   objective: Keep P2C viable through mailbox, provenance, boundary, control, and escalation hygiene.
-  progress_delta: Intervening direct-chat work was validated and reconciled; mailbox remains empty.
+  progress_delta: One mailbox proposal was dispositioned; primary abstracts support only a narrowed literature gate.
   trend_24h: up
   confidence: high
-  recommendation: Preserve the W3 firewall and keep GU packet abstention unchanged.
+  recommendation: Archive the proposal and preserve all source/provenance boundaries.
   findings:
   - No emergency revocation or writer lock blocked the cycle.
-  - Joe's direct-chat instruction, not the GU proposal, authorized W1-W3.
-  - W3 freezes P2C-native construction identity without curing the GU packet's provenance gap.
+  - GU transcripts and claim-mining reports remain unverified third-party pointers.
+  - Primary abstracts do not establish the proposed exact-Hamiltonian or two-sector mapping.
   options:
   - id: A
     label: Preserve candidate boundary
@@ -121,9 +122,9 @@ lanes:
   needs_joe: false
   drift_verdict: no_drift
   action_counts:
-    mail: 0
+    mail: 1
     reconciled: 0
     integrity_repairs: 0
     seeds_routed: 0
     escalations: 0
-  attention_pointer: no Joe action needed; direct-chat work reconciled and boundaries preserved
+  attention_pointer: no Joe action needed; literature lead narrowed to a primary-paper gate
