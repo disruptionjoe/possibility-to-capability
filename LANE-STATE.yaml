@@ -1,8 +1,8 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-20T00:46:38-05:00"
-run_ref: RUN-20260720-560-repository-work-cycle-cai-hourly
+updated_at: "2026-07-20T01:44:35-05:00"
+run_ref: RUN-20260720-563-repository-work-cycle-cai-hourly
 bottom_line: Public path hygiene repaired; keep P2C on source-grounded IRD application.
 decision_default: Keep Lane 1 pointed at source-grounded IRD application; preserve public repo path hygiene.
 needs_joe: false
