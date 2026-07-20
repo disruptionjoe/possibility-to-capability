@@ -350,14 +350,14 @@ Time as Finality owns the semantics (record model, reconstruction rule, D1 profi
 
 Read in full or in part; nothing else was read, and no agent read anything on my behalf:
 
-1. `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/governance/CHARTER.md` (full)
-2. `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/experiments/2026-07-14-ranked-decisive-test-program-v0.1.md` — heading lines only via regex `^#{1,3} ` (to locate section boundaries), then lines 104–169 (the Rank 2 section) only
-3. `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/packets/README.md` (full)
-4. `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/packets/schema/` — directory listing; `frozen-packet-v0.2.md` (full); `frozen-packet-v0.2.schema.json` (full)
-5. `C:/Users/joe/JB/CapacityOS/repos/public/time-as-finality/` — top-level directory listing; `git rev-parse HEAD`; `results/` and `technical-reports/` directory listings (names only); a filename-level grep for "packet" (paths only, no contents opened)
-6. `C:/Users/joe/JB/CapacityOS/repos/public/time-as-finality/FORMALISM.md` (full)
-7. `C:/Users/joe/JB/CapacityOS/repos/public/time-as-finality/tests/` — directory listing (names only); `tests/T46-open-causal-scarcity-synchronization-boundary.md` (full)
-8. Scratchpad only (written and executed, outside all repos): `C:\Users\joe\AppData\Local\Temp\claude\C--Users-joe-JB\38a54106-9cc3-428a-92e4-2bb753410f40\scratchpad\taf001_paired_intervention.py` and `taf001_output.txt`
+1. `./governance/CHARTER.md` (full)
+2. `./experiments/2026-07-14-ranked-decisive-test-program-v0.1.md` — heading lines only via regex `^#{1,3} ` (to locate section boundaries), then lines 104–169 (the Rank 2 section) only
+3. `./packets/README.md` (full)
+4. `./packets/schema/` — directory listing; `frozen-packet-v0.2.md` (full); `frozen-packet-v0.2.schema.json` (full)
+5. `../time-as-finality/` — top-level directory listing; `git rev-parse HEAD`; `results/` and `technical-reports/` directory listings (names only); a filename-level grep for "packet" (paths only, no contents opened)
+6. `../time-as-finality/FORMALISM.md` (full)
+7. `../time-as-finality/tests/` — directory listing (names only); `tests/T46-open-causal-scarcity-synchronization-boundary.md` (full)
+8. Scratchpad only (written and executed, outside all repos): `<local-scratchpad>/taf001_paired_intervention.py` and `taf001_output.txt`
 
 Not read: anything under P2C `explorations/`, `synthesis/`, `tests/`, `packets/intake/`, `packets/imports/`, other ranks of the test-program file, or any file whose name contains 'R2', 'access-capability', 'pilot', 'decisive-tests', 'fiber', or 'lane'. TaF's TESTS.md was listed as permitted but was not needed and was not opened; no other TaF file was opened (the grep in item 5 returned paths only, none opened).
 

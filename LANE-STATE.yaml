@@ -1,10 +1,10 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-19T22:43:50-05:00"
-run_ref: RUN-20260719-554-repository-work-cycle-cai-hourly
-bottom_line: GU ETA/Z2 mailbox signal is wait-only; keep P2C on source-grounded IRD application.
-decision_default: Keep Lane 1 pointed at source-grounded IRD application; do not reconstruct GU content from mailbox text.
+updated_at: "2026-07-20T00:46:38-05:00"
+run_ref: RUN-20260720-560-repository-work-cycle-cai-hourly
+bottom_line: Public path hygiene repaired; keep P2C on source-grounded IRD application.
+decision_default: Keep Lane 1 pointed at source-grounded IRD application; preserve public repo path hygiene.
 needs_joe: false
 lanes:
 - lane_id: "1"
@@ -83,45 +83,45 @@ lanes:
   needs_joe: false
 - lane_id: A
   work_status: moving
-  last_movement: Recorded GU ETA/Z2 mailbox signal as wait-only stewardship evidence.
-  movement_ref: steward/research-portfolio.json#mailbox_2026_07_19_instance_ladder_and_eta_demand
+  last_movement: Removed local home-path references from historical public exploration records.
+  movement_ref: explorations/2026-07-16-cross-repo-adjudication/gate_verify.py
   steering_attention: none
   steering_prompt: none
   steering_ref: LANES.yaml#A
   light: green
-  reason_code: mailbox_wait_signal_recorded
-  evidence_ref: steward/research-portfolio.json#mailbox_2026_07_19_instance_ladder_and_eta_demand
-  summary: Mailbox disposition recorded without packet import or source-truth movement.
-  evaluated_at: "2026-07-19T22:43:50-05:00"
-  run_ref: RUN-20260719-554-repository-work-cycle-cai-hourly
+  reason_code: public_path_hygiene_repaired
+  evidence_ref: full-repo absolute-home-path scan
+  summary: Public files no longer expose Joe home-directory paths.
+  evaluated_at: "2026-07-20T00:46:38-05:00"
+  run_ref: RUN-20260720-560-repository-work-cycle-cai-hourly
   objective: Keep P2C viable through mailbox, provenance, boundary, control, and escalation hygiene.
-  progress_delta: New GU instance-ladder and D-77-ETA mailbox note recorded as wait-only ranking evidence.
+  progress_delta: Existing historical exploration notes and one helper script were sanitized to remove local absolute home paths.
   trend_24h: up
   confidence: high
-  recommendation: Parent archive mailbox item.
+  recommendation: Keep full-repo home-path scan in closeout validation.
   findings:
   - No emergency revocation or writer lock blocked the cycle.
-  - Mailbox content stayed proposal-only and did not move packet, claim, or public posture.
+  - Public path hygiene drift was repaired without packet, claim, or public posture movement.
   options:
   - id: A
-    label: Archive through parent
+    label: Keep hygiene guard
     recommended: true
-    description: Parent should archive the CapacityOS mailbox item with this repo commit as disposition evidence.
+    description: Continue scanning for local home paths during public-repo closeout.
   - id: B
-    label: Leave open
+    label: Defer history cleanup
     recommended: false
-    description: Use only if parent cannot write the central mailbox archive.
+    description: Use only if future repairs risk changing historical evidence.
   - id: C
-    label: Request GU packet
+    label: Broaden provenance audit
     recommended: false
-    description: Route only if GU issues a source-owned object or frozen packet candidate.
+    description: Use if another public leak class appears in validation.
   decision_default: A
   needs_joe: false
-  drift_verdict: clean
+  drift_verdict: repaired
   action_counts:
-    mail: 1
+    mail: 0
     reconciled: 0
-    integrity_repairs: 0
+    integrity_repairs: 1
     seeds_routed: 0
     escalations: 0
-  attention_pointer: nothing needs Joe; parent should archive the processed mailbox item
+  attention_pointer: no Joe action needed; path hygiene drift repaired

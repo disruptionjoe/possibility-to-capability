@@ -6,8 +6,8 @@ Everything below was executed and receipted this session. Nothing was written to
 
 Scratchpad working copies (for the orchestrator to persist):
 
-- `C:\Users\joe\AppData\Local\Temp\claude\C--Users-joe-JB\38a54106-9cc3-428a-92e4-2bb753410f40\scratchpad\prereg_verify.py` (sha256 `6c0f11758fb1aa033f00674a342f63d7ab90d2c5ddcf7e2fe22ea2077ef429ed`)
-- `C:\Users\joe\AppData\Local\Temp\claude\C--Users-joe-JB\38a54106-9cc3-428a-92e4-2bb753410f40\scratchpad\GU-001-TD-001-transition-diagnosis-v0.1.json` (sha256 `af06931a8ab010d8df70fcd8a638074e0fc684fa8447245c65e845b991c171ef`)
+- `<local-scratchpad>/prereg_verify.py` (sha256 `6c0f11758fb1aa033f00674a342f63d7ab90d2c5ddcf7e2fe22ea2077ef429ed`)
+- `<local-scratchpad>/GU-001-TD-001-transition-diagnosis-v0.1.json` (sha256 `af06931a8ab010d8df70fcd8a638074e0fc684fa8447245c65e845b991c171ef`)
 - Demo repo: `...\scratchpad\prereg-demo\` (temporary git repo; transcript embedded below)
 
 ---
@@ -1172,4 +1172,4 @@ But two adversarial probes the report never ran punch mechanical holes in the ve
 
 **Respected, with the two disclosed-but-corrected gaps.** (a) No repo writes; artifacts staged in scratchpad with hashes — verified present and matching. (b) No packet substitution; no rewriting of the preflight or GR-001 into a pass; FAVORS_CANDIDATE kept conditional; discharge kept BLOCKED — the D1-corrected (R1 referee) vocabulary is used correctly throughout. (c) Serialization: the out-of-order execution of the diagnose-transition step is inherent to repairing a past skip and is honestly recorded, but must be worded per D9 — executed, not "cleared." (d) The non-vacuous stop-condition rule is honored in the mechanism (P7 requires nonempty stop conditions; the burned constant-True class is named) — though note P7 checks nonemptiness, not non-vacuity, so a constant-True stop condition would still verify: fold into the D1 corrected nonclaims ("does not make the stop conditions adequate" already covers it). (e) ADAPTER2-01, source sovereignty, OPEN questions: all respected. The lane fails its own Task-1 standard once (D6) and its verifier leaks twice (D2, D3); none flips direction, so SOUND-WITH-CORRECTIONS rather than SOUND.
 
-Key files: `C:/Users/joe/AppData/Local/Temp/claude/C--Users-joe-JB/38a54106-9cc3-428a-92e4-2bb753410f40/scratchpad/prereg_verify.py`, `.../GU-001-TD-001-transition-diagnosis-v0.1.json`, `.../prereg-demo/`; repo: `tests/classify_transition.py` (label swap provably inert: lines 392–399 vs 250–339), `packets/imports/GU-001/GU-001-grading-sign-barb-v0.2.json` (`/claim` lacks the D4 gloss), `explorations/2026-07-16-decisive-tests/lane-R2-access-capability-pilot.md:661` (D8), `explorations/2026-07-16-decisive-tests/lane-R1-rank1-adjudication.md` (governing corrected update).
+Key files: `<local-scratchpad>/prereg_verify.py`, `.../GU-001-TD-001-transition-diagnosis-v0.1.json`, `.../prereg-demo/`; repo: `tests/classify_transition.py` (label swap provably inert: lines 392–399 vs 250–339), `packets/imports/GU-001/GU-001-grading-sign-barb-v0.2.json` (`/claim` lacks the D4 gloss), `explorations/2026-07-16-decisive-tests/lane-R2-access-capability-pilot.md:661` (D8), `explorations/2026-07-16-decisive-tests/lane-R1-rank1-adjudication.md` (governing corrected update).

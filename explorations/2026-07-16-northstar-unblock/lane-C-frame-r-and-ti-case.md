@@ -248,7 +248,7 @@ Schema version to issue under (v0.1 vs v0.2 with bundle digests); whether to inc
 - `possibility-to-capability/packets/schema/frozen-packet-v0.2.md` — read in full.
 - `temporal-issuance/FORMAL-OBJECT.md` — read in full.
 - No file under `explorations/`, `synthesis/`, `tests/`, no other `experiments/` content, and no file matching `R2`, `access-capability`, `pilot`, `decisive-tests`, `fiber`, or `lane` was read, listed into context beyond the schema directory filename glob above, or delegated to any agent. The `packets/schema/` glob returned five filenames; two schema JSON files (`frozen-packet-v0.1.schema.json`, `frozen-packet-v0.2.schema.json`, `receiving-independence-assessment-v0.2.schema.json`) were not opened, as the normative `.md` contract sufficed.
-- Written outside any repo: `C:\Users\joe\AppData\Local\Temp\claude\C--Users-joe-JB\38a54106-9cc3-428a-92e4-2bb753410f40\scratchpad\ti_paired_case.py` (executed once; output embedded above).
+- Written outside any repo: `<local-scratchpad>/ti_paired_case.py` (executed once; output embedded above).
 
 ---
 

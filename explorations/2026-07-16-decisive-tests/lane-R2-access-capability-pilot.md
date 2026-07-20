@@ -82,7 +82,7 @@ A Rank-2-admissible packet, per case pair, must contain — source-issued, froze
 
 ## DELIVERABLE 2 — EXECUTABLE PILOT HARNESS (full source + output)
 
-Proposed path (not written): `tests/rank2_access_capability_pilot.py`. Pure Python stdlib. Lints clean under `tests/tef_check_tag_linter.py --strict` (registry mode, 0 violations, 0 advisories; tag counts T=2, E=11, F=5; evidential count 16). Currently exists only at scratchpad path `C:\Users\joe\AppData\Local\Temp\claude\C--Users-joe-JB\38a54106-9cc3-428a-92e4-2bb753410f40\scratchpad\rank2_access_capability_pilot.py`.
+Proposed path (not written): `tests/rank2_access_capability_pilot.py`. Pure Python stdlib. Lints clean under `tests/tef_check_tag_linter.py --strict` (registry mode, 0 violations, 0 advisories; tag counts T=2, E=11, F=5; evidential count 16). Currently exists only at scratchpad path `<local-scratchpad>/rank2_access_capability_pilot.py`.
 
 ```python
 """Rank-2 PILOT harness: access-versus-capability paired-intervention discriminator.
@@ -613,7 +613,7 @@ Linter (`tests/tef_check_tag_linter.py --strict`): convention `registry`, 18 che
 
 **Proposed repo paths (not written):**
 - `experiments/2026-07-16-rank2-access-capability-preregistration-v0.1.md` — Deliverable 1 content + this honest reading.
-- `tests/rank2_access_capability_pilot.py` — the harness (currently at scratchpad path `C:\Users\joe\AppData\Local\Temp\claude\C--Users-joe-JB\38a54106-9cc3-428a-92e4-2bb753410f40\scratchpad\rank2_access_capability_pilot.py`; lints clean under `tests/tef_check_tag_linter.py --strict`).
+- `tests/rank2_access_capability_pilot.py` — the harness (currently at scratchpad path `<local-scratchpad>/rank2_access_capability_pilot.py`; lints clean under `tests/tef_check_tag_linter.py --strict`).
 - Optional: `experiments/2026-07-16-rank2-real-case-spec-v0.1.md` if the source-facing spec should be separable for mailbox handoff to issuers.
 
 ---

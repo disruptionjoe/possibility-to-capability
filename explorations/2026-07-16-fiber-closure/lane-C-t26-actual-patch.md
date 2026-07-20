@@ -178,7 +178,7 @@ import sys
 from dataclasses import replace
 from itertools import combinations, product
 
-TAF_ROOT = r"C:/Users/joe/JB/CapacityOS/repos/public/time-as-finality"
+TAF_ROOT = r"../time-as-finality"
 sys.path.insert(0, TAF_ROOT)
 
 import models.d1_restriction_system as t26  # noqa: E402  (TaF actual code)
@@ -787,7 +787,7 @@ if __name__ == "__main__":
 ```
 P2C: TaF ACTUAL T26 PATCH/OVERLAP MACHINERY vs THE GLOBAL FLIP
 ==========================================================================
-driving TaF code at: C:/Users/joe/JB/CapacityOS/repos/public/time-as-finality/models/d1_restriction_system.py
+driving TaF code at: ../time-as-finality/models/d1_restriction_system.py
 
 CHECKS ([T] no evidential weight; [E] experiments; [F] failing-direction controls)
   PASS A_E_k1_counts_match_orbit_formula: True

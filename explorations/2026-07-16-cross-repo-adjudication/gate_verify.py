@@ -16,9 +16,10 @@ import subprocess
 import sys
 from pathlib import Path
 
-P2C = Path(r"C:\Users\joe\JB\CapacityOS\repos\public\possibility-to-capability")
-TAF = Path(r"C:\Users\joe\JB\CapacityOS\repos\public\time-as-finality")
-TI = Path(r"C:\Users\joe\JB\CapacityOS\repos\public\temporal-issuance")
+P2C = Path(__file__).resolve().parents[2]
+PUBLIC_ROOT = P2C.parent
+TAF = PUBLIC_ROOT / "time-as-finality"
+TI = PUBLIC_ROOT / "temporal-issuance"
 
 TAF_BUNDLE = TAF / "exports/packets/TAF-002-p2cw1-capability-adjudication-v0.1"
 TI_BUNDLE = TI / "exports/packets/TI-WFA-001-superconducting-ring-whole-family-legitimacy-v0.1"

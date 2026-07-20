@@ -7,7 +7,7 @@
 - **(b) into D1Field: CONSTRUCTIBLE as a branch-preserving functor, but FIBER-PRESERVED-BUT-UNDETERMINED** (grade: exhaustive-finite for functor laws/equivariance/battery; argued for the general invariant class)
 - All three mandatory controls fired correctly. `bar(b)`, H59, Krein positivity, physical issuance remain OPEN. Nothing here reopens the withdrawn identity; this *strengthens* ADAPTER2-01 from "the attempted map collapsed" to "every value-blind map must collapse, and the field-valued rescue provably cannot determine the fiber from finality-native structure at this tier."
 
-Fixture: `C:\Users\joe\AppData\Local\Temp\claude\C--Users-joe-JB\38a54106-9cc3-428a-92e4-2bb753410f40\scratchpad\gate1_branch_preserving_functor.py` (pure Python, no deps, exit 0, all 41 checks × 2 models matched pre-declared expectations on first run).
+Fixture: `<local-scratchpad>/gate1_branch_preserving_functor.py` (pure Python, no deps, exit 0, all 41 checks × 2 models matched pre-declared expectations on first run).
 
 ---
 

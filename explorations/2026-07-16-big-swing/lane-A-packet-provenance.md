@@ -33,7 +33,7 @@ The pin `d62a82f3` **predates** correction commit `159ca76` by ~9.5 hours, so th
 
 ## Packet manifest draft — 17 charter fields (Frozen-Packet Schema v0.1) with file-level provenance
 
-All paths relative to `C:/Users/joe/JB/CapacityOS/repos/public/gu-formalization/` at pin `77879e5` (evidence bytes identical at `d62a82f3`).
+All paths relative to `../gu-formalization/` at pin `77879e5` (evidence bytes identical at `d62a82f3`).
 
 | # | Charter v0.1 field | Status | Source (exact file / JSON field) |
 |---|---|---|---|
@@ -65,7 +65,7 @@ All paths relative to `C:/Users/joe/JB/CapacityOS/repos/public/gu-formalization/
 - **Annotation C:** source claim tier is exploration; import confers no promotion. All grades (EXACT/STRONG/STRUCTURAL/ARGUED, internal-tier verification only) carry through unweakened and unstrengthened.
 - **Note for Gate 1 (Provenance):** RESEARCH-STATUS.md line 124 says "FIVE independent methods" — the packet's typing (`raw_method_count_is_independence_count = false`) is the stricter and governing wording; flag as a source-surface wording variance, not a provenance failure.
 
-Key files: `C:/Users/joe/JB/CapacityOS/repos/public/gu-formalization/packets/GU-001-grading-sign-barb-v0.2.json`, `.../packets/GU-001-grading-sign-barb.md`, `.../RESEARCH-STATUS.md` (line 124), `.../explorations/time-as-finality-crosswalk/adapter2-correction-polarity-fiber-not-axis-2026-07-15.md`.
+Key files: `../gu-formalization/packets/GU-001-grading-sign-barb-v0.2.json`, `.../packets/GU-001-grading-sign-barb.md`, `.../RESEARCH-STATUS.md` (line 124), `.../explorations/time-as-finality-crosswalk/adapter2-correction-polarity-fiber-not-axis-2026-07-15.md`.
 
 ---
 
@@ -116,4 +116,4 @@ No cannot-fail test, no mislabeled control, no ADAPTER2-01 contradiction, no sou
 
 **IMPORTABLE — stands, now at receiver-verified grade** (full 16/16 manifest verification, digest recomputation under p2c's own canonicalization, p2c v0.2 schema validation 0 errors, test re-execution), with the corrections above applied and receiver annotations extended to `claim.statement` plus a logged `issued_at` anachronism. Import confers no promotion: the underlying GU result remains **exploration-tier, located-not-forced, one external Z/2 posit, five-method convergence explicitly typed as one dependence-driven unit** — and the GU-sign-to-TaF-polarity identification remains **OPEN** per ADAPTER2-01, exactly as the report's annotations state.
 
-Key files verified: `C:/Users/joe/JB/CapacityOS/repos/public/gu-formalization/packets/GU-001-grading-sign-barb-v0.2.json`, `C:/Users/joe/JB/CapacityOS/repos/public/gu-formalization/explorations/time-as-finality-crosswalk/adapter2-correction-polarity-fiber-not-axis-2026-07-15.md`, `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/governance/CHARTER.md`, `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/packets/schema/frozen-packet-v0.2.schema.json`, `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/tests/validate_frozen_packet_v0_2_contract.py`.
+Key files verified: `../gu-formalization/packets/GU-001-grading-sign-barb-v0.2.json`, `../gu-formalization/explorations/time-as-finality-crosswalk/adapter2-correction-polarity-fiber-not-axis-2026-07-15.md`, `./governance/CHARTER.md`, `./packets/schema/frozen-packet-v0.2.schema.json`, `./tests/validate_frozen_packet_v0_2_contract.py`.

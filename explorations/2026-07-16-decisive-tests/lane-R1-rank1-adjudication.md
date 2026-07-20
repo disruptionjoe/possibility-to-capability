@@ -60,10 +60,10 @@ Concrete repair path, in order:
 **Bottom line:** the completed GU-001 run satisfies Rank 1 prerequisites (i)-(iv) fully at receiver-verified grade, satisfies (v) only for the mechanical contract layer (genuinely committed pre-issuance) and not for the run-specific discretionary layer; the receiver update is `FAVORS_CANDIDATE` at provisional/preparation grade, conditional, with the named repair being a fully preregistered re-run on the next source-issued packet. Rank 1 is materially advanced — its evidential class did change, as the program predicted a real case would — but it is not yet fully discharged.
 
 Key evidence files:
-- `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/packets/imports/GU-001/GU-001-import-record-2026-07-16.md`
-- `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json`
-- `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/packets/imports/GU-001/GU-001-IA-001-receiving-independence-v0.2.json`
-- `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/explorations/2026-07-16-swing-2/lane-1-gu001-import-execution.md` (governing referee report, defects D3/D7 load-bearing here)
+- `./packets/imports/GU-001/GU-001-import-record-2026-07-16.md`
+- `./packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json`
+- `./packets/imports/GU-001/GU-001-IA-001-receiving-independence-v0.2.json`
+- `./explorations/2026-07-16-swing-2/lane-1-gu001-import-execution.md` (governing referee report, defects D3/D7 load-bearing here)
 - Git anchors: contract `100af73` (07-14 21:25), program `a800d04` (07-14 22:15), GU issuance `dde3792` (07-15 14:29, source repo), run `aeea411` (07-16 01:33, single commit, no intervening GU-001 prereg)
 
 ---
@@ -113,4 +113,4 @@ No averaging into a pass; GR-001's 8/8 stands as a contract-valid specimen, not 
 
 **Respected, with one gap.** (a) "Stop at provenance until a source-issued candidate exists" — respected: intake stayed blocked until `dde3792`; import followed issuance. (b) "The GU preflight is never rewritten into a pass" — respected: `packets/intake/` untouched since `4c5a2cd`; the README status line reflects new evidence, not a rewrite. (c) No packet substitution — respected: GU-001 itself, v0.2, source-issued id. (d) "No parallel partial pass can satisfy a later rank or make GU-001 importable" — respected: importability came from source issuance, not from parallel lanes; no later rank was claimed. (e) Serialization — **partially violated**: validate → assess → gates order held (and is evaluator-enforced), but the "diagnose transition" step was skipped before the rival update (D4). The adjudication report also failed to flag this in itself, which is why the verdict is SOUND-WITH-CORRECTIONS rather than SOUND.
 
-Key files: `packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json` (line 4: schema-forced `provisional`), `interfaces/gate-run-v0.1.schema.json` (line 31), `interfaces/gate-run-v0.1.md` (Neutrality section), `explorations/2026-07-16-big-swing/lane-A-packet-provenance.md` (pre-gate-run Annotations A/B/C, commit `0bfd2e9`), `experiments/2026-07-14-ranked-decisive-test-program-v0.1.md` (BLOCKED definition; serialization sentence; Rank-1 menu), `interfaces/transition-diagnosis-v0.1.md` (preregistered, unrun on GR-001) — all under `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/`.
+Key files: `packets/imports/GU-001/GU-001-GR-001-gate-run-v0.1.json` (line 4: schema-forced `provisional`), `interfaces/gate-run-v0.1.schema.json` (line 31), `interfaces/gate-run-v0.1.md` (Neutrality section), `explorations/2026-07-16-big-swing/lane-A-packet-provenance.md` (pre-gate-run Annotations A/B/C, commit `0bfd2e9`), `experiments/2026-07-14-ranked-decisive-test-program-v0.1.md` (BLOCKED definition; serialization sentence; Rank-1 menu), `interfaces/transition-diagnosis-v0.1.md` (preregistered, unrun on GR-001) — all under `./`.

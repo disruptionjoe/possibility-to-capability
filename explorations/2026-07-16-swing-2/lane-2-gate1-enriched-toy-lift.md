@@ -8,7 +8,7 @@ Exit 0, all checks matched pre-declared expectations. The deliverable follows.
 
 Exploration tier. No claim promotion. Nothing here reopens the withdrawn ADAPTER2-01 identity or moves any source-repo claim. `bar(b)`, H59, Krein positivity, physical issuance remain OPEN. This lifts the 2026-07-16 lane-B toy result along the referee's own defect list (D2, D5, D7, D8), which was treated as the spec.
 
-Fixture: `C:\Users\joe\AppData\Local\Temp\claude\C--Users-joe-JB\38a54106-9cc3-428a-92e4-2bb753410f40\scratchpad\gate1_native_nonthin_multiobserver.py` (pure Python, no deps, exit 0, runtime <1s). Recommend persisting to `possibility-to-capability/tests/gate1_native_nonthin_multiobserver.py` alongside the toy fixture (referee D9: scratchpad evidence evaporates); persistence left to the orchestrator.
+Fixture: `<local-scratchpad>/gate1_native_nonthin_multiobserver.py` (pure Python, no deps, exit 0, runtime <1s). Recommend persisting to `possibility-to-capability/tests/gate1_native_nonthin_multiobserver.py` alongside the toy fixture (referee D9: scratchpad evidence evaporates); persistence left to the orchestrator.
 
 ## 1. What was built (and how it differs from the toy)
 

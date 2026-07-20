@@ -9,12 +9,12 @@ All artifacts are built and validated end-to-end by p2c's own contract code. Fin
 Exploration tier throughout. Nothing below promotes any source claim, reopens the withdrawn `bar(b) = finality-axis polarity` identity (ADAPTER2-01), or moves any GU/TI/TaF claim. `bar(b)`, H59, Krein positivity, physical issuance: all OPEN.
 
 **Canonical validated copies of the two JSON artifacts (byte-exact, LF, trailing newline) already exist at:**
-- `C:/Users/joe/AppData/Local/Temp/claude/C--Users-joe-JB/38a54106-9cc3-428a-92e4-2bb753410f40/scratchpad/gu001/GU-001-IA-001-receiving-independence-v0.2.json`
-- `C:/Users/joe/AppData/Local/Temp/claude/C--Users-joe-JB/38a54106-9cc3-428a-92e4-2bb753410f40/scratchpad/gu001/GU-001-GR-001-gate-run-v0.1.json`
+- `<local-scratchpad>/gu001/GU-001-IA-001-receiving-independence-v0.2.json`
+- `<local-scratchpad>/gu001/GU-001-GR-001-gate-run-v0.1.json`
 
 Prefer copying those files over re-transcribing (the gate-run's `assessment_sha256` is canonical-JSON and formatting-invariant, but the quoted file sha256s are byte-exact).
 
-## (d) Proposed paths (all under `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/`)
+## (d) Proposed paths (all under `./`)
 
 | # | Path | Role |
 |---|---|---|
@@ -32,9 +32,9 @@ Also proposed (receiver-owned housekeeping, orchestrator's call): `packets/READM
 **Critical byte-level finding (verified live):** the GU working tree renders the packet JSON with CRLF (`sha256 385f97b1…`) because of `core.autocrlf=true`; the frozen blob is LF. Copies MUST be taken from git blob bytes, never `cp` from the working tree.
 
 ```bash
-cd C:/Users/joe/JB/CapacityOS/repos/public/gu-formalization
+cd ../gu-formalization
 PIN=77879e544cb3856db4201c917383b456949b812f
-DEST=C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/packets/imports/GU-001
+DEST=../possibility-to-capability/packets/imports/GU-001
 mkdir -p "$DEST"
 git show $PIN:packets/GU-001-grading-sign-barb-v0.2.json > "$DEST/GU-001-grading-sign-barb-v0.2.json"
 git show $PIN:packets/GU-001-grading-sign-barb.md       > "$DEST/GU-001-grading-sign-barb.md"
@@ -272,4 +272,4 @@ No ADAPTER2-01 contradiction, no packet edit, no claim promotion. The defects be
 
 `.gitattributes` (`* -text`) is correct and does not conflict with the existing root `.gitattributes` (which covers only `tests/fixtures/bundle-v0.2/**`).
 
-Key files verified: `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/tests/evaluate_gate_run.py`, `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/tests/validate_frozen_packet_v0_2_contract.py`, `C:/Users/joe/JB/CapacityOS/repos/public/gu-formalization/tests/W208_decisive_bit_lawvere_fixed_point.py` (NC1 lines 428–435), `C:/Users/joe/JB/CapacityOS/repos/public/gu-formalization/tests/W210_decisive_bit_helmholtz.py` (line 88 import; HELM2b), `C:/Users/joe/JB/CapacityOS/repos/public/gu-formalization/explorations/time-as-finality-crosswalk/adapter2-correction-polarity-fiber-not-axis-2026-07-15.md`, scratchpad artifacts at `C:/Users/joe/AppData/Local/Temp/claude/C--Users-joe-JB/38a54106-9cc3-428a-92e4-2bb753410f40/scratchpad/gu001/`.
+Key files verified: `./tests/evaluate_gate_run.py`, `./tests/validate_frozen_packet_v0_2_contract.py`, `../gu-formalization/tests/W208_decisive_bit_lawvere_fixed_point.py` (NC1 lines 428–435), `../gu-formalization/tests/W210_decisive_bit_helmholtz.py` (line 88 import; HELM2b), `../gu-formalization/explorations/time-as-finality-crosswalk/adapter2-correction-polarity-fiber-not-axis-2026-07-15.md`, scratchpad artifacts at `<local-scratchpad>/gu001/`.

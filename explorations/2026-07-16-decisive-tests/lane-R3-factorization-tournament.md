@@ -84,7 +84,7 @@ Even fully completed, the outcome remains scoped: `NO_FACTOR_FOUND` "is always s
 
 ---
 
-**Key paths:** program `experiments/2026-07-14-ranked-decisive-test-program-v0.1.md`; corpus spine `synthesis/2026-07-16-bounded-fiber-theorem-v1.0.md`; packet `packets/imports/GU-001/`; lanes under `explorations/2026-07-16-{big-swing,swing-2,fiber-closure,relational-dissolution}/`; fixtures under `tests/` (all repo-relative to `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/`). Governing upstream correction: `C:/Users/joe/JB/CapacityOS/repos/public/gu-formalization/explorations/time-as-finality-crosswalk/adapter2-correction-polarity-fiber-not-axis-2026-07-15.md`.
+**Key paths:** program `experiments/2026-07-14-ranked-decisive-test-program-v0.1.md`; corpus spine `synthesis/2026-07-16-bounded-fiber-theorem-v1.0.md`; packet `packets/imports/GU-001/`; lanes under `explorations/2026-07-16-{big-swing,swing-2,fiber-closure,relational-dissolution}/`; fixtures under `tests/` (all repo-relative to `./`). Governing upstream correction: `../gu-formalization/explorations/time-as-finality-crosswalk/adapter2-correction-polarity-fiber-not-axis-2026-07-15.md`.
 
 ---
 

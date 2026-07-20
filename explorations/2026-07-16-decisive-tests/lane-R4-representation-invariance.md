@@ -28,7 +28,7 @@ The 36-symbol vocabulary class is a stipulated formalization of "finality/issuan
 
 ## 2. New fixture: ternary-alphabet representation probe (door 1 × Rank 4)
 
-**File:** `C:/Users/joe/JB/CapacityOS/repos/public/possibility-to-capability/tests/rank4_ternary_alphabet_representation_probe.py` (commit `5a21f3b`, pushed to main). Pure Python stdlib. Lints clean under `tef_check_tag_linter.py --strict` (registry mode, 0 violations, 0 advisories).
+**File:** `./tests/rank4_ternary_alphabet_representation_probe.py` (commit `5a21f3b`, pushed to main). Pure Python stdlib. Lints clean under `tef_check_tag_linter.py --strict` (registry mode, 0 violations, 0 advisories).
 
 **Re-encoding tested:** same frozen fork content (one Z/2 fork between sign-labelled branches) re-encoded over V = {-1, 0, +1} with the flip embedded as the **transposition** (-1 ↔ +1), fixing 0. The three transpositions of V are conjugate under relabelling, so this is representative. A 3-cycle embedding is a declared nonclaim: not an involution, so it changes the datum's group Z/2 → Z/3 — different physical content, not an equivalent representation (the cyclic-orientation door stays a door).
 
