@@ -1,115 +1,115 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-20T10:36:23-05:00"
-run_ref: RUN-20260720-103623-repository-work-cycle-cai-hourly
-bottom_line: A discrete cell-complex paper is a literature lead, not yet Hamiltonian grounding for W1-W3.
-decision_default: Gate arXiv:2404.08556 on an explicit Hamiltonian and order-two sector realization before use.
+updated_at: "2026-07-20T11:39:31-05:00"
+run_ref: RUN-20260720-113624-repository-work-cycle-cai-hourly
+bottom_line: The discrete-GfE d=1 ring is a K-d-qualified specimen candidate, with Hamiltonian-role and transition gaps still open.
+decision_default: Preserve the qualified candidate boundary; hand-verify the primary equations, then seek a real transition frame.
 needs_joe: false
 lanes:
 - lane_id: "1"
   work_status: moving
-  last_movement: Two-sector W1-W3 added order-two and probe-class discriminator legs under a P2C-native provenance firewall.
-  movement_ref: explorations/2026-07-20-two-sector-witness/SYNTHESIS.md
+  last_movement: The discrete-GfE d=1 ring grounded the two-sector carrier in a published model at qualified exploration grade.
+  movement_ref: explorations/2026-07-20-discrete-gfe-specimen/SYNTHESIS.md
   steering_attention: watch
-  steering_prompt: Do not repeat W1-W3; seek exact-Hamiltonian grounding or a complete frozen transition frame.
+  steering_prompt: Preserve the Hamiltonian-role residue; hand-verify the paper, then seek a complete frozen transition frame.
   steering_ref: steward/research-portfolio.json#P2C-REAL-PHYSICAL-WITNESS
   light: green
-  reason_code: two_sector_probe_class_advance
-  evidence_ref: tests/two_sector_witness.py
-  summary: Order-two composition and probe-algebra restrictions now distinguish the minimal two-sector carrier at finite executable grade.
-  evaluated_at: "2026-07-20T09:36:22-05:00"
-  run_ref: RUN-20260720-093622-repository-work-cycle-cai-hourly
+  reason_code: discrete_gfe_kd_qualified_candidate
+  evidence_ref: explorations/2026-07-20-discrete-gfe-specimen/SYNTHESIS.md; tests/discrete_gfe_specimen.py
+  summary: A d=1 member supplies an exact self-adjoint operator and order-two holonomy sector, but not source-native Hamiltonian dynamics.
+  evaluated_at: "2026-07-20T11:39:31-05:00"
+  run_ref: RUN-20260720-113624-repository-work-cycle-cai-hourly
   objective: Test the hierarchy as a transition diagnostic across real source-grounded cases.
-  progress_delta: A literature lead arrived, but primary abstract verification does not close the exact-Hamiltonian or transition gaps.
-  scope_position: Finite P2C-native carrier and reader fixtures complete; whole-family absorption, physical grounding, and transition gates remain open.
+  progress_delta: The primary-paper gate produced a K-d-qualified d=1 specimen candidate and killed a naive datum-free embedding.
+  scope_position: Published-model carrier grounding is qualified; Hamiltonian role, dynamical transition, whole-family absorption, and PDF verification remain open.
   trend_24h: up
   confidence: med
-  recommendation: Keep W1-W3 banked; admit no grounding claim until the primary-paper gate passes.
+  recommendation: Keep the candidate qualified and move next to PDF verification plus a source-grounded transition frame.
   findings:
-  - Doubled-loop triviality separates the order-two carrier from integer winding.
-  - Hermitian J-commuting probes are sector-blind while a non-quaternionic loop probe reads the sector at minimal finite grade.
-  - The whole-family absorber still absorbs; no capability or finality verdict is licensed.
+  - Full-link holonomy, not the naive sigma embedding, carries the genuine order-two datum.
+  - The d=1 ring passes the finite witness legs; the paper's d=2 worked-example class fails the blindness leg.
+  - The paper supplies no Hamiltonian role or time evolution, and the whole-family absorber still absorbs.
   options:
   - id: A
-    label: Ground the carrier
+    label: Verify and transition
     recommended: true
-    description: Seek primary-source and exact-Hamiltonian grounding without replaying W1-W3.
+    description: Hand-verify Eq. 12 and Eq. 22, then seek a frozen before/after transition with matched frames.
   - id: B
-    label: Local IRD refinement
+    label: Cylinder certificate
     recommended: false
-    description: Only refine origin/current carrier coordinates if it directly supports the source-grounded application.
+    description: Add the optional matrix-element readability certificate only if it changes the candidate boundary.
   - id: C
-    label: Lane 2 hardening
+    label: Hold qualified
     recommended: false
-    description: Use only if reader reproducibility becomes the blocker.
+    description: Bank the candidate without further work until stronger source-grounded evidence arrives.
   decision_default: A
   needs_joe: false
 - lane_id: "2"
   work_status: thin
-  last_movement: Routed arXiv:2404.08556 to a bounded primary-paper Hamiltonian and sector-realization gate.
-  movement_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
+  last_movement: Completed the bounded primary-paper Hamiltonian and sector-realization gate for arXiv:2404.08556.
+  movement_ref: explorations/2026-07-20-discrete-gfe-specimen/SYNTHESIS.md
   steering_attention: watch
-  steering_prompt: A bounded primary-source spine may close the two-sector carrier's named grounding gap.
+  steering_prompt: Hand-verify the extracted primary equations before citation; do not generalize the d=1 pass to the model family.
   steering_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
   light: green
-  reason_code: discrete_gfe_literature_lead
-  evidence_ref: arXiv:2404.08556
-  summary: The primary abstract verifies a discrete cell-complex action but not an exact Hamiltonian or two-sector realization.
-  evaluated_at: "2026-07-20T10:36:23-05:00"
-  run_ref: RUN-20260720-103623-repository-work-cycle-cai-hourly
+  reason_code: discrete_gfe_primary_gate_completed
+  evidence_ref: explorations/2026-07-20-discrete-gfe-specimen/SYNTHESIS.md; arXiv:2404.08556
+  summary: The d=1 construction realizes an order-two sector on an exact model operator, with Hamiltonian-role and extraction-grade caveats.
+  evaluated_at: "2026-07-20T11:39:31-05:00"
+  run_ref: RUN-20260720-113624-repository-work-cycle-cai-hourly
   objective: Harden definitions, literature position, casebook, and reproducibility that support Lane 1.
-  progress_delta: One candidate primary paper was title/abstract verified and narrowed to two explicit admission questions.
-  scope_position: Source-spine pass remains open; no Hamiltonian or W1-W3 mapping has been established.
-  trend_24h: flat
+  progress_delta: Targeted full-text extraction and exact arithmetic closed the sector-realization leg and exposed the Hamiltonian-role fork.
+  scope_position: Primary-paper gate complete at qualified exploration grade; hand verification and source-native dynamics remain open.
+  trend_24h: up
   confidence: med
-  recommendation: Inspect the primary paper for an explicit Hamiltonian and order-two sector; abstain if absent.
+  recommendation: Preserve the qualified result and verify the load-bearing equations against the published PDF.
   findings:
-  - arXiv:2404.08556 names cell complexes, topological spinors, discrete Dirac operators, an action, and dynamical equations.
-  - Its abstract does not establish a Hamiltonian, one noncontractible loop, two sectors, or W1-W3 discriminator legs.
-  - arXiv:2510.24491 is a relative-entropy gravity lead, not current carrier grounding.
+  - The exact self-adjoint matter operator carries the d=1 order-two holonomy sector under the qualified reading.
+  - The paper does not name a Hamiltonian or time evolution; treating D as H is a standard-field completion.
+  - The automated HTML extraction is cross-checked but not yet hand-verified against the published PDF.
   options:
   - id: A
-    label: Gate discrete GfE paper
+    label: Verify primary equations
     recommended: true
-    description: Require an explicit Hamiltonian and order-two sector realization before mapping it to W1-W3.
+    description: Check Eq. 12 and Eq. 22 against the published PDF before the extraction is cited.
   - id: B
-    label: Stay reserve
+    label: Bank candidate
     recommended: false
-    description: Use if the grounding pass cannot be completed without a broader research program.
+    description: Preserve the qualified candidate without treating it as source-native dynamics.
   - id: C
-    label: Casebook hardening
+    label: Extend source spine
     recommended: false
-    description: Use after Lane 1 exposes a new comparison gap.
+    description: Add another carrier only if it attacks the Hamiltonian-role or transition residue.
   decision_default: A
   needs_joe: false
 - lane_id: A
   work_status: moving
-  last_movement: Processed the TOE/discrete-GfE proposal as an untrusted literature lead.
-  movement_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
+  last_movement: Reconciled the material discrete-GfE exploration into the authoritative portfolio and Lane state.
+  movement_ref: steward/research-portfolio.json#P2C-REAL-PHYSICAL-WITNESS
   steering_attention: none
   steering_prompt: none
   steering_ref: LANES.yaml#A
   light: green
-  reason_code: literature_lead_intake_processed
-  evidence_ref: 20260720-toe-transcripts-and-discrete-gfe-specimen-lead.md
-  summary: The proposal was verified only to primary abstracts and bounded below evidence or construction status.
-  evaluated_at: "2026-07-20T10:36:23-05:00"
-  run_ref: RUN-20260720-103623-repository-work-cycle-cai-hourly
+  reason_code: material_commit_state_reconciled
+  evidence_ref: 6305b86; explorations/2026-07-20-discrete-gfe-specimen/SYNTHESIS.md
+  summary: The qualified candidate is now visible without upgrading its Hamiltonian, transition, or physical claim status.
+  evaluated_at: "2026-07-20T11:39:31-05:00"
+  run_ref: RUN-20260720-113624-repository-work-cycle-cai-hourly
   objective: Keep P2C viable through mailbox, provenance, boundary, control, and escalation hygiene.
-  progress_delta: One mailbox proposal was dispositioned; primary abstracts support only a narrowed literature gate.
+  progress_delta: Corrected authoritative state lag after a material Joe-directed exploration commit.
   trend_24h: up
   confidence: high
-  recommendation: Archive the proposal and preserve all source/provenance boundaries.
+  recommendation: Keep the K-d-qualified/K-c-residual boundary explicit through the next evidence step.
   findings:
-  - No emergency revocation or writer lock blocked the cycle.
-  - GU transcripts and claim-mining reports remain unverified third-party pointers.
-  - Primary abstracts do not establish the proposed exact-Hamiltonian or two-sector mapping.
+  - No emergency revocation, mailbox payload, or competing writer blocked reconciliation.
+  - The exploration's provenance firewall separates the archived lead from its P2C-native justification.
+  - The d=1 result cannot be generalized to the paper's d=2 example class or to a capability verdict.
   options:
   - id: A
-    label: Preserve candidate boundary
+    label: Preserve qualified boundary
     recommended: true
-    description: Keep frozen evidence distinct from P2C witness status and construction authority.
+    description: Keep the Hamiltonian-role residue and transition gap inseparable from the candidate.
   - id: B
     label: Defer history cleanup
     recommended: false
@@ -120,11 +120,11 @@ lanes:
     description: Use if another public leak class appears in validation.
   decision_default: A
   needs_joe: false
-  drift_verdict: no_drift
+  drift_verdict: corrected_authoritative_state_lag
   action_counts:
-    mail: 1
-    reconciled: 0
+    mail: 0
+    reconciled: 2
     integrity_repairs: 0
     seeds_routed: 0
     escalations: 0
-  attention_pointer: no Joe action needed; literature lead narrowed to a primary-paper gate
+  attention_pointer: no Joe action needed; qualified candidate recorded with all residues intact
