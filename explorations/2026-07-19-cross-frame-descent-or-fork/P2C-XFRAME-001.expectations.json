@@ -1,0 +1,224 @@
+{
+  "schema_version": "p2c-cross-frame-prereg-v0.1",
+  "experiment_id": "P2C-XFRAME-001",
+  "status": "EXPECTATIONS_FROZEN_BEFORE_EXECUTION",
+  "created": "2026-07-19",
+  "target_revision": "362a94fefe8ae281df51827336ad103b4613bff3",
+  "lane_id": "1",
+  "reopen_basis": [
+    "C4 cross-frame transfer remains live",
+    "F5 invariant-quotient watch remains live",
+    "C1 task-semantics transfer remains condition-bound"
+  ],
+  "evidence_identity": {
+    "witness_id": "P2C-W1",
+    "witness_bundle": "exports/witness/P2C-W1-superconducting-ring-v0.1/witness.json",
+    "witness_content_revision": "850521c2fc07b277734e293cd68c0928bb0cb6de",
+    "witness_manifest_sha256": [
+      "694443cacddfcd784a81e01a6e059557b5b1e6aaeea8c0a7616a4f0ac6b71b51",
+      "dfd966259d9e8e2f58bc3725f53f5751c08e0f6b4015c01c333548e09eca0113",
+      "42f647eb7a1f6533e26ae9f6f321824693a77517540259fe505ce968d59ea9eb",
+      "b917f59b2e5f6ee3221a08260ce3f22043c7b843c89343a0fe7e778eb84db45f"
+    ],
+    "taf_packet_id": "TAF-002",
+    "taf_source_revision": "0749ce51c2eb542defe4010341787f1974a56a7d",
+    "ti_packet_id": "TI-WFA-001",
+    "ti_source_revision": "a336132d5ef3d6e3b31c704d07ecb39d28c753b1",
+    "source_truth_unchanged": true
+  },
+  "primitive_profile": {
+    "fields": [
+      "pair_defined",
+      "source_evidence_same",
+      "representation_equivalent",
+      "common_task_vocabulary",
+      "common_interface_available",
+      "interface_delta",
+      "resource_delta",
+      "mechanism_task_delta_under_common_interface",
+      "verified_task_delta_under_native_interface",
+      "conservative_extension",
+      "target_contained_in_declared_family",
+      "persistence_capped"
+    ],
+    "purpose": "A carrier-neutral comparison profile from which each declared frame may compute its own verdict without carrying that verdict as input.",
+    "forbidden_fields": [
+      "desired_verdict",
+      "capability_label",
+      "frame_winner",
+      "finality_label"
+    ]
+  },
+  "frames": [
+    {
+      "id": "N_TWO_CONTEXT_NORMALIZED",
+      "kind": "receiver_operational_construction",
+      "equivalence_claim": "none; this is a declared construction",
+      "rule": "Under a defined pair, common task vocabulary, common comparison interface, and matched resources: a strict mechanism task delta is capability; an interface-only delta with no mechanism task delta is access; resource mismatch is resource change; no pair is not adjudicable as capability."
+    },
+    {
+      "id": "R_ACCESS_CONSTITUTIVE",
+      "kind": "frozen_rival_construction",
+      "equivalence_claim": "none; this is a materially different capability semantics",
+      "rule": "Capability is the verified task profile of the system-interface pair. Profile enlargement through a conservative interface extension and nonconservative profile change are both capability changes, with different R-owned subtypes. No common posability or certifiability is ill-formed."
+    },
+    {
+      "id": "W_ONE_CONTEXT_WHOLE_FAMILY",
+      "kind": "material_individuation_fork",
+      "equivalence_claim": "none; this removes the before/after pair rather than re-encoding it",
+      "rule": "If the target is contained in the declared whole family, report global containment. With no pair, do not issue an operational capability or access verdict. Containment may not be promoted into operational absorption without an independently declared conclusion-class rule."
+    }
+  ],
+  "calibration_cases": [
+    {
+      "id": "IDENTITY_CONTROL",
+      "purpose": "No-change failing direction",
+      "expected_primitive": {
+        "pair_defined": true,
+        "interface_delta": false,
+        "resource_delta": false,
+        "mechanism_task_delta_under_common_interface": false,
+        "verified_task_delta_under_native_interface": false
+      }
+    },
+    {
+      "id": "ACCESS_ONLY_CONTROL",
+      "purpose": "Tests P2C access versus R conservative extension",
+      "expected_primitive": {
+        "pair_defined": true,
+        "interface_delta": true,
+        "resource_delta": false,
+        "mechanism_task_delta_under_common_interface": false,
+        "verified_task_delta_under_native_interface": true,
+        "conservative_extension": true
+      }
+    },
+    {
+      "id": "RESOURCE_ONLY_CONTROL",
+      "purpose": "Blocks resource laundering",
+      "expected_primitive": {
+        "pair_defined": true,
+        "interface_delta": false,
+        "resource_delta": true,
+        "mechanism_task_delta_under_common_interface": false
+      }
+    },
+    {
+      "id": "P2C_W1_OPERATIONAL",
+      "purpose": "The unchanged witness under its declared matched-budget pair",
+      "expected_primitive": {
+        "pair_defined": true,
+        "source_evidence_same": true,
+        "common_task_vocabulary": true,
+        "common_interface_available": true,
+        "interface_delta": false,
+        "resource_delta": false,
+        "mechanism_task_delta_under_common_interface": true,
+        "verified_task_delta_under_native_interface": true,
+        "conservative_extension": false,
+        "target_contained_in_declared_family": true,
+        "persistence_capped": true
+      },
+      "scope_condition": "The mechanism task delta is stipulated at the frozen witness and TAF-002 grades; C1 task-semantics transfer remains condition-bound."
+    },
+    {
+      "id": "P2C_W1_ONE_CONTEXT",
+      "purpose": "The same evidence under the material one-context individuation fork",
+      "expected_primitive": {
+        "pair_defined": false,
+        "source_evidence_same": true,
+        "target_contained_in_declared_family": true,
+        "persistence_capped": true
+      }
+    },
+    {
+      "id": "REPRESENTATION_RELABEL_CONTROL",
+      "purpose": "Certified-equivalence failing direction for label-sensitive classifiers",
+      "expected_primitive": {
+        "pair_defined": true,
+        "source_evidence_same": true,
+        "representation_equivalent": true,
+        "interface_delta": false,
+        "resource_delta": false,
+        "mechanism_task_delta_under_common_interface": true,
+        "verified_task_delta_under_native_interface": true
+      }
+    }
+  ],
+  "predictions_frozen_before_execution": [
+    {
+      "id": "P1",
+      "prediction": "The P2C-W1 operational case is nonconservative under both N and R, so the two constructions agree on a capability-shaped operational change while disagreeing about the existence of a frame-free capability object."
+    },
+    {
+      "id": "P2",
+      "prediction": "The access-only control receives different top-level labels under N and R, while a common primitive profile identifies the disagreement as access-only versus conservative interface extension rather than contradictory evidence."
+    },
+    {
+      "id": "P3",
+      "prediction": "The one-context whole-family construction is a material individuation fork, not an equivalent representation. It reports containment and cannot erase or confirm the operational claim without changing conclusion class."
+    },
+    {
+      "id": "P4",
+      "prediction": "Every representation-equivalent relabel preserves the primitive profile and every frame-specific verdict. A change triggers F5_EQUIVALENCE_FAILURE."
+    },
+    {
+      "id": "P5",
+      "prediction": "A carrier-neutral primitive profile exists as a common refinement, but a single frame-free ACCESS_CHANGE/CAPABILITY_CHANGE label does not descend across N and R on the access-only control."
+    }
+  ],
+  "outcome_rules": [
+    {
+      "id": "INVARIANT_DESCENT_SCOPED",
+      "condition": "All certified equivalent transports preserve a nontrivial frame-independent capability label and material forks are indexed without erasing it."
+    },
+    {
+      "id": "INDEXED_CONSTRUCTION_FORK",
+      "condition": "Certified equivalent transports preserve the primitive profile, but materially different constructions yield different top-level labels or no operational label; a coherent common refinement remains."
+    },
+    {
+      "id": "CAPABILITY_COLLAPSE_SCOPED",
+      "condition": "Faithful common-interface transport removes the mechanism task delta or factors it wholly through access, resources, possibility, or containment for the tested class."
+    },
+    {
+      "id": "F5_EQUIVALENCE_FAILURE",
+      "condition": "A certified representation equivalence changes the primitive profile or a frame-specific verdict after all witnesses are transported."
+    },
+    {
+      "id": "INDETERMINATE_NO_COMMON_SEMANTICS",
+      "condition": "No noncircular common task/resource/interface comparison can be frozen."
+    },
+    {
+      "id": "BLOCKED",
+      "condition": "Evidence identity, source ownership, or required construction data fail before comparison."
+    }
+  ],
+  "adversarial_budget": {
+    "declared_countermodel_families": [
+      "identity/no-change",
+      "access-only conservative extension",
+      "resource-only change",
+      "whole-family containment",
+      "representation relabel",
+      "verdict-carrying frame",
+      "no-common-interface"
+    ],
+    "mutation_requirements": [
+      "flip pair_defined",
+      "flip interface_delta",
+      "flip resource_delta",
+      "flip mechanism_task_delta_under_common_interface",
+      "flip conservative_extension",
+      "flip target_contained_in_declared_family",
+      "inject a forbidden desired_verdict field"
+    ],
+    "stopping_rule": "Execute every declared calibration and mutation once. New countermodels discovered after results are reopening candidates, not retroactive members of this exhaustion claim."
+  },
+  "nonclaims": [
+    "This preregistration does not establish physical capability enlargement.",
+    "It does not assert equivalence among the three material constructions.",
+    "It does not falsify or validate Frame R on a real case domain rich enough for its contextuality prediction.",
+    "It does not reach finality.",
+    "It does not move any source-repository claim or packet content."
+  ]
+}
