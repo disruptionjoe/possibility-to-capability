@@ -1,40 +1,40 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-20T08:35:52-05:00"
-run_ref: RUN-20260720-083552-repository-work-cycle-cai-hourly
-bottom_line: GU co-flip preflight abstains because the packet lacks an adjudicable transition frame.
-decision_default: Wait for a frozen input with all seven missing discriminator prerequisites.
+updated_at: "2026-07-20T09:36:22-05:00"
+run_ref: RUN-20260720-093622-repository-work-cycle-cai-hourly
+bottom_line: P2C now owns a two-sector holonomy/Kramers fixture; physical grounding and transition adjudication remain open.
+decision_default: Permit one bounded Lane 2 source-spine pass, then return to source-grounded Lane 1 transition work.
 needs_joe: false
 lanes:
 - lane_id: "1"
   work_status: moving
-  last_movement: Co-flip boundary preflight preserved an honest abstention on seven missing frame fields.
-  movement_ref: explorations/2026-07-20-coflip-holonomy-boundary-preflight/SYNTHESIS.md
+  last_movement: Two-sector W1-W3 added order-two and probe-class discriminator legs under a P2C-native provenance firewall.
+  movement_ref: explorations/2026-07-20-two-sector-witness/SYNTHESIS.md
   steering_attention: watch
-  steering_prompt: Wait for a frozen transition with independent identity, matched frames, task delta, native response, and completion rival.
-  steering_ref: steward/research-portfolio.json#P2C-BOUNDARY-EXTERNALITY-DISCRIMINATOR
+  steering_prompt: Do not repeat W1-W3; seek exact-Hamiltonian grounding or a complete frozen transition frame.
+  steering_ref: steward/research-portfolio.json#P2C-REAL-PHYSICAL-WITNESS
   light: green
-  reason_code: packet_not_adjudicable
-  evidence_ref: tests/coflip_holonomy_boundary_preflight.py
-  summary: The frozen candidate cannot be encoded neutrally without inventing values for unknown discriminator fields.
-  evaluated_at: "2026-07-20T07:36:51-05:00"
-  run_ref: RUN-20260720-073651-repository-work-cycle-cai-hourly
+  reason_code: two_sector_probe_class_advance
+  evidence_ref: tests/two_sector_witness.py
+  summary: Order-two composition and probe-algebra restrictions now distinguish the minimal two-sector carrier at finite executable grade.
+  evaluated_at: "2026-07-20T09:36:22-05:00"
+  run_ref: RUN-20260720-093622-repository-work-cycle-cai-hourly
   objective: Test the hierarchy as a transition diagnostic across real source-grounded cases.
-  progress_delta: The qualified GU candidate was preflighted; abstention is forced before discriminator invocation by seven missing fields.
-  scope_position: Preflight complete for current packet; no admissible capability or finality classification exists.
+  progress_delta: Joe-directed W1-W3 landed and was independently revalidated; two net-new discriminator legs exceed prior witnesses.
+  scope_position: Finite P2C-native carrier and reader fixtures complete; whole-family absorption, physical grounding, and transition gates remain open.
   trend_24h: up
   confidence: med
-  recommendation: Preserve abstention and wait for a complete frozen transition frame.
+  recommendation: Bank W1-W3; pursue grounding or a complete transition rather than another fixture replay.
   findings:
-  - Source identity is frozen at GU commit 32e3603, but independent identity remains absent.
-  - Transition, matched resource/access frames, task delta, native response, and completion rival are all missing.
-  - Boolean defaults would manufacture either matching or mismatch, so the neutral result is abstention.
+  - Doubled-loop triviality separates the order-two carrier from integer winding.
+  - Hermitian J-commuting probes are sector-blind while a non-quaternionic loop probe reads the sector at minimal finite grade.
+  - The whole-family absorber still absorbs; no capability or finality verdict is licensed.
   options:
   - id: A
-    label: Wait for complete frame
+    label: Ground the carrier
     recommended: true
-    description: Re-open only when all missing discriminator prerequisites are frozen.
+    description: Seek primary-source and exact-Hamiltonian grounding without replaying W1-W3.
   - id: B
     label: Local IRD refinement
     recommended: false
@@ -49,8 +49,8 @@ lanes:
   work_status: thin
   last_movement: Added topological-order source freeze and validator.
   movement_ref: literature/2026-07-19-topological-order-source-freeze.md
-  steering_attention: none
-  steering_prompt: none
+  steering_attention: watch
+  steering_prompt: A bounded primary-source spine may close the two-sector carrier's named grounding gap.
   steering_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
   light: green
   reason_code: source_freeze_validation_added
@@ -59,23 +59,23 @@ lanes:
   evaluated_at: "2026-07-19T22:43:50-05:00"
   run_ref: RUN-20260719-554-repository-work-cycle-cai-hourly
   objective: Harden definitions, literature position, casebook, and reproducibility that support Lane 1.
-  progress_delta: No new Lane 2 artifact this cycle; source-freeze pass remains current.
-  scope_position: Reserve; source-freeze validator is complete for current topological-order inputs.
+  progress_delta: W1-W3 exposed a new reader-trust gap for order-two flat-holonomy and Kramers probe-class grounding.
+  scope_position: Reserve with one bounded source-spine pass now justified directly by Lane 1.
   trend_24h: flat
   confidence: med
-  recommendation: Stay reserve.
+  recommendation: Permit one bounded source-spine pass, then return priority to Lane 1.
   findings:
-  - Topological-order literature spine remains the latest hardening output.
-  - No new reader-trust blocker was found during mailbox processing.
+  - Existing topological-order source freeze does not ground the new two-sector order-two carrier.
+  - The W2 Kramers construction is declared literature-grade and needs primary-source reader anchors.
   options:
   - id: A
-    label: Stay reserve
+    label: Ground two-sector carrier
     recommended: true
-    description: Let Lane 1 continue unless a reproducibility blocker appears.
+    description: Freeze primary-source anchors for order-two holonomy and Kramers probe classes.
   - id: B
-    label: Extend source freeze
+    label: Stay reserve
     recommended: false
-    description: Add literature only when a concrete source-grounded specimen requires it.
+    description: Use if the grounding pass cannot be completed without a broader research program.
   - id: C
     label: Casebook hardening
     recommended: false
@@ -84,25 +84,26 @@ lanes:
   needs_joe: false
 - lane_id: A
   work_status: moving
-  last_movement: Processed the frozen GU co-flip/holonomy proposal as qualified candidate evidence.
-  movement_ref: steward/research-portfolio.json#P2C-REAL-PHYSICAL-WITNESS
+  last_movement: Reconciled the Joe-directed two-sector W1-W3 commit into portfolio and Lane state.
+  movement_ref: explorations/2026-07-20-two-sector-witness/SYNTHESIS.md
   steering_attention: none
   steering_prompt: none
   steering_ref: LANES.yaml#A
   light: green
-  reason_code: frozen_candidate_intake_processed
-  evidence_ref: GU-COFLIP-HOLONOMY-FREEZE-2026-07-20@32e3603
-  summary: Frozen source evidence was verified and bounded below P2C witness-import status.
-  evaluated_at: "2026-07-20T06:36:50-05:00"
-  run_ref: RUN-20260720-063650-repository-work-cycle-cai-hourly
+  reason_code: direct_chat_work_reconciled
+  evidence_ref: afa6b0e
+  summary: Direct-chat-authorized W1-W3 work is now reflected in authoritative operational state.
+  evaluated_at: "2026-07-20T09:36:22-05:00"
+  run_ref: RUN-20260720-093622-repository-work-cycle-cai-hourly
   objective: Keep P2C viable through mailbox, provenance, boundary, control, and escalation hygiene.
-  progress_delta: Mailbox remains empty; prior qualified-candidate disposition is unchanged.
+  progress_delta: Intervening direct-chat work was validated and reconciled; mailbox remains empty.
   trend_24h: up
   confidence: high
-  recommendation: Preserve the qualified-candidate boundary and archive the handled proposal.
+  recommendation: Preserve the W3 firewall and keep GU packet abstention unchanged.
   findings:
   - No emergency revocation or writer lock blocked the cycle.
-  - The GU freeze is candidate evidence, not an accepted P2C witness or authority to execute W1-W3.
+  - Joe's direct-chat instruction, not the GU proposal, authorized W1-W3.
+  - W3 freezes P2C-native construction identity without curing the GU packet's provenance gap.
   options:
   - id: A
     label: Preserve candidate boundary
@@ -125,4 +126,4 @@ lanes:
     integrity_repairs: 0
     seeds_routed: 0
     escalations: 0
-  attention_pointer: no Joe action needed; frozen candidate routed to bounded classification
+  attention_pointer: no Joe action needed; direct-chat work reconciled and boundaries preserved
