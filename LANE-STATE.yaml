@@ -1,10 +1,10 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-20T11:39:31-05:00"
-run_ref: RUN-20260720-113624-repository-work-cycle-cai-hourly
-bottom_line: The discrete-GfE d=1 ring is a K-d-qualified specimen candidate, with Hamiltonian-role and transition gaps still open.
-decision_default: Preserve the qualified candidate boundary; hand-verify the primary equations, then seek a real transition frame.
+updated_at: "2026-07-20T13:42:00-05:00"
+run_ref: RUN-20260720-133556-repository-work-cycle-cai-hourly
+bottom_line: The discrete-GfE formulas are primary-PDF verified; Hamiltonian-role and transition gaps remain open.
+decision_default: Preserve the qualified candidate boundary and seek a real source-grounded transition frame.
 needs_joe: false
 lanes:
 - lane_id: "1"
@@ -12,29 +12,29 @@ lanes:
   last_movement: The discrete-GfE d=1 ring grounded the two-sector carrier in a published model at qualified exploration grade.
   movement_ref: explorations/2026-07-20-discrete-gfe-specimen/SYNTHESIS.md
   steering_attention: watch
-  steering_prompt: Preserve the Hamiltonian-role residue; hand-verify the paper, then seek a complete frozen transition frame.
+  steering_prompt: Preserve the Hamiltonian-role residue and seek a complete frozen transition frame.
   steering_ref: steward/research-portfolio.json#P2C-REAL-PHYSICAL-WITNESS
   light: green
   reason_code: discrete_gfe_kd_qualified_candidate
   evidence_ref: explorations/2026-07-20-discrete-gfe-specimen/SYNTHESIS.md; tests/discrete_gfe_specimen.py
   summary: A d=1 member supplies an exact self-adjoint operator and order-two holonomy sector, but not source-native Hamiltonian dynamics.
-  evaluated_at: "2026-07-20T11:39:31-05:00"
-  run_ref: RUN-20260720-113624-repository-work-cycle-cai-hourly
+  evaluated_at: "2026-07-20T13:42:00-05:00"
+  run_ref: RUN-20260720-133556-repository-work-cycle-cai-hourly
   objective: Test the hierarchy as a transition diagnostic across real source-grounded cases.
-  progress_delta: The primary-paper gate produced a K-d-qualified d=1 specimen candidate and killed a naive datum-free embedding.
-  scope_position: Published-model carrier grounding is qualified; Hamiltonian role, dynamical transition, whole-family absorption, and PDF verification remain open.
+  progress_delta: Primary-PDF verification confirmed the two load-bearing formulas and corrected version-dependent equation citations.
+  scope_position: Published-model carrier grounding is qualified; Hamiltonian role, dynamical transition, and whole-family absorption remain open.
   trend_24h: up
   confidence: med
-  recommendation: Keep the candidate qualified and move next to PDF verification plus a source-grounded transition frame.
+  recommendation: Keep the candidate qualified and move next to a source-grounded transition frame.
   findings:
   - Full-link holonomy, not the naive sigma embedding, carries the genuine order-two datum.
   - The d=1 ring passes the finite witness legs; the paper's d=2 worked-example class fails the blindness leg.
   - The paper supplies no Hamiltonian role or time evolution, and the whole-family absorber still absorbs.
   options:
   - id: A
-    label: Verify and transition
+    label: Seek transition
     recommended: true
-    description: Hand-verify Eq. 12 and Eq. 22, then seek a frozen before/after transition with matched frames.
+    description: Seek a frozen before/after transition with matched resources, access, tasks, and native response.
   - id: B
     label: Cylinder certificate
     recommended: false
@@ -47,32 +47,32 @@ lanes:
   needs_joe: false
 - lane_id: "2"
   work_status: thin
-  last_movement: Completed the bounded primary-paper Hamiltonian and sector-realization gate for arXiv:2404.08556.
-  movement_ref: explorations/2026-07-20-discrete-gfe-specimen/SYNTHESIS.md
+  last_movement: Verified the discrete-GfE load-bearing formulas against the current arXiv v4 PDF.
+  movement_ref: literature/2026-07-20-discrete-gfe-primary-equation-verification.md
   steering_attention: watch
-  steering_prompt: Hand-verify the extracted primary equations before citation; do not generalize the d=1 pass to the model family.
+  steering_prompt: Use the corrected v4 PDF citations; do not generalize the d=1 pass to the model family.
   steering_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
   light: green
-  reason_code: discrete_gfe_primary_gate_completed
-  evidence_ref: explorations/2026-07-20-discrete-gfe-specimen/SYNTHESIS.md; arXiv:2404.08556
-  summary: The d=1 construction realizes an order-two sector on an exact model operator, with Hamiltonian-role and extraction-grade caveats.
-  evaluated_at: "2026-07-20T11:39:31-05:00"
-  run_ref: RUN-20260720-113624-repository-work-cycle-cai-hourly
+  reason_code: discrete_gfe_primary_formulas_verified
+  evidence_ref: literature/2026-07-20-discrete-gfe-primary-equation-verification.md; arXiv:2404.08556v4
+  summary: The primary PDF confirms the gauge coupling and weighted derivative; version-aware citations are now explicit.
+  evaluated_at: "2026-07-20T13:42:00-05:00"
+  run_ref: RUN-20260720-133556-repository-work-cycle-cai-hourly
   objective: Harden definitions, literature position, casebook, and reproducibility that support Lane 1.
-  progress_delta: Targeted full-text extraction and exact arithmetic closed the sector-realization leg and exposed the Hamiltonian-role fork.
-  scope_position: Primary-paper gate complete at qualified exploration grade; hand verification and source-native dynamics remain open.
+  progress_delta: Closed the named hand-verification gap and corrected HTML/PDF equation-number divergence.
+  scope_position: Primary-paper formula gate complete; source-native Hamiltonian dynamics and transition evidence remain open.
   trend_24h: up
   confidence: med
-  recommendation: Preserve the qualified result and verify the load-bearing equations against the published PDF.
+  recommendation: Preserve the qualified result and stop source hardening until transition evidence appears.
   findings:
   - The exact self-adjoint matter operator carries the d=1 order-two holonomy sector under the qualified reading.
   - The paper does not name a Hamiltonian or time evolution; treating D as H is a standard-field completion.
-  - The automated HTML extraction is cross-checked but not yet hand-verified against the published PDF.
+  - The v4 PDF numbers the load-bearing displays Eq. (6) and Eq. (10); the HTML labels them Eq. (12) and Eq. (22).
   options:
   - id: A
-    label: Verify primary equations
+    label: Hold verified spine
     recommended: true
-    description: Check Eq. 12 and Eq. 22 against the published PDF before the extraction is cited.
+    description: Preserve the corrected citations and wait for transition-bearing evidence.
   - id: B
     label: Bank candidate
     recommended: false

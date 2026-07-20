@@ -4,8 +4,8 @@ status: provisional
 created: 2026-07-20
 workflow: BOUNDARY-TO-ISSUANCE-WITNESS / P2C-REAL-PHYSICAL-WITNESS
 construction: discrete_gfe_two_sector_specimen_candidate (arXiv:2404.08556 instantiation)
-evidence_grade: primary-literature extraction + finite exact-arithmetic instantiation
-verification: tests/discrete_gfe_specimen.py (exit 0; strict TEF lint clean; 16 [E] + 6 [F] = 22)
+evidence_grade: primary-literature extraction + primary-PDF formula verification + finite exact-arithmetic instantiation
+verification: literature/2026-07-20-discrete-gfe-primary-equation-verification.md; tests/discrete_gfe_specimen.py (exit 0; strict TEF lint clean; 16 [E] + 6 [F] = 22)
 provenance: literature-native (arXiv:2404.08556) + P2C-native justification; see Section 8
 directed_by: "Joe direct chat, 2026-07-20 (cross-repo session; discrete-GfE specimen lead)"
 ---
@@ -46,9 +46,11 @@ the arXiv HTML full text (v3), 2026-07-20, in three targeted extraction
 passes. The GU-side transcript and claim-mining rows were NOT consumed; the
 paper is the source. Honest reading note: extraction was performed through an
 automated web-fetch summarizer over the arXiv HTML, with cross-checks between
-passes; equation numbers below are as reported by that reading and were
-consistent across passes. A hand-verified PDF pass is a named upgrade, not
-assumed.
+passes. A later primary-source pass verified the two load-bearing formulas
+against the current arXiv v4 PDF; see
+`literature/2026-07-20-discrete-gfe-primary-equation-verification.md`. The HTML
+labels those displays Eq. (12) and Eq. (22), while the v4 PDF numbers the same
+formulas Eq. (6) and Eq. (10). Future citations use the PDF numbers.
 
 The construction, as extracted:
 
@@ -60,13 +62,14 @@ The construction, as extracted:
    N = N0 + N1 + N2.
 3. **Discrete Dirac operator.** D = d + d^dagger, self-adjoint, with d built
    from the gauge-coupled boundary operators conjugated by the metric,
-   d = G^{-1/2} (block subdiagonal of B_[n]^(A) daggers) G^{1/2} (Eq. 22
-   region). gamma_0 = diag(+I_{N0}, -I_{N1}, +I_{N2}) anticommutes with D
+   d = G^{-1/2} (block subdiagonal of B_[n]^(A) daggers) G^{1/2} (v4 PDF
+   Eq. 10; HTML Eq. 22). gamma_0 = diag(+I_{N0}, -I_{N1}, +I_{N2}) anticommutes with D
    (Eq. 34): the spectrum is symmetric about zero.
 4. **Metric degrees of freedom.** G = diag(G_0, G_1, G_2), one Hermitian
    positive block per cell dimension (in general non-diagonal within a
    block). The vacuum-entropy term of the action is built from G alone.
-5. **Gauge coupling (load-bearing detail).** Minimal substitution (Eq. 12):
+5. **Gauge coupling (load-bearing detail).** Minimal substitution (v4 PDF
+   Eq. 6; HTML Eq. 12):
    B_[n]^(A) = B_[n]^(+) e^{-i e_n A^(n)} + B_[n]^(-) e^{+i e_n A^(n)},
    where B^(+)/B^(-) are the positive/negative incidence parts and A^(n) is
    a DIAGONAL matrix of gauge-field values on n-cells. The SAME field enters
@@ -276,11 +279,11 @@ call, not this session's.
 **Discrete-geometry theorist (faithfulness attack).** (1) d=1 is within the
 paper's definitions but outside its worked examples (2d/3d); the specimen
 claim must always carry the d=1 flag — it does. (2) The load-bearing
-extraction is Eq. 12's double-sided substitution; it was confirmed in two
+extraction is the v4 PDF Eq. 6 double-sided substitution (HTML Eq. 12); it was confirmed in two
 independent extraction passes, and the fixture's internal consequences
 (naive-sigma triviality, half-link/charge-2 behavior) are exactly what that
-form implies — self-consistent, but a hand-verified PDF pass remains the
-named upgrade before any Lane 2 freeze cites this extraction. (3) Declared
+form implies — self-consistent, and the later v4 PDF pass confirms the two
+load-bearing formulas while correcting their citations. (3) Declared
 truncations: A^(2) = 0, e_n = 1, diagonal metric blocks in the robustness
 sweep (the paper allows non-diagonal; the sweep is a sample, not a
 theorem). (4) At d=1 the directional Dirac operator equals the total D, so
@@ -334,8 +337,9 @@ model passes the witness."
 3. **d=1 specialization**: inside the definitions, outside the worked
    examples; and the worked-example class (d=2) fails K-b — the specimen
    is the d=1 member, full stop.
-4. **Extraction grade**: automated HTML extraction, cross-checked across
-   passes but not hand-verified against the published PDF.
+4. **Extraction grade**: the two load-bearing formulas are hand-verified
+   against the current arXiv v4 PDF. Broader prose extraction remains
+   cross-checked HTML reading and is not a line-by-line published-version audit.
 5. **The whole-family absorber still absorbs**: no physical issuance,
    capability, or finality verdict is licensed, exactly as across the
    witness family.
@@ -375,7 +379,7 @@ model passes the witness."
      two" would be construction-from-consequence. Fix: two sectors is the
      frozen minimal member of P2C's carrier family (W3 Section 2.1), and
      the quarter-turn alphabet's h in {+1, -1} is FORCED by the paper's
-     Eq. 12 plus exact arithmetic — verified as a closure theorem in the
+     v4 PDF Eq. 6 (HTML Eq. 12) plus exact arithmetic — verified as a closure theorem in the
      fixture, not chosen.
   3. *Vocabulary/receipt leakage.* Grep-level check: no external
      repository's token, receipt, convention pin, plane count, or numeric
@@ -385,9 +389,9 @@ model passes the witness."
      fields in Section 5 belong to this P2C-owned specimen; they do not
      cure any external packet's independent-identity gap, and the standing
      preflight abstention on that packet is untouched.
-  - Auditor's verdict: firewall holds at declaration grade; the residual
-    (occasion correlation; extraction not yet hand-verified) is named, not
-    hidden.
+  - Auditor's verdict: firewall holds at declaration grade; the occasion
+    correlation and the PDF/HTML equation-number divergence are named, not
+    hidden. The load-bearing formulas are now primary-PDF verified.
 
 ## 9. Validation
 
@@ -418,11 +422,10 @@ convention, zero violations, zero advisories.
   inseparably. The steward adjudicates whether the gate's
   "exact-Hamiltonian" accepts that reading; this session proposes and does
   not admit.
-- Bounded next steps, in order of information per cost: (a) hand-verify
-  Eq. 12 and Eq. 22 against the published PDF before anything cites this
-  extraction; (b) fold this specimen into the planned Lane 2 source-spine
-  freeze for order-two flat-holonomy carriers as one grounded leg;
-  (c) steward ruling on the Hamiltonian-ROLE fork; (d) optional
+- Bounded next steps, in order of information per cost: (a) seek a frozen
+  source-grounded before/after transition with matched frames; (b) fold this
+  specimen into a future source spine only if that directly supports the
+  transition gate; (c) preserve the Hamiltonian-ROLE fork; (d) optional
   matrix-element disk certificate for the cylinder's order-4 readability.
 - The cylinder findings (no gauge quotient; local readability at moment
   order 4; the naive-sigma datum-free embedding) are boundary data worth
