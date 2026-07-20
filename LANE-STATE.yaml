@@ -1,9 +1,9 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-20T14:39:31-05:00"
-run_ref: RUN-20260720-143630-repository-work-cycle-cai-hourly
-bottom_line: The discrete-GfE formulas are primary-PDF verified; Hamiltonian-role and transition gaps remain open.
+updated_at: "2026-07-20T18:46:55-05:00"
+run_ref: RUN-20260720-184304-repository-work-cycle-cai-hourly
+bottom_line: GU commits corroborate access-by-probe-algebra as a type, but no frozen packet or transition frame closes the open gates.
 decision_default: Preserve the qualified candidate boundary and seek a real source-grounded transition frame.
 needs_joe: false
 lanes:
@@ -85,25 +85,25 @@ lanes:
   needs_joe: false
 - lane_id: A
   work_status: moving
-  last_movement: Dispositioned the four-repo persona synthesis without importing or upgrading its claims.
+  last_movement: Dispositioned GU access-by-algebra corroboration as commit-pinned steering evidence without importing or upgrading it.
   movement_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
   steering_attention: none
   steering_prompt: none
   steering_ref: LANES.yaml#A
   light: green
-  reason_code: persona_synthesis_mailbox_disposition
+  reason_code: gu_access_by_algebra_corroboration_disposition
   evidence_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
-  summary: Existing global/local results absorbed one line; the native-reader line remains unfrozen and gated.
-  evaluated_at: "2026-07-20T14:39:31-05:00"
-  run_ref: RUN-20260720-143630-repository-work-cycle-cai-hourly
+  summary: Three GU commits support the probe-algebra typing as a lead; frozen-packet and transition gates remain open.
+  evaluated_at: "2026-07-20T18:46:55-05:00"
+  run_ref: RUN-20260720-184304-repository-work-cycle-cai-hourly
   objective: Keep P2C viable through mailbox, provenance, boundary, control, and escalation hygiene.
-  progress_delta: Processed one proposal as steering data while preserving all source, Hamiltonian, transition, and completion gates.
+  progress_delta: Pinned three GU corroboration commits as steering evidence while preserving source, Hamiltonian, transition, and completion gates.
   trend_24h: up
   confidence: high
   recommendation: Archive the proposal after parent receipt; wait for a frozen source-grounded transition or native-reader packet.
   findings:
-  - The global-containment/local-capability distinction is already owner truth and gained no new evidence from persona counts.
-  - The missing-section/native-reader line lacks a frozen source object and complete transition frame.
+  - GU S-matrix transparency, N6 freeness, and diagonal-boundary records independently locate reading limits in operator or equivariance classes.
+  - The Runtime proposal is not a source-issued frozen packet and cannot enter the P2C support ledger as accepted evidence.
   - The discrete-GfE Hamiltonian-role residue, dynamical-transition gap, and whole-family absorber remain inseparable.
   options:
   - id: A
@@ -127,4 +127,4 @@ lanes:
     integrity_repairs: 0
     seeds_routed: 0
     escalations: 0
-  attention_pointer: no Joe action needed; proposal dispositioned with transition gates intact
+  attention_pointer: no Joe action needed; Runtime may archive after parent receipt, with transition gates intact
