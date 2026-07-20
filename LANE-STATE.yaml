@@ -2,22 +2,22 @@ lane_state_version: '1.0'
 owner_id: possibility-to-capability
 manifest_ref: LANES.yaml
 manifest_revision: 1
-evaluated_at: '2026-07-19T19:41:17-05:00'
-run_ref: RUN-20260719-549-repository-work-cycle-cai-hourly
+evaluated_at: '2026-07-19T21:29:47-05:00'
+run_ref: P2C-XFRAME-001
 lanes:
 - lane_id: '1'
-  work_status: watch
-  last_movement: GU payload-spec sharpening mailbox accepted as wait signal.
-  movement_ref: steward/research-portfolio.json#mailbox_2026_07_19_payload_spec_sharpened_by_channel_fanout
-  steering_attention: watch
-  steering_prompt: Wait for GU source-owned finite payload, object, packet, T3 result, or (7,7) result; do not reconstruct from mailbox notes.
-  steering_ref: steward/research-portfolio.json#mailbox_2026_07_19_payload_spec_sharpened_by_channel_fanout
+  work_status: moving
+  last_movement: P2C-XFRAME-001 executed with INDEXED_CONSTRUCTION_FORK.
+  movement_ref: explorations/2026-07-19-cross-frame-descent-or-fork/SYNTHESIS.md
+  steering_attention: active
+  steering_prompt: Build and attack the explicit start-preserving restriction diagram; compare it against augmented-dynamics reduction.
+  steering_ref: steward/research-portfolio.json#P2C-CROSS-REPO-ADJUDICATION
   light: green
-  reason_code: gu_payload_spec_sharpening_recorded
-  evidence_ref: steward/research-portfolio.json#mailbox_2026_07_19_payload_spec_sharpened_by_channel_fanout
-  summary: GU payload-spec sharpening recorded; no packet import or source truth moved.
-  evaluated_at: '2026-07-19T19:41:17-05:00'
-  run_ref: RUN-20260719-549-repository-work-cycle-cai-hourly
+  reason_code: cross_frame_indexed_fork_executed
+  evidence_ref: tests/cross_frame_descent_or_fork.py
+  summary: Representation transport is invariant; material N/R/W constructions retain a bounded indexed fork.
+  evaluated_at: '2026-07-19T21:29:47-05:00'
+  run_ref: P2C-XFRAME-001
 - lane_id: '2'
   work_status: watch
   last_movement: Added topological-order source freeze and validator.

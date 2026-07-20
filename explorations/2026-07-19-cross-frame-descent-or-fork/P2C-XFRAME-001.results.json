@@ -1,0 +1,80 @@
+{
+  "schema_version": "p2c-cross-frame-result-v0.1",
+  "experiment_id": "P2C-XFRAME-001",
+  "status": "EXECUTED",
+  "executed": "2026-07-19",
+  "preregistration_commit": "3d297f9",
+  "target_revision": "362a94fefe8ae281df51827336ad103b4613bff3",
+  "outcome": "INDEXED_CONSTRUCTION_FORK",
+  "source_truth_unchanged": true,
+  "finality": "NOT_REACHED",
+  "headline": {
+    "theorem_consequence_checks": 1,
+    "evidential_checks": 9,
+    "failing_direction_controls": 7,
+    "evidential_plus_failing_direction": 16,
+    "unexpected_results_after_specification_repair": 0
+  },
+  "frame_reads": {
+    "IDENTITY_CONTROL": {
+      "N_TWO_CONTEXT_NORMALIZED": "NO_TYPED_CHANGE",
+      "R_ACCESS_CONSTITUTIVE": "NO_TYPED_CHANGE",
+      "W_ONE_CONTEXT_WHOLE_FAMILY": "NOT_CONTAINED"
+    },
+    "ACCESS_ONLY_CONTROL": {
+      "N_TWO_CONTEXT_NORMALIZED": "ACCESS_CHANGE",
+      "R_ACCESS_CONSTITUTIVE": "CAPABILITY_CHANGE_CONSERVATIVE_INTERFACE_EXTENSION",
+      "W_ONE_CONTEXT_WHOLE_FAMILY": "NOT_CONTAINED"
+    },
+    "RESOURCE_ONLY_CONTROL": {
+      "N_TWO_CONTEXT_NORMALIZED": "RESOURCE_FRAME_CHANGED",
+      "R_ACCESS_CONSTITUTIVE": "RESOURCE_FRAME_CHANGED",
+      "W_ONE_CONTEXT_WHOLE_FAMILY": "NOT_CONTAINED"
+    },
+    "P2C_W1_OPERATIONAL": {
+      "N_TWO_CONTEXT_NORMALIZED": "CAPABILITY_CHANGE_NONCONSERVATIVE",
+      "R_ACCESS_CONSTITUTIVE": "CAPABILITY_CHANGE_NONCONSERVATIVE",
+      "W_ONE_CONTEXT_WHOLE_FAMILY": "GLOBAL_CONTAINMENT_ONLY"
+    },
+    "P2C_W1_ONE_CONTEXT": {
+      "N_TWO_CONTEXT_NORMALIZED": "NOT_ADJUDICABLE_NO_PAIR",
+      "R_ACCESS_CONSTITUTIVE": "NOT_ADJUDICABLE_NO_PAIR",
+      "W_ONE_CONTEXT_WHOLE_FAMILY": "GLOBAL_CONTAINMENT_ONLY"
+    },
+    "REPRESENTATION_RELABEL_CONTROL": {
+      "N_TWO_CONTEXT_NORMALIZED": "CAPABILITY_CHANGE_NONCONSERVATIVE",
+      "R_ACCESS_CONSTITUTIVE": "CAPABILITY_CHANGE_NONCONSERVATIVE",
+      "W_ONE_CONTEXT_WHOLE_FAMILY": "GLOBAL_CONTAINMENT_ONLY"
+    }
+  },
+  "predictions": {
+    "P1": "MATCHED",
+    "P2": "MATCHED",
+    "P3": "MATCHED",
+    "P4": "MATCHED_AFTER_PARTIAL_OVERLAY_INTERPRETATION_REPAIR",
+    "P5": "MATCHED"
+  },
+  "bounded_adversarial_budget": {
+    "identity_no_change": "PASSED",
+    "access_only_conservative_extension": "PASSED",
+    "resource_only_change": "PASSED",
+    "whole_family_containment": "PASSED",
+    "representation_relabel": "PASSED",
+    "verdict_carrying_frame_rejected": "PASSED",
+    "no_common_interface": "PASSED",
+    "declared_mutations": "7_OF_7_SHOW_TEETH"
+  },
+  "specification_repair": {
+    "observed_on_first_execution": "The representation-relabel calibration supplied a partial primitive overlay. A generic-baseline fill silently changed the omitted whole-family containment fact and falsely emitted F5_EQUIVALENCE_FAILURE.",
+    "repair": "Interpret REPRESENTATION_RELABEL_CONTROL as a partial overlay on P2C_W1_OPERATIONAL, as frozen by P4 and the prose preregistration. Frame rules, outcome rules, predictions, and source inputs were not changed.",
+    "first_false_outcome_retained_in_record": "F5_EQUIVALENCE_FAILURE caused by loader ambiguity; rejected as an invalid transport, not hidden as a scientific result."
+  },
+  "governing_referee_report": "REFEREE-REPORT.md",
+  "limitations": [
+    "The common primitive refinement is a receiver-defined finite schema, not a proved universal quotient.",
+    "No source-certified equivalence exists among N, R, and W; W is a material construction fork.",
+    "P2C-W1 task semantics remain C1 condition-bound and persistence remains capped.",
+    "The result does not test Frame R on a real case domain rich enough to evaluate its contextuality prediction.",
+    "No physical capability, universal hierarchy, source claim, issuance, or finality conclusion is established."
+  ]
+}

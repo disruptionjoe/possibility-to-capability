@@ -135,3 +135,19 @@ claim promotion, or external publication is authorized.
 - commit and push the coherent P2C batch; and
 - finish the manual repository session sync guard.
 
+## Run Receipt
+
+- `P2C-XFRAME-001` was preregistered and pushed at commit `3d297f9` before
+  execution.
+- The first execution exposed a partial-overlay ambiguity in the equivalent
+  relabel loader. It changed an omitted containment fact and falsely selected
+  `F5_EQUIVALENCE_FAILURE`. The incident is preserved in the result record.
+- The loader was repaired so `REPRESENTATION_RELABEL_CONTROL` inherits the
+  unchanged operational witness before its declared overlay, as frozen by P4.
+  No source input, frame rule, prediction, or outcome rule changed.
+- Final result: `INDEXED_CONSTRUCTION_FORK`; 9 `[E]` + 7 `[F]` = 16
+  evidential/teeth checks, with 1 `[T]` setup consequence listed separately.
+- Governing artifacts: `P2C-XFRAME-001.results.json`, `SYNTHESIS.md`, and
+  `REFEREE-REPORT.md` in this directory.
+- Source repositories and packet claim status remained untouched; finality is
+  `NOT_REACHED`.

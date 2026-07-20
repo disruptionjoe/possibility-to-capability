@@ -158,6 +158,10 @@ does not establish novelty, physics, source truth, or the candidate story.
   for the topological-order witness. It requires primary literature anchors,
   source-bounded witness-leg mapping, nonclaim firewalls, and a reader rerun
   protocol.
+- `cross_frame_descent_or_fork.py` executes preregistration P2C-XFRAME-001 on
+  unchanged P2C-W1. It separates certified representation relabels from
+  materially different N/R/W constructions, rejects verdict-carrying inputs,
+  and exercises the declared mutation budget before selecting an outcome.
 
 Run from the repository root:
 
@@ -169,6 +173,7 @@ python tests/p2c_second_standard_adjudication.py
 python tests/bec_circulation_witness.py
 python tests/topological_order_witness.py
 python tests/topological_order_source_freeze.py
+python tests/cross_frame_descent_or_fork.py
 ```
 
 A pass means the adapter prototype satisfies the finite contract in that file.
@@ -184,7 +189,10 @@ carrier replication at finite-model/exploration tier. The topological-order
 witness pass means Alternate B has a finite loop/gamma/distance stress test
 with the fixed-family absorber still explicit. The source-freeze pass means the
 reader-facing literature spine names its primary anchors and keeps the witness
-mapping bounded. None of these tests establishes a real physical witness or
+mapping bounded. The cross-frame pass means the finite common primitive profile
+is representation-invariant while top-level labels remain construction-indexed;
+it does not prove a universal quotient or equate the constructions. None of
+these tests establishes a real physical witness or
 promotes an unexplained residual into a proved capability enlargement.
 
 ## Relational-dissolution fixture
