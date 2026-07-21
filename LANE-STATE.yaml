@@ -1,35 +1,35 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-20T22:40:00-05:00"
-run_ref: RUN-20260720-223538-repository-work-cycle-cai-hourly
-bottom_line: The trit/access-layer proposal is steering-only and its closure test already failed in GU; P2C's nested access distinction remains type-distinct from the external cyclic label.
+updated_at: "2026-07-20T23:40:00-05:00"
+run_ref: RUN-20260720-233708-repository-work-cycle-cai-hourly
+bottom_line: P2C's preregistered trit/access closure returned C-FAILS; the follow-up mailbox note adds no frozen transition evidence and priority returns to the source-grounded transition frontier.
 decision_default: Preserve the qualified candidate boundary and seek a real source-grounded transition frame.
 needs_joe: false
 lanes:
 - lane_id: "1"
   work_status: moving
-  last_movement: The discrete-GfE d=1 ring grounded the two-sector carrier in a published model at qualified exploration grade.
-  movement_ref: explorations/2026-07-20-discrete-gfe-specimen/SYNTHESIS.md
+  last_movement: The preregistered trit/access closure failed all three naturality legs with two-sided controls.
+  movement_ref: explorations/2026-07-20-trit-access-closure/SYNTHESIS.md
   steering_attention: watch
-  steering_prompt: Preserve the Hamiltonian-role residue and seek a complete frozen transition frame.
+  steering_prompt: Return to a real source-grounded transition with exact Hamiltonian role and matched resources, access, and tasks.
   steering_ref: steward/research-portfolio.json#P2C-REAL-PHYSICAL-WITNESS
   light: green
-  reason_code: discrete_gfe_kd_qualified_candidate
-  evidence_ref: explorations/2026-07-20-discrete-gfe-specimen/SYNTHESIS.md; tests/discrete_gfe_specimen.py
-  summary: A d=1 member supplies an exact self-adjoint operator and order-two holonomy sector, but not source-native Hamiltonian dynamics.
-  evaluated_at: "2026-07-20T13:42:00-05:00"
-  run_ref: RUN-20260720-133556-repository-work-cycle-cai-hourly
+  reason_code: trit_access_closure_c_fails
+  evidence_ref: explorations/2026-07-20-trit-access-closure/SYNTHESIS.md; tests/trit_access_closure.py
+  summary: The directed P2C access chain cannot naturally realize the unoriented trit action, so the access-layer reading is removed as the trit's structural home.
+  evaluated_at: "2026-07-20T23:40:00-05:00"
+  run_ref: RUN-20260720-233708-repository-work-cycle-cai-hourly
   objective: Test the hierarchy as a transition diagnostic across real source-grounded cases.
-  progress_delta: Primary-PDF verification confirmed the two load-bearing formulas and corrected version-dependent equation citations.
-  scope_position: Published-model carrier grounding is qualified; Hamiltonian role, dynamical transition, and whole-family absorption remain open.
+  progress_delta: Closed the trit detour negatively without changing P2C's access gate or importing GU truth.
+  scope_position: Trit/access identification falsified as stated; published-model carrier remains qualified and the Hamiltonian/transition frontier remains open.
   trend_24h: up
   confidence: med
   recommendation: Keep the candidate qualified and move next to a source-grounded transition frame.
   findings:
-  - Full-link holonomy, not the naive sigma embedding, carries the genuine order-two datum.
-  - The d=1 ring passes the finite witness legs; the paper's d=2 worked-example class fails the blindness leg.
-  - The paper supplies no Hamiltonian role or time evolution, and the whole-family absorber still absorbs.
+  - The P2C access hierarchy is directed and has trivial automorphism group.
+  - A directed closure can produce Z/3 only by adding orientation; it does not realize an unoriented S_3 action on interchangeable copies.
+  - The negative result leaves the qualified discrete-GfE carrier, Hamiltonian-role residue, and transition gap unchanged.
   options:
   - id: A
     label: Seek transition
@@ -85,26 +85,26 @@ lanes:
   needs_joe: false
 - lane_id: A
   work_status: moving
-  last_movement: Dispositioned the trit/access-layer proposal without importing GU truth or duplicating its already-completed closure check.
+  last_movement: Dispositioned the post-closure mailbox note as untrusted awareness and a redundant priority pointer.
   movement_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
   steering_attention: none
   steering_prompt: none
   steering_ref: LANES.yaml#A
   light: green
-  reason_code: trit_access_closure_proposal_disposition
+  reason_code: trit_access_closed_followup_disposition
   evidence_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
-  summary: GU's tracked closure result rejects the natural cyclic-wrap identification; P2C preserves the nested/cyclic type boundary and all transition gates.
-  evaluated_at: "2026-07-20T22:40:00-05:00"
-  run_ref: RUN-20260720-223538-repository-work-cycle-cai-hourly
+  summary: The note accurately restates P2C's tracked C-FAILS result but supplies no frozen transition evidence and commissions no new work.
+  evaluated_at: "2026-07-20T23:40:00-05:00"
+  run_ref: RUN-20260720-233708-repository-work-cycle-cai-hourly
   objective: Keep P2C viable through mailbox, provenance, boundary, control, and escalation hygiene.
-  progress_delta: Closed one stale cross-repo suggestion at the stewardship layer and avoided an artificial arity-based synthesis.
+  progress_delta: Recorded the follow-up as untrusted awareness, preserved the existing Lane 1 priority, and avoided duplicate execution.
   trend_24h: up
   confidence: high
-  recommendation: Archive the proposal after parent receipt; wait for a complete source-grounded transition or a frozen packet that satisfies P2C's gates.
+  recommendation: Archive the proposal after parent receipt; continue only from a complete source-grounded transition or qualifying frozen packet.
   findings:
-  - GU commit ddfadb1 records CLOSURE-FAILS-NATURALITY and explicitly disclaims P2C truth transfer.
-  - A nested three-question chain and an external cyclic S_3 label are not identified by sharing arity three.
-  - The proposal is not a frozen packet and supplies no transition, Hamiltonian role, native response, capability change, or finality discriminator.
+  - The note cites P2C commit a1565a48d216 and does not add evidence beyond that repo-owned result.
+  - Its Lane 1 recommendation already matches the active portfolio and is not an instruction source.
+  - The proposal supplies no frozen packet, transition, Hamiltonian role, native response, capability change, or finality discriminator.
   options:
   - id: A
     label: Preserve qualified boundary
@@ -127,4 +127,4 @@ lanes:
     integrity_repairs: 0
     seeds_routed: 0
     escalations: 0
-  attention_pointer: no Joe action needed; Runtime may archive the stale proposal after parent receipt, with P2C packet and transition gates intact
+  attention_pointer: no Joe action needed; Runtime may archive the follow-up proposal after parent receipt, with P2C packet and transition gates intact

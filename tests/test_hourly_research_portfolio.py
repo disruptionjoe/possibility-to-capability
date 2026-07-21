@@ -40,7 +40,8 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
             if item["id"] == "P2C-BOUNDARY-EXTERNALITY-DISCRIMINATOR"
         )
         self.assertFalse(boundary["hourly_eligible"])
-        self.assertIn("do not repeat the taxonomy", boundary["next_swing"])
+        self.assertIn("Do not repeat this preflight", boundary["next_swing"])
+        self.assertIn("before/after transition", boundary["next_swing"])
         cross_domain = next(
             item
             for item in active[0]["internal_work_items"]
