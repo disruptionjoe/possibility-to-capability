@@ -1,10 +1,10 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-20T23:40:00-05:00"
-run_ref: RUN-20260720-233708-repository-work-cycle-cai-hourly
-bottom_line: P2C's preregistered trit/access closure returned C-FAILS; the follow-up mailbox note adds no frozen transition evidence and priority returns to the source-grounded transition frontier.
-decision_default: Preserve the qualified candidate boundary and seek a real source-grounded transition frame.
+updated_at: "2026-07-21T10:36:50-05:00"
+run_ref: RUN-20260721-103650-repository-work-cycle-cai-hourly
+bottom_line: A committed GU hostile verification qualifies the historical GU-001 externality reading; the frozen import remains immutable, and no successor packet or transition witness is yet importable.
+decision_default: Hold current GU-001 citations at packet-version-relative grade and preserve the real source-grounded transition frontier.
 needs_joe: false
 lanes:
 - lane_id: "1"
@@ -46,42 +46,42 @@ lanes:
   decision_default: A
   needs_joe: false
 - lane_id: "2"
-  work_status: thin
-  last_movement: Verified the discrete-GfE load-bearing formulas against the current arXiv v4 PDF.
-  movement_ref: literature/2026-07-20-discrete-gfe-primary-equation-verification.md
+  work_status: moving
+  last_movement: Logged committed GU-001 source drift and qualified current citation without editing the frozen import.
+  movement_ref: packets/imports/GU-001/GU-001-source-drift-receipt-2026-07-21.md
   steering_attention: watch
-  steering_prompt: Use the corrected v4 PDF citations; do not generalize the d=1 pass to the model family.
+  steering_prompt: Require a source-issued GU successor packet before treating the bridge qualification as an imported update.
   steering_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
   light: green
-  reason_code: discrete_gfe_primary_formulas_verified
-  evidence_ref: literature/2026-07-20-discrete-gfe-primary-equation-verification.md; arXiv:2404.08556v4
-  summary: The primary PDF confirms the gauge coupling and weighted derivative; version-aware citations are now explicit.
-  evaluated_at: "2026-07-20T13:42:00-05:00"
-  run_ref: RUN-20260720-133556-repository-work-cycle-cai-hourly
+  reason_code: gu001_source_drift_citation_qualified
+  evidence_ref: packets/imports/GU-001/GU-001-source-drift-receipt-2026-07-21.md; steward/research-portfolio.json#HIERARCHY-HARDENING
+  summary: GU-001 remains an immutable historical import, but its current finality/externality citation now carries the later GU domain-bridge qualification.
+  evaluated_at: "2026-07-21T10:36:50-05:00"
+  run_ref: RUN-20260721-103650-repository-work-cycle-cai-hourly
   objective: Harden definitions, literature position, casebook, and reproducibility that support Lane 1.
-  progress_delta: Closed the named hand-verification gap and corrected HTML/PDF equation-number divergence.
-  scope_position: Primary-paper formula gate complete; source-native Hamiltonian dynamics and transition evidence remain open.
+  progress_delta: Separated historical packet-relative PASS from current source-grade citation and recorded NOT_YET_IMPORTABLE_AS_GU001_UPDATE.
+  scope_position: GU-001 historical import preserved; current bridge grade qualified; source-native Hamiltonian dynamics and transition evidence remain open.
   trend_24h: up
-  confidence: med
-  recommendation: Preserve the qualified result and stop source hardening until transition evidence appears.
+  confidence: high
+  recommendation: Await a source-issued successor packet; do not reconstruct the bridge update from committed explorations.
   findings:
-  - The exact self-adjoint matter operator carries the d=1 order-two holonomy sector under the qualified reading.
-  - The paper does not name a Hamiltonian or time evolution; treating D as H is a standard-field completion.
-  - The v4 PDF numbers the load-bearing displays Eq. (6) and Eq. (10); the HTML labels them Eq. (12) and Eq. (22).
+  - The generic codomain no-invariant-valuation theorem does not itself establish physical internal unreadability.
+  - The substantive GU claim depends on a domain-side internal-equals-alpha-even bridge currently graded at exploration tier.
+  - No source-issued successor packet or matched transition frame arrived, so Lane 1 does not reopen on this correction.
   options:
   - id: A
-    label: Hold verified spine
+    label: Hold qualified import
     recommended: true
-    description: Preserve the corrected citations and wait for transition-bearing evidence.
+    description: Preserve immutable GU-001 and qualify current citation pending a successor packet.
   - id: B
-    label: Bank candidate
+    label: Seek successor packet
     recommended: false
-    description: Preserve the qualified candidate without treating it as source-native dynamics.
+    description: Route only through the governed packet seam; do not rebuild GU truth here.
   - id: C
-    label: Extend source spine
+    label: Continue transition frontier
     recommended: false
-    description: Add another carrier only if it attacks the Hamiltonian-role or transition residue.
-  decision_default: A
+    description: Resume Lane 1 only when a complete source-grounded transition arrives.
+  decision_default: Hold qualified import and wait for a successor packet or transition witness.
   needs_joe: false
 - lane_id: A
   work_status: moving

@@ -32,6 +32,11 @@ synthetic unanimous result from partial source artifacts.
 - Founding-case blocked preflight:
   `packets/intake/GU-001-blocked-preflight-v0.1-2026-07-14.json`
 - GU-001: IMPORTED 2026-07-16 at pin `77879e5`; see `packets/imports/GU-001/`.
+  A later committed source correction is logged in
+  `GU-001-source-drift-receipt-2026-07-21.md`: the frozen import remains
+  immutable and historically packet-relative, while current citation of its
+  externality/finality reading is qualified pending a source-issued successor
+  packet that closes or accurately grades the domain-side bridge lemma.
 - TAF-001: IMPORTED 2026-07-16 (source-issued by time-as-finality, issuance
   commit `ae37ec19`); see `packets/imports/TAF-001/`.
 - TI-PIT-002: IMPORTED 2026-07-16 (source-issued by temporal-issuance, issuance
