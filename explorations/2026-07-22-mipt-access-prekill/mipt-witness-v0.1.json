@@ -1,0 +1,60 @@
+{
+  "schema_version": "0.1",
+  "assessment_id": "MIPT-TD-001",
+  "status": "provisional",
+  "question": "Crossing a measurement-induced entanglement phase transition (volume-law to area-law in a monitored quantum circuit): does it enlarge normalized capability, or is it an access change driven by the measurement/monitoring rate?",
+  "construction": {
+    "fork_identified": false,
+    "selected_branch_id": "monitored-circuit",
+    "retention_statement": "One declared construction: a fixed unitary gate ensemble with a tunable projective-measurement (monitoring) rate as the only control parameter. A capability-inclusive construction that treated protected-code distance as an intrinsic, access-independent resource would require a separately retained branch; that branch is exactly what the normalized frame here contests."
+  },
+  "branch_relation": "SAME_OBJECT",
+  "branches": [
+    {
+      "branch_id": "monitored-circuit",
+      "label": "weak-monitoring phase",
+      "admissibility": "ADMISSIBLE",
+      "witness": {
+        "possibility_family_relation": {"value": "SAME", "evidence_refs": ["mipt://hilbert-space-and-gate-ensemble-fixed-across-transition"]},
+        "representation_relation": {"value": "EQUIVALENT", "evidence_refs": ["mipt://same-circuit-model-both-phases"]},
+        "description_change": {"value": "YES", "evidence_refs": ["mipt://entanglement-entropy-scaling-volume-vs-area-law"]},
+        "dynamics_change": {"value": "NO", "evidence_refs": ["mipt://unitary-gate-law-unchanged-only-monitoring-rate-tuned"]},
+        "persistent_record": {"value": "NO", "evidence_refs": ["mipt://measurement-records-present-in-both-phases-not-a-transition-delta"]},
+        "access_change": {"value": "YES", "evidence_refs": ["mipt://monitoring-measurement-rate-is-the-readout-access-control-parameter"]},
+        "control_change": {"value": "NO", "evidence_refs": ["mipt://no-new-steering-actuation-added-only-readout-rate"]},
+        "raw_task_set_relation": {"value": "SUPERSET", "evidence_refs": ["mipt://higher-monitoring-yields-more-heralding-readout-tasks"]},
+        "normalized_task_set_relation": {"value": "EQUAL", "evidence_refs": ["mipt://holding-measurement-access-fixed-intrinsic-unitary-realizable-set-unchanged"]},
+        "irreversible": {"value": "NO", "evidence_refs": ["mipt://transition-is-tunable-both-directions-in-monitoring-rate"]},
+        "settlement": {"value": "NO", "evidence_refs": ["mipt://no-settled-non-reopenable-outcome"]},
+        "preceding_layer_factorization": {"value": "NOT_APPLICABLE", "evidence_refs": ["mipt://no-finality-claim-advanced"]},
+        "reopenable_by_admissible_continuation": {"value": "YES", "evidence_refs": ["mipt://lowering-monitoring-rate-reopens-the-volume-law-phase"]},
+        "ordering_relation": {"value": "ORDER_COMPATIBLE", "evidence_refs": ["mipt://monotone-in-monitoring-rate"]}
+      },
+      "normalization_frame": "Common task vocabulary is the set of state preparations realizable by the fixed unitary gate ensemble, with the projective-measurement (monitoring) access held fixed for the normalized comparison. Under that held-fixed access the intrinsic realizable set is equal across the two phases.",
+      "factorization_search_scope": null,
+      "declared_claims": ["CAPABILITY_ENLARGEMENT"],
+      "evidence_grade": "EXPLORATORY",
+      "verification": "UNVERIFIED"
+    }
+  ],
+  "label_neutrality": {"left_label": "volume-law", "right_label": "area-law", "required": true},
+  "assumptions": [
+    "The monitored-circuit control parameter is the measurement/monitoring rate; the unitary gate ensemble (the intrinsic dynamical law) is held fixed across the transition.",
+    "The normalized task frame holds measurement access fixed, so any 'protected quantum code' capability is scored relative to that fixed access rather than as an access-independent intrinsic resource."
+  ],
+  "evidence_grade": "EXPLORATORY",
+  "tests": [
+    "Classify a transition whose sole control knob is the readout/monitoring rate, with the intrinsic unitary law and possibility family fixed, as an access change and reject the declared capability-enlargement claim once the measurement access is normalized."
+  ],
+  "falsifiers": [
+    "A source-grounded MIPT construction in which crossing the transition changes the intrinsic unitary dynamical law itself (not the monitoring rate), or enlarges a normalized task set with measurement access held fixed, would move this off ACCESS_CHANGE.",
+    "A pure volume-law/area-law relabeling changes the computed diagnosis."
+  ],
+  "nonclaims": [
+    "This is a receiver-owned diagnosis of a stated MIPT framing, not a physics result about measurement-induced criticality, not a claim about the correct scaling theory of the transition, and not a source-repository verdict.",
+    "It does not assert that the quantum-error-correcting-code interpretation of the volume-law phase is wrong physics; it asserts only that, under P2C's normalized-access frame, that interpretation does not license a CAPABILITY_ENLARGEMENT type."
+  ],
+  "reopening_conditions": [
+    "Reopen if a construction shows the intrinsic dynamical law (not the monitoring rate) changing across the transition, or if measurement access cannot be held fixed in the normalization without redefining the task set."
+  ]
+}

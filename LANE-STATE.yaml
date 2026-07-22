@@ -1,35 +1,35 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-22T01:38:00-05:00"
-run_ref: RUN-20260722-013635-repository-work-cycle-cai-hourly
-bottom_line: The discrete-GfE synthesis now marks its exact-Hamiltonian proposal as superseded; the order-two sector remains qualified and the source-grounded transition gate remains open.
-decision_default: Preserve the qualified sector and seek the missing source-grounded Hamiltonian transition with the full matched frame.
+updated_at: "2026-07-22T09:20:00-05:00"
+run_ref: RUN-20260722-directed-wave1-tierA-lane1
+bottom_line: Wave-1 directed prep landed. The methodology-level novelty/genre scan graded NEW-FRAMING-ONLY under an adversarial referee (every inferential primitive is subsumed; the possibility-to-finality ladder as a domain-neutral agent-capability instrument is not), a security-first transfer-BREAKER prereg skeleton is landed, and the MIPT measurement-induced-transition pre-kill confirmed ACCESS_CHANGE, removing one candidate witness family from the P2C-2 dynamical-transition search.
+decision_default: Pursue the P2C-2 dynamical-transition specimens (TFIM-quench DQPT thin-shadow kill first, then matched-drive anomalous-Floquet); keep the security-first transfer-BREAKER read-only until directed; sigma stays GU-gated NOT_YET_IMPORTABLE.
 needs_joe: false
 lanes:
 - lane_id: "1"
   work_status: moving
-  last_movement: The preregistered trit/access closure failed all three naturality legs with two-sided controls.
-  movement_ref: explorations/2026-07-20-trit-access-closure/SYNTHESIS.md
+  last_movement: MIPT measurement-induced-transition pre-kill confirmed ACCESS_CHANGE (declared CAPABILITY_ENLARGEMENT rejected), removing one candidate witness family from the P2C-2 dynamical-transition search; security-first transfer-BREAKER prereg skeleton P2C-XBREAK-001 landed.
+  movement_ref: explorations/2026-07-22-mipt-access-prekill/NOTE.md
   steering_attention: watch
-  steering_prompt: Return to a real source-grounded transition with exact Hamiltonian role and matched resources, access, and tasks.
-  steering_ref: steward/research-portfolio.json#P2C-REAL-PHYSICAL-WITNESS
+  steering_prompt: Pursue the P2C-2 dynamical-transition specimens (TFIM-quench DQPT thin-shadow-reconstruction kill first, then matched-drive anomalous-Floquet); keep the transfer-BREAKER security probe read-only until directed.
+  steering_ref: explorations/2026-07-22-wave1-triple-diamond-prep-steering.md
   light: green
-  reason_code: trit_access_closure_c_fails
-  evidence_ref: explorations/2026-07-20-trit-access-closure/SYNTHESIS.md; tests/trit_access_closure.py
-  summary: The directed P2C access chain cannot naturally realize the unoriented trit action, so the access-layer reading is removed as the trit's structural home.
-  evaluated_at: "2026-07-20T23:40:00-05:00"
-  run_ref: RUN-20260720-233708-repository-work-cycle-cai-hourly
+  reason_code: mipt_access_prekill_confirmed
+  evidence_ref: explorations/2026-07-22-mipt-access-prekill/NOTE.md; tests/classify_transition.py; explorations/2026-07-22-methodology-novelty-genre-scan/TRANSFER-BREAKER-PREREG-SKELETON.md
+  summary: The measurement-induced entanglement phase transition types as an access change because its only control knob is the measurement/monitoring readout rate, not the intrinsic unitary law, so it cannot serve as a dynamical transition with no static-Hamiltonian representative; the North Star's own transfer falsifier now has a security-first executable skeleton.
+  evaluated_at: "2026-07-22T09:20:00-05:00"
+  run_ref: RUN-20260722-directed-wave1-tierA-lane1
   objective: Test the hierarchy as a transition diagnostic across real source-grounded cases.
-  progress_delta: Closed the trit detour negatively without changing P2C's access gate or importing GU truth.
-  scope_position: Trit/access identification falsified as stated; published-model carrier remains qualified and the Hamiltonian/transition frontier remains open.
+  progress_delta: Pre-killed the MIPT witness family and predeclared the transfer-BREAKER falsifier without building fixtures, changing the access gate, or importing GU truth.
+  scope_position: MIPT removed as a P2C-2 candidate; the TFIM-quench DQPT and matched-drive anomalous-Floquet specimens remain the live P2C-2 candidates; the transfer-BREAKER security probe is predeclared but unrun.
   trend_24h: up
   confidence: med
-  recommendation: Keep the candidate qualified and move next to a source-grounded transition frame.
+  recommendation: Advance the P2C-2 dynamical-transition specimens; keep P2C-REAL-PHYSICAL-WITNESS as the selected core swing and the transfer-BREAKER read-only until directed.
   findings:
-  - The P2C access hierarchy is directed and has trivial automorphism group.
-  - A directed closure can produce Z/3 only by adding orientation; it does not realize an unoriented S_3 action on interchangeable copies.
-  - The negative result leaves the qualified discrete-GfE carrier, Hamiltonian-role residue, and transition gap unchanged.
+  - The MIPT pre-kill holds because dynamics_change is NO (unitary law fixed) while access_change is YES (monitoring rate is the readout knob); raw task superset with normalized task equality rejects the capability claim.
+  - The methodology genre scan graded NEW-FRAMING-ONLY; its novelty is contingent on transfer evidence with default forecast transfer fails, so the security-first probe is the highest-value next test.
+  - No source truth, capability, finality, canon, or public posture moved; a pre-kill and a prereg skeleton are not claim promotions.
   options:
   - id: A
     label: Seek transition
@@ -47,27 +47,27 @@ lanes:
   needs_joe: false
 - lane_id: "2"
   work_status: moving
-  last_movement: Logged committed GU-001 source drift and qualified current citation without editing the frozen import.
-  movement_ref: packets/imports/GU-001/GU-001-source-drift-receipt-2026-07-21.md
+  last_movement: Executed the methodology-level novelty/genre scan; adversarial-referee verdict NEW-FRAMING-ONLY with a full related-work spine. The earlier GU-001 source-drift qualification persists in the portfolio.
+  movement_ref: explorations/2026-07-22-methodology-novelty-genre-scan/SYNTHESIS.md
   steering_attention: watch
-  steering_prompt: Require a source-issued GU successor packet before treating the bridge qualification as an imported update.
-  steering_ref: steward/research-portfolio.json#HIERARCHY-HARDENING
+  steering_prompt: Cite the related-work spine in any methodology write-up; do not promote the methodology to novel without a passing security-first transfer-BREAKER run.
+  steering_ref: explorations/2026-07-22-wave1-triple-diamond-prep-steering.md
   light: green
-  reason_code: gu001_source_drift_citation_qualified
-  evidence_ref: packets/imports/GU-001/GU-001-source-drift-receipt-2026-07-21.md; steward/research-portfolio.json#HIERARCHY-HARDENING
-  summary: GU-001 remains an immutable historical import, but its current finality/externality citation now carries the later GU domain-bridge qualification.
-  evaluated_at: "2026-07-21T10:36:50-05:00"
-  run_ref: RUN-20260721-103650-repository-work-cycle-cai-hourly
+  reason_code: methodology_genre_scan_new_framing_only
+  evidence_ref: explorations/2026-07-22-methodology-novelty-genre-scan/SYNTHESIS.md; packets/imports/GU-001/GU-001-source-drift-receipt-2026-07-21.md
+  summary: The agent-capability methodology's inferential primitives are each subsumed by a mature literature (control theory, object-capability security, Halpern-Pearl, Mayo/Platt, COS preregistration, agent-eval abstention), but no prior packages the possibility-to-finality ladder as a domain-neutral agent-capability instrument; grade NEW-FRAMING-ONLY, contingent on transfer evidence.
+  evaluated_at: "2026-07-22T09:20:00-05:00"
+  run_ref: RUN-20260722-directed-wave1-tierA-lane1
   objective: Harden definitions, literature position, casebook, and reproducibility that support Lane 1.
-  progress_delta: Separated historical packet-relative PASS from current source-grade citation and recorded NOT_YET_IMPORTABLE_AS_GU001_UPDATE.
-  scope_position: GU-001 historical import preserved; current bridge grade qualified; source-native Hamiltonian dynamics and transition evidence remain open.
+  progress_delta: Ran the North Star's transfer falsifier at the methodology level and produced a citable related-work spine plus a security-first transfer-BREAKER prereg skeleton, without building fixtures or moving any claim.
+  scope_position: Methodology genre position established at NEW-FRAMING-ONLY; the GU-001 historical import and its qualified current citation remain preserved; source-native Hamiltonian dynamics and transition evidence remain open.
   trend_24h: up
   confidence: high
-  recommendation: Await a source-issued successor packet; do not reconstruct the bridge update from committed explorations.
+  recommendation: Treat the methodology as candidate-novel-only pending transfer evidence; run exactly one security-first transfer-BREAKER probe when directed, default forecast transfer fails.
   findings:
-  - The generic codomain no-invariant-valuation theorem does not itself establish physical internal unreadability.
-  - The substantive GU claim depends on a domain-side internal-equals-alpha-even bridge currently graded at exploration tier.
-  - No source-issued successor packet or matched transition frame arrived, so Lane 1 does not reopen on this correction.
+  - Every load-bearing inferential primitive of the methodology is subsumed by an existing literature; the contribution is integration plus the specific typed ladder, not a new inferential primitive.
+  - Object-capability security is the strongest subsumer, so the security domain is the cheapest possible falsification and is domain 1 of the transfer-BREAKER prereg.
+  - Scan and council agreement are not evidence; the cited literatures and the adversarial referee carry the grade.
   options:
   - id: A
     label: Hold qualified import
