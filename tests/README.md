@@ -90,6 +90,19 @@ promote a source claim, or validate the receiver judgments' substance.
   imported `TAF-001` nonphysics packet as a receiver-owned transfer test. It
   classifies ALPHA as access change and BETA as record formation while rejecting
   capability, access-relabeling, and finality overclaim controls.
+- `security_transfer_breaker.py` executes preregistration `P2C-XBREAK-001`
+  (domain 1, object-capability security). An inline object-capability adversary
+  tries to break the capability/access distinction: the classic confused deputy
+  (`explorations/2026-07-22-security-transfer-breaker-p2c-xbreak-001/confused-deputy-witness-v0.1.json`)
+  types as `NULL_NO_RELEVANT_CHANGE` for the client with the capability overclaim
+  rejected; a genuine rights amplification
+  (`authority-amplification-witness-v0.1.json`) types as `CAPABILITY_ENLARGEMENT`;
+  a permission grant types as `ACCESS_CHANGE`; the two admissible frames of the
+  confused deputy form a declared `CONSTRUCTION_FORK`, not a hidden circularity.
+  Verdict: the discriminator HOLDS (no break, no hierarchy revision), and the
+  predeclared transfer-fails-novelty forecast is confirmed (object-capability's
+  own vocabulary is at least as sharp). Lints clean under
+  `tef_check_tag_linter.py --strict` (registry mode, T=1 / E=10 / F=4).
 
 Run from the repository root:
 
@@ -97,6 +110,8 @@ Run from the repository root:
 python tests/validate_transition_diagnosis_contract.py
 python tests/classify_transition.py tests/fixtures/transition-diagnosis-v0.1-valid.json
 python tests/cross_domain_transition_adjudication.py
+python tests/security_transfer_breaker.py
+python tests/classify_transition.py explorations/2026-07-22-security-transfer-breaker-p2c-xbreak-001/confused-deputy-witness-v0.1.json
 ```
 
 A classification diagnoses supplied receiver witnesses. It does not establish

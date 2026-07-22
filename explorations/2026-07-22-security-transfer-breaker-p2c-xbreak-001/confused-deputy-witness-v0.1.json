@@ -1,0 +1,61 @@
+{
+  "schema_version": "0.1",
+  "assessment_id": "OCAP-CONFUSED-DEPUTY-TD-001",
+  "status": "provisional",
+  "question": "Confused deputy (Hardy 1988): a low-authority client invokes an ambiently-authorized deputy (a compiler holding write authority to SYSX/BILL) and supplies SYSX/BILL as the output designator, so the deputy overwrites the billing file. Under the client-authority frame, did the client's operational capability enlarge, or is this only a raw effect achieved through the deputy's own authority?",
+  "construction": {
+    "fork_identified": false,
+    "selected_branch_id": "client-authority-frame",
+    "retention_statement": "One declared construction: the normalized frame holds the CLIENT's own held authority (its capability/permission set) fixed and asks whether that set enlarged. An ambient-authority frame that instead holds the deputy's authority available as a standing service is a materially different construction and is retained separately (see the frame-fork battery), not collapsed into this one."
+  },
+  "branch_relation": "SAME_OBJECT",
+  "branches": [
+    {
+      "branch_id": "client-authority-frame",
+      "label": "client invokes deputy with SYSX/BILL as output designator",
+      "admissibility": "ADMISSIBLE",
+      "witness": {
+        "possibility_family_relation": {"value": "SAME", "evidence_refs": ["ocap://same-filesystem-and-program-set-before-and-after-invocation"]},
+        "representation_relation": {"value": "EQUIVALENT", "evidence_refs": ["ocap://same-protection-state-model-both-endpoints"]},
+        "description_change": {"value": "NO", "evidence_refs": ["ocap://client-held-authority-description-unchanged-by-the-invocation"]},
+        "dynamics_change": {"value": "NO", "evidence_refs": ["ocap://no-change-to-the-intrinsic-protection-dynamics-only-a-designator-was-supplied"]},
+        "persistent_record": {"value": "NO", "evidence_refs": ["ocap://no-new-persistent-authority-record-formed-for-the-client-billing-corruption-handled-as-a-separate-record-rival"]},
+        "access_change": {"value": "NO", "evidence_refs": ["ocap://client-received-no-new-permission-token-or-acl-entry-designation-authorization-conflation-is-in-the-deputy-not-the-client"]},
+        "control_change": {"value": "NO", "evidence_refs": ["ocap://client-gained-no-new-actuation-authority-the-deputy-exercised-its-own"]},
+        "raw_task_set_relation": {"value": "SUPERSET", "evidence_refs": ["ocap://raw-effect-writing-SYSX-BILL-became-achievable-via-the-ambiently-authorized-deputy"]},
+        "normalized_task_set_relation": {"value": "EQUAL", "evidence_refs": ["ocap://holding-the-clients-own-held-authority-fixed-the-client-still-cannot-write-SYSX-BILL-on-its-own"]},
+        "irreversible": {"value": "NO", "evidence_refs": ["ocap://no-irreversibility-claimed-for-the-clients-standing"]},
+        "settlement": {"value": "NO", "evidence_refs": ["ocap://no-settled-non-reopenable-outcome-for-the-clients-authority"]},
+        "preceding_layer_factorization": {"value": "NOT_APPLICABLE", "evidence_refs": ["ocap://no-finality-claim-advanced"]},
+        "reopenable_by_admissible_continuation": {"value": "YES", "evidence_refs": ["ocap://an-acl-or-capability-grant-would-be-required-to-actually-enlarge-the-clients-authority"]},
+        "ordering_relation": {"value": "ORDER_COMPATIBLE", "evidence_refs": ["ocap://before-after-are-order-compatible-protection-states"]}
+      },
+      "normalization_frame": "Common task vocabulary is the set of effects the client can bring about acting alone with its OWN held authority (capability/permission set). The deputy's ambient write authority to SYSX/BILL is NOT part of the client's held authority and is not counted into the normalized set; under that held-fixed authority the client's realizable set is EQUAL before and after the invocation.",
+      "factorization_search_scope": null,
+      "declared_claims": ["CAPABILITY_ENLARGEMENT"],
+      "evidence_grade": "EXPLORATORY",
+      "verification": "UNVERIFIED"
+    }
+  ],
+  "label_neutrality": {"left_label": "before-invocation", "right_label": "after-invocation", "required": true},
+  "assumptions": [
+    "The object of classification is the change in the CLIENT's operational standing produced by the confused-deputy invocation, not the effect on the billing file per se.",
+    "In the ambient-authority regime the deputy conflates designation (the client-supplied filename) with authorization (the deputy's own write right); the client never held, and does not acquire, write authority to SYSX/BILL.",
+    "The declared witness deliberately advances the strongest attacker-flattering reading (CAPABILITY_ENLARGEMENT) so the classifier must accept or reject it."
+  ],
+  "evidence_grade": "EXPLORATORY",
+  "tests": [
+    "Classify an event whose only client-side act was supplying a designator to an ambiently-authorized deputy, with the client's own held authority fixed, and reject the declared capability-enlargement claim once that authority is normalized."
+  ],
+  "falsifiers": [
+    "A construction in which the client actually acquires a persistent, re-exercisable write authority to SYSX/BILL (an ACL entry or an unforgeable capability) holding no other access variable, would move this off NULL/ACCESS toward a genuine access or capability change.",
+    "A pure before/after relabeling changes the computed diagnosis."
+  ],
+  "nonclaims": [
+    "This is a receiver-owned diagnosis of a stated textbook object-capability scenario, not a new security result and not a claim about any deployed system.",
+    "It does not assert that the confused deputy is harmless; the billing file is really corrupted. It asserts only that, under the client-authority frame, that corruption does not license a CAPABILITY_ENLARGEMENT type for the client, because the client's held authority did not amplify."
+  ],
+  "reopening_conditions": [
+    "Reopen if a construction shows the client acquiring re-exercisable authority to the target with no access variable moved, or if the deputy's authority cannot be excluded from the client's normalized frame without redefining the task set."
+  ]
+}

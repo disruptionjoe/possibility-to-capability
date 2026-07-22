@@ -1,0 +1,60 @@
+{
+  "schema_version": "0.1",
+  "assessment_id": "OCAP-AUTHORITY-AMPLIFICATION-TD-001",
+  "status": "provisional",
+  "question": "Rights amplification (object-capability): the client acquires a capability-minting facet (a sealer/unsealer pair or a factory) so that, relative to the SAME ambient access budget, it can now generate and compose capabilities it could not before. Is this a genuine capability enlargement distinct from a permission/access change, or does it collapse into an access grant?",
+  "construction": {
+    "fork_identified": false,
+    "selected_branch_id": "amplification-frame",
+    "retention_statement": "One declared construction: the ambient access budget (ACL entries, reachable resource set) is held fixed and the client's held authority acquires a GENERATIVE facet whose exercise enlarges the normalized realizable task set. A reading that treats acquiring the facet as merely one more permission grant is retained separately as the token-acquisition rival, not collapsed into this one."
+  },
+  "branch_relation": "SAME_OBJECT",
+  "branches": [
+    {
+      "branch_id": "amplification-frame",
+      "label": "client acquires a capability-minting facet",
+      "admissibility": "ADMISSIBLE",
+      "witness": {
+        "possibility_family_relation": {"value": "SAME", "evidence_refs": ["ocap://same-object-graph-universe-before-and-after"]},
+        "representation_relation": {"value": "EQUIVALENT", "evidence_refs": ["ocap://same-protection-state-model-both-endpoints"]},
+        "description_change": {"value": "YES", "evidence_refs": ["ocap://clients-authority-description-now-includes-a-generative-minting-facet"]},
+        "dynamics_change": {"value": "NO", "evidence_refs": ["ocap://intrinsic-protection-dynamics-unchanged-only-the-clients-held-authority-grew"]},
+        "persistent_record": {"value": "NO", "evidence_refs": ["ocap://no-audit-record-formation-is-the-before-after-delta"]},
+        "access_change": {"value": "NO", "evidence_refs": ["ocap://no-ambient-acl-widening-no-new-reachable-resource-added-to-the-clients-access-set"]},
+        "control_change": {"value": "NO", "evidence_refs": ["ocap://no-new-standalone-actuator-added-the-delta-is-generative-authority-not-a-single-actuation"]},
+        "raw_task_set_relation": {"value": "SUPERSET", "evidence_refs": ["ocap://client-can-now-mint-and-compose-capabilities-it-could-not-before"]},
+        "normalized_task_set_relation": {"value": "SUPERSET", "evidence_refs": ["ocap://holding-the-ambient-access-budget-fixed-the-clients-realizable-set-strictly-grows-because-the-facet-is-generative-not-access-mediated"]},
+        "irreversible": {"value": "NO", "evidence_refs": ["ocap://facet-can-be-revoked-in-principle"]},
+        "settlement": {"value": "NO", "evidence_refs": ["ocap://no-finality-claim-advanced"]},
+        "preceding_layer_factorization": {"value": "NOT_APPLICABLE", "evidence_refs": ["ocap://no-finality-claim-advanced"]},
+        "reopenable_by_admissible_continuation": {"value": "YES", "evidence_refs": ["ocap://revoking-the-facet-reopens-the-prior-authority"]},
+        "ordering_relation": {"value": "ORDER_COMPATIBLE", "evidence_refs": ["ocap://before-after-order-compatible"]}
+      },
+      "normalization_frame": "Common task vocabulary is the set of effects realizable by the client holding the ambient access budget (ACL entries, reachable resources) FIXED. Under that held-fixed access, acquiring the generative minting facet strictly enlarges the realizable set, because the amplification is not mediated by any single access knob that could be normalized away.",
+      "factorization_search_scope": null,
+      "declared_claims": ["CAPABILITY_ENLARGEMENT"],
+      "evidence_grade": "EXPLORATORY",
+      "verification": "UNVERIFIED"
+    }
+  ],
+  "label_neutrality": {"left_label": "pre-amplification", "right_label": "post-amplification", "required": true},
+  "assumptions": [
+    "The acquired facet is generative (it mints or amplifies capabilities), so its value is not exhausted by any single reachable-resource grant.",
+    "The ambient access budget is held fixed in the normalized frame; the enlargement is scored against that fixed access rather than as a new ACL entry."
+  ],
+  "evidence_grade": "EXPLORATORY",
+  "tests": [
+    "Classify the acquisition of a generative authority whose normalized realizable set grows with ambient access held fixed as a capability enlargement, and check that it stays distinct from the access-change type."
+  ],
+  "falsifiers": [
+    "A construction showing the facet's every effect is reproducible by a single ACL widening (so the normalized set is EQUAL once that one access is held fixed) would collapse this to an access change.",
+    "A pure pre/post relabeling changes the computed diagnosis."
+  ],
+  "nonclaims": [
+    "This is a receiver-owned diagnosis of a stated object-capability rights-amplification scenario, not a new security theorem.",
+    "It does not claim the P2C static task-set discriminator reproduces the object-capability designation/authorization structural distinction; it claims only that, under the declared frame, a generative authority enlarges the normalized task set and is typed CAPABILITY_ENLARGEMENT."
+  ],
+  "reopening_conditions": [
+    "Reopen if the amplification is shown reducible to a single access grant, or if acquiring the facet cannot be separated from an ambient access widening in any admissible frame."
+  ]
+}

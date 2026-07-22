@@ -1,35 +1,37 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-22T09:20:00-05:00"
-run_ref: RUN-20260722-directed-wave1-tierA-lane1
-bottom_line: Wave-1 directed prep landed. The methodology-level novelty/genre scan graded NEW-FRAMING-ONLY under an adversarial referee (every inferential primitive is subsumed; the possibility-to-finality ladder as a domain-neutral agent-capability instrument is not), a security-first transfer-BREAKER prereg skeleton is landed, and the MIPT measurement-induced-transition pre-kill confirmed ACCESS_CHANGE, removing one candidate witness family from the P2C-2 dynamical-transition search.
-decision_default: Pursue the P2C-2 dynamical-transition specimens (TFIM-quench DQPT thin-shadow kill first, then matched-drive anomalous-Floquet); keep the security-first transfer-BREAKER read-only until directed; sigma stays GU-gated NOT_YET_IMPORTABLE.
+updated_at: "2026-07-22T17:05:00-05:00"
+run_ref: RUN-20260722-directed-lane1-security-xbreak-001
+bottom_line: Directed Lane-1 run executed the security-first transfer-BREAKER P2C-XBREAK-001 (object-capability, domain 1). An inline object-capability adversary attacked the capability/access distinction on the classic confused deputy plus a circularity breaker. VERDICT HOLDS -- P2C keeps CAPABILITY_ENLARGEMENT distinct from ACCESS_CHANGE without circularity (confused deputy types NULL for the client with the capability overclaim rejected; a genuine rights amplification types CAPABILITY_ENLARGEMENT; frame-dependence is a declared CONSTRUCTION_FORK, not a collapse; label-swap invariant), so no BREAK and no hierarchy revision. SIMULTANEOUSLY the predeclared default transfer-fails-novelty is CONFIRMED -- object-capability's own vocabulary is at least as sharp (frame-free) and owns a structural distinction P2C's static task-set discriminator cannot represent -- satisfying the FIRST conjunct of the program-level NOTHING-NEW falsifier. Domain 2 was NOT built (skeleton authorizes domain 1 only); the methodology grade stays NEW-FRAMING-ONLY.
+decision_default: Security transfer-BREAKER is complete and SPENT for current inputs -- do not re-run it or build domains 2-4 under the frozen skeleton. Resume the P2C-2 dynamical-transition specimens (TFIM-quench DQPT thin-shadow kill first, then matched-drive anomalous-Floquet) as the active Lane-1 default; sigma stays GU-gated NOT_YET_IMPORTABLE. A grade move off NEW-FRAMING-ONLY (which would require a second non-physics domain also transfer-failing) is a scientific-status change PAUSED for Joe.
 needs_joe: false
+needs_joe_note: No Joe action required to record this fixture verdict. FLAG for visibility only, no decision requested now -- authorizing the SECOND non-physics domain could fire the program-level falsifier and move the methodology grade toward NOTHING-NEW; that grade/status change is Joe-gated and is not proposed here.
 lanes:
 - lane_id: "1"
   work_status: moving
-  last_movement: MIPT measurement-induced-transition pre-kill confirmed ACCESS_CHANGE (declared CAPABILITY_ENLARGEMENT rejected), removing one candidate witness family from the P2C-2 dynamical-transition search; security-first transfer-BREAKER prereg skeleton P2C-XBREAK-001 landed.
-  movement_ref: explorations/2026-07-22-mipt-access-prekill/NOTE.md
+  last_movement: Executed the directed security-first transfer-BREAKER P2C-XBREAK-001 (object-capability, domain 1). VERDICT HOLDS -- the capability/access discriminator survives without circularity (confused deputy -> NULL_NO_RELEVANT_CHANGE with the CAPABILITY_ENLARGEMENT overclaim rejected; rights amplification -> CAPABILITY_ENLARGEMENT; permission grant -> ACCESS_CHANGE; two frames -> declared CONSTRUCTION_FORK; label-invariant), so no BREAK and no hierarchy revision. The predeclared default transfer-fails-novelty is CONFIRMED (object-capability is at least as sharp), satisfying the first conjunct of the NOTHING-NEW falsifier; grade stays NEW-FRAMING-ONLY.
+  movement_ref: explorations/2026-07-22-security-transfer-breaker-p2c-xbreak-001/SYNTHESIS.md
   steering_attention: watch
-  steering_prompt: Pursue the P2C-2 dynamical-transition specimens (TFIM-quench DQPT thin-shadow-reconstruction kill first, then matched-drive anomalous-Floquet); keep the transfer-BREAKER security probe read-only until directed.
+  steering_prompt: The security transfer-BREAKER is spent -- do not re-run it or build domains 2-4 under the frozen skeleton. Resume the P2C-2 dynamical-transition specimens (TFIM-quench DQPT thin-shadow kill first, then matched-drive anomalous-Floquet). Authorizing a second non-physics domain is Joe-gated because it can fire a scientific-status grade change.
   steering_ref: explorations/2026-07-22-wave1-triple-diamond-prep-steering.md
   light: green
-  reason_code: mipt_access_prekill_confirmed
-  evidence_ref: explorations/2026-07-22-mipt-access-prekill/NOTE.md; tests/classify_transition.py; explorations/2026-07-22-methodology-novelty-genre-scan/TRANSFER-BREAKER-PREREG-SKELETON.md
-  summary: The measurement-induced entanglement phase transition types as an access change because its only control knob is the measurement/monitoring readout rate, not the intrinsic unitary law, so it cannot serve as a dynamical transition with no static-Hamiltonian representative; the North Star's own transfer falsifier now has a security-first executable skeleton.
-  evaluated_at: "2026-07-22T09:20:00-05:00"
-  run_ref: RUN-20260722-directed-wave1-tierA-lane1
+  reason_code: security_transfer_breaker_holds_transfer_fails_novelty
+  evidence_ref: explorations/2026-07-22-security-transfer-breaker-p2c-xbreak-001/SYNTHESIS.md; tests/security_transfer_breaker.py; explorations/2026-07-22-security-transfer-breaker-p2c-xbreak-001/confused-deputy-witness-v0.1.json; tests/classify_transition.py
+  summary: On object-capability -- the strongest subsumer -- the unchanged classifier keeps CAPABILITY_ENLARGEMENT distinct from ACCESS_CHANGE without circularity and rejects the confused-deputy capability overclaim under every honest rival, so the discriminator HOLDS; but object-capability's own capability/ACL/log vocabulary produces the same-or-sharper frame-free verdict and owns a designation/authorization structural distinction P2C's static task-set check cannot represent, so security transfer fails to add novelty (default forecast confirmed).
+  evaluated_at: "2026-07-22T17:05:00-05:00"
+  run_ref: RUN-20260722-directed-lane1-security-xbreak-001
   objective: Test the hierarchy as a transition diagnostic across real source-grounded cases.
-  progress_delta: Pre-killed the MIPT witness family and predeclared the transfer-BREAKER falsifier without building fixtures, changing the access gate, or importing GU truth.
-  scope_position: MIPT removed as a P2C-2 candidate; the TFIM-quench DQPT and matched-drive anomalous-Floquet specimens remain the live P2C-2 candidates; the transfer-BREAKER security probe is predeclared but unrun.
+  progress_delta: Ran the North Star's transfer falsifier on its hardest single domain and recorded a fixture-grade verdict (HOLDS on the discriminator, transfer-fails on novelty) without changing any definition, evaluator, verdict, canon, or public posture.
+  scope_position: Security domain 1 complete and spent; the program-level falsifier's first conjunct is satisfied; domain 2 is unbuilt and Joe-gated; the TFIM-quench DQPT and matched-drive anomalous-Floquet specimens remain the live P2C-2 candidates and are the active Lane-1 default.
   trend_24h: up
-  confidence: med
-  recommendation: Advance the P2C-2 dynamical-transition specimens; keep P2C-REAL-PHYSICAL-WITNESS as the selected core swing and the transfer-BREAKER read-only until directed.
+  confidence: high
+  recommendation: Bank the HOLDS-but-transfer-fails verdict; resume the P2C-2 dynamical-transition specimens; do not re-run or extend the security breaker without explicit authorization.
   findings:
-  - The MIPT pre-kill holds because dynamics_change is NO (unitary law fixed) while access_change is YES (monitoring rate is the readout knob); raw task superset with normalized task equality rejects the capability claim.
-  - The methodology genre scan graded NEW-FRAMING-ONLY; its novelty is contingent on transfer evidence with default forecast transfer fails, so the security-first probe is the highest-value next test.
-  - No source truth, capability, finality, canon, or public posture moved; a pre-kill and a prereg skeleton are not claim promotions.
+  - The confused deputy is the ocap signature "raw access up, normalized authority unchanged" (raw_task SUPERSET, normalized_task EQUAL); the classifier types it NULL for the client and rejects CAPABILITY_ENLARGEMENT, matching object-capability's frame-free verdict.
+  - No circularity: capability is defined as task growth that survives holding access fixed (a difference operator, not access itself); the frame-flip is a declared CONSTRUCTION_FORK and the label-swap control holds, so verdict (a) BREAK / REVISE_HIERARCHY did not trigger.
+  - Transfer fails on novelty: object-capability is at least as sharp and owns a structural designation/authorization distinction P2C's static discriminator cannot represent; a genuine amplification that also records its token types MULTI_LEVEL, not pure capability.
+  - No source truth, capability, finality, canon, claim status, or public posture moved; recording a preregistered breaker's verdict is not a claim promotion. A grade move off NEW-FRAMING-ONLY remains Joe-gated.
   options:
   - id: A
     label: Seek transition
