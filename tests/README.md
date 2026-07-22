@@ -247,3 +247,27 @@ A pass is toy-grade evidence for operator opacity: multiplicity can be visible
 through relative alignment, while absolute labels and operator identity remain
 unsettled. It does not establish observer agency, physical issuance, or any
 source-repo verdict.
+
+## Current discrete-GfE frontier integrity suite
+
+- `two_sector_witness.py` checks the finite two-sector witness used to separate
+  relative sector structure from an absolute-label interpretation.
+- `discrete_gfe_specimen.py` checks the current discrete generalized-free-energy
+  specimen and its declared finite controls.
+- `coflip_holonomy_boundary_preflight.py` checks the co-flip/holonomy boundary
+  preflight before any stronger physical interpretation is considered.
+- `trit_access_closure.py` checks the finite trit access and closure conditions
+  used by the current frontier comparison.
+
+Run from the repository root:
+
+```text
+python tests/two_sector_witness.py
+python tests/discrete_gfe_specimen.py
+python tests/coflip_holonomy_boundary_preflight.py
+python tests/trit_access_closure.py
+```
+
+A pass confirms only that these finite frontier fixtures satisfy their declared
+internal contracts. It does not establish a Hamiltonian transition, observer
+agency, physical issuance, or capability enlargement.
