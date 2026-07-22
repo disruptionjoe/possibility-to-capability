@@ -44,5 +44,16 @@ substrate; **do NOT re-gate on external (σ) issuance**; "relocation of a stuck 
   adversarial referee governs) + a domain-neutral **transfer-BREAKER** battery prereg skeleton, **security
   as domain 1**, default forecast "transfer fails." Read-only; do NOT build fixtures until the genre gate
   returns. This is the campaign's single highest value-per-token gate.
+- **UNIVERSALITY REFRAME (Joe, 2026-07-22 — supersedes the "novelty-or-bust" read):** the transfer battery's
+  value is a **cross-domain UNIVERSALITY contribution**, not only a novel primitive. A "same typed structure
+  / same math as field X" result is a **POSITIVE universality data point** (complexity-science mode: the
+  coarse invariant that recurs), NOT a novelty failure — do NOT file it NOTHING-NEW-and-abandon. The
+  genuinely-unclaimed object is the possibility→…→finality **ladder as one domain-neutral instrument** (the
+  scan found it unpackaged anywhere). Claim at the **coarse-invariant level** (P2C is the common denominator,
+  not the richest per-domain description — object-capability is genuinely richer in security), and prioritize
+  domains where the universality is **non-trivial / forcing**, not endless "holds here too" confirmations.
+  Pursue P2C-3 as a cross-domain universality result + a reusable cross-domain audit instrument. The
+  2026-07-22 security transfer-breaker (HOLDS, non-circular, same verdict as object-capability) is, under
+  this lens, the FIRST confirmed cross-domain identity — a positive datum, not a strike.
 
 **Full candidate portfolios + predeclared falsifiers:** Wave-1 triple-diamond prep output (2026-07-22).
