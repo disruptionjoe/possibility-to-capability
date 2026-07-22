@@ -212,6 +212,12 @@ steward's).** The d=1 ring instantiation is two-sector, witness-passing,
 and its sector datum is carried by an exact self-adjoint matter operator of
 a published model. The qualifications are the honest gap in Section 7.
 
+> **Current steward disposition (supersedes the K-d proposal above):** the
+> later primary-source audit preserves the qualified order-two sector but finds
+> no explicit Hamiltonian role or dynamical transition. Current result:
+> `K_D_QUALIFIED_SECTOR_PRESERVED__NO_HAMILTONIAN_TRANSITION`. See
+> `../2026-07-21-discrete-gfe-primary-source-spine-check.md`.
+
 ## 5. Witness-leg table (ring specimen) and transition frame fields
 
 Legs, all exact, all with the two-sector witness's discipline:
@@ -412,7 +418,12 @@ headline:
 Four `[T]` setup checks excluded from the headline. Strict lint: registry
 convention, zero violations, zero advisories.
 
-## 10. Proposed steward disposition (proposal only, not executed)
+## 10. Historical proposed steward disposition (superseded)
+
+The bullets below preserve this exploration's original proposal. They are not
+the current steward disposition. The 2026-07-21 primary-source integrity audit
+resolved the ambiguity against the Hamiltonian reading: the sector remains
+qualified, while the source-grounded Hamiltonian-transition gate remains open.
 
 - Record this exploration as **K-d qualified: specimen CANDIDATE at
   exploration tier** — the d=1 ring instantiation of arXiv:2404.08556 is a
