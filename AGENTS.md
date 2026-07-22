@@ -314,6 +314,18 @@ Discovery is Lane-less. A direct mount uses these local surfaces without
 CapacityOS. System observations, health, schedules, and execution history are
 not Lane truth.
 
+## Purpose, Passion, and Practice
+
+- **Purpose:** Determine whether the
+  possibility-to-dynamics-to-records-to-access-to-capability-to-finality
+  hierarchy is a valid, transferable diagnostic of what changed in a system.
+- **Passion:** Test whether agents can enable collective intelligence across
+  independent projects without erasing their distinct perspectives,
+  responsibilities, meanings, or evidentiary limits.
+- **Practice:** Build a reusable library of provenance-preserving cross-project
+  reasoning tools: frozen packets, boundary contracts, typed-transition
+  diagnostics, gate checks, and abstention patterns.
+
 ## Versioning Default
 
 After any coherent batch of repository changes that Joe has authorized, commit
