@@ -1,32 +1,32 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-22T18:52:00-05:00"
-run_ref: RUN-20260722-184245-possibility-to-capability-stewardship
-bottom_line: The security-first P2C-XBREAK-001 result is banked under Joe's later universality reframe. The unchanged capability/access discriminator HOLDS without circularity across object-capability security, making this the first positive cross-domain identity at the coarse-invariant level. Object-capability remains the sharper native vocabulary, so transfer still failed to add novelty and the methodology grade remains NEW-FRAMING-ONLY. These are compatible findings, not a reason to abandon P2C-3 as NOTHING-NEW. Domain 2 remains unbuilt and Joe-gated; no hierarchy, claim, canon, or public posture moved.
-decision_default: Bank the security result as both a positive universality datum and a novelty limitation. Do not re-run P2C-XBREAK-001 or build domains 2-4 under the frozen skeleton. Resume the bounded P2C-2 dynamical-transition supplier checks (TFIM-quench DQPT thin-shadow kill first, then matched-drive anomalous-Floquet) until a second non-physics domain is explicitly authorized; sigma stays GU-gated NOT_YET_IMPORTABLE.
+updated_at: "2026-07-22T20:55:00-05:00"
+run_ref: RUN-20260722-204348-possibility-to-capability-stewardship
+bottom_line: Joe's ratified Science Council role makes the reusable cross-domain capability diagnostic a first-class product deliverable. The repository already has a tested Transition Diagnosis v0.1 evaluator, but it remains buried under tests and is not yet a stable user-facing instrument. The bounded next move is an executable MVP extraction that preserves current semantics, evidence requirements, abstention, label invariance, and nonclaim boundaries. The security datum remains banked, domain 2 remains Joe-gated, and no hierarchy, grade, claim, canon, or public posture moves.
+decision_default: Extract the existing evaluator into a stable repository-owned command with a compatibility wrapper, one documented example, and deterministic regression checks. Do not re-run security, build domain 2, deploy, or imply that a provisional diagnosis validates witnesses or establishes universality.
 needs_joe: false
 needs_joe_note: No Joe action required to record this fixture verdict. FLAG for visibility only, no decision requested now -- authorizing the SECOND non-physics domain could fire the program-level falsifier and move the methodology grade toward NOTHING-NEW; that grade/status change is Joe-gated and is not proposed here.
 lanes:
 - lane_id: "1"
   work_status: moving
-  last_movement: Executed the directed security-first transfer-BREAKER P2C-XBREAK-001 (object-capability, domain 1). VERDICT HOLDS -- the capability/access discriminator survives without circularity (confused deputy -> NULL_NO_RELEVANT_CHANGE with the CAPABILITY_ENLARGEMENT overclaim rejected; rights amplification -> CAPABILITY_ENLARGEMENT; permission grant -> ACCESS_CHANGE; two frames -> declared CONSTRUCTION_FORK; label-invariant), so no BREAK and no hierarchy revision. The predeclared default transfer-fails-novelty is CONFIRMED (object-capability is at least as sharp), satisfying the first conjunct of the NOTHING-NEW falsifier; grade stays NEW-FRAMING-ONLY.
-  movement_ref: explorations/2026-07-22-security-transfer-breaker-p2c-xbreak-001/SYNTHESIS.md
+  last_movement: "Re-ranked current Lane 1 under Joe's ratified role: the executable capability-diagnostic instrument MVP now leads; the spent security transfer probe is banked and non-hourly, while the second non-physics domain remains Joe-gated."
+  movement_ref: steward/research-portfolio.json#P2C-CAPABILITY-DIAGNOSTIC-INSTRUMENT
   steering_attention: watch
-  steering_prompt: Preserve the security result as the first positive cross-domain universality datum without erasing its transfer-fails-novelty result. The security fixture is spent; do not re-run it or build domains 2-4 under the frozen skeleton. Resume the bounded P2C-2 dynamical-transition supplier checks. Authorizing a second non-physics domain is Joe-gated because it can fire a scientific-status grade change.
+  steering_prompt: Extract the already-tested Transition Diagnosis v0.1 evaluator into a stable user-facing command without changing semantics. Preserve explicit evidence, abstention, label invariance, compatibility, and the provisional/non-universality firewall.
   steering_ref: explorations/2026-07-22-wave1-triple-diamond-prep-steering.md
   light: green
-  reason_code: security_transfer_breaker_holds_universality_datum_banked
+  reason_code: capability_diagnostic_instrument_mvp_selected
   evidence_ref: explorations/2026-07-22-security-transfer-breaker-p2c-xbreak-001/SYNTHESIS.md; tests/security_transfer_breaker.py; explorations/2026-07-22-security-transfer-breaker-p2c-xbreak-001/confused-deputy-witness-v0.1.json; tests/classify_transition.py
-  summary: On object-capability -- the strongest subsumer -- the unchanged classifier keeps CAPABILITY_ENLARGEMENT distinct from ACCESS_CHANGE without circularity and rejects the confused-deputy capability overclaim under every honest rival. Under Joe's universality reframe this is the first positive cross-domain identity at the coarse-invariant level, while object-capability's same-or-sharper native vocabulary still means the transfer added no novel primitive.
-  evaluated_at: "2026-07-22T18:52:00-05:00"
-  run_ref: RUN-20260722-184245-possibility-to-capability-stewardship
+  summary: The validated evaluator is executable but tests-only; a bounded extraction can produce the first reusable instrument MVP without new scientific claims, domain expansion, or duplicated classification logic.
+  evaluated_at: "2026-07-22T20:55:00-05:00"
+  run_ref: RUN-20260722-204348-possibility-to-capability-stewardship
   objective: Test the hierarchy as a transition diagnostic across real source-grounded cases.
-  progress_delta: "Reconciled the closed security result with Joe's later universality steering: banked one positive cross-domain identity without erasing the novelty limitation, changing the grade, or duplicating the fixture."
-  scope_position: Security domain 1 complete and spent; the program-level falsifier's first conjunct is satisfied; domain 2 is unbuilt and Joe-gated; the TFIM-quench DQPT and matched-drive anomalous-Floquet specimens remain the live P2C-2 candidates and are the active Lane-1 default.
+  progress_delta: "Reconciled the post-receipt Science Council ratification into an owner-local ranked work item and removed the stale spent-security hourly selection."
+  scope_position: Instrument MVP extraction is current and owner-local; security remains spent, domain 2 remains Joe-gated, and physical supplier checks remain bounded fallback work.
   trend_24h: up
   confidence: high
-  recommendation: Bank the HOLDS result as both the first positive universality datum and a transfer-fails-novelty limitation; resume the P2C-2 dynamical-transition specimens; do not re-run or extend the security breaker without explicit authorization.
+  recommendation: Build the v0.1 instrument MVP from the existing evaluator, then rerank from actual usability and regression evidence.
   findings:
   - The confused deputy is the ocap signature "raw access up, normalized authority unchanged" (raw_task SUPERSET, normalized_task EQUAL); the classifier types it NULL for the client and rejects CAPABILITY_ENLARGEMENT, matching object-capability's frame-free verdict.
   - No circularity: capability is defined as task growth that survives holding access fixed (a difference operator, not access itself); the frame-flip is a declared CONSTRUCTION_FORK and the label-swap control holds, so verdict (a) BREAK / REVISE_HIERARCHY did not trigger.

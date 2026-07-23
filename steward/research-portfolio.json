@@ -31,6 +31,7 @@
     "wave1_directed_steering_2026_07_22": "Landed the Wave-1 triple-diamond directed steering (explorations/2026-07-22-wave1-triple-diamond-prep-steering.md) as repo-local prep-only steering; no claim/canon/verdict/freeze moved. Two Tier-A items executed 2026-07-22: (P2C-3) a methodology-level novelty/genre scan returned adversarial-referee NEW-FRAMING-ONLY with a full related-work spine, plus the security-first transfer-BREAKER preregistration skeleton P2C-XBREAK-001 (explorations/2026-07-22-methodology-novelty-genre-scan/); (P2C-2 STEP 0) the MIPT classify_transition pre-kill CONFIRMED as ACCESS_CHANGE, removing the measurement-induced-transition witness family (explorations/2026-07-22-mipt-access-prekill/). Directed priorities for the hourly cadence: P2C-REAL-PHYSICAL-WITNESS remains the selected core swing, and the P2C-2 dynamical-transition search should pursue the TFIM-quench DQPT thin-shadow-reconstruction kill first, then the matched-drive anomalous-Floquet specimen; the transfer-BREAKER security probe stays read-only until directed; the sigma (P2C-1) value stays GU-gated NOT_YET_IMPORTABLE. Council/scan agreement is not evidence; the adversarial referee and the literature dispose.",
     "charter_realignment_2026_07_22": "Later same-day authoritative Lane reprioritization at LANES.yaml commit 18a8efc supersedes the prep-only hourly ordering while preserving its evidence. Cross-domain transfer P2C-3 is the top Lane 1 headline because transfer beyond physics is the repository's own chartered falsifier. P2C-XBREAK-001 security-first is the selected next falsification under its preregistered default TRANSFER FAILS. P2C-2 physical/dynamical specimens remain bounded supplier checks for Dynamic Unity and are non-hourly until the transfer probe closes or new evidence triggers their reopen condition. P2C-1 remains GU-gated NOT_YET_IMPORTABLE.",
     "universality_reframe_2026_07_22": "Joe's later steering at commit 2777410 supersedes a novelty-or-bust interpretation without changing the adversarial-referee grade. The unchanged hierarchy's non-circular HOLDS result in object-capability security is the first positive cross-domain identity at the coarse-invariant level even though object-capability remains the sharper native vocabulary and the methodology remains NEW-FRAMING-ONLY. Bank both facts: transfer failed to add a novel primitive, and transfer succeeded as one universality datum. Do not abandon P2C-3 as NOTHING-NEW; also do not promote universality from one domain, re-run the spent security fixture, or build the Joe-gated second non-physics domain under the frozen skeleton."
+    ,"capability_diagnostic_instrument_role_2026_07_22": "Joe's ratified Science Council role makes the reusable cross-domain capability diagnostic a first-class product deliverable, valued for utility independently of the grand universality claim. The next bounded Lane 1 move is to extract the already-tested Transition Diagnosis v0.1 evaluator from its tests-only home into an explicit user-facing tool surface with a stable command, example input, compatibility wrapper, and honest nonclaim boundary. This is an executable discriminator, not a schema-only byproduct, claim promotion, deployment, or domain-2 experiment."
   },
   "lane_manifest_ref": "LANES.yaml",
   "artifact_role": "Repository-owned work and ranking portfolio. Durable Lane definitions and control state exist only in root LANES.yaml.",
@@ -63,9 +64,23 @@
       "forbidden_shortcut": "Do not treat analogy, fluent narrative, a packet schema, irreversible process, stochastic outcome, added label, or domain-specific relabeling as typed adjudication. Do not spend an hourly run retrying ADAPTER2-01 without new native source or target structure that meets its reopen burden.",
       "internal_work_items": [
         {
+          "id": "P2C-CAPABILITY-DIAGNOSTIC-INSTRUMENT",
+          "state": "ACTIVE_MVP_EXTRACTION",
+          "rank": 1,
+          "priority_score": 29,
+          "hourly_eligible": true,
+          "relation_to_hard_core": "Lane 1 operational expression of the cross-domain universality wager: expose the already-tested typed-change evaluator as a reusable capability-versus-access diagnostic whose utility is independently testable across domains.",
+          "authority_2026_07_22": "Science Council role ratified by Joe in LANES.yaml commits 76e04a3 and c1faeee: the capability-diagnostic instrument is a first-class product deliverable. Purpose, hierarchy definitions, scientific grade, claim status, canon, and public posture remain unchanged.",
+          "activation": "Extract the existing tests/classify_transition.py evaluator into a stable user-facing tool without changing its classification semantics; preserve a compatibility wrapper, one honest example, deterministic regression checks, and the provisional/non-universality firewall.",
+          "next_swing": "Build the bounded v0.1 command-line MVP from the already-executed evaluator. The MVP must run one assessment end to end, emit a machine-readable result, keep evidence-bearing inputs explicit, preserve label-invariance and abstention behavior, and state that classification does not validate supplied witnesses or establish universality. Do not deploy, publish externally, add domain 2, or change scientific status.",
+          "success_condition": "A user can invoke one stable repository-owned command on a documented example and receive the same validated typed result as the existing evaluator, while the old test entrypoint remains compatible and regression checks pass.",
+          "kill_condition": "The extraction changes verdict semantics, hides evidence requirements, turns unknowns into success, duplicates the evaluator, or presents a provisional diagnosis as source truth or universality evidence.",
+          "forbidden_shortcut": "Do not count a schema, README, renamed test file, or narrative mockup alone as the instrument; the bounded output must execute."
+        },
+        {
           "id": "P2C-BOUNDARY-EXTERNALITY-DISCRIMINATOR",
           "state": "ADVANCED_OPEN_FRONTIER",
-          "rank": 2,
+          "rank": 3,
           "priority_score": 25,
           "hourly_eligible": false,
           "relation_to_hard_core": "Core wager through a falsifier/control interface: P2C must distinguish outside/local-patch, fixed condition, resource flow, access change, record formation, executable capability change, completion, and finality before it can combine boundary-source packets without smuggling in a desired verdict.",
@@ -80,12 +95,12 @@
         },
         {
           "id": "P2C-CROSS-DOMAIN-TRANSITION-ADJUDICATION",
-          "state": "ADVANCED_OPEN_FRONTIER",
-          "rank": 1,
+          "state": "SECURITY_DATUM_BANKED_SECOND_DOMAIN_JOE_GATED",
+          "rank": 2,
           "priority_score": 23,
-          "hourly_eligible": true,
+          "hourly_eligible": false,
           "relation_to_hard_core": "Core wager in its generality-testing form: establish whether the same typed change discipline that survived physical specimens can classify a nonphysics transition without analogy collapse or domain-specific redefinition.",
-          "next_swing": "Execute the preregistered P2C-XBREAK-001 security-first transfer breaker against a bounded source-grounded object-capability case. Preserve the default TRANSFER FAILS, run the incumbent-subsumer rival, and abstain if matched frame, resource, task oracle, or completion-rival evidence is missing. Do not expand to domains 2-4 unless the security result satisfies the preregistered continuation gate.",
+          "next_swing": "Do not repeat P2C-XBREAK-001. Bank security as one positive coarse-invariant universality datum and one transfer-fails-novelty result. Re-open only on Joe's explicit authorization for the second non-physics domain or a new source-grounded case meeting the recorded reopening burden.",
           "swing_2026_07_16": "Executed first source-grounded nonphysics transfer on imported TAF-001 (finite record/access intervention packet). Added tests/cross_domain_transition_adjudication.py and explorations/2026-07-16-cross-domain-transition-adjudication/SYNTHESIS.md. Result: CROSS_DOMAIN_TRANSFER_PASS_SCOPED. ALPHA classifies as ACCESS_CHANGE while quarantining TaF-native nonmonotone reconstructibility deltas from P2C capability; BETA classifies as RECORD_FORMATION under fixed holder access; capability, access-relabeling, and finality overclaim controls fail as intended. Validation headline: 7 [E] + 3 [F] = 10. Scope: designed finite source packet only; no TaF claim status, public posture, capability enlargement, or finality verdict moved.",
           "rerank_2026_07_16": "Advanced and moved to rank 2 after the first cross-domain transfer fixture. The item remains open for a harder real nonphysics packet with operational capability-side evidence, but the immediate due reach swing is discharged for current available frozen inputs. Priority returns to P2C-REAL-PHYSICAL-WITNESS Alternate B unless a stronger source-grounded nonphysics packet arrives first.",
           "swing_2026_07_19": "Executed CAI public-entryway governance transition adjudication at exploration tier using direct-chat quick-load pins only: projection rev 2, cai-governance-operations canon/cai-domain-constitution.md at Governance head 06ff7a2, admitted SHA-256 1EFB043FDECB83CBC0E8F7B19496910A084BA57F66B1E0E38C7B4A428197A5FB, active cai-church-public-entryway agreement revision 1 with Governance and Church acceptance refs. Added tests/cai_entryway_transition_adjudication.py and explorations/2026-07-19-cai-entryway-transition-adjudication/SYNTHESIS.md. Result: CROSS_DOMAIN_TRANSFER_PASS_SCOPED__GOVERNANCE_ENTRYWAY. The unchanged transition classifier returns MULTI_LEVEL with RECORD_FORMATION, ACCESS_CHANGE, and scoped routing CAPABILITY_ENLARGEMENT under the declared relationship frame. Controls block digest-blind acceptance, one-sided acceptance, access-only capability overclaim, proposal-as-authority, and public-posture movement. Validation headline: 8 [E] + 5 [F] = 13. No CAI source truth, Church truth, source packet import, public posture, external action, content verdict, or finality claim moved.",
@@ -96,12 +111,13 @@
           "forbidden_shortcut": "Do not use a merely illustrative analogy or a case whose desired classification is embedded in its labels. Source-ground the transition and make the failing direction executable.",
           "candidate_lead": "Continuity Ledger K0 individuation and after-the-fact relabeling is an unverified lead supplied outside P2C. It becomes eligible only through a source-issued, frozen, provenance-bearing CL packet. Do not reconstruct or accept the source finding from a peer note; if no packet exists, choose another controlled case.",
           "genre_gate_2026_07_22": "Wave-1 P2C-3 executed a methodology-level novelty/genre scan (explorations/2026-07-22-methodology-novelty-genre-scan/SYNTHESIS.md). Adversarial-referee verdict NEW-FRAMING-ONLY: every load-bearing inferential primitive is subsumed by a mature literature (control-theory reachability/observability + Kalman decomposition and object-capability security for the access/capability distinction; Halpern-Pearl actual causation for the matched frame; Mayo severe testing and Platt strong inference for the completion-rival; COS preregistration for predeclared falsifiers; reject-option ML and agent-eval abstention categories for honest abstention), but no single prior packages the possibility->dynamics->records->access->capability->finality ladder as a domain-neutral agent-capability instrument, and the records/finality levels plus the agent-capability framing are unpackaged. The novelty is contingent on transfer evidence; default forecast is transfer fails. The security-first transfer-BREAKER preregistration skeleton P2C-XBREAK-001 (explorations/2026-07-22-methodology-novelty-genre-scan/TRANSFER-BREAKER-PREREG-SKELETON.md) is landed as the highest-value cross-domain transfer probe and supersedes the Continuity Ledger lead in priority; it stays read-only until directed. No fixtures were built.",
-          "rerank_2026_07_22_charter_realignment": "Promoted to rank 1 and hourly-eligible by the later accepted LANES.yaml charter realignment. The preregistered security-first P2C-XBREAK-001 probe is now the selected Lane 1 falsification. This changes execution priority only; it does not change the NEW-FRAMING-ONLY grade or predetermine the transfer result."
+          "rerank_2026_07_22_charter_realignment": "Promoted to rank 1 and hourly-eligible by the later accepted LANES.yaml charter realignment. The preregistered security-first P2C-XBREAK-001 probe was selected and subsequently executed. Its closed result is banked; this historical selection no longer confers eligibility.",
+          "rerank_2026_07_22_instrument_role": "Demoted to rank 2 and made non-hourly after the security probe closed and Joe ratified the capability-diagnostic instrument as a first-class output. The new instrument item leads because it is executable under current authority without repeating security or opening domain 2."
         },
         {
           "id": "P2C-REAL-PHYSICAL-WITNESS",
           "state": "ADVANCED_OPEN_FRONTIER",
-          "rank": 3,
+          "rank": 4,
           "rerank_2026_07_16f": "Promoted to rank 1 after P2C-NULL-COMPLETION-CLOSURE resolved (derived firewall, D2 closed at model grade). Lane doctrine invariant: belt resolved -> core wager leads. The NEXT Progress swing on this item is the designated REACH swing (see selection_contract.reach_swing_accounting_2026_07_16): Alternate C (BEC quantized circulation, independent domain replication) or Alternate B (topological entanglement entropy gamma=log D). Both are now triply motivated: C4 per-construction transfer, F5 watch, and the completion-closure result's own transfer test -- the composite attack reached Q and P, so the first question for any new witness model is whether its local-invariance leg is stronger or weaker than the ring's.",
           "priority_score": 22,
           "hourly_eligible": false,
@@ -131,7 +147,7 @@
         {
           "id": "P2C-BOUNDARY-ADAPTER",
           "state": "ADVANCED_OPEN_FRONTIER",
-          "rank": 4,
+          "rank": 5,
           "priority_score": 27,
           "hourly_eligible": false,
           "relation_to_hard_core": "Belt serving the core directly: the adapter is the typed interface the core wager's witness must cross. Now LEADS (rerank_2026_07_16b): the real witness has disciplined the definitions per the prior rerank's intent, so the adapter should be built to consume the witness's concrete structure.",
@@ -146,7 +162,7 @@
         {
           "id": "P2C-NULL-COMPLETION-CLOSURE",
           "state": "RESOLVED_DERIVED_FIREWALL_MODEL_RELATIVE",
-          "rank": 5,
+          "rank": 6,
           "priority_score": 26,
           "hourly_eligible": false,
           "swing_2026_07_16e": "Executed (Joe authorized, direct chat, 2026-07-16). CompletionClass-P2C v0.1 built and closed: nine channel constructors + certified/hull containment constructors, three claim classes, three admissibility axioms with pre-this-swing P2C provenance (A-FRAME = witness frame declaration + adapter RESOURCE_FRAME_CHANGED; A-UNIF = adapter verdict-carrying rejection; A-CAL = this item's own pre-declared kill condition). FIREWALL VERDICT: DERIVED, not stipulated and not refuted -- a theorem of the finite model from type-free axioms (hull totality + uniformity + non-constancy cap uncertified containment at representational; A-FRAME blocks in-frame upgrade of certified containment). The refutation branch was RUN: the unrestricted absorber reopens absorption and simultaneously collapses the instrument (constant verdict map, f2-fail). Scope binding per referee R1: derivation binds instrument-admissible standards only; C2 NARROWED (v1-table-relativity -> axiom-relativity), not eliminated. COMPOSITION (referee D2): class closed under sequential composition as a verified FIXPOINT (c4); no composite absorbs the witness (c1), the closure strictly exceeds the singles (c3, register target needs depth 2), and the escape is theorem-shaped (c2 carrier dichotomy). HEADLINE HONESTY: the composite attack comes within ONE signature of killing the scoped survivor -- composites reach Q and P; the entire escape hangs on local-op invariance (c1-fail). Kill condition checked executably in BOTH directions, NOT triggered (p1 breadth, p2/f1 restriction-with-bite). F1: legitimacy-standard remainder (a) DISCHARGED at exploration tier, model-relative; (b) narrowed; (c) individuation fork and (d) family-exhaustiveness untouched -- F1 LIVE, FURTHER NARROWED, now carried by fork/transfer legs. Fixture 11 [E] + 4 [F] = 15, strict lint clean, exit 0. Files: explorations/2026-07-16-completion-class-firewall/{COMPLETION-CLASS-P2C,SYNTHESIS,REFEREE-REPORT}.md + closure_output.txt; tests/p2c_completion_class_closure.py. Referee-governed; record stands as corrected.",
@@ -162,7 +178,7 @@
         {
           "id": "P2C-CROSS-REPO-ADJUDICATION",
           "state": "ADVANCED_RAW_RESTRICTION_SEPARATION",
-          "rank": 6,
+          "rank": 7,
           "priority_score": 23,
           "hourly_eligible": false,
           "re_arm_2026_07_16": "Re-arm condition branch 2 is now MET: CompletionClass-P2C v0.1 exists (explorations/2026-07-16-completion-class-firewall/) and is ready for a second-standard re-adjudication of P2C-W1. That re-adjudication is a LOCAL swing: it re-runs the completion leg under the P2C-owned standard using the frozen witness bundle and the already-imported sovereign packets read-only; it requires NO new cross-repo action and NO proposals. Expected value: tests whether the scoped-survivor verdict is stable when C2's v1-relativity is replaced by P2C's derived firewall. Ranked below the witness reach swing and the unblocked adapter rerun because the derived cap agrees with v1's in content, so the re-adjudication's information gain is confirmatory unless an axiom fails on contact.",
@@ -181,7 +197,7 @@
         {
           "id": "P2C-METHODOLOGY-NOVELTY-GENRE",
           "state": "SECURITY_TRANSFER_BREAKER_RUN_HOLDS_UNIVERSALITY_DATUM_BANKED",
-          "rank": 7,
+          "rank": 8,
           "priority_score": 18,
           "hourly_eligible": false,
           "relation_to_hard_core": "Lane 2 legitimacy feeding Lane 1: establishes whether the agent-capability methodology (source-grounded, matched-frame, completion-rival, preregistered, abstaining typed-change battery) is subsumed by prior work, and runs the North Star's own transfer falsifier at the methodology level before any domain fixture is built.",
