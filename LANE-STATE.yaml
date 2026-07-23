@@ -1,32 +1,32 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-22T20:55:00-05:00"
-run_ref: RUN-20260722-204348-possibility-to-capability-stewardship
-bottom_line: Joe's ratified Science Council role makes the reusable cross-domain capability diagnostic a first-class product deliverable. The repository already has a tested Transition Diagnosis v0.1 evaluator, but it remains buried under tests and is not yet a stable user-facing instrument. The bounded next move is an executable MVP extraction that preserves current semantics, evidence requirements, abstention, label invariance, and nonclaim boundaries. The security datum remains banked, domain 2 remains Joe-gated, and no hierarchy, grade, claim, canon, or public posture moves.
-decision_default: Extract the existing evaluator into a stable repository-owned command with a compatibility wrapper, one documented example, and deterministic regression checks. Do not re-run security, build domain 2, deploy, or imply that a provisional diagnosis validates witnesses or establishes universality.
+updated_at: "2026-07-22T21:02:00-05:00"
+run_ref: RUN-20260722-204348-possibility-to-capability-progress
+bottom_line: The first reusable capability-diagnostic MVP is complete. Transition Diagnosis v0.1 now has a stable repository-owned command, documented example, explicit evidence and nonclaim boundaries, and a compatibility wrapper for every historical test command. Canonical and compatibility outputs match, and the security breaker remains green. The MVP changes no classifier semantics, hierarchy, grade, claim, canon, domain authorization, deployment, or public posture.
+decision_default: Bank the executable v0.1 MVP and wait for a real user or domain fixture to expose the next usability or evidence-boundary failure. Do not invent domain 2, duplicate the evaluator, deploy, or treat a provisional diagnosis as witness validation or universality evidence.
 needs_joe: false
 needs_joe_note: No Joe action required to record this fixture verdict. FLAG for visibility only, no decision requested now -- authorizing the SECOND non-physics domain could fire the program-level falsifier and move the methodology grade toward NOTHING-NEW; that grade/status change is Joe-gated and is not proposed here.
 lanes:
 - lane_id: "1"
   work_status: moving
-  last_movement: "Re-ranked current Lane 1 under Joe's ratified role: the executable capability-diagnostic instrument MVP now leads; the spent security transfer probe is banked and non-hourly, while the second non-physics domain remains Joe-gated."
+  last_movement: Extracted the unchanged Transition Diagnosis v0.1 evaluator into the stable tools/capability_diagnostic.py command, preserved the historical wrapper, documented one example and nonclaim boundary, and passed deterministic regression.
   movement_ref: steward/research-portfolio.json#P2C-CAPABILITY-DIAGNOSTIC-INSTRUMENT
   steering_attention: watch
-  steering_prompt: Extract the already-tested Transition Diagnosis v0.1 evaluator into a stable user-facing command without changing semantics. Preserve explicit evidence, abstention, label invariance, compatibility, and the provisional/non-universality firewall.
+  steering_prompt: Bank the MVP. Re-open only on a real user or domain fixture that exposes an input, usability, evidence-boundary, packaging, or regression failure.
   steering_ref: explorations/2026-07-22-wave1-triple-diamond-prep-steering.md
   light: green
-  reason_code: capability_diagnostic_instrument_mvp_selected
-  evidence_ref: explorations/2026-07-22-security-transfer-breaker-p2c-xbreak-001/SYNTHESIS.md; tests/security_transfer_breaker.py; explorations/2026-07-22-security-transfer-breaker-p2c-xbreak-001/confused-deputy-witness-v0.1.json; tests/classify_transition.py
-  summary: The validated evaluator is executable but tests-only; a bounded extraction can produce the first reusable instrument MVP without new scientific claims, domain expansion, or duplicated classification logic.
-  evaluated_at: "2026-07-22T20:55:00-05:00"
-  run_ref: RUN-20260722-204348-possibility-to-capability-stewardship
+  reason_code: capability_diagnostic_instrument_mvp_complete
+  evidence_ref: tools/capability_diagnostic.py; tools/README.md; tests/classify_transition.py; tests/security_transfer_breaker.py
+  summary: A stable repository-owned command now exposes the tested evaluator without duplicated logic, while historical imports and commands remain compatible and provisional/non-universality boundaries remain explicit.
+  evaluated_at: "2026-07-22T21:02:00-05:00"
+  run_ref: RUN-20260722-204348-possibility-to-capability-progress
   objective: Test the hierarchy as a transition diagnostic across real source-grounded cases.
-  progress_delta: "Reconciled the post-receipt Science Council ratification into an owner-local ranked work item and removed the stale spent-security hourly selection."
-  scope_position: Instrument MVP extraction is current and owner-local; security remains spent, domain 2 remains Joe-gated, and physical supplier checks remain bounded fallback work.
+  progress_delta: "Delivered the executable v0.1 capability-diagnostic MVP with compatibility and regression evidence, then advanced the item out of repeat-hourly selection."
+  scope_position: Instrument MVP complete for current inputs; security remains spent, domain 2 remains Joe-gated, and all further work requires a real fixture, user need, or recorded reopen condition.
   trend_24h: up
   confidence: high
-  recommendation: Build the v0.1 instrument MVP from the existing evaluator, then rerank from actual usability and regression evidence.
+  recommendation: Use the stable command on real evidence-bearing assessments and reopen instrument work only from observed failure or authorized new-domain demand.
   findings:
   - The confused deputy is the ocap signature "raw access up, normalized authority unchanged" (raw_task SUPERSET, normalized_task EQUAL); the classifier types it NULL for the client and rejects CAPABILITY_ENLARGEMENT, matching object-capability's frame-free verdict.
   - No circularity: capability is defined as task growth that survives holding access fixed (a difference operator, not access itself); the frame-flip is a declared CONSTRUCTION_FORK and the label-swap control holds, so verdict (a) BREAK / REVISE_HIERARCHY did not trigger.

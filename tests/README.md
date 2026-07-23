@@ -73,7 +73,9 @@ promote a source claim, or validate the receiver judgments' substance.
 
 ## Transition diagnosis contract
 
-- `classify_transition.py` validates and classifies a provisional
+- `../tools/capability_diagnostic.py` is the reusable command-line instrument;
+  `classify_transition.py` remains its compatibility wrapper for historical
+  commands and test imports. The instrument validates and classifies a provisional
   Transition Diagnosis v0.1 witness record using only the Python standard
   library.
 - `validate_transition_diagnosis_contract.py` materializes and checks 35
@@ -109,6 +111,8 @@ Run from the repository root:
 ```text
 python tests/validate_transition_diagnosis_contract.py
 python tests/classify_transition.py tests/fixtures/transition-diagnosis-v0.1-valid.json
+
+python tools/capability_diagnostic.py tests/fixtures/transition-diagnosis-v0.1-valid.json
 python tests/cross_domain_transition_adjudication.py
 python tests/security_transfer_breaker.py
 python tests/classify_transition.py explorations/2026-07-22-security-transfer-breaker-p2c-xbreak-001/confused-deputy-witness-v0.1.json

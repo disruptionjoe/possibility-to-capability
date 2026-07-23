@@ -65,17 +65,18 @@
       "internal_work_items": [
         {
           "id": "P2C-CAPABILITY-DIAGNOSTIC-INSTRUMENT",
-          "state": "ACTIVE_MVP_EXTRACTION",
+          "state": "MVP_COMPLETE",
           "rank": 1,
           "priority_score": 29,
-          "hourly_eligible": true,
+          "hourly_eligible": false,
           "relation_to_hard_core": "Lane 1 operational expression of the cross-domain universality wager: expose the already-tested typed-change evaluator as a reusable capability-versus-access diagnostic whose utility is independently testable across domains.",
           "authority_2026_07_22": "Science Council role ratified by Joe in LANES.yaml commits 76e04a3 and c1faeee: the capability-diagnostic instrument is a first-class product deliverable. Purpose, hierarchy definitions, scientific grade, claim status, canon, and public posture remain unchanged.",
           "activation": "Extract the existing tests/classify_transition.py evaluator into a stable user-facing tool without changing its classification semantics; preserve a compatibility wrapper, one honest example, deterministic regression checks, and the provisional/non-universality firewall.",
-          "next_swing": "Build the bounded v0.1 command-line MVP from the already-executed evaluator. The MVP must run one assessment end to end, emit a machine-readable result, keep evidence-bearing inputs explicit, preserve label-invariance and abstention behavior, and state that classification does not validate supplied witnesses or establish universality. Do not deploy, publish externally, add domain 2, or change scientific status.",
+          "next_swing": "The v0.1 command-line MVP is complete for current inputs. Re-open on a real user or domain fixture that exposes an input, usability, evidence-boundary, packaging, or regression failure; do not manufacture a domain-2 case, deploy, or promote scientific status merely to extend the tool.",
           "success_condition": "A user can invoke one stable repository-owned command on a documented example and receive the same validated typed result as the existing evaluator, while the old test entrypoint remains compatible and regression checks pass.",
           "kill_condition": "The extraction changes verdict semantics, hides evidence requirements, turns unknowns into success, duplicates the evaluator, or presents a provisional diagnosis as source truth or universality evidence.",
-          "forbidden_shortcut": "Do not count a schema, README, renamed test file, or narrative mockup alone as the instrument; the bounded output must execute."
+          "forbidden_shortcut": "Do not count a schema, README, renamed test file, or narrative mockup alone as the instrument; the bounded output must execute.",
+          "mvp_2026_07_22": "Extracted the unchanged Transition Diagnosis v0.1 evaluator to tools/capability_diagnostic.py; retained tests/classify_transition.py as a compatibility wrapper; documented the stable command, example, evidence boundary, and nonclaims; and preserved identical machine-readable output across both entrypoints. The security transfer-breaker regression still passes 10 [E] + 4 [F], with label invariance and provisional/non-universality output intact. No classifier semantics, source truth, domain-2 fixture, hierarchy, grade, claim, canon, deployment, or public posture moved."
         },
         {
           "id": "P2C-BOUNDARY-EXTERNALITY-DISCRIMINATOR",

@@ -36,6 +36,7 @@ without changing meaning to obtain the intended answer.
 - `synthesis/` - repo-independent explanatory synthesis.
 - `literature/` - literature maps and novelty comparisons.
 - `papers/` - provisional paper candidates and publication-oriented byproducts.
+- `tools/` - reusable capability-diagnostic command and user boundary.
 - `tests/` - deterministic checks owned by this repo.
 - `results/` - generated or summarized test receipts.
 - `governance/` - the ratified charter and future governance records.
@@ -67,9 +68,16 @@ The strongest warranted synthesis treats the hierarchy as a fallible typed
 diagnostic, not a chronology, causal ladder, ontology, or established physical
 result. The physical specimens establish neither irreducible issuance nor a
 general capability claim. Their principal value is that they make the
-classification and its strongest completion rival executable. The next
-generality test is a preregistered, source-grounded nonphysics transition using
-the same definitions and an explicit abstention path.
+classification and its strongest completion rival executable. The reusable
+v0.1 command is:
+
+```text
+python tools/capability_diagnostic.py tests/fixtures/transition-diagnosis-v0.1-valid.json
+```
+
+It classifies supplied evidence-bearing assessments provisionally; it does not
+verify witness truth or establish universality. A second nonphysics domain
+remains separately gated.
 
 Start with `synthesis/2026-07-14-coherent-story-v0.1.md` for the plain-English
 picture, `experiments/2026-07-14-ranked-decisive-test-program-v0.1.md` for the
