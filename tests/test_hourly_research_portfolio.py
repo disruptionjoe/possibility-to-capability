@@ -14,7 +14,7 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.data = json.loads(PORTFOLIO.read_text(encoding="utf-8"))
 
-    def test_active_work_group_and_ready_work_exist(self) -> None:
+    def test_active_work_group_and_current_selection_state(self) -> None:
         active = [group for group in self.data["work_groups"] if group["state"] == "ACTIVE"]
         self.assertEqual([group["id"] for group in active], [self.data["lane_1_work_group"]])
         selectable = [
@@ -24,16 +24,21 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
             and item["state"] in ("READY", "ADVANCED_OPEN_FRONTIER",
                                   "RESOLVED_SCOPED_SURVIVOR")
         ]
-        self.assertGreaterEqual(len(selectable), 1)
+        self.assertEqual(selectable, [])
         # Explicit rank overrides raw priority_score, while hourly_eligible
-        # suppresses items advanced for current inputs. After the CAI entryway
-        # transfer, the next eligible frontier is the real physical witness.
+        # suppresses items advanced or banked for current inputs. The
+        # capability-diagnostic MVP is complete, and every remaining path has
+        # an explicit external-input, source-evidence, or Joe gate.
         self.assertTrue(self.data["selection_contract"][
             "explicit_rank_field_overrides_priority_score"])
-        selected = min(selectable, key=lambda item: item["rank"])
-        self.assertEqual(
-            selected["id"], "P2C-REAL-PHYSICAL-WITNESS"
+        instrument = next(
+            item
+            for item in active[0]["internal_work_items"]
+            if item["id"] == "P2C-CAPABILITY-DIAGNOSTIC-INSTRUMENT"
         )
+        self.assertEqual(instrument["state"], "MVP_COMPLETE")
+        self.assertFalse(instrument["hourly_eligible"])
+        self.assertIn("real user or domain fixture", instrument["next_swing"])
         boundary = next(
             item
             for item in active[0]["internal_work_items"]
@@ -49,7 +54,14 @@ class HourlyResearchPortfolioTests(unittest.TestCase):
         )
         self.assertFalse(cross_domain["hourly_eligible"])
         self.assertIn("CAI public-entryway", cross_domain["swing_2026_07_19"])
-        self.assertIn("Advanced for current", cross_domain["next_swing"])
+        self.assertIn("explicit authorization", cross_domain["next_swing"])
+        physical = next(
+            item
+            for item in active[0]["internal_work_items"]
+            if item["id"] == "P2C-REAL-PHYSICAL-WITNESS"
+        )
+        self.assertFalse(physical["hourly_eligible"])
+        self.assertIn("source-grounded transition", physical["next_swing"])
         self.assertIn("reach_swing_accounting_2026_07_16",
                       self.data["selection_contract"])
 
