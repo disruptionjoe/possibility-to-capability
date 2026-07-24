@@ -1,0 +1,247 @@
+{
+  "schema_version": "0.1",
+  "assessment_id": "QCLOCK_HISTORY-TD-204",
+  "status": "provisional",
+  "question": "Does conditioned coherent history recombination enlarge capability beyond ordinary clock dephasing, or does it only add the control access needed to perform a channel-certification task?",
+  "construction": {
+    "fork_identified": true,
+    "selected_branch_id": null,
+    "retention_statement": "The preprint proves an operational separation relative to a specified implemented history set, but the P2C change object can be either the complete laboratory instrument or the clock under fixed coherent-recombination access. Both constructions are retained."
+  },
+  "branch_relation": "ALTERNATIVE_CONSTRUCTIONS",
+  "branches": [
+    {
+      "branch_id": "complete-protocol-frame",
+      "label": "coherent-history certification instrument",
+      "admissibility": "ADMISSIBLE",
+      "witness": {
+        "possibility_family_relation": {
+          "value": "SAME",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2606.12755v1#specified-history-set"
+          ]
+        },
+        "representation_relation": {
+          "value": "INEQUIVALENT",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2606.12755v1#choi-rank-separation"
+          ]
+        },
+        "description_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2606.12755v1#channel-certification"
+          ]
+        },
+        "dynamics_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2606.12755v1#conditioned-coherent-history-recombination"
+          ]
+        },
+        "persistent_record": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2606.12755v1#bright-dark-port-populations"
+          ]
+        },
+        "access_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2606.12755v1#coherent-history-access"
+          ]
+        },
+        "control_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2606.12755v1#conditioned-recombination-control"
+          ]
+        },
+        "raw_task_set_relation": {
+          "value": "SUPERSET",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2606.12755v1#certification-task"
+          ]
+        },
+        "normalized_task_set_relation": {
+          "value": "SUPERSET",
+          "evidence_refs": [
+            "p2c://quantum-clock/complete-protocol-resource-frame"
+          ]
+        },
+        "irreversible": {
+          "value": "NO",
+          "evidence_refs": [
+            "p2c://quantum-clock/repeatable-certification-protocol"
+          ]
+        },
+        "settlement": {
+          "value": "NO",
+          "evidence_refs": [
+            "p2c://quantum-clock/relative-not-absolute-certification"
+          ]
+        },
+        "preceding_layer_factorization": {
+          "value": "FACTORED",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2606.12755v1#relative-to-implemented-histories"
+          ]
+        },
+        "reopenable_by_admissible_continuation": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2606.12755v1#different-histories-or-controls-not-ruled-out"
+          ]
+        },
+        "ordering_relation": {
+          "value": "ORDER_COMPATIBLE",
+          "evidence_refs": [
+            "p2c://quantum-clock/control-dynamics-record-certification-order"
+          ]
+        }
+      },
+      "normalization_frame": "Compare the complete ordinary-readout instrument with the complete coherent-recombination instrument, each inside its declared protocol budget and the same specified history set. The latter can execute the relative channel-certification decision task that ordinary dephasing cannot.",
+      "factorization_search_scope": null,
+      "declared_claims": [
+        "FIXED_FAMILY_DYNAMICS",
+        "RECORD_FORMATION",
+        "ACCESS_CHANGE",
+        "CAPABILITY_ENLARGEMENT",
+        "MULTI_LEVEL"
+      ],
+      "evidence_grade": "ARGUMENT",
+      "verification": "UNVERIFIED"
+    },
+    {
+      "branch_id": "access-fixed-clock-frame",
+      "label": "clock capability with recombination access held fixed",
+      "admissibility": "ADMISSIBLE",
+      "witness": {
+        "possibility_family_relation": {
+          "value": "SAME",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2606.12755v1#specified-history-set"
+          ]
+        },
+        "representation_relation": {
+          "value": "EQUIVALENT",
+          "evidence_refs": [
+            "p2c://quantum-clock/same-clock-under-access-normalization"
+          ]
+        },
+        "description_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2606.12755v1#channel-certification"
+          ]
+        },
+        "dynamics_change": {
+          "value": "NO",
+          "evidence_refs": [
+            "p2c://quantum-clock/intrinsic-clock-dynamics-held-fixed"
+          ]
+        },
+        "persistent_record": {
+          "value": "NO",
+          "evidence_refs": [
+            "p2c://quantum-clock/classify-standing-access-before-readout"
+          ]
+        },
+        "access_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2606.12755v1#coherent-history-access"
+          ]
+        },
+        "control_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2606.12755v1#conditioned-recombination-control"
+          ]
+        },
+        "raw_task_set_relation": {
+          "value": "SUPERSET",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2606.12755v1#certification-task"
+          ]
+        },
+        "normalized_task_set_relation": {
+          "value": "EQUAL",
+          "evidence_refs": [
+            "p2c://quantum-clock/recombination-access-normalized-away"
+          ]
+        },
+        "irreversible": {
+          "value": "NO",
+          "evidence_refs": [
+            "p2c://quantum-clock/repeatable-certification-protocol"
+          ]
+        },
+        "settlement": {
+          "value": "NO",
+          "evidence_refs": [
+            "p2c://quantum-clock/relative-not-absolute-certification"
+          ]
+        },
+        "preceding_layer_factorization": {
+          "value": "FACTORED",
+          "evidence_refs": [
+            "p2c://quantum-clock/access-control-factorization"
+          ]
+        },
+        "reopenable_by_admissible_continuation": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2606.12755v1#different-histories-or-controls-not-ruled-out"
+          ]
+        },
+        "ordering_relation": {
+          "value": "ORDER_COMPATIBLE",
+          "evidence_refs": [
+            "p2c://quantum-clock/access-before-task-order"
+          ]
+        }
+      },
+      "normalization_frame": "Hold the clock's intrinsic dynamics and coherent-recombination access fixed across endpoints, and classify the newly supplied controller as an access/control change. In that frame the raw certification task appears, but normalized clock capability remains equal.",
+      "factorization_search_scope": null,
+      "declared_claims": [
+        "ACCESS_CHANGE",
+        "CAPABILITY_ENLARGEMENT"
+      ],
+      "evidence_grade": "ARGUMENT",
+      "verification": "UNVERIFIED"
+    }
+  ],
+  "label_neutrality": {
+    "left_label": "ordinary dephasing protocol",
+    "right_label": "coherent-history certification protocol",
+    "required": true
+  },
+  "assumptions": [
+    "Zeng arXiv:2606.12755v1 is a non-peer-reviewed preprint and is used at argument grade.",
+    "The certification excludes classical mixtures only for the same specified implemented proper-time histories, not arbitrary classical protocols.",
+    "Whole-instrument capability and clock-intrinsic capability under fixed control access are distinct admissible change objects."
+  ],
+  "evidence_grade": "ARGUMENT",
+  "tests": [
+    "validate both Transition Diagnosis v0.1 branches",
+    "check aggregate construction-fork preservation",
+    "require the access-fixed branch to reject a pure capability overclaim",
+    "check label-swap invariance"
+  ],
+  "falsifiers": [
+    "ordinary single-time dephasing performs the same relative channel-certification task for the specified history set",
+    "conditioned coherent recombination adds no material control or access operation",
+    "a justified common change object forces both branches to the same normalized task relation"
+  ],
+  "nonclaims": [
+    "No completed experimental certification of nonclassical proper-time histories is reported.",
+    "The preprint does not rule out arbitrary classical protocols with different histories or controls.",
+    "No finality, absolute nonclassicality, universality, hierarchy, source-verdict, or canon claim is established."
+  ],
+  "reopening_conditions": [
+    "peer review or experiment changes the source grade",
+    "a full resource ledger forces one normalization frame over the other",
+    "a classical protocol inside the same specified history and control set reproduces the proposed witness"
+  ]
+}

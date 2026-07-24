@@ -1,51 +1,49 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-22T21:02:00-05:00"
-run_ref: RUN-20260722-204348-possibility-to-capability-progress
-bottom_line: The first reusable capability-diagnostic MVP is complete. Transition Diagnosis v0.1 now has a stable repository-owned command, documented example, explicit evidence and nonclaim boundaries, and a compatibility wrapper for every historical test command. Canonical and compatibility outputs match, and the security breaker remains green. The MVP changes no classifier semantics, hierarchy, grade, claim, canon, domain authorization, deployment, or public posture.
-decision_default: Bank the executable v0.1 MVP and wait for a real user or domain fixture to expose the next usability or evidence-boundary failure. Do not invent domain 2, duplicate the evaluator, deploy, or treat a provisional diagnosis as witness validation or universality evidence.
+updated_at: "2026-07-24T18:49:48-05:00"
+run_ref: RUN-20260724-231035-possibility-to-capability-progress
+bottom_line: The quantum-clock fixture blocks precision-as-capability and preserves two honest resource/access construction forks.
+decision_default: Bank the fixture; reopen on a real user failure or source-backed matched budget, not another reading of the same abstracts.
 needs_joe: false
 needs_joe_note: No Joe action required to record this fixture verdict. FLAG for visibility only, no decision requested now -- authorizing the SECOND non-physics domain could fire the program-level falsifier and move the methodology grade toward NOTHING-NEW; that grade/status change is Joe-gated and is not proposed here.
 lanes:
 - lane_id: "1"
   work_status: moving
-  last_movement: Extracted the unchanged Transition Diagnosis v0.1 evaluator into the stable tools/capability_diagnostic.py command, preserved the historical wrapper, documented one example and nonclaim boundary, and passed deterministic regression.
+  last_movement: Ran four quantum-clock protocol families through the unchanged diagnostic and preserved two normalization forks.
   movement_ref: steward/research-portfolio.json#P2C-CAPABILITY-DIAGNOSTIC-INSTRUMENT
   steering_attention: watch
-  steering_prompt: Bank the MVP. Re-open only on a real user or domain fixture that exposes an input, usability, evidence-boundary, packaging, or regression failure.
-  steering_ref: explorations/2026-07-22-wave1-triple-diamond-prep-steering.md
+  steering_prompt: Reopen on a real user failure or a source-backed matched resource ledger that collapses a fork.
+  steering_ref: explorations/2026-07-24-quantum-clock-capability-specimen/SYNTHESIS.md
   light: green
-  reason_code: capability_diagnostic_instrument_mvp_complete
-  evidence_ref: tools/capability_diagnostic.py; tools/README.md; tests/classify_transition.py; tests/security_transfer_breaker.py
-  summary: A stable repository-owned command now exposes the tested evaluator without duplicated logic, while historical imports and commands remain compatible and provisional/non-universality boundaries remain explicit.
-  evaluated_at: "2026-07-22T21:02:00-05:00"
-  run_ref: RUN-20260722-204348-possibility-to-capability-progress
+  reason_code: quantum_clock_real_fixture_banked
+  evidence_ref: explorations/2026-07-24-quantum-clock-capability-specimen/SYNTHESIS.md; tests/quantum_clock_capability_specimen.py
+  summary: Precision becomes capability only after a thresholded task and common resource, access, and control frame are declared.
+  evaluated_at: "2026-07-24T18:49:48-05:00"
+  run_ref: RUN-20260724-231035-possibility-to-capability-progress
   objective: Test the hierarchy as a transition diagnostic across real source-grounded cases.
-  progress_delta: "Delivered the executable v0.1 capability-diagnostic MVP with compatibility and regression evidence, then advanced the item out of repeat-hourly selection."
-  scope_position: Instrument MVP complete for current inputs; security remains spent, domain 2 remains Joe-gated, and all further work requires a real fixture, user need, or recorded reopen condition.
+  progress_delta: "Added four real quantum-clock records: two bounded multi-level results and two explicit construction forks."
+  scope_position: Instrument MVP plus first post-MVP real fixture; two normalization forks await matched source budgets.
   trend_24h: up
   confidence: high
-  recommendation: Use the stable command on real evidence-bearing assessments and reopen instrument work only from observed failure or authorized new-domain demand.
+  recommendation: Bank the fixture; seek a matched budget or real user failure.
   findings:
-  - The confused deputy is the ocap signature "raw access up, normalized authority unchanged" (raw_task SUPERSET, normalized_task EQUAL); the classifier types it NULL for the client and rejects CAPABILITY_ENLARGEMENT, matching object-capability's frame-free verdict.
-  - No circularity: capability is defined as task growth that survives holding access fixed (a difference operator, not access itself); the frame-flip is a declared CONSTRUCTION_FORK and the label-swap control holds, so verdict (a) BREAK / REVISE_HIERARCHY did not trigger.
-  - Transfer fails on novelty: object-capability is at least as sharp and owns a structural designation/authorization distinction P2C's static discriminator cannot represent; a genuine amplification that also records its token types MULTI_LEVEL, not pure capability.
-  - Universality is distinct from novelty: the same coarse capability/access invariant recurs under an unchanged evaluator in a hostile non-physics domain, so the security HOLDS result is a positive datum even though the incumbent remains sharper.
-  - No source truth, capability, finality, canon, claim status, or public posture moved; recording a preregistered breaker's verdict is not a claim promotion. A grade move off NEW-FRAMING-ONLY remains Joe-gated.
+  - Frequency shift and short-time precision do not establish normalized capability; the overclaim controls reject both.
+  - Cascaded GHZ and coherent-history certification fork on the whole-instrument versus access/resource-normalized change object.
+  - The input contract needs a thresholded task plus atom, time, control, prior, readout, and error budgets; no new hierarchy level is warranted.
   options:
   - id: A
-    label: Seek transition
+    label: Bank fixture
     recommended: true
-    description: Seek a frozen before/after transition with matched resources, access, tasks, and native response.
+    description: Preserve the typed results and wait for a matched source budget or observed user failure.
   - id: B
-    label: Cylinder certificate
+    label: Seek matched budget
     recommended: false
-    description: Add the optional matrix-element readability certificate only if it changes the candidate boundary.
+    description: Reopen when a source-backed resource ledger can collapse either construction fork.
   - id: C
-    label: Hold qualified
+    label: Add precision level
     recommended: false
-    description: Bank the candidate without further work until stronger source-grounded evidence arrives.
+    description: Do not add a hierarchy level from one specimen without independent forcing evidence.
   decision_default: A
   needs_joe: false
 - lane_id: "2"

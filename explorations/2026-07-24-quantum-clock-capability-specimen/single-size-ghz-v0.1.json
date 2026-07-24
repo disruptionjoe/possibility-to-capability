@@ -1,0 +1,146 @@
+{
+  "schema_version": "0.1",
+  "assessment_id": "QCLOCK_GHZ-TD-202",
+  "status": "provisional",
+  "question": "Does a single-size GHZ optical-clock protocol enlarge normalized capability, or does its short-time precision gain remain absorbed by changed control and reduced dynamic range?",
+  "construction": {
+    "fork_identified": false,
+    "selected_branch_id": "single-size-ghz-operational",
+    "retention_statement": "The branch uses the completed Cao et al. experiment's own operational envelope: short-dark-time sub-SQL frequency instability together with the reported reduced dynamic range and no optimal-dark-time precision improvement over unentangled atoms."
+  },
+  "branch_relation": "SAME_OBJECT",
+  "branches": [
+    {
+      "branch_id": "single-size-ghz-operational",
+      "label": "single-size GHZ clock interrogation",
+      "admissibility": "ADMISSIBLE",
+      "witness": {
+        "possibility_family_relation": {
+          "value": "SAME",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#optical-clock-family"
+          ]
+        },
+        "representation_relation": {
+          "value": "EQUIVALENT",
+          "evidence_refs": [
+            "p2c://quantum-clock/same-frequency-estimation-object"
+          ]
+        },
+        "description_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#ghz-protocol"
+          ]
+        },
+        "dynamics_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#multi-qubit-rydberg-gates"
+          ]
+        },
+        "persistent_record": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#atom-laser-comparison"
+          ]
+        },
+        "access_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#ghz-state-preparation"
+          ]
+        },
+        "control_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#programmable-atom-array"
+          ]
+        },
+        "raw_task_set_relation": {
+          "value": "SUPERSET",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#below-standard-quantum-limit"
+          ]
+        },
+        "normalized_task_set_relation": {
+          "value": "EQUAL",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#reduced-dynamic-range"
+          ]
+        },
+        "irreversible": {
+          "value": "NO",
+          "evidence_refs": [
+            "p2c://quantum-clock/repeated-ramsey-protocol"
+          ]
+        },
+        "settlement": {
+          "value": "NO",
+          "evidence_refs": [
+            "p2c://quantum-clock/no-finality-claim"
+          ]
+        },
+        "preceding_layer_factorization": {
+          "value": "FACTORED",
+          "evidence_refs": [
+            "p2c://quantum-clock/precision-control-dynamic-range-factorization"
+          ]
+        },
+        "reopenable_by_admissible_continuation": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#cascade-continuation"
+          ]
+        },
+        "ordering_relation": {
+          "value": "ORDER_COMPATIBLE",
+          "evidence_refs": [
+            "p2c://quantum-clock/control-dynamics-record-order"
+          ]
+        }
+      },
+      "normalization_frame": "Compare achievable clock precision over the operational dark-time and dynamic-range envelope, while accounting for GHZ preparation and control. A short-time variance gain does not enlarge the normalized task set when the same protocol loses usable range and does not improve optimum precision.",
+      "factorization_search_scope": null,
+      "declared_claims": [
+        "FIXED_FAMILY_DYNAMICS",
+        "RECORD_FORMATION",
+        "ACCESS_CHANGE",
+        "CAPABILITY_ENLARGEMENT"
+      ],
+      "evidence_grade": "ARGUMENT",
+      "verification": "UNVERIFIED"
+    }
+  ],
+  "label_neutrality": {
+    "left_label": "unentangled protocol",
+    "right_label": "single-size GHZ protocol",
+    "required": true
+  },
+  "assumptions": [
+    "The completed Cao et al. experiment is used only for the claims stated in its abstract-level operational result.",
+    "Capability means an executable task-set change after the declared resource, access, and control normalization, not lower variance at one operating point.",
+    "The reduced dynamic range and optimal-dark-time comparison are part of the assessed object rather than omitted costs."
+  ],
+  "evidence_grade": "ARGUMENT",
+  "tests": [
+    "validate the Transition Diagnosis v0.1 contract",
+    "check label-swap invariance",
+    "require the capability overclaim to be rejected when normalized tasks remain equal"
+  ],
+  "falsifiers": [
+    "a matched full-envelope comparison establishes a previously impossible estimation decision task at the same atom, time, control, prior, readout, and error budgets",
+    "the reported dynamic-range loss is removed without adding a new control or resource",
+    "the classification changes under endpoint relabeling"
+  ],
+  "nonclaims": [
+    "No claim is made that entanglement lacks metrological value.",
+    "No raw precision number is converted into capability without a decision-task threshold and matched budget.",
+    "No capability, finality, universality, hierarchy, or source-verdict claim is established."
+  ],
+  "reopening_conditions": [
+    "a source-backed full-envelope resource-normalized task comparison becomes available",
+    "a user supplies a decision threshold for which the short-time gain changes executability",
+    "the control or readout boundary is reformulated with an independently justified normalization"
+  ]
+}

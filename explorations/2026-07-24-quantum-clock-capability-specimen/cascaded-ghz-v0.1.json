@@ -1,0 +1,247 @@
+{
+  "schema_version": "0.1",
+  "assessment_id": "QCLOCK_CASCADE-TD-203",
+  "status": "provisional",
+  "question": "Does cascading multiple GHZ sizes create a normalized capability enlargement, or is the extended unambiguous phase interval an access and resource reconfiguration?",
+  "construction": {
+    "fork_identified": true,
+    "selected_branch_id": null,
+    "retention_statement": "The published experiment establishes an extended unambiguous phase-estimation interval for the cascade, but the abstract does not establish one unique atom, interrogation-time, gate, prior, readout, and error-budget normalization. Both the whole-instrument and strict matched-budget constructions remain live."
+  },
+  "branch_relation": "ALTERNATIVE_CONSTRUCTIONS",
+  "branches": [
+    {
+      "branch_id": "whole-instrument-frame",
+      "label": "cascade counted as the available instrument",
+      "admissibility": "ADMISSIBLE",
+      "witness": {
+        "possibility_family_relation": {
+          "value": "SAME",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#optical-clock-family"
+          ]
+        },
+        "representation_relation": {
+          "value": "EQUIVALENT",
+          "evidence_refs": [
+            "p2c://quantum-clock/same-phase-estimation-object"
+          ]
+        },
+        "description_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#varying-size-ghz-cascade"
+          ]
+        },
+        "dynamics_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#multi-ensemble-metrology"
+          ]
+        },
+        "persistent_record": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#unambiguous-phase-estimation"
+          ]
+        },
+        "access_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#cascade-access"
+          ]
+        },
+        "control_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#simultaneous-ghz-preparation"
+          ]
+        },
+        "raw_task_set_relation": {
+          "value": "SUPERSET",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#extended-interval"
+          ]
+        },
+        "normalized_task_set_relation": {
+          "value": "SUPERSET",
+          "evidence_refs": [
+            "p2c://quantum-clock/whole-instrument-operational-envelope"
+          ]
+        },
+        "irreversible": {
+          "value": "NO",
+          "evidence_refs": [
+            "p2c://quantum-clock/repeatable-cascade-protocol"
+          ]
+        },
+        "settlement": {
+          "value": "NO",
+          "evidence_refs": [
+            "p2c://quantum-clock/no-finality-claim"
+          ]
+        },
+        "preceding_layer_factorization": {
+          "value": "FACTORED",
+          "evidence_refs": [
+            "p2c://quantum-clock/cascade-control-factorization"
+          ]
+        },
+        "reopenable_by_admissible_continuation": {
+          "value": "YES",
+          "evidence_refs": [
+            "p2c://quantum-clock/further-resource-matching"
+          ]
+        },
+        "ordering_relation": {
+          "value": "ORDER_COMPATIBLE",
+          "evidence_refs": [
+            "p2c://quantum-clock/control-dynamics-record-task-order"
+          ]
+        }
+      },
+      "normalization_frame": "Treat the complete cascaded-GHZ apparatus and its declared operating resources as the after-system, compared with the single-size protocol as the before-system. In this whole-instrument frame, unambiguous phase estimation over an extended interval is a newly executable task.",
+      "factorization_search_scope": null,
+      "declared_claims": [
+        "FIXED_FAMILY_DYNAMICS",
+        "RECORD_FORMATION",
+        "ACCESS_CHANGE",
+        "CAPABILITY_ENLARGEMENT",
+        "MULTI_LEVEL"
+      ],
+      "evidence_grade": "ARGUMENT",
+      "verification": "UNVERIFIED"
+    },
+    {
+      "branch_id": "strict-matched-budget-frame",
+      "label": "atom, gate, prior, and readout budgets matched",
+      "admissibility": "ADMISSIBLE",
+      "witness": {
+        "possibility_family_relation": {
+          "value": "SAME",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#optical-clock-family"
+          ]
+        },
+        "representation_relation": {
+          "value": "EQUIVALENT",
+          "evidence_refs": [
+            "p2c://quantum-clock/same-phase-estimation-object"
+          ]
+        },
+        "description_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#varying-size-ghz-cascade"
+          ]
+        },
+        "dynamics_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#multi-ensemble-metrology"
+          ]
+        },
+        "persistent_record": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#unambiguous-phase-estimation"
+          ]
+        },
+        "access_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#cascade-access"
+          ]
+        },
+        "control_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#simultaneous-ghz-preparation"
+          ]
+        },
+        "raw_task_set_relation": {
+          "value": "SUPERSET",
+          "evidence_refs": [
+            "https://www.nature.com/articles/s41586-024-07913-z#extended-interval"
+          ]
+        },
+        "normalized_task_set_relation": {
+          "value": "INCOMPARABLE",
+          "evidence_refs": [
+            "p2c://quantum-clock/missing-complete-matched-budget-comparison"
+          ]
+        },
+        "irreversible": {
+          "value": "NO",
+          "evidence_refs": [
+            "p2c://quantum-clock/repeatable-cascade-protocol"
+          ]
+        },
+        "settlement": {
+          "value": "NO",
+          "evidence_refs": [
+            "p2c://quantum-clock/no-finality-claim"
+          ]
+        },
+        "preceding_layer_factorization": {
+          "value": "FACTORED",
+          "evidence_refs": [
+            "p2c://quantum-clock/cascade-control-factorization"
+          ]
+        },
+        "reopenable_by_admissible_continuation": {
+          "value": "YES",
+          "evidence_refs": [
+            "p2c://quantum-clock/further-resource-matching"
+          ]
+        },
+        "ordering_relation": {
+          "value": "ORDER_COMPATIBLE",
+          "evidence_refs": [
+            "p2c://quantum-clock/control-dynamics-record-task-order"
+          ]
+        }
+      },
+      "normalization_frame": "Require an explicit common budget over atom allocation among GHZ sizes, preparation gates, interrogation time, prior phase range, readout, and target error. The abstract-level source does not establish a total ordering of task sets in that strict frame.",
+      "factorization_search_scope": null,
+      "declared_claims": [
+        "FIXED_FAMILY_DYNAMICS",
+        "RECORD_FORMATION",
+        "ACCESS_CHANGE"
+      ],
+      "evidence_grade": "ARGUMENT",
+      "verification": "UNVERIFIED"
+    }
+  ],
+  "label_neutrality": {
+    "left_label": "single-size protocol",
+    "right_label": "cascaded protocol",
+    "required": true
+  },
+  "assumptions": [
+    "The completed Cao et al. experiment establishes the reported cascade and extended unambiguous phase interval, not a universal resource-normalized superiority theorem.",
+    "Whole-instrument and strict matched-budget task frames are materially admissible and must not be silently merged.",
+    "A capability verdict requires a declared decision task and error threshold, not the word precision alone."
+  ],
+  "evidence_grade": "ARGUMENT",
+  "tests": [
+    "validate both Transition Diagnosis v0.1 branches",
+    "check aggregate construction-fork preservation",
+    "check label-swap invariance"
+  ],
+  "falsifiers": [
+    "a source-backed common normalization forces the same task-set relation in both branches",
+    "the extended interval disappears under the whole-instrument protocol as implemented",
+    "the aggregate verdict changes under endpoint relabeling"
+  ],
+  "nonclaims": [
+    "No equal-resource capability enlargement is asserted from the abstract-level source.",
+    "No claim is made that the cascade lacks operational value.",
+    "No finality, universality, hierarchy, source-verdict, or canon claim is established."
+  ],
+  "reopening_conditions": [
+    "a full source-backed resource ledger and decision threshold make the two task sets comparable",
+    "a replication or reanalysis changes the reported dynamic-range or extended-interval result",
+    "an admissible third normalization frame produces a different typed outcome"
+  ]
+}

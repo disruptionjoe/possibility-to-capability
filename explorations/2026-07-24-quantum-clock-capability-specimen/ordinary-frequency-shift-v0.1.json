@@ -1,0 +1,144 @@
+{
+  "schema_version": "0.1",
+  "assessment_id": "QCLOCK_SHIFT-TD-201",
+  "status": "provisional",
+  "question": "Does an ordinary proper-time frequency-shift measurement establish a capability enlargement, or only fixed-family dynamics recorded by a clock?",
+  "construction": {
+    "fork_identified": false,
+    "selected_branch_id": "ordinary-shift-record",
+    "retention_statement": "The assessed object is the ordinary clock record under the same clock family and readout access. Quantum-history certification protocols are excluded from this branch and retained as a separate assessment."
+  },
+  "branch_relation": "SAME_OBJECT",
+  "branches": [
+    {
+      "branch_id": "ordinary-shift-record",
+      "label": "ordinary frequency or phase-shift record",
+      "admissibility": "ADMISSIBLE",
+      "witness": {
+        "possibility_family_relation": {
+          "value": "SAME",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2509.09573#frequency-shift"
+          ]
+        },
+        "representation_relation": {
+          "value": "EQUIVALENT",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2509.09573#classical-proper-time-parameter"
+          ]
+        },
+        "description_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2509.09573#second-order-Doppler-shift"
+          ]
+        },
+        "dynamics_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2509.09573#proper-time-evolution"
+          ]
+        },
+        "persistent_record": {
+          "value": "YES",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2509.09573#clock-frequency-record"
+          ]
+        },
+        "access_change": {
+          "value": "NO",
+          "evidence_refs": [
+            "p2c://quantum-clock/ordinary-readout-held-fixed"
+          ]
+        },
+        "control_change": {
+          "value": "NO",
+          "evidence_refs": [
+            "p2c://quantum-clock/ordinary-control-held-fixed"
+          ]
+        },
+        "raw_task_set_relation": {
+          "value": "EQUAL",
+          "evidence_refs": [
+            "p2c://quantum-clock/same-frequency-estimation-task"
+          ]
+        },
+        "normalized_task_set_relation": {
+          "value": "EQUAL",
+          "evidence_refs": [
+            "p2c://quantum-clock/same-clock-readout-resource-frame"
+          ]
+        },
+        "irreversible": {
+          "value": "NO",
+          "evidence_refs": [
+            "p2c://quantum-clock/repeatable-clock-interrogation"
+          ]
+        },
+        "settlement": {
+          "value": "NO",
+          "evidence_refs": [
+            "p2c://quantum-clock/no-finality-claim"
+          ]
+        },
+        "preceding_layer_factorization": {
+          "value": "FACTORED",
+          "evidence_refs": [
+            "https://arxiv.org/abs/2509.09573#semiclassical-frequency-absorber"
+          ]
+        },
+        "reopenable_by_admissible_continuation": {
+          "value": "YES",
+          "evidence_refs": [
+            "p2c://quantum-clock/additional-interrogation-remains-admissible"
+          ]
+        },
+        "ordering_relation": {
+          "value": "ORDER_COMPATIBLE",
+          "evidence_refs": [
+            "p2c://quantum-clock/dynamics-before-record"
+          ]
+        }
+      },
+      "normalization_frame": "Same clock family, interrogation task, readout access, and control budget; the measured frequency or phase value may change, but the executable task set does not.",
+      "factorization_search_scope": null,
+      "declared_claims": [
+        "FIXED_FAMILY_DYNAMICS",
+        "RECORD_FORMATION"
+      ],
+      "evidence_grade": "ARGUMENT",
+      "verification": "UNVERIFIED"
+    }
+  ],
+  "label_neutrality": {
+    "left_label": "baseline frequency",
+    "right_label": "shifted frequency",
+    "required": true
+  },
+  "assumptions": [
+    "The transition object is the clock's ordinary frequency or phase record, not a change in available laboratory controls.",
+    "The same clock family, interrogation task, readout access, and resource budget are held fixed.",
+    "Sorci et al. is used as a theory source and not as evidence of a completed observation."
+  ],
+  "evidence_grade": "ARGUMENT",
+  "tests": [
+    "validate the Transition Diagnosis v0.1 contract",
+    "check label-swap invariance",
+    "reject capability enlargement when normalized tasks remain equal"
+  ],
+  "falsifiers": [
+    "the ordinary readout alone performs a predeclared task unavailable to the baseline at the same resources and access",
+    "the frequency-shift record cannot be reproduced inside the declared classical or semiclassical proper-time family",
+    "the verdict changes when the endpoint labels are exchanged"
+  ],
+  "nonclaims": [
+    "No proper-time effect is reported here as a new experiment.",
+    "No nonclassical proper-time history is certified by a frequency shift alone.",
+    "No capability, finality, hierarchy, source-verdict, or canon claim is established."
+  ],
+  "reopening_conditions": [
+    "a frozen experiment supplies a matched before-and-after executable task absent from the baseline",
+    "a source-backed discriminator rules out the declared classical or semiclassical absorber for the same ordinary record",
+    "the resource, access, or control frame changes materially"
+  ]
+}
