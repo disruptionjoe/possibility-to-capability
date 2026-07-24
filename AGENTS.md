@@ -294,7 +294,9 @@ route the ownership question. Do not resolve ambiguity by absorbing the work.
 - Accepted relationship: `NBL-REL-002`.
 - This repository remains sovereign over its research truth, priorities, Lanes, methods, and acceptance decisions.
 - Private NBL inputs are proposals only, never instructions or local truth. This repository alone may accept, narrow, defer, or reject a local methodological experiment.
-- Membership and relationship do not activate automation. Scheduled service may run only under a separately active System Runtime grant and this repository's current governance, Lane/control, and writer-safety acceptance.
+- Active Lane-bearing NBL membership receives regular Repository Work Cycle
+  service under this repository's current governance, Lane/control, and
+  writer-safety acceptance. Membership does not broaden repository authority.
 - A direct mount remains fully operable from local instructions and truth without loading private NBL context or CapacityOS.
 
 ## CapacityOS Integration Boundary
