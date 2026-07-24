@@ -6,7 +6,7 @@ owner_service_run_id: RUN-20260723-231008-possibility-to-capability
 parent_run_id: RUN-20260723-231008-repository-work-cycle-nbl-hourly
 owner_id: possibility-to-capability
 workflow: repo-stewardship-run
-workflow_revision: sha256:4e18c410d3e4e6b789a4bd56726f5e198c6bcdfcc754c26ad561efe991bcee8a
+workflow_revision: sha256:a48bac11b9ff98a6a43a57f0f18cda076d51b0d7b6632da0df32509f4009d137
 mode: execute
 lane_id: A
 starting_revision: 300791404e7e93fbf71dc24654b3afc93e26db0b
