@@ -151,3 +151,14 @@ multi-chain proof that is not artificial aggregation, a neutrality test that
 cannot be represented as a label permutation, a source/receiver evidence type
 not expressible by JSON Pointer, or an outcome not faithfully represented by
 the four-state lattice.
+
+## Operating path and return
+
+Portfolio work moves through framing, design, construction and testing,
+adjudication, and harden-or-return disposition. Formal, model, collision, and
+hardening treatments remain evidence-typed. Lane 1 carries the core wager;
+Lane 2 carries legitimacy-belt work only with an explicit relation and return.
+
+The gate run records structural evidence, not receiver acceptance. Lane A keeps
+the research portfolio, dependencies, and open receiver returns coherent until
+their owners dispose them.

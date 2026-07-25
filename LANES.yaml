@@ -1,5 +1,5 @@
 lane_contract_version: '1.0'
-manifest_revision: 1
+manifest_revision: 2
 owner:
   owner_id: possibility-to-capability
   display_name: Possibility to Capability
@@ -186,3 +186,11 @@ lanes:
   - policy_identity
   - escalation
 special_rules: []
+extensions:
+  operating_architecture:
+    contract_version: "1.0"
+    operating_contract_refs: ["interfaces/gate-run-v0.1.md"]
+    work_state_refs: ["README.md", "explorations/2026-07-16-progress-lanes.md", "steward/research-portfolio.json"]
+    channel_contract_refs: []
+    lane_a_portfolio_refs: ["LANE-STATE.yaml"]
+    return_contract_refs: ["interfaces/gate-run-v0.1.md"]
