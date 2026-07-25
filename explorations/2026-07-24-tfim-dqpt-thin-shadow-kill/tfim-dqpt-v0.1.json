@@ -1,0 +1,141 @@
+{
+  "schema_version": "0.1",
+  "assessment_id": "TFIM-DQPT-TD-001",
+  "status": "provisional",
+  "question": "Does a cross-critical TFIM quench produce a response without a fixed static-Hamiltonian representative, or a fixed-family dynamical record fully reconstructed from the frozen initial state and post-quench Hamiltonian?",
+  "construction": {
+    "fork_identified": false,
+    "selected_branch_id": "fixed-post-quench-hamiltonian",
+    "retention_statement": "One source-pinned fermionic-mode construction is assessed. Restricted analytic continuation from positive-real equilibrium free-energy data is preserved as a different evidence-access question, not retained as a rival physical construction."
+  },
+  "branch_relation": "SAME_OBJECT",
+  "branches": [
+    {
+      "branch_id": "fixed-post-quench-hamiltonian",
+      "label": "cross-critical TFIM quench",
+      "admissibility": "ADMISSIBLE",
+      "witness": {
+        "possibility_family_relation": {
+          "value": "SAME",
+          "evidence_refs": [
+            "arXiv:1206.2505v2#eq-7-fixed-tfim-family"
+          ]
+        },
+        "representation_relation": {
+          "value": "EQUIVALENT",
+          "evidence_refs": [
+            "P2C-TFIM-DQPT-001#spectral-product-equivalence"
+          ]
+        },
+        "description_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "arXiv:1206.2505v2#eq-16-rate-nonanalyticity"
+          ]
+        },
+        "dynamics_change": {
+          "value": "YES",
+          "evidence_refs": [
+            "arXiv:1206.2505v2#eq-2-fixed-h-time-evolution"
+          ]
+        },
+        "persistent_record": {
+          "value": "YES",
+          "evidence_refs": [
+            "arXiv:1206.2505v2#loschmidt-rate-and-work-distribution"
+          ]
+        },
+        "access_change": {
+          "value": "NO",
+          "evidence_refs": [
+            "P2C-TFIM-DQPT-001#common-observable-and-spectral-data"
+          ]
+        },
+        "control_change": {
+          "value": "NO",
+          "evidence_refs": [
+            "P2C-TFIM-DQPT-001#single-fixed-post-quench-generator"
+          ]
+        },
+        "raw_task_set_relation": {
+          "value": "EQUAL",
+          "evidence_refs": [
+            "P2C-TFIM-DQPT-001#no-operational-task-delta-supplied"
+          ]
+        },
+        "normalized_task_set_relation": {
+          "value": "EQUAL",
+          "evidence_refs": [
+            "P2C-TFIM-DQPT-001#no-matched-task-enlargement"
+          ]
+        },
+        "irreversible": {
+          "value": "NO",
+          "evidence_refs": [
+            "arXiv:1206.2505v2#unitary-fixed-h-evolution"
+          ]
+        },
+        "settlement": {
+          "value": "NO",
+          "evidence_refs": [
+            "P2C-TFIM-DQPT-001#no-settlement-witness"
+          ]
+        },
+        "preceding_layer_factorization": {
+          "value": "FACTORED",
+          "evidence_refs": [
+            "P2C-TFIM-DQPT-001#fixed-h-spectral-reconstruction"
+          ]
+        },
+        "reopenable_by_admissible_continuation": {
+          "value": "YES",
+          "evidence_refs": [
+            "arXiv:1206.2505v2#continued-unitary-trajectory"
+          ]
+        },
+        "ordering_relation": {
+          "value": "CO_OCCURRENT",
+          "evidence_refs": [
+            "P2C-TFIM-DQPT-001#dynamics-and-return-record-cooccur"
+          ]
+        }
+      },
+      "normalization_frame": "The comparison fixes the finite TFIM mode family, initial state, post-quench Hamiltonian, evolution time, Loschmidt observable, spectral data, and computational access. No before/after operational task-set enlargement is supplied.",
+      "factorization_search_scope": null,
+      "declared_claims": [
+        "CAPABILITY_ENLARGEMENT",
+        "FINALITY_CANDIDATE"
+      ],
+      "evidence_grade": "COMPUTATION",
+      "verification": "DETERMINISTIC_SYNTHETIC"
+    }
+  ],
+  "label_neutrality": {
+    "left_label": "ferromagnetic-origin",
+    "right_label": "paramagnetic-destination",
+    "required": true
+  },
+  "assumptions": [
+    "The source's fermionic-mode exact solution and published formulas are correctly represented in SOURCE-FREEZE.md.",
+    "The assessed static representative includes the fixed post-quench Hamiltonian, frozen initial state, and spectral overlaps; it is not restricted to positive-real equilibrium free-energy data.",
+    "A computed Loschmidt-rate record is scored as receiver-owned record formation, not as an experimental observation."
+  ],
+  "evidence_grade": "COMPUTATION",
+  "tests": [
+    "Reconstruct finite-mode Loschmidt probability by fixed-H spectral amplitudes and by the exact closed product and require agreement.",
+    "Check the source critical momentum and time, same-phase control, large-finite slope separation, overclaim rejection, and pure label invariance."
+  ],
+  "falsifiers": [
+    "The fixed post-quench Hamiltonian plus initial-state spectral overlaps cannot reproduce the exact source product without time-dependent retuning.",
+    "A source-grounded matched resource/access/task comparison establishes a normalized operational task-set enlargement absent from this frame.",
+    "A pure endpoint relabeling changes the diagnostic result."
+  ],
+  "nonclaims": [
+    "This receiver-owned finite computation does not refute the published DQPT, prove its thermodynamic limit, move source truth, or generalize to all DQPTs.",
+    "It does not establish or deny capability, issuance, finality, universality, canon, public posture, or the separately banked anomalous-Floquet candidate."
+  ],
+  "reopening_conditions": [
+    "Reopen TFIM on a materially different source-grounded construction that defeats fixed-H plus initial-state spectral reconstruction.",
+    "Reopen the typed verdict if a matched operational task/resource/access frame supplies a genuine task-set delta."
+  ]
+}
