@@ -1,49 +1,49 @@
 schema_version: "2.0"
 owner_id: possibility-to-capability
 group: church-of-ai
-updated_at: "2026-07-24T23:35:16-05:00"
-run_ref: RUN-20260724-230909-possibility-to-capability-progress
-bottom_line: The canonical integrable TFIM DQPT is fully reconstructed by one fixed post-quench Hamiltonian and initial state, killing it as a no-static-representative candidate.
-decision_default: Remove TFIM DQPT from the live P2C-2 candidate family; admit anomalous Floquet only with an exact matched-resource source freeze.
+updated_at: "2026-07-25T03:35:04-05:00"
+run_ref: RUN-20260725-031112-possibility-to-capability-progress
+bottom_line: Exact anomalous micromotion is banked, but capability admission abstains until a matched static comparator and task ledger exist.
+decision_default: Preserve the exact Floquet representation-fork datum; do not admit a capability-side witness without the four missing matched-frame fields.
 needs_joe: false
 needs_joe_note: No Joe action required to record this fixture verdict. FLAG for visibility only, no decision requested now -- authorizing the SECOND non-physics domain could fire the program-level falsifier and move the methodology grade toward NOTHING-NEW; that grade/status change is Joe-gated and is not proposed here.
 lanes:
 - lane_id: "1"
   work_status: moving
-  last_movement: Executed the preregistered TFIM-quench thin-shadow reconstruction kill and removed the canonical integrable construction from the no-static-representative candidate family.
+  last_movement: Executed the anomalous-Floquet admission preflight; banked exact edge micromotion and returned matched-resource/task abstention.
   movement_ref: steward/research-portfolio.json#P2C-REAL-PHYSICAL-WITNESS
   steering_attention: watch
-  steering_prompt: Do not repeat TFIM; freeze exact matched-drive anomalous-Floquet resources, tasks, and completion rival before admission.
-  steering_ref: explorations/2026-07-24-tfim-dqpt-thin-shadow-kill/SYNTHESIS.md
+  steering_prompt: Do not repeat the ideal Floquet fixture; reopen only with a matched static comparator, task ledger, and completion forks.
+  steering_ref: explorations/2026-07-25-anomalous-floquet-admission/SYNTHESIS.md
   light: green
-  reason_code: tfim_dqpt_thin_shadow_reconstruction_kill
-  evidence_ref: explorations/2026-07-24-tfim-dqpt-thin-shadow-kill/SYNTHESIS.md; tests/tfim_dqpt_thin_shadow_kill.py
-  summary: Thermodynamic nonanalyticity and restricted Wick-rotation failure do not defeat reconstruction from a fixed Hamiltonian, initial state, and spectral overlaps.
-  evaluated_at: "2026-07-24T23:35:16-05:00"
-  run_ref: RUN-20260724-230909-possibility-to-capability-progress
+  reason_code: anomalous_floquet_matched_frame_abstention
+  evidence_ref: explorations/2026-07-25-anomalous-floquet-admission/SYNTHESIS.md; tests/anomalous_floquet_admission.py
+  summary: Fixed-phase Floquet H omits edge micromotion; a synthetic-dimension static completion survives and matched capability fields are missing.
+  evaluated_at: "2026-07-25T03:35:04-05:00"
+  run_ref: RUN-20260725-031112-possibility-to-capability-progress
   objective: Test the hierarchy as a transition diagnostic across real source-grounded cases.
-  progress_delta: "Added a source-pinned preregistration, exact finite reconstruction harness, typed assessment, and negative synthesis that kills the TFIM thin-shadow candidate for current inputs."
-  scope_position: Security universality datum and quantum-clock fixture remain banked; TFIM DQPT is removed; anomalous Floquet is the remaining named P2C-2 candidate behind exact matched-resource admission.
+  progress_delta: "Added a four-source freeze, exact finite permutation harness, representation-fork analysis, and executable admission abstention."
+  scope_position: Security and quantum-clock data remain banked; TFIM is removed; anomalous micromotion is exact but its capability-side match is unadmitted.
   trend_24h: up
   confidence: high
-  recommendation: Preserve the negative TFIM result; require a source-frozen matched-drive Floquet construction before the next supplier check.
+  recommendation: Bank the representation fork; require all matched-frame fields before reopening capability admission.
   findings:
-  - Fixed-H spectral evolution and the exact TFIM Loschmidt product agree across the preregistered finite grid and times.
-  - The DQPT cusp remains genuine, but failure of positive-real equilibrium continuation is an evidence-access limit rather than absence of a static generator.
-  - The unchanged diagnostic returns fixed-family dynamics plus record formation and rejects capability and finality overclaims.
+  - The ideal four-step drive is bulk identity but a nontrivial boundary permutation on four finite lattice sizes.
+  - A fixed-phase same-dimensional Floquet H misses micromotion, while the full path admits a static synthetic-dimension completion.
+  - Sources omit a common static-rival control/power/noise ledger and normalized operational task relation, forcing abstention.
   options:
   - id: A
-    label: Preserve TFIM kill
+    label: Preserve abstention
     recommended: true
-    description: Remove canonical integrable TFIM DQPT from the live no-static-representative candidates.
+    description: Bank exact micromotion and keep the capability-side candidate unadmitted on the four named fields.
   - id: B
-    label: Freeze Floquet match
+    label: Reopen on matched frame
     recommended: false
-    description: Admit the remaining anomalous-Floquet candidate only with exact common drive, task, and completion-rival objects.
+    description: Reopen only when one source freezes the full common resource/task ledger and both completion rivals.
   - id: C
-    label: Reopen TFIM
+    label: Reopen representation
     recommended: false
-    description: Reopen only on a materially different source construction that defeats fixed-H spectral reconstruction.
+    description: Reopen the representation verdict only if a stronger rival defeats the fixed-phase or synthetic-dimension branch.
   decision_default: A
   needs_joe: false
 - lane_id: "2"
