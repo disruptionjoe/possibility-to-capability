@@ -290,3 +290,32 @@ python tests/trit_access_closure.py
 A pass confirms only that these finite frontier fixtures satisfy their declared
 internal contracts. It does not establish a Hamiltonian transition, observer
 agency, physical issuance, or capability enlargement.
+
+## Kalman-quadrant remainder instrument
+
+- `kalman_quadrant_remainder_instrument.py` is an executable calibration
+  fixture (P2C-KQRI-001): a finite deterministic toy world with exact ground
+  truth where the reconstruction remainder is computed two independent ways —
+  directly by exhaustive enumeration plus stream matching, and as
+  `~(reachable & observable)` by graph closures — and verified to coincide
+  under a declared known initial state. It demonstrates the
+  known-initial-state caveat (free response partly recovers the
+  unreachable-but-observable sector when the declaration is dropped), prints
+  a graded R-curve that plateaus at the structural floor, and asserts three
+  deliberately wrong readings FAIL: the edge-free hypothesis, the ORIGINAL
+  disjunctive downstream-only conjecture (the sealed room is the machine
+  witness), and a render-mesh-observable control. Lints clean under
+  `tef_check_tag_linter.py --strict` (registry mode, 3 [T] / 6 [E] / 3 [F]).
+  Synthesis:
+  `explorations/2026-07-27-kalman-quadrant-remainder-instrument/SYNTHESIS.md`.
+
+Run from the repository root:
+
+```text
+python tests/kalman_quadrant_remainder_instrument.py
+```
+
+A pass means the known Kalman-decomposition typing, made executable on this
+declared toy class, behaves as the capability-formalism record says it
+should. It claims no novel typing (the 2026-07-22 novelty scan's SUBSUMED
+verdict stands), no physics, and no source claim movement.
